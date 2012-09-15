@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WaitForWindowWidget</class>
+ <widget class="QWidget" name="WaitForWindowWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string comment="@title">Edit window to wait for</string>
+  </property>
+  <property name="whatsThis">
+   <string comment="@info:whatsthis">&lt;para&gt;Set the object name of the window to wait for.&lt;/para&gt;</string>
+  </property>
+  <layout class="QVBoxLayout" name="WaitForWindowVerticalLayout">
+   <item>
+    <widget class="QGroupBox" name="waitForWindowGroupBox">
+     <property name="title">
+      <string comment="@title:group">Wait for window</string>
+     </property>
+     <layout class="QHBoxLayout" name="waitForWindowGroupBoxHorizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="labelVerticalLayout">
+        <item>
+         <widget class="QLabel" name="windowObjectNameLabel">
+          <property name="text">
+           <string comment="@label:textbox">Window name:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="buddy">
+           <cstring>windowObjectNameLineEdit</cstring>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="valueVerticalLayout">
+        <item>
+         <widget class="KLineEdit" name="windowObjectNameLineEdit">
+          <property name="whatsThis">
+           <string comment="@info:whatsthis">&lt;para&gt;The name of the window to be shown.&lt;/para&gt;
+&lt;para&gt;Note that the name is not the title of the window or its class name, but the string returned by its objectName() method.&lt;/para&gt;
+&lt;para&gt;Also note that it can wait either for windows or for dialogs, not just for windows.&lt;/para&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="waitForWindowWidgetSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>klineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

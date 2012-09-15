@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<gui name="ktutorial-editor" version="1">
+    <MenuBar>
+        <Menu name="file">
+            <Action name="exportTutorial"/>
+        </Menu>
+        <Menu name="edit">
+            <Menu name="editTutorials">
+                <Text context="@title:menu">Tutorial</Text>
+                <Action name="setTutorialInformation"/>
+                <Action name="setTutorialLicense"/>
+                <Action name="setTutorialSetup"/>
+                <Action name="setTutorialTearDown"/>
+            </Menu>
+            <Menu name="editSteps">
+                <Text context="@title:menu Noun, a step in a tutorial">Step</Text>
+                <Action name="addStep"/>
+                <Action name="setStepData"/>
+                <Action name="setStepSetup"/>
+                <Action name="setStepTearDown"/>
+                <Action name="removeStep"/>
+            </Menu>
+            <Menu name="editReactions">
+                <Text context="@title:menu Noun, a reaction in a step">Reaction</Text>
+                <Action name="addReaction"/>
+                <Action name="setReactionData"/>
+                <Action name="removeReaction"/>
+            </Menu>
+            <Separator/>
+            <Action name="testTutorial"/>
+            <Action name="testTutorialFromCurrentStep"/>
+        </Menu>
+        <Menu name="view">
+            <Menu name="panels">
+                <Text context="@title:menu">Panels</Text>
+                <Action name="showEditTutorialDock"/>
+                <Action name="showEditStepDock"/>
+                <Action name="showEditReactionDock"/>
+            </Menu>
+        </Menu>
+        <Menu name="help">
+            <DefineGroup name="ktutorial"/>
+        </Menu>
+    </MenuBar>
+    <ToolBar name="mainToolBar">
+        <Text context="@title:menu">Main Toolbar</Text>
+        <Action name="exportTutorial"/>
+        <Separator/>
+        <Action name="testTutorial"/>
+    </ToolBar>
+</gui>

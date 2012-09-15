@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tutorial name="Interacting with the target application">
+    <description>This tutorial shows how KTutorial editor can interact with the target application of a tutorial, for example, to show the object names or test the tutorial without installing it.</description>
+    <license>Copyright (C) 2010 by Daniel Calviño Sánchez &lt;danxuliu@gmail.com&gt;
+Copyright (C) 2012 by Daniel Calviño Sánchez &lt;danxuliu@gmail.com&gt;
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; If not, see &lt;http://www.gnu.org/licenses/&gt;.</license>
+    <step id="start">
+        <text>&lt;para&gt;Welcome to the tutorial to learn how &lt;application&gt;KTutorial editor&lt;/application&gt; can interact with the target application.&lt;/para&gt;
+
+&lt;para&gt;The target application is the one that the tutorial is being designed for. &lt;application&gt;KTutorial editor&lt;/application&gt; can &quot;talk&quot; with target applications to provide some useful features when designing a tutorial.&lt;/para&gt;
+
+&lt;para&gt;To see these features we will design a tutorial for &lt;application&gt;KTutorial editor&lt;/application&gt; itself that asks the user to add a new step and accept the step dialog.&lt;/para&gt;
+
+&lt;para&gt;Let's begin by &lt;link url=&quot;widget:addStepToolButton&quot;&gt;adding a new step&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="StepDataDialog"/>
+            <nextStep id="setStartStepId"/>
+        </reaction>
+    </step>
+    <step id="setStartStepId">
+        <text>&lt;para&gt;Set the &lt;link url=&quot;widget:idLineEdit&quot;&gt;id of the step&lt;/link&gt; to &lt;emphasis&gt;start&lt;/emphasis&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="CustomCode">
+            <waitForSignal emitterName="idLineEdit" signalName="textChanged(QString)"/>
+            <customCode>idLineEdit = ktutorial.findObject(&quot;idLineEdit&quot;);
+if (idLineEdit.text == &quot;start&quot;) {
+    tutorial.nextStep(&quot;setStartStepText&quot;);
+}</customCode>
+        </reaction>
+    </step>
+    <step id="setStartStepText">
+        <text>&lt;para&gt;Set the &lt;link url=&quot;widget:textTextEdit&quot;&gt;text of the step&lt;/link&gt; to:&lt;/para&gt;
+
+&lt;para&gt;&lt;emphasis&gt;Add a new step.&lt;/emphasis&gt;&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="CustomCode">
+            <waitForSignal emitterName="textTextEdit" signalName="textChanged()"/>
+            <customCode>textTextEdit = ktutorial.findObject(&quot;textTextEdit&quot;);
+if (textTextEdit.plainText.toLowerCase() == t.i18n(&quot;Add a new step.&quot;).toLowerCase()) {
+    tutorial.nextStep(&quot;acceptAddStartStepDialog&quot;);
+}</customCode>
+        </reaction>
+    </step>
+    <step id="acceptAddStartStepDialog">
+        <text>&lt;para&gt;And finally accept the dialog clicking in the &lt;link url=&quot;widget:okButton&quot;&gt;&lt;interface&gt;Ok&lt;/interface&gt; button&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="okButton" signalName="clicked()"/>
+            <nextStep id="addReactionToStartStep"/>
+        </reaction>
+    </step>
+    <step id="addReactionToStartStep">
+        <text>&lt;para&gt;Now, select the &lt;emphasis&gt;start&lt;/emphasis&gt; step and add a new reaction to it.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="ReactionDialog"/>
+            <nextStep id="setStartStepReactionTriggerToConditionMet"/>
+        </reaction>
+    </step>
+    <step id="setStartStepReactionTriggerToConditionMet">
+        <text>&lt;para&gt;Set the trigger type to &lt;link url=&quot;widget:triggerConditionRadioButton&quot;&gt;&lt;interface&gt;condition met&lt;/interface&gt;&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="triggerConditionRadioButton" signalName="clicked()"/>
+            <nextStep id="addWaitForToStartStepReaction"/>
+        </reaction>
+    </step>
+    <step id="addWaitForToStartStepReaction">
+        <text>&lt;para&gt;&lt;link url=&quot;widget:addButton&quot;&gt;&lt;interface&gt;Add&lt;/interface&gt;&lt;/link&gt; a new condition.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="addWaitForDialog"/>
+            <nextStep id="selectWaitForWindowInStartStepReaction"/>
+        </reaction>
+    </step>
+    <step id="selectWaitForWindowInStartStepReaction">
+        <text>&lt;para&gt;We want the step to react when the dialog to add a new step is shown, so select &lt;emphasis&gt;The specified window is shown&lt;/emphasis&gt; in the &lt;link url=&quot;widget:waitForTypeComboBox&quot;&gt;combo box&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="CustomCode">
+            <waitForSignal emitterName="waitForTypeComboBox" signalName="currentIndexChanged(int)"/>
+            <customCode>comboBox = ktutorial.findObject(&quot;waitForTypeComboBox&quot;);
+if (comboBox.currentText == t.i18nc(&quot;@item:inlistbox&quot;, &quot;The specified window is shown&quot;)) {
+    tutorial.nextStep(&quot;acceptNewWaitForDialogForStartStepReaction&quot;);
+}</customCode>
+        </reaction>
+    </step>
+    <step id="acceptNewWaitForDialogForStartStepReaction">
+        <text>&lt;para&gt;&lt;link url=&quot;widget:addWaitForDialog/okButton&quot;&gt;Accept the dialog&lt;/link&gt; to add the condition to wait for.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="addWaitForDialog/okButton" signalName="clicked()"/>
+            <nextStep id="editWaitForWindowInStartStepReaction"/>
+        </reaction>
+    </step>
+    <step id="editWaitForWindowInStartStepReaction">
+        <text>&lt;para&gt;Select the condition just added and &lt;link url=&quot;widget:editButton&quot;&gt;edit&lt;/link&gt; it.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="editWaitForWindowDialog"/>
+            <nextStep id="chooseWindowObjectName"/>
+        </reaction>
+    </step>
+    <step id="chooseWindowObjectName">
+        <text>&lt;para&gt;Now it is time to set the name of the window/dialog that we want to wait for. We asked the user to add a new step, so we want to wait for the dialog that appears when &lt;interface&gt;Add step&lt;/interface&gt; is clicked. But... what is the object name of that dialog (note that the object name is not the title)?&lt;/para&gt;
+
+&lt;para&gt;Usually the name of the objects (windows, widgets...) will be quite descriptive, so we can suppose how it will look like. However, a name that &lt;emphasis&gt;is something like...&lt;/emphasis&gt; is not enough, we need the exact name.&lt;/para&gt;
+
+&lt;para&gt;&lt;application&gt;KTutorial editor&lt;/application&gt; is able to show you a list with all the objects in the target application that KTutorial can access to.&lt;/para&gt;
+
+&lt;para&gt;Click on &lt;link url=&quot;widget:objectNamePushButton&quot;&gt;Choose...&lt;/link&gt; to select the object from the list.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="openwith"/>
+            <nextStep id="setTargetApplicationToUse"/>
+        </reaction>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="RemoteObjectChooser"/>
+            <nextStep id="targetApplicationAlreadyRunning"/>
+        </reaction>
+    </step>
+    <step id="setTargetApplicationToUse">
+        <text>&lt;para&gt;To show you the list with the objects in the target application &lt;application&gt;KTutorial editor&lt;/application&gt; needs to know which one is the target application. You can select it from the list of known applications or set its executable name.&lt;/para&gt;
+
+&lt;para&gt;Once the target application is set &lt;application&gt;KTutorial editor&lt;/application&gt; will start a new instance of that application to &quot;talk&quot; with it.&lt;/para&gt;
+
+&lt;para&gt;The target application of this tutorial is &lt;application&gt;KTutorial editor&lt;/application&gt; itself, so select it in the list or write &lt;emphasis&gt;ktutorial-editor&lt;/emphasis&gt; (which is the name of its executable) in the text line, then accept the dialog.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForEvent receiverName="openwith" eventName="Hide"/>
+            <nextStep id="highlightWidgetInRemoteObjectChooser"/>
+        </reaction>
+    </step>
+    <step id="targetApplicationAlreadyRunning">
+        <text>&lt;para&gt;&lt;application&gt;KTutorial editor&lt;/application&gt; needs to know which application is the target application of the tutorial to &quot;talk&quot; with it.&lt;/para&gt;
+
+&lt;para&gt;It seems that you already had selected the target application before starting this tutorial. Unfortunately, if the target application already selected is not &lt;application&gt;KTutorial editor&lt;/application&gt;, you will have to close this tutorial and that target application, create a new tutorial (using &lt;interface&gt;File|New&lt;/interface&gt;, or &lt;interface&gt;New&lt;/interface&gt; in the tool bar) and start this tutorial again.&lt;/para&gt;
+
+&lt;para&gt;Yes, I guess I should have warned you about this when you started this tutorial :P&lt;/para&gt;</text>
+        <reaction triggerType="OptionSelected" responseType="NextStep">
+            <option name="Continue"/>
+            <nextStep id="highlightWidgetInRemoteObjectChooser"/>
+        </reaction>
+    </step>
+    <step id="highlightWidgetInRemoteObjectChooser">
+        <text>&lt;para&gt;Now you have the list with the objects that KTutorial can access in the target application.&lt;/para&gt;
+
+&lt;para&gt;Note that when you select a widget in the list the widget is highlighted in the target application. For example, select the object named &lt;emphasis&gt;centralTreeView&lt;/emphasis&gt;. You will see that, in the target application, the tree view that shows the tutorial being designed is highlighted.&lt;/para&gt;
+
+&lt;para&gt;The list also shows the parent/child relationship between objects. For example, select &lt;emphasis&gt;editTutorialDock&lt;/emphasis&gt;. The whole dock is highlighted.&lt;/para&gt;
+
+&lt;para&gt;Now, select the unnamed object from the ActionListWidget class that appears in the list as a child element of the &lt;emphasis&gt;editTutorialDock&lt;/emphasis&gt;. Now only the buttons in the dock are highlighted, as they are part of that widget.&lt;/para&gt;
+
+&lt;para&gt;And finally, if you select the &lt;emphasis&gt;setTutorialInformationToolButton&lt;/emphasis&gt; element, only the button to set the information of the tutorial will be highlighted.&lt;/para&gt;</text>
+        <reaction triggerType="OptionSelected" responseType="NextStep">
+            <option name="Continue"/>
+            <nextStep id="selectStepDataDialogInRemoteObjectChooser"/>
+        </reaction>
+    </step>
+    <step id="selectStepDataDialogInRemoteObjectChooser">
+        <text>&lt;para&gt;You may have noticed that the list does not contain the object we are looking for, that is, the dialog that is shown to add a new step. The reason is that the list does not contain all the objects that may exist in the target application at any time. Instead, it is dynamic. When a new object is added or an existing one removed from the target application the list reflects that.&lt;/para&gt;
+
+&lt;para&gt;So, in the target application, show the dialog to add a new step. Once you do this, a new object (and all its children) will be added to the end of the list. The object is called &lt;emphasis&gt;StepDataDialog&lt;/emphasis&gt; and, yes, it is the dialog that has just been shown.&lt;/para&gt;
+
+&lt;para&gt;Select the &lt;emphasis&gt;StepDataDialog&lt;/emphasis&gt; element in the list and &lt;link url=&quot;widget:RemoteObjectChooser/okButton&quot;&gt;accept the dialog&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="RemoteObjectChooser/okButton" signalName="clicked()"/>
+            <nextStep id="acceptEditWaitForWindowDialogForStartStepReaction"/>
+        </reaction>
+    </step>
+    <step id="acceptEditWaitForWindowDialogForStartStepReaction">
+        <text>&lt;para&gt;Now that the name of the window was set &lt;link url=&quot;widget:editWaitForWindowDialog/okButton&quot;&gt;accept the dialog&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="editWaitForWindowDialog/okButton" signalName="clicked()"/>
+            <nextStep id="setNextStepResponseInStartStepReaction"/>
+        </reaction>
+    </step>
+    <step id="setNextStepResponseInStartStepReaction">
+        <text>&lt;para&gt;We want to change to another step when the window is shown, so now it is time to set the name of that other step.&lt;/para&gt;
+
+&lt;para&gt;Set the &lt;link url=&quot;widget:responseStepLineEdit&quot;&gt;step to change to&lt;/link&gt; to &lt;emphasis&gt;acceptDialog&lt;/emphasis&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="CustomCode">
+            <waitForSignal emitterName="responseStepLineEdit" signalName="textChanged(QString)"/>
+            <customCode>responseStepLineEdit = ktutorial.findObject(&quot;responseStepLineEdit&quot;);
+if (responseStepLineEdit.text == &quot;acceptDialog&quot;) {
+    tutorial.nextStep(&quot;acceptStartStepReactionDialog&quot;);
+}</customCode>
+        </reaction>
+    </step>
+    <step id="acceptStartStepReactionDialog">
+        <text>&lt;para&gt;And finally &lt;link url=&quot;widget:okButton&quot;&gt;accept the dialog&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="okButton" signalName="clicked()"/>
+            <nextStep id="addAcceptDialogStep"/>
+        </reaction>
+    </step>
+    <step id="addAcceptDialogStep">
+        <text>&lt;para&gt;We are done with the first step. Now we will take care of the second one, that will wait until the user accepts the dialog.&lt;/para&gt;
+
+&lt;para&gt;Of course, the first thing to do is to &lt;link url=&quot;widget:addStepToolButton&quot;&gt;add a new step&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="StepDataDialog"/>
+            <nextStep id="setAcceptDialogStepId"/>
+        </reaction>
+    </step>
+    <step id="setAcceptDialogStepId">
+        <text>&lt;para&gt;Set the &lt;link url=&quot;widget:idLineEdit&quot;&gt;id of the step&lt;/link&gt; to &lt;emphasis&gt;acceptDialog&lt;/emphasis&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="CustomCode">
+            <waitForSignal emitterName="idLineEdit" signalName="textChanged(QString)"/>
+            <customCode>idLineEdit = ktutorial.findObject(&quot;idLineEdit&quot;);
+if (idLineEdit.text == &quot;acceptDialog&quot;) {
+    tutorial.nextStep(&quot;setAcceptDialogStepText&quot;);
+}</customCode>
+        </reaction>
+    </step>
+    <step id="setAcceptDialogStepText">
+        <text>&lt;para&gt;Set the &lt;link url=&quot;widget:textTextEdit&quot;&gt;text of the step&lt;/link&gt; to:&lt;/para&gt;
+
+&lt;para&gt;&lt;emphasis&gt;Set the id to &amp;lt;emphasis&amp;gt;start&amp;lt;/emphasis&amp;gt; and the text to &amp;lt;emphasis&amp;gt;First step&amp;lt;/emphasis&amp;gt;, then accept the dialog.&lt;/emphasis&gt;&lt;/para&gt;
+
+&lt;para&gt;Remember that you can copy the text above and paste it in the text area, you don't need to write it yourself.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="CustomCode">
+            <waitForSignal emitterName="textTextEdit" signalName="textChanged()"/>
+            <customCode>textTextEdit = ktutorial.findObject(&quot;textTextEdit&quot;);
+trimmedText = textTextEdit.plainText.replace(/^\s+|\s+$/g, '');
+if (trimmedText.toLowerCase() == t.i18n(&quot;Set the id to &amp;lt;emphasis&amp;gt;start&amp;lt;/emphasis&amp;gt; and the text to &amp;lt;emphasis&amp;gt;First step&amp;lt;/emphasis&amp;gt;, then accept the dialog.&quot;).toLowerCase()) {
+    tutorial.nextStep(&quot;acceptAddAcceptDialogStepDialog&quot;);
+}</customCode>
+        </reaction>
+    </step>
+    <step id="acceptAddAcceptDialogStepDialog">
+        <text>&lt;para&gt;And finally &lt;link url=&quot;widget:okButton&quot;&gt;accept the dialog&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="okButton" signalName="clicked()"/>
+            <nextStep id="addReactionToAcceptDialogStep"/>
+        </reaction>
+    </step>
+    <step id="addReactionToAcceptDialogStep">
+        <text>&lt;para&gt;Now, select the &lt;emphasis&gt;acceptDialog&lt;/emphasis&gt; step and add a new reaction to it.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="ReactionDialog"/>
+            <nextStep id="setAcceptDialogStepReactionTriggerToConditionMet"/>
+        </reaction>
+    </step>
+    <step id="setAcceptDialogStepReactionTriggerToConditionMet">
+        <text>&lt;para&gt;Set the trigger type to &lt;link url=&quot;widget:triggerConditionRadioButton&quot;&gt;&lt;interface&gt;condition met&lt;/interface&gt;&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="triggerConditionRadioButton" signalName="clicked()"/>
+            <nextStep id="addWaitForToAcceptDialogStepReaction"/>
+        </reaction>
+    </step>
+    <step id="addWaitForToAcceptDialogStepReaction">
+        <text>&lt;para&gt;&lt;link url=&quot;widget:addButton&quot;&gt;&lt;interface&gt;Add&lt;/interface&gt;&lt;/link&gt; a new condition.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="addWaitForDialog"/>
+            <nextStep id="selectWaitForSignalInAcceptDialogStepReaction"/>
+        </reaction>
+    </step>
+    <step id="selectWaitForSignalInAcceptDialogStepReaction">
+        <text>&lt;para&gt;To wait for the user to accept the dialog we will wait for the user to click on the &lt;interface&gt;Ok&lt;/interface&gt; button.&lt;/para&gt;
+
+&lt;para&gt;Buttons emit a signal whenever they are clicked, so select &lt;emphasis&gt;The specified signal is emitted&lt;/emphasis&gt; in the &lt;link url=&quot;widget:waitForTypeComboBox&quot;&gt;combo box&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="CustomCode">
+            <waitForSignal emitterName="waitForTypeComboBox" signalName="currentIndexChanged(int)"/>
+            <customCode>comboBox = ktutorial.findObject(&quot;waitForTypeComboBox&quot;);
+if (comboBox.currentText == t.i18nc(&quot;@item:inlistbox&quot;, &quot;The specified signal is emitted&quot;)) {
+    tutorial.nextStep(&quot;acceptNewWaitForDialogForAcceptDialogStepReaction&quot;);
+}</customCode>
+        </reaction>
+    </step>
+    <step id="acceptNewWaitForDialogForAcceptDialogStepReaction">
+        <text>&lt;para&gt;&lt;link url=&quot;widget:addWaitForDialog/okButton&quot;&gt;Accept the dialog&lt;/link&gt; to add the condition to wait for.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="addWaitForDialog/okButton" signalName="clicked()"/>
+            <nextStep id="editWaitForSignalInAcceptDialogStepReaction"/>
+        </reaction>
+    </step>
+    <step id="editWaitForSignalInAcceptDialogStepReaction">
+        <text>&lt;para&gt;Select the condition just added and &lt;link url=&quot;widget:editButton&quot;&gt;edit&lt;/link&gt; it.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="editWaitForSignalDialog"/>
+            <nextStep id="triggerEmitterNameCompletionBox"/>
+        </reaction>
+    </step>
+    <step id="triggerEmitterNameCompletionBox">
+        <text>&lt;para&gt;We are again in a point where we need to know the name of an object, in this case, the name of the &lt;interface&gt;Ok&lt;/interface&gt; button. This time, though, we will not choose it from the list. We will see another little &lt;application&gt;KTutorial editor&lt;/application&gt; feature instead.&lt;/para&gt;
+
+&lt;para&gt;When there is a target application running (if you closed it, start it again clicking on &lt;interface&gt;Choose...&lt;/interface&gt; and then closing the list), the field to set an object name offers text completion with the names of the objects in the target application. Like the list to select an object, the completion list is dynamic, so entries are added and removed based on objects added and removed in the target application.&lt;/para&gt;
+
+&lt;para&gt;Ensure that the target application is running and that, in that target application, the dialog to add a new step is open. Then just write &lt;emphasis&gt;o&lt;/emphasis&gt; in the &lt;link url=&quot;widget:objectNameLineEdit&quot;&gt;emitter name field&lt;/link&gt; and watch the completion list pop up.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="CustomCode">
+            <waitForSignal emitterName="objectNameLineEdit" signalName="completion(QString)"/>
+            <customCode>objectNameLineEdit = ktutorial.findObject(&quot;objectNameLineEdit&quot;);
+if (objectNameLineEdit.text == &quot;o&quot;) {
+    tutorial.nextStep(&quot;selectOkButtonInCompletionBox&quot;);
+}</customCode>
+        </reaction>
+    </step>
+    <step id="selectOkButtonInCompletionBox">
+        <text>&lt;para&gt;As you can see, the completion list proposes &lt;emphasis&gt;okButton&lt;/emphasis&gt;, as it is the only object in the target application whose name starts with &lt;emphasis&gt;o&lt;/impact&gt;. The completion list proposes all the objects in the target application whose name starts with the text written in the emitter name field.&lt;/para&gt;
+
+&lt;para&gt;You should set the emitter name to &lt;emphasis&gt;okButton&lt;/emphasis&gt;, but instead of writing it use the completion list. To use some proposed completion click on it with the mouse, or traverse the list using the up and down keys pressing enter when you reach the desired one.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="CustomCode">
+            <waitForSignal emitterName="objectNameLineEdit" signalName="textChanged(QString)"/>
+            <customCode>objectNameLineEdit = ktutorial.findObject(&quot;objectNameLineEdit&quot;);
+if (objectNameLineEdit.text == &quot;okButton&quot;) {
+    tutorial.nextStep(&quot;triggerSignalNameCompletionBox&quot;);
+}</customCode>
+        </reaction>
+    </step>
+    <step id="triggerSignalNameCompletionBox">
+        <text>&lt;para&gt;The signal name field also provides completion when the target application is running and the emitter name was set.&lt;/para&gt;
+
+&lt;para&gt;Note that the completion list can also be triggered using the standard shortcut &lt;shortcut&gt;Ctrl+T&lt;/shortcut&gt; when the focus is on a text edition widget. Click on the &lt;link url=&quot;widget:signalNameLineEdit&quot;&gt;signal name field&lt;/link&gt; to give it the focus, then press &lt;shortcut&gt;Ctrl+T&lt;/shortcut&gt; to show all the signals that can be emitted by the &lt;interface&gt;Ok&lt;/interface&gt; button.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="signalNameLineEdit" signalName="substringCompletion(QString)"/>
+            <nextStep id="selectClickedSignalInCompletionBox"/>
+        </reaction>
+    </step>
+    <step id="selectClickedSignalInCompletionBox">
+        <text>&lt;para&gt;As it was explained before, we want to react when the &lt;interface&gt;Ok&lt;/interface&gt; button is clicked, so select the &lt;emphasis&gt;clicked()&lt;/emphasis&gt; signal from the completion list.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="CustomCode">
+            <waitForSignal emitterName="signalNameLineEdit" signalName="textChanged(QString)"/>
+            <customCode>signalNameLineEdit = ktutorial.findObject(&quot;signalNameLineEdit&quot;);
+if (signalNameLineEdit.text == &quot;clicked()&quot;) {
+    tutorial.nextStep(&quot;acceptEditWaitForSignalDialogForAcceptDialogStepReaction&quot;);
+}</customCode>
+        </reaction>
+    </step>
+    <step id="acceptEditWaitForSignalDialogForAcceptDialogStepReaction">
+        <text>&lt;para&gt;Now that the emitter and signal names were set &lt;link url=&quot;widget:editWaitForSignalDialog/okButton&quot;&gt;accept the dialog&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="editWaitForSignalDialog/okButton" signalName="clicked()"/>
+            <nextStep id="setNextStepResponseInAcceptDialogStepReaction"/>
+        </reaction>
+    </step>
+    <step id="setNextStepResponseInAcceptDialogStepReaction">
+        <text>&lt;para&gt;The user accepting the dialog to add a new step will make our example tutorial to change to its last step.&lt;/para&gt;
+
+&lt;para&gt;Set the &lt;link url=&quot;widget:responseStepLineEdit&quot;&gt;step to change to&lt;/link&gt; to &lt;emphasis&gt;end&lt;/emphasis&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="CustomCode">
+            <waitForSignal emitterName="responseStepLineEdit" signalName="textChanged(QString)"/>
+            <customCode>responseStepLineEdit = ktutorial.findObject(&quot;responseStepLineEdit&quot;);
+if (responseStepLineEdit.text == &quot;end&quot;) {
+    tutorial.nextStep(&quot;acceptAcceptDialogStepReactionDialog&quot;);
+}</customCode>
+        </reaction>
+    </step>
+    <step id="acceptAcceptDialogStepReactionDialog">
+        <text>&lt;para&gt;And finally &lt;link url=&quot;widget:okButton&quot;&gt;accept the dialog&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="okButton" signalName="clicked()"/>
+            <nextStep id="addEndStep"/>
+        </reaction>
+    </step>
+    <step id="addEndStep">
+        <text>&lt;para&gt;The last step in the tutorial will just inform the user that the tutorial is done.&lt;/para&gt;
+
+&lt;para&gt;As with the previous ones, we have to start by &lt;link url=&quot;widget:addStepToolButton&quot;&gt;adding a new step&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="StepDataDialog"/>
+            <nextStep id="setEndStepId"/>
+        </reaction>
+    </step>
+    <step id="setEndStepId">
+        <text>&lt;para&gt;Set the &lt;link url=&quot;widget:idLineEdit&quot;&gt;id of the step&lt;/link&gt; to &lt;emphasis&gt;end&lt;/emphasis&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="CustomCode">
+            <waitForSignal emitterName="idLineEdit" signalName="textChanged(QString)"/>
+            <customCode>idLineEdit = ktutorial.findObject(&quot;idLineEdit&quot;);
+if (idLineEdit.text == &quot;end&quot;) {
+    tutorial.nextStep(&quot;setEndStepText&quot;);
+}</customCode>
+        </reaction>
+    </step>
+    <step id="setEndStepText">
+        <text>&lt;para&gt;Set the &lt;link url=&quot;widget:textTextEdit&quot;&gt;text of the step&lt;/link&gt; to:&lt;/para&gt;
+
+&lt;para&gt;&lt;emphasis&gt;And that's all!&lt;/emphasis&gt;&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="CustomCode">
+            <waitForSignal emitterName="textTextEdit" signalName="textChanged()"/>
+            <customCode>textTextEdit = ktutorial.findObject(&quot;textTextEdit&quot;);
+if (textTextEdit.plainText.toLowerCase() == t.i18n(&quot;And that's all!&quot;).toLowerCase()) {
+    tutorial.nextStep(&quot;acceptAddEndStepDialog&quot;);
+}</customCode>
+        </reaction>
+    </step>
+    <step id="acceptAddEndStepDialog">
+        <text>&lt;para&gt;And finally &lt;link url=&quot;widget:okButton&quot;&gt;accept the dialog&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="okButton" signalName="clicked()"/>
+            <nextStep id="testTutorial"/>
+        </reaction>
+    </step>
+    <step id="testTutorial">
+        <text>&lt;para&gt;Well, now that we have added that last step the example tutorial is done. But, when designing a tutorial, how can we know that it does what we expect it to do?&lt;/para&gt;
+
+&lt;para&gt;&lt;application&gt;KTutorial editor&lt;/application&gt; is able to start the tutorial being designed in its target application without having to manually export and install the tutorial. This way you can truly check that the tutorial will behave as you expect.&lt;/para&gt;
+
+&lt;para&gt;When testing a tutorial you are advised to use a target application in a clean state, like you would do when using a tutorial from that application.&lt;/para&gt;
+
+&lt;para&gt;So cancel the dialog to add a new step in the target application if you haven't done it yet. Then, to start in the target application the tutorial we have been editing click on &lt;interface&gt;Edit|Test tutorial&lt;/interface&gt;, or the &lt;interface&gt;Test tutorial&lt;/interface&gt; button in the toolbar.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="testTutorial" signalName="triggered()"/>
+            <nextStep id="end"/>
+        </reaction>
+    </step>
+    <step id="end">
+        <text>&lt;para&gt;The tutorial shown in the target application is the one we have been designing. If you add a new step, it will change to the second step, and if you accept the dialog it will change to the last step.&lt;/para&gt;
+
+&lt;para&gt;Note, however, that when a tutorial is tested it is not installed. The tutorials must be installed to be available in the tutorial list of the target application.&lt;/para&gt;
+
+&lt;para&gt;And that's all, the tutorial about the interaction with the target application ends here.&lt;/para&gt;</text>
+    </step>
+</tutorial>

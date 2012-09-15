@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReactionWidget</class>
+ <widget class="QWidget" name="ReactionWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string comment="@title">Edit reaction</string>
+  </property>
+  <property name="whatsThis">
+   <string comment="@info:whatsthis">&lt;para&gt;Edit the response of a step to certain trigger.&lt;/para&gt;
+&lt;para&gt;When a step is active, the actions of the user can trigger a response in the tutorial. A trigger can be an option in the step selected by the user, or a condition that was met. The response can be changing to another step, or executing some custom code.&lt;/para&gt;</string>
+  </property>
+  <layout class="QVBoxLayout" name="reactionWidgetVerticalLayout">
+   <item>
+    <widget class="QGroupBox" name="triggerGroupBox">
+     <property name="title">
+      <string comment="@title:group Something that causes a response">Trigger</string>
+     </property>
+     <layout class="QVBoxLayout" name="triggerGroupBoxVerticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="triggerOptionHorizontalLayout">
+        <item>
+         <widget class="QRadioButton" name="triggerOptionRadioButton">
+          <property name="text">
+           <string comment="@option:radio">Option:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="KLineEdit" name="triggerOptionLineEdit">
+          <property name="whatsThis">
+           <string comment="@info:whatsthis">&lt;para&gt;The name of the option.&lt;/para&gt;
+&lt;para&gt;An option with this name will be added to the step, so the same name set here will be shown to the user.&lt;/para&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="triggerConditionVerticalLayout">
+        <item>
+         <widget class="QRadioButton" name="triggerConditionRadioButton">
+          <property name="text">
+           <string comment="@option:radio">Condition met:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="responseGroupBox">
+     <property name="title">
+      <string comment="@title:group">Response</string>
+     </property>
+     <layout class="QVBoxLayout" name="responseGroupBoxVerticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="responseStepHorizontalLayout">
+        <item>
+         <widget class="QRadioButton" name="responseStepRadioButton">
+          <property name="text">
+           <string comment="@option:radio">Change to step:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="KLineEdit" name="responseStepLineEdit">
+          <property name="whatsThis">
+           <string comment="@info:whatsthis">&lt;para&gt;The id of the step to change to.&lt;/para&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="responseCodeVerticalLayout">
+        <item>
+         <widget class="QRadioButton" name="responseCodeRadioButton">
+          <property name="text">
+           <string comment="@option:radio">Custom response code:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="KTextEdit" name="responseCodeTextEdit">
+          <property name="whatsThis">
+           <string comment="@info:whatsthis">&lt;para&gt;The custom code to execute.&lt;/para&gt;
+&lt;para&gt;The code will be written as is into a new function called when the response is triggered. This means that the code must be written in the same programming language the tutorial will be exported to.&lt;/para&gt;
+&lt;para&gt;Also note that you only have to provide the body of the function. The signature is automatically generated.&lt;/para&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>klineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KTextEdit</class>
+   <extends>QTextEdit</extends>
+   <header>ktextedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

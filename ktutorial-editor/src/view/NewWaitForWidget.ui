@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NewWaitForWidget</class>
+ <widget class="QWidget" name="NewWaitForWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string comment="@title">New condition to wait for</string>
+  </property>
+  <property name="whatsThis">
+   <string comment="@info:whatsthis">&lt;para&gt;Selects the type of the new condition.&lt;/para&gt;</string>
+  </property>
+  <layout class="QVBoxLayout" name="NewWaitForWidgetVerticalLayout">
+   <item>
+    <widget class="QGroupBox" name="waitForTypeGroupBox">
+     <property name="title">
+      <string comment="@title">Condition to wait for type</string>
+     </property>
+     <layout class="QHBoxLayout" name="waitForTypeGroupBoxHorizontalLayout">
+      <item>
+       <widget class="QLabel" name="waitForTypeLabel">
+        <property name="text">
+         <string comment="@label:listbox">Type:</string>
+        </property>
+        <property name="buddy">
+         <cstring>waitForTypeComboBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="KComboBox" name="waitForTypeComboBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <item>
+         <property name="text">
+          <string comment="@item:inlistbox">All the contained conditions must match</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="@item:inlistbox">Any of the contained conditions must match</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="@item:inlistbox">The contained condition can't match</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="@item:inlistbox">The specified signal is emitted</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="@item:inlistbox">The specified event is received</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="@item:inlistbox">The specified window is shown</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="@item:inlistbox">The specified property has certain value</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string comment="@item:inlistbox">The step is activated</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="newWaitForWidgetSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KComboBox</class>
+   <extends>QComboBox</extends>
+   <header>kcombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

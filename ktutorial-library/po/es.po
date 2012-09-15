@@ -1,0 +1,320 @@
+# translation of es.po to Español
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Daniel Calviño Sánchez <danxuliu@gmail.com>, 2008, 2010, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: es\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/tracker/?"
+"group_id=301227&atid=1270278\n"
+"POT-Creation-Date: 2012-08-20 12:59+0200\n"
+"PO-Revision-Date: 2012-08-20 13:04+0200\n"
+"Last-Translator: Daniel Calviño Sánchez <danxuliu@gmail.com>\n"
+"Language-Team: Spanish <>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: customization/DefaultKdeCustomization.cpp:63
+msgctxt "@action:inmenu"
+msgid "Tutorials..."
+msgstr "Tutoriales..."
+
+#: tutorials/UsingKTutorial.cpp:71
+msgctxt "@info/plain Plain text in a QTextEdit"
+msgid "Look at me! I am the text area!"
+msgstr "¡Mírame! ¡Soy el área de texto!"
+
+#: tutorials/UsingKTutorial.cpp:142
+msgctxt "@info/plain"
+msgid "Using the tutorials"
+msgstr "Utilización de los tutoriales"
+
+#: tutorials/UsingKTutorial.cpp:143
+msgctxt "@info/plain"
+msgid "This tutorial shows how the tutorial system works"
+msgstr "Este tutorial muestra cómo funciona el sistema de tutoriales"
+
+#: tutorials/UsingKTutorial.cpp:150
+msgctxt "@info"
+msgid ""
+"<para>Welcome to the tutorial to learn how to use tutorials ;)</"
+"para><para>But, what is a tutorial? A tutorial is a little guide to help you "
+"to learn how to use an application. For example, it shows you how some "
+"feature works, or how to accomplish some task.</para>"
+msgstr ""
+"<para>Bienvenido al tutorial para aprender cómo utilizar los tutoriales :)</"
+"para><para>Pero, ¿qué es un tutorial? Un tutorial es una pequeña guía para "
+"ayudarte a aprender cómo usar una aplicación. Por ejemplo, te muestra cómo "
+"funciona cierta característica, o cómo llevar a cabo cierta tarea.</para>"
+
+#: tutorials/UsingKTutorial.cpp:155 tutorials/UsingKTutorial.cpp:169
+#: tutorials/UsingKTutorial.cpp:197 tutorials/UsingKTutorial.cpp:211
+#: tutorials/UsingKTutorial.cpp:239
+msgctxt "@action"
+msgid "Continue"
+msgstr "Continuar"
+
+#: tutorials/UsingKTutorial.cpp:163
+msgctxt "@info"
+msgid ""
+"<para>A tutorial is composed of several steps. Each step contains a bit of "
+"information.</para><para>There are several ways to advance from one step to "
+"another. For example, clicking on the button below the tutorial will change "
+"to the next step.</para>"
+msgstr ""
+"<para>Un tutorial se compone de varios pasos. Cada paso contiene un poco de "
+"información.</para><para>Hay varias formas de avanzar desde un paso a otro. "
+"Por ejemplo, haciendo click en el botón de debajo el tutorial cambiará al "
+"siguiente paso.</para>"
+
+#: tutorials/UsingKTutorial.cpp:177
+msgctxt "@info"
+msgid ""
+"<para>In other steps you may have more than one option to select. This can "
+"be used, for example, to follow one path or another in the tutorial, skip "
+"some part of the tutorial, etcetera. Which option do you prefer?</para>"
+msgstr ""
+"<para>En otros pasos puedes tener más de una opción para seleccionar. Esto "
+"puede usarse, por ejemplo, para seguir un camino u otro en el tutorial, "
+"saltarse cierta parte del tutorial, etcétera. ¿Qué opción prefieres?</para>"
+
+#: tutorials/UsingKTutorial.cpp:181 tutorials/UsingKTutorial.cpp:195
+msgctxt "@action"
+msgid "Option 1"
+msgstr "Opción 1"
+
+#: tutorials/UsingKTutorial.cpp:183 tutorials/UsingKTutorial.cpp:209
+msgctxt "@action"
+msgid "Option 2"
+msgstr "Opción 2"
+
+#: tutorials/UsingKTutorial.cpp:191 tutorials/UsingKTutorial.cpp:205
+msgctxt "@info"
+msgid ""
+"<para>You have selected <emphasis>%1</emphasis>. Don't worry, as this is "
+"just an example, selecting one option or the other makes no difference.</"
+"para><para>In the next step you will learn the last way to advance from one "
+"step to another. To show this to you I will open a new window where text can "
+"be written.</para>"
+msgstr ""
+"<para>Has seleccionado <emphasis>%1</emphasis>. No te preocupes, dado que "
+"esto es sólo un ejemplo, no hay ninguna diferencia entre seleccionar una "
+"opción u otra.</para><para>En el siguiente paso aprenderás la última forma "
+"de avanzar de un paso a otro. Para mostrártelo abriré una nueva ventana en "
+"la que puede escribirse texto.</para>"
+
+#: tutorials/UsingKTutorial.cpp:219
+msgctxt "@info"
+msgid ""
+"<para>Do you see the new window that has appeared? Yes, the one that says "
+"that it is the text area. Well, the last way to advance from one step to "
+"another is just doing what you are asked for.</para><para>In this case, "
+"empty the text area erasing all its text and once you have done it look "
+"again to the tutorial.</para>"
+msgstr ""
+"<para>¿Ves la nueva ventana que ha aparecido? Sí, la que dice que es el área "
+"de texto. Bien, la última forma de avanzar de un paso a otro es simplemente "
+"haciendo lo que se te pide.</para><para>En este caso, vacía el área de texto "
+"borrando todo su texto y una vez lo hayas hecho fíjate de nuevo en el "
+"tutorial.</para>"
+
+#: tutorials/UsingKTutorial.cpp:233
+msgctxt "@info"
+msgid ""
+"<para>Do you see? You are in a new step, but you didn't tell the tutorial to "
+"continue to the next step, and neither you had to select between several "
+"options. The tutorial advanced automatically when you erased the text as "
+"requested. This will be the most common way to advance from one step to "
+"another.</para>"
+msgstr ""
+"<para>¿Ves? Estás en un nuevo paso, pero no le dijiste al tutorial que "
+"continuase al siguiente paso, ni tampoco tuviste que seleccionar entre "
+"varias opciones. El tutorial avanzó automáticamente cuando borraste el texto "
+"como se te pidió. Ésta será la forma más común de avanzar de un paso a otro."
+"</para>"
+
+#: tutorials/UsingKTutorial.cpp:250
+msgctxt "@info"
+msgid ""
+"<para>Sometimes, a tutorial may provide a link to a <emphasis>widget</"
+"emphasis> (an element of the graphical user interface, like a button). For "
+"example, <link url=\"widget:usingKTutorialTextEdit\">this is a link to the "
+"text area</link>.</para><para>When you click on a link to a widget, the "
+"widget is highlighted to help you to spot it. If you click again on it, the "
+"highlighting will be stopped. In this example it is pretty clear what the "
+"text area refers to, but it can be useful in tutorials for more complex "
+"applications.</para><para>Ok, close the window with the text area to "
+"continue with the tutorial.</para>"
+msgstr ""
+"<para>En algunos casos un tutorial podría proveer un enlace a un "
+"<emphasis>widget</emphasis> (un elemento de la interfaz gráfica de usuario, "
+"como un botón). Por ejemplo, <link url=\"widget:usingKTutorialTextEdit"
+"\">esto es un enlace al área de texto</link>.</para><para>Cuando haces click "
+"en un enlace a un widget, el widget se remarca para que te sea más fácil "
+"encontrarlo. Si haces click en él de nuevo, dejará de remarcarse. En este "
+"ejemplo está bastante claro a qué se refiere el área de texto, pero puede "
+"ser útil en tutoriales para aplicaciones más complejas.</para><para>Bien, "
+"ahora cierra la ventana con el área de texto para seguir con el tutorial.</"
+"para>"
+
+#: tutorials/UsingKTutorial.cpp:269
+msgctxt "@info"
+msgid ""
+"<para>You may have noticed that the tutorial window has no border. Does that "
+"mean that it can't be moved? Not at all. It can be dragged using the mouse "
+"like any other window, but pressing in a different place. Let's see how.</"
+"para><para>Above these paragraphs you can see an empty space, next to the "
+"button at the corner. Press with the left button of your mouse on that empty "
+"space. Just press, don't release the mouse button yet.</para>"
+msgstr ""
+"<para>Puede que te hayas dado cuenta de que la ventana del tutorial no tiene "
+"borde. ¿Eso significa que no se puede mover? En absoluto. Puede arrastrarse "
+"utilizando el ratón como cualquier otra ventana, pero presionando en un "
+"lugar distinto. Veamos cómo.</para><para>Sobre estos párrafos puedes ver un "
+"espacio vacío, al lado del botón de la esquina. Presiona con el botón "
+"izquierdo de tu ratón en dicho espacio vacío. Simplemente presiona, no "
+"sueltes el botón del ratón aún.</para>"
+
+#: tutorials/UsingKTutorial.cpp:285
+msgctxt "@info"
+msgid ""
+"<para>Now, and without releasing the button, move the mouse and the window "
+"will be moved. Once you release the button, the window will be kept in the "
+"place it was. Of course, you can move it again dragging it like you have "
+"just done.</para>"
+msgstr ""
+"<para>Ahora, y sin soltar el botón, mueve el ratón y la ventana se moverá. "
+"Cuando sueltes el botón, la ventana permanecerá en la posición en la que "
+"estaba. Por supuesto, puedes moverla de nuevo arrastrándola como acabas de "
+"hacer.</para>"
+
+#: tutorials/UsingKTutorial.cpp:298
+msgctxt "@info"
+msgid ""
+"<para>And that's all. You can now close the tutorial. In fact, you could "
+"have closed the tutorial in any other of the previous steps, but if you do "
+"that when the tutorial is started again it won't remember what you did. It "
+"will start from the beginning again.</para><para>But how do you close the "
+"tutorial? Well, do you see that button above this text, in the corner, with "
+"an icon that looks like a close icon? Do you guess what it does? ;) Just "
+"click on it and you will return to the tutorial selection dialog. Bye!</para>"
+msgstr ""
+"<para>Y eso es todo. Ahora ya puedes cerrar el tutorial. De hecho, podrías "
+"haber cerrado el tutorial en cualquiera de los pasos previos, pero si lo "
+"haces cuando el tutorial empiece de nuevo no recordará lo que hiciste. "
+"Empezará desde el principio otra vez.</para><para>¿Pero cómo puedes cerrar "
+"el tutorial? Bien, ¿ves ese botón sobre este texto, en la esquina, con un "
+"icono que parece un icono de cerrar? ¿Adivinas qué hace? ;) Simplemente haz "
+"click en él y volverás al diálogo de selección de tutoriales. ¡Hasta luego!</"
+"para>"
+
+#: view/StepTextWidget.cpp:113
+msgctxt "@item:inmenu"
+msgid "Highlight"
+msgstr "Remarcar"
+
+#: view/StepTextWidget.cpp:116
+msgctxt "@item:inmenu"
+msgid "Stop highlighting"
+msgstr "Dejar de remarcar"
+
+#: view/StepWidget.cpp:47
+msgctxt "@title:window"
+msgid "Tutorial: %1"
+msgstr "Tutorial: %1"
+
+#: view/TutorialListModel.cpp:58
+msgctxt "@title:column"
+msgid "Tutorials name"
+msgstr "Nombres de los tutoriales"
+
+#: view/TutorialManagerDialog.cpp:42 rc.cpp:12
+msgctxt "@title:window"
+msgid "Tutorial manager"
+msgstr "Gestor de tutoriales"
+
+#: view/TutorialManagerDialog.cpp:48
+msgctxt "@action:button Used to start a tutorial"
+msgid "Start"
+msgstr "Empezar"
+
+#: view/TutorialManagerDialog.cpp:49
+msgctxt "@info:tooltip"
+msgid "Start the selected tutorial"
+msgstr "Empezar el tutorial seleccionado"
+
+#: view/TutorialManagerDialog.cpp:50
+msgctxt "@info:whatsthis"
+msgid "Start the selected tutorial"
+msgstr "Empezar el tutorial seleccionado"
+
+#: rc.cpp:3
+msgctxt "@info:tooltip"
+msgid "Close this tutorial"
+msgstr "Cerrar este tutorial"
+
+#: rc.cpp:6
+msgctxt "@info:whatsthis"
+msgid ""
+"Click here to close the tutorial.<nl/>The tutorial can be closed when you "
+"have finished it, or at any time to cancel it."
+msgstr ""
+"Haz click aquí para cerrar el tutorial.<nl/>El tutorial puede cerrarse "
+"cuando lo hayas terminado, o en cualquier momento para cancelarlo."
+
+#: rc.cpp:9
+msgctxt "@info:whatsthis"
+msgid ""
+"Here appear the instructions for each step of the tutorial.<nl/>Once you "
+"complete one step, a new step with new instructions will be shown."
+msgstr ""
+"Aquí aparecen las instrucciones para cada paso del tutorial.<nl/>Cuando "
+"completes un paso, un nuevo paso con nuevas instrucciones se mostrará."
+
+#: rc.cpp:15
+msgctxt "@info:tooltip"
+msgid "Available tutorials"
+msgstr "Tutoriales disponibles"
+
+#: rc.cpp:18
+msgctxt "@info:whatsthis"
+msgid ""
+"This is the list with the available tutorials.<nl/>Select a tutorial and "
+"click <interface>Start</interface> button."
+msgstr ""
+"Esta es la lista con los tutoriales disponibles.<nl/>Selecciona un tutorial "
+"y haz click en el botón <interface>Empezar</interface>."
+
+#: rc.cpp:21
+msgctxt "@title"
+msgid "Description"
+msgstr "Descripción"
+
+#: rc.cpp:24
+msgctxt "@info:tooltip"
+msgid "Description of the selected tutorial"
+msgstr "Descripción del tutorial seleccionado"
+
+#: rc.cpp:27
+msgctxt "@info:whatsthis"
+msgid "This is the description of the selected tutorial."
+msgstr "Ésta es la descripción del tutorial seleccionado."
+
+#: rc.cpp:28
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Daniel Calviño Sánchez"
+
+#: rc.cpp:29
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "danxuliu@gmail.com"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "The instructions for this step"
+#~ msgstr "Las instrucciones para este paso"

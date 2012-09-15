@@ -1,0 +1,488 @@
+<!--<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd"> -->
+<!-- Uncomment the previous two lines to validate this document -->
+<!-- standalone.  Be sure to recomment them before attempting to -->
+<!-- process index.docbook -->
+
+<chapter id="commands">
+    <title>Command Reference</title>
+
+    <sect1 id="commands-mainwindow">
+        <title>The main &ktutorial-editor; window</title>
+
+        <sect2>
+            <title>The <guimenu>File</guimenu> Menu</title>
+            <para>
+                <variablelist>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <shortcut>
+                                    <keycombo action="simul">&Ctrl;<keycap>N</keycap></keycombo>
+                                </shortcut>
+                                <guimenu>File</guimenu>
+                                <guimenuitem>New</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Creates a new tutorial.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <shortcut>
+                                    <keycombo action="simul">&Ctrl;<keycap>O</keycap></keycombo>
+                                </shortcut>
+                                <guimenu>File</guimenu>
+                                <guimenuitem>Open...</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Opens a saved tutorial.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>File</guimenu>
+                                <guimenuitem>Open Recent</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Opens a tutorial from the list of the most recently used tutorials.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <shortcut>
+                                    <keycombo action="simul">&Ctrl;<keycap>S</keycap></keycombo>
+                                </shortcut>
+                                <guimenu>File</guimenu>
+                                <guimenuitem>Save</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Saves the tutorial to the current file.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>File</guimenu>
+                                <guimenuitem>Save As...</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Saves the tutorial to the selected file.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>File</guimenu>
+                                <guimenuitem>Export...</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Exports the tutorial to a script.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <shortcut>
+                                    <keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo>
+                                </shortcut>
+                                <guimenu>File</guimenu>
+                                <guimenuitem>Quit</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Quits &ktutorial-editor;.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+            </para>
+        </sect2>
+
+        <sect2>
+            <title>The <guimenu>Edit</guimenu> Menu</title>
+            <para>
+                <variablelist>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <shortcut>
+                                    <keycombo action="simul">&Ctrl;<keycap>Z</keycap></keycombo>
+                                </shortcut>
+                                <guimenu>Edit</guimenu>
+                                <guimenuitem>Undo</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Undoes the last edition action not undone yet.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <shortcut>
+                                    <keycombo action="simul">&Ctrl;&Shift;<keycap>Z</keycap></keycombo>
+                                </shortcut>
+                                <guimenu>Edit</guimenu>
+                                <guimenuitem>Redo</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Does again the last undone edition action not redone yet.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Edit</guimenu>
+                                <guimenu>Tutorial</guimenu>
+                                <guimenuitem>Set information...</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Opens the dialog to set the name and description of the tutorial.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Edit</guimenu>
+                                <guimenu>Tutorial</guimenu>
+                                <guimenuitem>Set license...</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Opens the dialog to set the license text of the tutorial.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Edit</guimenu>
+                                <guimenu>Tutorial</guimenu>
+                                <guimenuitem>Set setup code...</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Opens the dialog to set the custom code to be executed when the tutorial starts.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Edit</guimenu>
+                                <guimenu>Tutorial</guimenu>
+                                <guimenuitem>Set tear down code...</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Opens the dialog to set the custom code to be executed when the tutorial finishes.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Edit</guimenu>
+                                <guimenu>Step</guimenu>
+                                <guimenuitem>Add step...</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Opens the dialog to add a new step to the tutorial.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Edit</guimenu>
+                                <guimenu>Step</guimenu>
+                                <guimenuitem>Set data...</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Opens the dialog to set the name and text of the currently selected step.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Edit</guimenu>
+                                <guimenu>Step</guimenu>
+                                <guimenuitem>Set setup code...</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Opens the dialog to set the custom code to be executed when the tutorial passes to the currently selected step.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Edit</guimenu>
+                                <guimenu>Step</guimenu>
+                                <guimenuitem>Set tear down code...</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Opens the dialog to set the custom code to be executed when the tutorial changes from the currently selected step to another step.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Edit</guimenu>
+                                <guimenu>Step</guimenu>
+                                <guimenuitem>Remove step</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Removes the currently selected step from the tutorial.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Edit</guimenu>
+                                <guimenu>Reaction</guimenu>
+                                <guimenuitem>Add reaction...</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Opens the dialog to add a new reaction to the selected step.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Edit</guimenu>
+                                <guimenu>Reaction</guimenu>
+                                <guimenuitem>Set data...</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Opens the dialog to set the trigger and response of the currently selected reaction.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Edit</guimenu>
+                                <guimenu>Reaction</guimenu>
+                                <guimenuitem>Remove reaction</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Removes the currently selected reaction from its step.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Edit</guimenu>
+                                <guimenuitem>Test tutorial</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Starts the tutorial in the target application.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Edit</guimenu>
+                                <guimenuitem>Test tutorial from current step</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Starts the tutorial in the target application from the currently selected step.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+            </para>
+        </sect2>
+
+        <sect2>
+            <title>The <guimenu>View</guimenu> Menu</title>
+            <para>
+                <variablelist>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>View</guimenu>
+                                <guimenuitem>Panels</guimenuitem>
+                                <guimenuitem>Edit tutorial</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Shows or hides the panel with the shorcuts to tutorial edition actions.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>View</guimenu>
+                                <guimenuitem>Panels</guimenuitem>
+                                <guimenuitem>Edit step</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Shows or hides the panel with the shorcuts to step edition actions.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>View</guimenu>
+                                <guimenuitem>Panels</guimenuitem>
+                                <guimenuitem>Edit reaction</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Shows or hides the panel with the shorcuts to reaction edition actions.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+            </para>
+        </sect2>
+
+        <sect2>
+            <title>The <guimenu>Settings</guimenu> Menu</title>
+            <para>
+                <variablelist>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Settings</guimenu>
+                                <guimenuitem>Show Toolbar</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Shows or hides the main toolbar.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Settings</guimenu>
+                                <guimenuitem>Show Statusbar</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Shows or hides the statusbar.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Settings</guimenu>
+                                <guimenuitem>Configure Shortcuts...</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Opens a configure dialog for binding keys to actions.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>
+                            <menuchoice>
+                                <guimenu>Settings</guimenu>
+                                <guimenuitem>Configure Toolbars...</guimenuitem>
+                            </menuchoice>
+                        </term>
+                        <listitem>
+                            <para>
+                                <action>Opens a configure dialog for selecting the actions to show in the toolbar.</action>
+                            </para>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+            </para>
+        </sect2>
+
+        <sect2>
+            <title>The <guimenu>Help</guimenu> Menu</title>
+
+            &help.menu.documentation;
+
+        </sect2>
+    </sect1>
+</chapter>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=4:shiftwidth=4:expandtab
+kate: space-indent on; indent-width 4; tab-width 4; indent-mode none;
+-->

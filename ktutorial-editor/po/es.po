@@ -1,0 +1,3010 @@
+# Spanish translations for ktutorial-editor package
+# Traducciones al español para el paquete ktutorial-editor.
+# Copyright (C) 2010 Daniel Calviño Sánchez
+# This file is distributed under the same license as the ktutorial-editor package.
+#
+# Daniel Calviño Sánchez <danxuliu@gmail.com>, 2010, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: ktutorial-editor\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/tracker/?"
+"group_id=301227&atid=1270278\n"
+"POT-Creation-Date: 2012-08-20 13:00+0200\n"
+"PO-Revision-Date: 2012-08-20 13:05+0200\n"
+"Last-Translator: Daniel Calviño Sánchez <danxuliu@gmail.com>\n"
+"Language-Team: Spanish <>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.4\n"
+
+#: commands/ReactionCommands.cpp:36
+msgctxt "@action"
+msgid "Set reaction trigger type"
+msgstr "Establecer el tipo de activador de la reacción"
+
+#: commands/ReactionCommands.cpp:58
+msgctxt "@action"
+msgid "Set reaction option name"
+msgstr "Establecer el nombre de la opción de la reacción"
+
+#: commands/ReactionCommands.cpp:82
+msgctxt "@action"
+msgid "Set reaction condition to wait for"
+msgstr "Establecer la condición por la que esperar de la reacción"
+
+#: commands/ReactionCommands.cpp:114
+msgctxt "@action"
+msgid "Set reaction response type"
+msgstr "Establecer el tipo de respuesta de la reacción"
+
+#: commands/ReactionCommands.cpp:136
+msgctxt "@action"
+msgid "Set reaction next step id"
+msgstr "Establecer el identificador del siguiente paso de la reacción"
+
+#: commands/ReactionCommands.cpp:158
+msgctxt "@action"
+msgid "Set reaction custom code"
+msgstr "Establecer el código propio de la reacción"
+
+#: commands/StepCommands.cpp:36
+msgctxt "@action"
+msgid "Set step id"
+msgstr "Establecer el identificador del paso"
+
+#: commands/StepCommands.cpp:58
+msgctxt "@action"
+msgid "Set step text"
+msgstr "Establecer el texto del paso"
+
+#: commands/StepCommands.cpp:80
+msgctxt "@action"
+msgid "Set step setup code"
+msgstr "Establecer el código de inicialización del paso"
+
+#: commands/StepCommands.cpp:102
+msgctxt "@action"
+msgid "Set step tear down code"
+msgstr "Establecer el código de finalización del paso"
+
+#: commands/StepCommands.cpp:141 EditActions.cpp:290
+msgctxt "@action"
+msgid "Add reaction"
+msgstr "Añadir reacción"
+
+#: commands/StepCommands.cpp:186 EditActions.cpp:203
+msgctxt "@action"
+msgid "Remove reaction"
+msgstr "Eliminar reacción"
+
+#: commands/TutorialCommands.cpp:36
+msgctxt "@action"
+msgid "Set tutorial name"
+msgstr "Establecer el nombre del tutorial"
+
+#: commands/TutorialCommands.cpp:58
+msgctxt "@action"
+msgid "Set tutorial description"
+msgstr "Establecer la descripción del tutorial"
+
+#: commands/TutorialCommands.cpp:80
+msgctxt "@action"
+msgid "Set tutorial license"
+msgstr "Establecer la licencia del tutorial"
+
+#: commands/TutorialCommands.cpp:102
+msgctxt "@action"
+msgid "Set tutorial setup code"
+msgstr "Establecer el código de inicialización del tutorial"
+
+#: commands/TutorialCommands.cpp:125
+msgctxt "@action"
+msgid "Set tutorial tear down code"
+msgstr "Establecer el código de finalización del tutorial"
+
+#: commands/TutorialCommands.cpp:164 EditActions.cpp:248
+msgctxt "@action"
+msgid "Add step"
+msgstr "Añadir paso"
+
+#: commands/TutorialCommands.cpp:209 EditActions.cpp:176
+msgctxt "@action"
+msgid "Remove step"
+msgstr "Eliminar paso"
+
+#: EditActions.cpp:107
+msgctxt "@action"
+msgid "Set information..."
+msgstr "Establecer información..."
+
+#: EditActions.cpp:108
+msgctxt "@info:status"
+msgid "Set the name and description of the tutorial."
+msgstr "Establecer el nombre y la descripción del tutorial."
+
+#: EditActions.cpp:116
+msgctxt "@action"
+msgid "Set license..."
+msgstr "Establecer licencia..."
+
+#: EditActions.cpp:117
+msgctxt "@info:status"
+msgid "Set the license text of the tutorial."
+msgstr "Establecer el texto de licencia del tutorial."
+
+#: EditActions.cpp:124 EditActions.cpp:157
+msgctxt "@action"
+msgid "Set setup code..."
+msgstr "Establecer código de inicialización..."
+
+#: EditActions.cpp:125
+msgctxt "@info:status"
+msgid "Set the custom code to be executed when the tutorial starts."
+msgstr ""
+"Establecer el código propio para ser ejecutado cuando comience el tutorial."
+
+#: EditActions.cpp:132 EditActions.cpp:166
+msgctxt "@action"
+msgid "Set tear down code..."
+msgstr "Establecer el código de finalización..."
+
+#: EditActions.cpp:133
+msgctxt "@info:status"
+msgid "Set the custom code to be executed when the tutorial finishes."
+msgstr ""
+"Establecer el código propio para ser ejecutado cuando termine el tutorial."
+
+#: EditActions.cpp:140
+msgctxt "@action"
+msgid "Add step..."
+msgstr "Añadir paso..."
+
+#: EditActions.cpp:141
+msgctxt "@info:status"
+msgid "Add a new step to the tutorial."
+msgstr "Añadir un nuevo paso al tutorial."
+
+#: EditActions.cpp:148
+msgctxt "@action"
+msgid "Set step data..."
+msgstr "Establecer datos del paso..."
+
+#: EditActions.cpp:149
+msgctxt "@info:status"
+msgid "Set the name and text of the currently selected step."
+msgstr "Establecer el nombre y el texto del paso seleccionado actualmente."
+
+#: EditActions.cpp:158
+msgctxt "@info:status"
+msgid ""
+"Set the custom code to be executed when the tutorial passes to the currently "
+"selected step."
+msgstr ""
+"Establecer el código propio para ser ejecutado cuando el tutorial cambie al "
+"paso seleccionado actualmente."
+
+#: EditActions.cpp:167
+msgctxt "@info:status"
+msgid ""
+"Set the custom code to be executed when the tutorial changes from the "
+"currently selected step to another step."
+msgstr ""
+"Establecer el código propio para ser ejecutado cuando el tutorial cambie del "
+"paso seleccionado actualmente a otro paso."
+
+#: EditActions.cpp:177
+msgctxt "@info:status"
+msgid "Removes the currently selected step from the tutorial."
+msgstr "Elimina del tutorial el paso seleccionado actualmente."
+
+#: EditActions.cpp:185
+msgctxt "@action"
+msgid "Add reaction..."
+msgstr "Añadir reacción..."
+
+#: EditActions.cpp:186
+msgctxt "@info:status"
+msgid "Add a new reaction to the selected step."
+msgstr "Añadir una nueva reacción al paso seleccionado actualmente."
+
+#: EditActions.cpp:194
+msgctxt "@action"
+msgid "Set reaction data..."
+msgstr "Establecer datos de la reacción..."
+
+#: EditActions.cpp:195
+msgctxt "@info:status"
+msgid "Set the trigger and the response of the currently selected reaction."
+msgstr ""
+"Establecer el activador y la respuesta de la reacción seleccionada "
+"actualmente."
+
+#: EditActions.cpp:204
+msgctxt "@info:status"
+msgid "Removes the currently selected reaction from its step."
+msgstr "Elimina de su paso la reacción seleccionada actualmente."
+
+#: FileActions.cpp:60
+msgctxt "@label"
+msgid ""
+"The tutorial has been modified.<nl/>Do you want to save your changes or "
+"discard them?"
+msgstr ""
+"El tutorial ha sido modificado.<nl/>¿Deseas guardar los cambios o "
+"descartarlos?"
+
+#: FileActions.cpp:62
+msgctxt "@title:window"
+msgid "Close tutorial"
+msgstr "Cerrar tutorial"
+
+#: FileActions.cpp:92
+msgctxt "@label"
+msgid "There was a problem when trying to open the file:<nl/>%1"
+msgstr "Ocurrió un problema cuando se intentaba abrir el archivo:<nl/>%1"
+
+#: FileActions.cpp:94
+msgctxt "@title:window"
+msgid "File could not be read"
+msgstr "El archivo no pudo leerse"
+
+#: FileActions.cpp:98
+msgctxt "@label"
+msgid "There was a problem when trying to load the tutorial:<nl/>%1"
+msgstr "Ocurrió un problema cuando se intentaba cargar el tutorial:<nl/>%1"
+
+#: FileActions.cpp:100
+msgctxt "@title:window"
+msgid "Tutorial could not be loaded"
+msgstr "El tutorial no pudo cargarse"
+
+#: FileActions.cpp:153
+msgctxt "@action"
+msgid "Export..."
+msgstr "Exportar..."
+
+#: FileActions.cpp:154
+msgctxt "@info:status"
+msgid "Exports the tutorial to a script."
+msgstr "Exporta el tutorial a un script."
+
+#: FileActions.cpp:168
+msgctxt "@title"
+msgid "Open Tutorial"
+msgstr "Abrir tutorial"
+
+#: FileActions.cpp:171 FileActions.cpp:213
+msgctxt "@item:inlistbox A KFileDialog filter"
+msgid "*.xml|XML file"
+msgstr "*.xml|Archivo XML"
+
+#: FileActions.cpp:189 FileActions.cpp:224
+msgctxt "@label"
+msgid "There was a problem when trying to save the tutorial:<nl/>%1"
+msgstr "Ocurrió un problema cuando se intentaba guardar el tutorial:<nl/>%1"
+
+#: FileActions.cpp:191 FileActions.cpp:226 TutorialTester.cpp:81
+msgctxt "@title:window"
+msgid "Tutorial could not be saved"
+msgstr "El tutorial no pudo guardarse"
+
+#: FileActions.cpp:209
+msgctxt "@title"
+msgid "Save Tutorial"
+msgstr "Guardar tutorial"
+
+#: FileActions.cpp:246
+msgctxt "@title"
+msgid "Export Tutorial"
+msgstr "Exportar tutorial"
+
+#: FileActions.cpp:261
+msgctxt "@label"
+msgid "There was a problem when trying to save the exported tutorial:<nl/>%1"
+msgstr ""
+"Ocurrió un problema cuando se intentaba guardar el tutorial exportado:<nl/>%1"
+
+#: FileActions.cpp:263
+msgctxt "@title:window"
+msgid "Exported tutorial could not be saved"
+msgstr "El tutorial exportado no pudo guardarse"
+
+#: KTutorialEditor.cpp:166
+msgctxt "@title"
+msgid "Edit tutorial"
+msgstr "Editar tutorial"
+
+#: KTutorialEditor.cpp:171
+msgctxt "@title"
+msgid "Edit step"
+msgstr "Editar paso"
+
+#: KTutorialEditor.cpp:175 rc.cpp:64
+msgctxt "@title"
+msgid "Edit reaction"
+msgstr "Editar reacción"
+
+#: KTutorialEditor.cpp:252
+msgctxt ""
+"@title:window Window title for KTutorial editor when the tutorial has no "
+"associated URL"
+msgid "New file"
+msgstr "Nuevo archivo"
+
+#: KTutorialEditor.cpp:271
+msgctxt ""
+"@title:window Wrapper for the window title when the tutorial was modified "
+"but not saved yet"
+msgid "%1 [not saved]"
+msgstr "%1 [no guardado]"
+
+#: main.cpp:27
+msgctxt "@title"
+msgid "KTutorial editor"
+msgstr "Editor para KTutorial"
+
+#: main.cpp:29
+msgctxt "@title"
+msgid "An editor to create tutorials for <application>KTutorial</application>."
+msgstr ""
+"Un editor para crear tutoriales para <application>KTutorial</application>."
+
+#: main.cpp:32
+msgctxt "@info:credit"
+msgid "Copyright (c) 2010-2012 Daniel Calviño Sánchez"
+msgstr "Copyright (c) 2010-2012 Daniel Calviño Sánchez"
+
+#: main.cpp:33
+msgctxt "@info:credit"
+msgid "Daniel Calviño Sánchez"
+msgstr "Daniel Calviño Sánchez"
+
+#: main.cpp:34
+msgctxt "@info:credit"
+msgid "Main developer"
+msgstr "Desarrollador principal"
+
+#: main.cpp:39
+msgctxt "@info:shell"
+msgid "The tutorial to open"
+msgstr "El tutorial a abrir"
+
+#: serialization/Serialization.cpp:41
+msgctxt "@info/plain"
+msgid "A file was expected, but '%1' is a folder"
+msgstr "Se esperaba un archivo, pero '%1' es un directorio"
+
+#: serialization/Serialization.cpp:105
+msgctxt "@item:inlistbox A KFileDialog filter"
+msgid "*.js|Javascript file"
+msgstr "*.js|Archivo Javascript"
+
+#: serialization/TutorialReader.cpp:50
+msgid "XML document is not well formed: %1, line %2, column %3"
+msgstr "El documento XML no está bien formado: %1, línea %2, columna %3"
+
+#: serialization/TutorialReader.cpp:55
+msgid "Unknown root element, <emphasis>tutorial</emphasis> expected, got: %1"
+msgstr ""
+"Elemento raíz desconocido, se esperaba <emphasis>tutorial</emphasis>, se "
+"encontró: %1"
+
+#: TestTutorialActions.cpp:64
+msgctxt "@action"
+msgid "Test tutorial"
+msgstr "Probar tutorial"
+
+#: TestTutorialActions.cpp:65
+msgctxt "@info:status"
+msgid "Starts the tutorial in the target application."
+msgstr "Empieza el tutorial en la aplicación objetivo"
+
+#: TestTutorialActions.cpp:74
+msgctxt "@action"
+msgid "Test tutorial from current step"
+msgstr "Probar tutorial desde el paso actual"
+
+#: TestTutorialActions.cpp:75
+msgctxt "@info:status"
+msgid "Starts the tutorial in the target application from the current step."
+msgstr "Empieza el tutorial en la aplicación objetivo desde el paso actual"
+
+#: tutorials/BasicConcepts.js:3
+msgid "Basic concepts"
+msgstr "Conceptos básicos"
+
+#: tutorials/BasicConcepts.js:4
+msgid ""
+"This tutorial shows how to design a basic tutorial for the KTutorial test "
+"application."
+msgstr ""
+"Este tutorial muestra cómo diseñar un tutorial básico para la aplicación de "
+"prueba de KTutorial."
+
+#: tutorials/BasicConcepts.js:8
+msgctxt "@info"
+msgid ""
+"<para>Welcome to the tutorial to learn the basic concepts in "
+"<application>KTutorial editor</application>.</para>\n"
+"\n"
+"<para>When you end this tutorial you will have written a tutorial for the "
+"KTutorial test application that teaches the user how to clear the text area. "
+"First it will ask the user to write something in the text area, and then "
+"clear it using a menu item or a toolbar button.</para>\n"
+"\n"
+"<para>We will start setting the tutorial information. This information is "
+"shown to the user in the tutorial selection dialog as a way to know the "
+"purpose of a tutorial before starting it.</para>\n"
+"\n"
+"<para>Click the <link url=\"widget:setTutorialInformationToolButton"
+"\"><interface>Set information</interface></link> direct access in the dock "
+"panels, or in <interface>Edit|Tutorial|Set information...</interface>.</para>"
+msgstr ""
+"<para>Bienvenido al tutorial para aprender los conceptos básicos de "
+"<application>KTutorial editor</application>.</para>\n"
+"\n"
+"<para>Cuando termines este tutorial habrás escrito un tutorial para la "
+"aplicación de prueba de KTutorial que enseña al usuario cómo limpiar el área "
+"de texto. Primero le pedirá al usuario que escriba algo en el área de texto, "
+"y luego que la limpie utilizando un elemento del menú o un botón de la barra "
+"de herramientas.</para>\n"
+"\n"
+"<para>Comenzaremos por establecer la información del tutorial. La "
+"información se muestra al usuario en el diálogo de selección de tutoriales "
+"para que pueda saber el objetivo del tutorial antes de empezarlo.</para>\n"
+"\n"
+"<para>Haz click en el acceso directo <link url=\"widget:"
+"setTutorialInformationToolButton\"><interface>Establecer información</"
+"interface></link> de los paneles de acoplamiento, o en <interface>Editar|"
+"Tutorial|Establecer información...</interface>.</para>"
+
+#: tutorials/BasicConcepts.js:22
+msgctxt "@info"
+msgid ""
+"Now, set the name of the tutorial to \"Example\" and its description to "
+"\"Example tutorial\" and accept the dialog clicking in <link url=\"widget:"
+"okButton\"><interface>Ok</interface> button</link>."
+msgstr ""
+"Ahora, pon \"Ejemplo\" como nombre del tutorial y \"Tutorial de ejemplo\" "
+"como descripción y acepta el diálogo haciendo click en el <link url=\"widget:"
+"okButton\">botón <interface>Aceptar</interface></link>."
+
+#: tutorials/BasicConcepts.js:36
+msgctxt "@info"
+msgid ""
+"<para>Now it is time to add the first step of the tutorial. Every tutorial "
+"must have a step called \"start\", so KTutorial can know where the tutorial "
+"starts.</para>\n"
+"\n"
+"<para>Click the <link url=\"widget:addStepToolButton\"><interface>Add step</"
+"interface></link> direct access in the dock panels, or in <interface>Edit|"
+"Step|Add step...</interface>.</para>"
+msgstr ""
+"<para>Ahora es el momento de añadir el primer paso del tutorial. Todo "
+"tutorial debe tener un paso llamado \"start\" (comienzo, en inglés), de modo "
+"que KTutorial pueda saber dónde comienza el tutorial.</para>\n"
+"\n"
+"<para>Haz click en el acceso directo <link url=\"widget:addStepToolButton"
+"\"><interface>Añadir paso</interface></link> de los paneles de acoplamiento, "
+"o en <interface>Editar|Paso|Añadir paso...</interface>.</para>"
+
+#: tutorials/BasicConcepts.js:50
+msgctxt "@info"
+msgid ""
+"<para>Set the id of the step to <emphasis>start</emphasis> and the text to "
+"<emphasis>Write &lt;emphasis&gt;Hello world!&lt;/emphasis&gt; in the text "
+"area.</emphasis>, then accept the dialog.</para>\n"
+"\n"
+"<para><emphasis>&lt;emphasis&gt;</emphasis> is a special markup that is not "
+"shown in the tutorial. Instead, the text between <emphasis>&lt;emphasis&gt;</"
+"emphasis> and <emphasis>&lt;/emphasis&gt;</emphasis> will be written in "
+"italics.</para>"
+msgstr ""
+"<para>Pon <emphasis>start</emphasis> como identificador del paso y "
+"<emphasis>Escribe &lt;emphasis&gt;¡Hola mundo!&lt;/emphasis&gt; en el área "
+"de texto.</emphasis> como texto, luego acepta el diálogo.</para>\n"
+"\n"
+"<para><emphasis>&lt;emphasis&gt;</emphasis> es un marcado especial que no se "
+"muestra en el tutorial. En cambio, el texto entre <emphasis>&lt;emphasis&gt;"
+"</emphasis> y <emphasis>&lt;/emphasis&gt;</emphasis> estará escrito en "
+"cursiva.</para>"
+
+#: tutorials/BasicConcepts.js:64
+msgctxt "@info"
+msgid ""
+"<para>The start step will wait until the user writes <emphasis>Hello world!</"
+"emphasis> in the text area of the KTutorial test application.</para>\n"
+"\n"
+"<para>For the step to do that we have to add a reaction to it. To add a "
+"reaction, in the <link url=\"widget:centralTreeView\">tutorial tree view</"
+"link> select the step to add the reaction to and click the <link url="
+"\"widget:addReactionToolButton\"><interface>Add reaction</interface></link> "
+"direct access in the dock panels, or in <interface>Edit|Reaction|Add "
+"reaction...</interface>.</para>"
+msgstr ""
+"<para>El paso start esperará hasta que el usuario escriba <emphasis>¡Hola "
+"mundo!</emphasis> en el área de texto de la aplicación de prueba de "
+"KTutorial.</para>\n"
+"\n"
+"<para>Para que el paso haga eso debemos añadirle una reacción. Para añadir "
+"una reacción, en la <link url=\"widget:centralTreeView\">vista en árbol del "
+"tutorial</link> selecciona el paso al que añadir la reacción y haz click en "
+"el acceso directo <link url=\"widget:addReactionToolButton"
+"\"><interface>Añadir reacción</interface></link> de los paneles de "
+"acoplamiento, o en <interface>Edit|Reacción|Añadir reacción...</interface>.</"
+"para>"
+
+#: tutorials/BasicConcepts.js:78
+msgctxt "@info"
+msgid ""
+"<para>A reaction can be triggered when the user selects some option or when "
+"a condition is met, but not both in the same reaction (although several "
+"reactions can be added to the same step).</para>\n"
+"\n"
+"<para>We want the step to react when something happens, that is, when a "
+"condition is met, so select the <link url=\"widget:"
+"triggerConditionRadioButton\"><interface>condition met</interface> radio "
+"button</link>.</para>"
+msgstr ""
+"<para>Una reacción puede activarse cuando el usuario selecciona cierta "
+"opción o cuando se cumple cierta condición, pero no ambas en la misma "
+"reacción (aunque pueden añadirse varias reacciones al mismo paso).</para>\n"
+"\n"
+"<para>Queremos que el paso reaccione cuando ocurra algo, es decir, cuando se "
+"cumpla una condición, así que selecciona el <link url=\"widget:"
+"triggerConditionRadioButton\">botón <interface>condición cumplida</"
+"interface></link>.</para>"
+
+#: tutorials/BasicConcepts.js:92
+msgctxt "@info"
+msgid ""
+"<para>Once the <interface>condition met</interface> button is selected we "
+"can add a new condition to the reaction. Only one condition can be added to "
+"each reaction, although the condition can be composed of other conditions.</"
+"para>\n"
+"\n"
+"<para>Click <link url=\"widget:addButton\"><interface>Add...</interface> "
+"button</link> to show the dialog to add new conditions.</para>"
+msgstr ""
+"<para>Una vez se selecciona el botón <interface>condición cumplida</"
+"interface> ya podemos añadir una nueva condición a la reacción. Sólo se "
+"puede añadir una condición a cada reacción, aunque la condición puede estar "
+"compuesta por otras condiciones.</para>\n"
+"\n"
+"<para>Haz click en el <link url=\"widget:addButton\">botón "
+"<interface>Añadir...</interface></link> para mostrar el diálogo para añadir "
+"nuevas condiciones.</para>"
+
+#: tutorials/BasicConcepts.js:106
+msgctxt "@info"
+msgid ""
+"<para>In the dialog you can select the type of condition to wait for.</"
+"para>\n"
+"\n"
+"<para>There are simple and composed conditions. Simple conditions wait for "
+"something specific. Composed conditions wait for other conditions to be met."
+"</para>\n"
+"\n"
+"<para>In this case, as it will be explained later, we want to wait for a "
+"signal, so select \"The specified signal is emitted\" in the <link url="
+"\"widget:waitForTypeComboBox\">combobox</link> and accept the dialog.</para>"
+msgstr ""
+"<para>En el diálogo puedes seleccionar el tipo de condición por la que "
+"esperar.</para>\n"
+"\n"
+"<para>Hay condiciones simples y compuestas. Las simples esperan por algo "
+"específico. Las compuestas esperan a que se cumplan otras condiciones.</"
+"para>\n"
+"\n"
+"<para>En este caso, como se explicará más adelante, queremos esperar por una "
+"señal, así que selecciona \"Se emite la señal especificada\" en la <link url="
+"\"widget:waitForTypeComboBox\">lista desplegable</link> y acepta el diálogo."
+"</para>"
+
+#: tutorials/BasicConcepts.js:120
+msgctxt "@info"
+msgid ""
+"<para>Just adding the condition is not enough to define it. Which signal "
+"will it wait for? Emitted by which object? Simple conditions have to be "
+"edited after being added to set its parameters.</para>\n"
+"\n"
+"<para>Composed conditions, on the other hand, have no parameters to be set. "
+"They are defined by its own type and its child conditions.</para>\n"
+"\n"
+"<para>To edit a condition, select it in the <link url=\"widget:"
+"waitForTreeView\">condition tree</link> and then click the <link url="
+"\"widget:editButton\"><interface>Edit...</interface> button</link>.</para>"
+msgstr ""
+"<para>Únicamente añadir la condición no es suficiente para definirla. ¿Por "
+"qué señal esperará? ¿Emitida por qué objeto? Las condiciones simples tienen "
+"que editarse después de añadirlas para establecer sus parámetros.</para>\n"
+"\n"
+"<para>Las condiciones compuestas, en cambio, no tienen parámetros que "
+"establecer. Se definen mediante su propio tipo y sus condiciones hijas.</"
+"para>\n"
+"\n"
+"<para>Para editar una condición, selecciónala en el <link url=\"widget:"
+"waitForTreeView\">árbol de condiciones</link> y luego haz click en el <link "
+"url=\"widget:editButton\">botón <interface>Editar...</interface></link>.</"
+"para>"
+
+#: tutorials/BasicConcepts.js:134
+msgctxt "@info"
+msgid ""
+"<para>The parameters that have to be set depend on the type of the "
+"condition. In this case, the name of the object that emits the signal and "
+"the name of the signal are needed.</para>\n"
+"\n"
+"<para><application>KTutorial editor</application> is able to <emphasis>talk</"
+"emphasis> to the application that the tutorial is being designed for and "
+"show you the name of the objects and the signals they emit. However, this "
+"will be seen in another tutorial. In this one you will be given all the "
+"values you need.</para>\n"
+"\n"
+"<para>Ok, back to the condition. We have asked the user to write "
+"<emphasis>Hello world!</emphasis> in the text area, so we want to react when "
+"the text in the text area changes.</para>\n"
+"\n"
+"<para>The text area is appropriately named <emphasis>textArea</emphasis>, "
+"and it emits the signal <emphasis>textChanged()</emphasis>. Set those values "
+"in the <link url=\"widget:objectNameLineEdit\"><interface>emitter name</"
+"interface> field</link> and in the <link url=\"widget:signalNameLineEdit"
+"\"><interface>signal name</interface> field</link>, respectively, and accept "
+"the dialog.</para>"
+msgstr ""
+"<para>Los parámetros a establecer dependen del tipo de la condición. En este "
+"caso, se necesitan el nombre del objeto que emite la señal y el nombre de la "
+"señal.</para>\n"
+"\n"
+"<para><application>KTutorial editor</application> es capaz de "
+"<emphasis>hablar</emphasis> con la aplicación para la que se está diseñando "
+"el tutorial y mostrarte el nombre de los objetos y las señales que emiten. "
+"Sin embargo, esto se verá en otro tutorial. En éste se te proporcionarán "
+"todos los valores que necesitas.</para>\n"
+"\n"
+"<para>Bien, volvamos con la condición. Pedimos al usuario que escribiese "
+"<emphasis>¡Hola mundo!</emphasis> en el área de texto, así que queremos "
+"reaccionar cuando cambie el texto en el área de texto.</para>\n"
+"\n"
+"<para>El área de texto se llama <emphasis>textArea</emphasis> y emite la "
+"señal <emphasis>textChanged()</emphasis>. Establece esos valores en el <link "
+"url=\"widget:objectNameLineEdit\">campo <interface>nombre del emisor</"
+"interface></link> y en el <link url=\"widget:signalNameLineEdit\">campo "
+"<interface>nombre de la señal</interface></link>, respectivamente, y acepta "
+"el diálogo.</para>"
+
+#: tutorials/BasicConcepts.js:148
+msgctxt "@info"
+msgid ""
+"<para>Now that the parameters of the condition are set, the step will react "
+"whenever the user writes something in the text area. But, how should it "
+"react?</para>\n"
+"\n"
+"<para>We want to advance to the next step when the user writes "
+"<emphasis>Hello world!</emphasis>, but textChanged() is emitted whenever the "
+"text was changed no matter what was written. So, before changing to the next "
+"step, we must check that the text area contains the expected text.</para>\n"
+"\n"
+"<para>The checks will be made using some custom Javascript code, so select "
+"the <link url=\"widget:responseCodeRadioButton\"><interface>custom response "
+"code</interface> radio button.</link>.</para>"
+msgstr ""
+"<para>Ahora que ya se establecieron los parámetros de la condición, el paso "
+"reaccionará cuando el usuario escriba algo en el área de texto. Pero, ¿cómo "
+"debería reaccionar?</para>\n"
+"\n"
+"<para>Queremos avanzar al siguiente paso cuando el usuario escriba <emphasis>"
+"¡Hola mundo!</emphasis>, pero textChanged() se emite cada vez que se cambia "
+"el texto independientemente de lo escrito. Así que, antes de cambiar al "
+"siguiente paso, debemos comprobar que el área de texto contiene el texto "
+"esperado.</para>\n"
+"\n"
+"<para>Las comprobaciones se harán utilizando cierto código Javascript "
+"propio, así que selecciona el <link url=\"widget:responseCodeRadioButton"
+"\">botón <interface>código propio de respuesta</interface></link>.</para>"
+
+#: tutorials/BasicConcepts.js:162
+msgctxt "@info"
+msgid ""
+"<para>The following code snippet gets the text area object, checks if it "
+"contains the text <emphasis>Hello world!</emphasis> (without taking into "
+"account upper and lower cases) and, in that case, changes to the step "
+"<emphasis>clearText</emphasis>:</para>\n"
+"\n"
+"<pre>textArea = ktutorial.findObject(\"textArea\");\n"
+"if (textArea.plainText.toLowerCase() == t.i18n(\"Hello world!\").toLowerCase"
+"()) {\n"
+"    tutorial.nextStep(\"clearText\");\n"
+"}</pre>\n"
+"\n"
+"<para>You can copy the code selecting it with the mouse, clicking with the "
+"right mouse button on the selection and then clicking on <interface>Copy</"
+"interface>. To paste it, click with the right mouse button on the <link url="
+"\"widget:responseCodeTextEdit\">custom response code area</link> and then on "
+"<interface>Paste</interface>. Once done, accept the dialog.</para>"
+msgstr ""
+"<para>El siguiente fragmento de código obtiene el objeto del área de texto, "
+"comprueba si contiene el texto <emphasis>¡Hola mundo!</emphasis> (sin tener "
+"en cuenta mayúsculas y minúsculas) y, en ese caso, cambia al paso "
+"<emphasis>limpiarTexto</emphasis>:</para>\n"
+"\n"
+"<pre>textArea = ktutorial.findObject(\"textArea\");\n"
+"if (textArea.plainText.toLowerCase() == t.i18n(\"¡Hola mundo!\").toLowerCase"
+"()) {\n"
+"    tutorial.nextStep(\"limpiarTexto\");\n"
+"}</pre>\n"
+"\n"
+"<para>Puedes copiar el código seleccionándolo con el ratón, haciendo click "
+"con el botón derecho del ratón en la selección y después haciendo click en "
+"<interface>Copiar</interface>. Para pegarlo, haz click con el botón derecho "
+"en el <link url=\"widget:responseCodeTextEdit\">área de código de la "
+"respuesta propia</link> y luego en <interface>Pegar</interface>. Cuando esté "
+"copiado, acepta el diálogo.</para>"
+
+#: tutorials/BasicConcepts.js:176
+msgctxt "@info"
+msgid ""
+"<para>Well, we have just created the start step of the tutorial. It waits "
+"for the user to write <emphasis>Hello world!</emphasis> in the text area and "
+"then changes to the clearText step.</para>\n"
+"\n"
+"<para>Now we will take care of the clearText step. Let's begin by adding a "
+"new step.</para>"
+msgstr ""
+"<para>Bien, acabamos de crear el paso start del tutorial. Espera a que el "
+"usuario escriba <emphasis>¡Hola mundo!</emphasis> en el área de texto y "
+"entonces cambia al paso limpiarTexto.</para>\n"
+"\n"
+"<para>Ahora nos encargaremos del paso limpiarTexto. Empecemos por añadir un "
+"nuevo paso.</para>"
+
+#: tutorials/BasicConcepts.js:190
+msgctxt "@info"
+msgid ""
+"<para>Set the id of the step to <emphasis>clearText</emphasis> and the text "
+"to <emphasis>Now you have to trigger the clear action. To do this you can "
+"click in &lt;interface&gt;File|Clear&lt;/interface&gt;, or in the toolbar "
+"button called &lt;interface&gt;Clear&lt;/interface&gt;.</emphasis>, then "
+"accept the dialog.</para>\n"
+"\n"
+"<para>Like <emphasis>&lt;emphasis&gt;</emphasis> in the text of the start "
+"step, <emphasis>&lt;interface&gt;</emphasis> is another special markup used "
+"when referring to something in the graphical user interface.</para>"
+msgstr ""
+"<para>Pon <emphasis>limpiarTexto</emphasis> como identificador del paso y "
+"<emphasis>Ahora debes activar la acción de limpiar. Para hacer esto puedes "
+"hacer click en &lt;interface&gt;Archivo|Limpiar&lt;/interface&gt; o en el "
+"botón de la barra de herramientas llamado &lt;interface&gt;Limpiar&lt;/"
+"interface&gt;.</emphasis> como texto, luego acepta el diálogo.</para>\n"
+"\n"
+"<para>Al igual que <emphasis>&lt;emphasis&gt;</emphasis> en el texto del "
+"paso start, <emphasis>&lt;interface&gt;</emphasis> es otro marcado especial "
+"utilizado para referirse a algo en la interfaz gráfica de usuario.</para>"
+
+#: tutorials/BasicConcepts.js:204
+msgctxt "@info"
+msgid ""
+"<para>The clearText step will wait for the user to trigger the clear action "
+"(that is, clicking <interface>Clear</interface> button in the tool bar or "
+"<interface>File|Clear</interface> in the menu).</para>\n"
+"\n"
+"<para>So we have to add a reaction to the clearText step. Like we did with "
+"the start step, select the clearText step in the tutorial tree view and "
+"click on <interface>Add reaction</interface>.</para>"
+msgstr ""
+"<para>El paso limpiarTexto esperará a que el usuario active la acción de "
+"limpiar (es decir, hacer click en el botón <interface>Limpiar</interface> de "
+"la barra de herramientas o en <interface>Archivo|Limpiar</interface> en el "
+"menú).</para>\n"
+"\n"
+"<para>Así que tenemos que añadir una reacción al paso limpiarTexto. Igual "
+"que hicimos con el paso start, selecciona el paso limpiarTexto en la vista "
+"de árbol del tutorial y haz click en <interface>Añadir reacción</interface>."
+"</para>"
+
+#: tutorials/BasicConcepts.js:218
+msgctxt "@info"
+msgid ""
+"<para>Again, to wait for something to happen we have to add a condition. And "
+"again, that condition is a signal being emitted.</para>\n"
+"\n"
+"<para>Add a new condition to wait for a signal and edit it to set its "
+"parameters.</para>"
+msgstr ""
+"<para>De nuevo, para esperar a que ocurra algo tenemos que añadir una "
+"condición. Y de nuevo, la condición es que se emita una señal.</para>\n"
+"\n"
+"<para>Añade una nueva condición para esperar por una señal y edítala para "
+"establecer sus parámetros.</para>"
+
+#: tutorials/BasicConcepts.js:232
+msgctxt "@info"
+msgid ""
+"<para>Usually, buttons in tool bars and menu entries are graphical "
+"representations of the so called <emphasis>actions</emphasis>. Actions are "
+"commands given to the application, for example, <emphasis>add step</"
+"emphasis> or <emphasis>save file</emphasis>, and they behave the same no "
+"matter if they were triggered from a tool bar or from the menu.</para>\n"
+"\n"
+"<para>So, as a rule of thumb, when you expect the user to click on a menu "
+"item or in a tool bar button, wait for the <emphasis>triggered()</emphasis> "
+"signal of the action they represent, instead of the <emphasis>clicked()</"
+"emphasis> signal of the button.</para>\n"
+"\n"
+"<para>In this case, the object name of the action is just <emphasis>clear</"
+"emphasis>. Set it in the emitter name, set the signal name to "
+"<emphasis>triggered()</emphasis> and accept the dialog.</para>"
+msgstr ""
+"<para>Por lo general, los botones de las barras de herramientas y las "
+"entradas de menú son representaciones gráficas de las llamadas "
+"<emphasis>acciones</emphasis>. Las acciones son órdenes dadas a la "
+"aplicación, por ejemplo, <emphasis>añadir paso</emphasis> o "
+"<emphasis>guardar archivo</emphasis>, y se comportan de la misma manera sin "
+"importar si fueron activadas desde la barra de herramientas o desde el menú."
+"</para>\n"
+"\n"
+"<para>Así que, como regla general, cuando el usuario vaya a hacer click en "
+"un elemento del menú o en un botón de la barra de herramientas, espera por "
+"la señal <emphasis>triggered()</emphasis> de la acción que representan, en "
+"lugar de la señal <emphasis>clicked()</emphasis> del botón.</para>\n"
+"\n"
+"<para>En este caso, el nombre del objeto de la acción es <emphasis>clear</"
+"emphasis>. Ponlo como nombre del emisor, pon <emphasis>triggered()</"
+"emphasis> como nombre de la señal y acepta el diálogo.</para>"
+
+#: tutorials/BasicConcepts.js:246
+msgctxt "@info"
+msgid ""
+"<para>This time there is nothing else to be checked once the condition is "
+"met. When the clear action is triggered the text area is cleared, so the "
+"signal being emitted is enough to change to the next step in the tutorial.</"
+"para>\n"
+"\n"
+"<para>Just set the name of the step to change to, which we will call "
+"<emphasis>end</emphasis>, in the <link url=\"widget:responseStepLineEdit"
+"\"><interface>change to step</interface> field</link> and accept the dialog."
+"</para>"
+msgstr ""
+"<para>Esta vez no hay nada más que comprobar una vez que se cumple la "
+"condición. Cuando la acción de limpiar se activa el área de texto se limpia, "
+"por lo que el que se emita la señal es suficiente para cambiar al siguiente "
+"paso del tutorial.</para>\n"
+"\n"
+"<para>Simplemente establece el nombre del paso al que cambiar, que "
+"llamaremos <emphasis>fin</emphasis>, en el <link url=\"widget:"
+"responseStepLineEdit\">campo <interface>cambiar al paso</interface></link> y "
+"acepta el diálogo.</para>"
+
+#: tutorials/BasicConcepts.js:260
+msgctxt "@info"
+msgid "<para>We are almost done. Add another step, the last one.</para>"
+msgstr "<para>Ya terminamos. Añade otro paso, el último.</para>"
+
+#: tutorials/BasicConcepts.js:274
+msgctxt "@info"
+msgid ""
+"<para>Set the id of the step to <emphasis>end</emphasis> and its text to "
+"<emphasis>And that's all. Now you can close the tutorial.</emphasis>, then "
+"accept the dialog.</para>"
+msgstr ""
+"<para>Pon <emphasis>fin</emphasis> como identificador del paso y "
+"<emphasis>Eso es todo. Ahora puedes cerrar el tutorial.</emphasis> como el "
+"texto, luego acepta el diálogo.</para>"
+
+#: tutorials/BasicConcepts.js:288
+msgctxt "@info"
+msgid ""
+"<para>The last step does not need a reaction, as it just informs the user "
+"that the tutorial has ended and that it can be closed.</para>\n"
+"\n"
+"<para>Finally, to install the tutorial you have just made you would have to "
+"export it (<interface>File|Export...</interface> or <interface>Export</"
+"interface> button in the tool bar) to a Javascript file and save it in the "
+"tutorials subdirectory of the data directory of KTutorial test application.</"
+"para>\n"
+"\n"
+"<para>Of course, this is too cumbersome to test a tutorial while it is being "
+"designed. <application>KTutorial editor</application> is able to launch an "
+"application and start the tutorial being designed on it, but this will be "
+"shown in another tutorial.</para>\n"
+"\n"
+"<para>That's all, this basic <application>KTutorial editor</application> "
+"walkthrough ends here.</para>"
+msgstr ""
+"<para>El último paso no necesita ninguna reacción, ya que simplemente "
+"informa al usuario de que se terminó el tutorial y que puede cerrarse.</"
+"para>\n"
+"\n"
+"<para>Finalmente, para instalar el tutorial que acabas de hacer tendrías que "
+"exportarlo (<interface>Archivo|Exportar...</interface> o botón "
+"<interface>Exportar</interface> de la barra de herramientas) a un archivo "
+"Javascript y guardarlo en el subdirectorio tutorials del directorio de datos "
+"de la aplicación de prueba de KTutorial.</para>\n"
+"\n"
+"<para>Por supuesto, eso es demasiado engorroso para probar un tutorial "
+"mientras se está diseñando. <application>KTutorial editor</application> "
+"puede lanzar una aplicación y comenzar el tutorial que se está diseñando en "
+"ella, pero esto se mostrará en otro tutorial.</para>\n"
+"\n"
+"<para>Y eso es todo, este recorrido básico por <application>KTutorial "
+"editor</application> termina aquí.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:3
+msgid "Interacting with the target application"
+msgstr "Interactuando con la aplicación objetivo"
+
+#: tutorials/InteractingWithTheTargetApplication.js:4
+msgid ""
+"This tutorial shows how KTutorial editor can interact with the target "
+"application of a tutorial, for example, to show the object names or test the "
+"tutorial without installing it."
+msgstr ""
+"Este tutorial muestra cómo puede interactuar KTutorial editor con la "
+"aplicación objetivo de un tutorial para, por ejemplo, mostrar los nombres de "
+"los objetos o probar el tutorial sin instalarlo."
+
+#: tutorials/InteractingWithTheTargetApplication.js:8
+msgctxt "@info"
+msgid ""
+"<para>Welcome to the tutorial to learn how <application>KTutorial editor</"
+"application> can interact with the target application.</para>\n"
+"\n"
+"<para>The target application is the one that the tutorial is being designed "
+"for. <application>KTutorial editor</application> can \"talk\" with target "
+"applications to provide some useful features when designing a tutorial.</"
+"para>\n"
+"\n"
+"<para>To see these features we will design a tutorial for "
+"<application>KTutorial editor</application> itself that asks the user to add "
+"a new step and accept the step dialog.</para>\n"
+"\n"
+"<para>Let's begin by <link url=\"widget:addStepToolButton\">adding a new "
+"step</link>.</para>"
+msgstr ""
+"<para>Bienvenido al tutorial para aprender cómo puede interactuar "
+"<application>KTutorial editor</application> con la aplicación objetivo.</"
+"para>\n"
+"\n"
+"<para>La aplicación objetivo es aquélla para la que se está diseñando el "
+"tutorial. <application>KTutorial editor</application> puede \"hablar\" con "
+"las aplicaciones objetivo para ofrecer ciertas funcionalidades útiles a la "
+"hora de diseñar un tutorial.</para>\n"
+"\n"
+"<para>Para ver estas características diseñaremos un tutorial para el propio "
+"<application>KTutorial editor</application> que pida al usuario añadir un "
+"nuevo paso y aceptar el diálogo del paso.</para>\n"
+"\n"
+"<para>Comencemos por <link url=\"widget:addStepToolButton\">añadir un nuevo "
+"paso</link>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:22
+msgctxt "@info"
+msgid ""
+"<para>Set the <link url=\"widget:idLineEdit\">id of the step</link> to "
+"<emphasis>start</emphasis>.</para>"
+msgstr ""
+"<para>Pon <emphasis>start</emphasis> como <link url=\"widget:idLineEdit"
+"\">identificador del paso</link>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:43
+msgctxt "@info"
+msgid ""
+"<para>Set the <link url=\"widget:textTextEdit\">text of the step</link> to:</"
+"para>\n"
+"\n"
+"<para><emphasis>Add a new step.</emphasis></para>"
+msgstr ""
+"<para>Pon como <link url=\"widget:textTextEdit\">texto del paso</link>:</"
+"para>\n"
+"\n"
+"<para><emphasis>Añade un nuevo paso.</emphasis></para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:55
+msgid "Add a new step."
+msgstr "Añade un nuevo paso."
+
+#: tutorials/InteractingWithTheTargetApplication.js:64
+msgctxt "@info"
+msgid ""
+"<para>And finally accept the dialog clicking in the <link url=\"widget:"
+"okButton\"><interface>Ok</interface> button</link>.</para>"
+msgstr ""
+"<para>Y finalmente acepta el diálogo haciendo click en el <link url=\"widget:"
+"okButton\">botón <interface>Aceptar</interface></link>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:78
+msgctxt "@info"
+msgid ""
+"<para>Now, select the <emphasis>start</emphasis> step and add a new reaction "
+"to it.</para>"
+msgstr ""
+"<para>Ahora, selecciona el paso <emphasis>start</emphasis> y añádele una "
+"nueva reacción.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:92
+#: tutorials/InteractingWithTheTargetApplication.js:375
+msgctxt "@info"
+msgid ""
+"<para>Set the trigger type to <link url=\"widget:triggerConditionRadioButton"
+"\"><interface>condition met</interface></link>.</para>"
+msgstr ""
+"<para>Establece el tipo de activador como <link url=\"widget:"
+"triggerConditionRadioButton\"><interface>condición cumplida</interface></"
+"link>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:106
+#: tutorials/InteractingWithTheTargetApplication.js:389
+msgctxt "@info"
+msgid ""
+"<para><link url=\"widget:addButton\"><interface>Add</interface></link> a new "
+"condition.</para>"
+msgstr ""
+"<para><link url=\"widget:addButton\"><interface>Añade</interface></link> una "
+"nueva condición.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:120
+msgctxt "@info"
+msgid ""
+"<para>We want the step to react when the dialog to add a new step is shown, "
+"so select <emphasis>The specified window is shown</emphasis> in the <link "
+"url=\"widget:waitForTypeComboBox\">combo box</link>.</para>"
+msgstr ""
+"<para>Queremos que el paso reaccione cuando se muestre el diálogo para "
+"añadir un nuevo paso, así que selecciona <emphasis>Se muestra la ventana "
+"especificada</emphasis> en la <link url=\"widget:waitForTypeComboBox\">lista "
+"desplegable</link>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:132 rc.cpp:55
+msgctxt "@item:inlistbox"
+msgid "The specified window is shown"
+msgstr "Se muestra la ventana especificada"
+
+#: tutorials/InteractingWithTheTargetApplication.js:141
+#: tutorials/InteractingWithTheTargetApplication.js:424
+msgctxt "@info"
+msgid ""
+"<para><link url=\"widget:addWaitForDialog/okButton\">Accept the dialog</"
+"link> to add the condition to wait for.</para>"
+msgstr ""
+"<para><link url=\"widget:addWaitForDialog/okButton\">Acepta el diálogo</"
+"link> para añadir la condición por la que esperar.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:155
+#: tutorials/InteractingWithTheTargetApplication.js:438
+msgctxt "@info"
+msgid ""
+"<para>Select the condition just added and <link url=\"widget:editButton"
+"\">edit</link> it.</para>"
+msgstr ""
+"<para>Selecciona la condición que acabas de añadir y <link url=\"widget:"
+"editButton\">edítala</link>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:169
+msgctxt "@info"
+msgid ""
+"<para>Now it is time to set the name of the window/dialog that we want to "
+"wait for. We asked the user to add a new step, so we want to wait for the "
+"dialog that appears when <interface>Add step</interface> is clicked. But... "
+"what is the object name of that dialog (note that the object name is not the "
+"title)?</para>\n"
+"\n"
+"<para>Usually the name of the objects (windows, widgets...) will be quite "
+"descriptive, so we can suppose how it will look like. However, a name that "
+"<emphasis>is something like...</emphasis> is not enough, we need the exact "
+"name.</para>\n"
+"\n"
+"<para><application>KTutorial editor</application> is able to show you a list "
+"with all the objects in the target application that KTutorial can access to."
+"</para>\n"
+"\n"
+"<para>Click on <link url=\"widget:objectNamePushButton\">Choose...</link> to "
+"select the object from the list.</para>"
+msgstr ""
+"<para>Ahora es el momento de establecer el nombre de la ventana/diálogo por "
+"la que queremos esperar. Pedimos al usuario que añadiese un nuevo paso, así "
+"que queremos esperar por el diálogo que aparece cuando se hace click en "
+"<interface>Añadir paso</interface>. Pero... ¿cuál es el nombre de objeto de "
+"ése diálogo (téngase en cuenta que el nombre de objeto no es el título)?</"
+"para>\n"
+"\n"
+"<para>Generalmente el nombre de los objetos (ventanas, widgets...) será "
+"bastante descriptivo, por lo que podemos suponer qué pinta tendrá. Sin "
+"embargo, un nombre que <emphasis>es algo así como...</emphasis> no es "
+"suficiente, necesitamos el nombre exacto.</para>\n"
+"\n"
+"<para><application>KTutorial editor</application> es capaz de mostrarte una "
+"lista con todos los objetos de la aplicación objetivo a los que KTutorial "
+"tiene acceso.</para>\n"
+"\n"
+"<para>Haz click en <link url=\"widget:objectNamePushButton\">Escoger...</"
+"link> para seleccionar el objeto de la lista.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:187
+msgctxt "@info"
+msgid ""
+"<para>To show you the list with the objects in the target application "
+"<application>KTutorial editor</application> needs to know which one is the "
+"target application. You can select it from the list of known applications or "
+"set its executable name.</para>\n"
+"\n"
+"<para>Once the target application is set <application>KTutorial editor</"
+"application> will start a new instance of that application to \"talk\" with "
+"it.</para>\n"
+"\n"
+"<para>The target application of this tutorial is <application>KTutorial "
+"editor</application> itself, so select it in the list or write "
+"<emphasis>ktutorial-editor</emphasis> (which is the name of its executable) "
+"in the text line, then accept the dialog.</para>"
+msgstr ""
+"<para>Para mostrarte la lista con los objetos de la aplicación objetivo "
+"<application>KTutorial editor</application> tiene que saber cuál es la "
+"aplicación objetivo. Puedes seleccionarla de la lista de aplicaciones "
+"conocidas o establecer el nombre de su ejecutable.</para>\n"
+"\n"
+"<para>Una vez que se establezca la aplicación objetivo "
+"<application>KTutorial editor</application> arrancará una nueva instancia de "
+"esa aplicación para \"hablar\" con ella.</para>\n"
+"\n"
+"<para>La aplicación objetivo de este tutorial es el propio "
+"<application>KTutorial editor</application>, así que selecciónalo en la "
+"lista o escribe <emphasis>ktutorial-editor</emphasis> (que es el nombre de "
+"su ejecutable) en la línea de texto, luego acepta el diálogo.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:201
+msgctxt "@info"
+msgid ""
+"<para><application>KTutorial editor</application> needs to know which "
+"application is the target application of the tutorial to \"talk\" with it.</"
+"para>\n"
+"\n"
+"<para>It seems that you already had selected the target application before "
+"starting this tutorial. Unfortunately, if the target application already "
+"selected is not <application>KTutorial editor</application>, you will have "
+"to close this tutorial and that target application, create a new tutorial "
+"(using <interface>File|New</interface>, or <interface>New</interface> in the "
+"tool bar) and start this tutorial again.</para>\n"
+"\n"
+"<para>Yes, I guess I should have warned you about this when you started this "
+"tutorial :P</para>"
+msgstr ""
+"<para><application>KTutorial editor</application> tiene que saber qué "
+"aplicación es la aplicación objetivo del tutorial para \"hablar\" con ella.</"
+"para>\n"
+"\n"
+"<para>Parece que ya habías seleccionado la aplicación objetivo antes de "
+"empezar este tutorial. Desafortunadamente, si la aplicación objetivo ya "
+"seleccionada no es <application>KTutorial editor</application>, tendrás que "
+"cerrar este tutorial y esa aplicación objetivo, crear un nuevo tutorial "
+"(mediante <interface>>Archivo|Nuevo</interface>, o <interface>Nuevo</"
+"interface> en la barra de herramientas) y empezar este tutorial de nuevo.</"
+"para>\n"
+"\n"
+"<para>Sí, supongo que tendría que haberte avisado de esto cuando empezaste "
+"este tutorial :P</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:204
+#: tutorials/InteractingWithTheTargetApplication.js:217
+msgctxt "@action Tutorial option"
+msgid "Continue"
+msgstr "Continuar"
+
+#: tutorials/InteractingWithTheTargetApplication.js:214
+msgctxt "@info"
+msgid ""
+"<para>Now you have the list with the objects that KTutorial can access in "
+"the target application.</para>\n"
+"\n"
+"<para>Note that when you select a widget in the list the widget is "
+"highlighted in the target application. For example, select the object named "
+"<emphasis>centralTreeView</emphasis>. You will see that, in the target "
+"application, the tree view that shows the tutorial being designed is "
+"highlighted.</para>\n"
+"\n"
+"<para>The list also shows the parent/child relationship between objects. For "
+"example, select <emphasis>editTutorialDock</emphasis>. The whole dock is "
+"highlighted.</para>\n"
+"\n"
+"<para>Now, select the unnamed object from the ActionListWidget class that "
+"appears in the list as a child element of the <emphasis>editTutorialDock</"
+"emphasis>. Now only the buttons in the dock are highlighted, as they are "
+"part of that widget.</para>\n"
+"\n"
+"<para>And finally, if you select the "
+"<emphasis>setTutorialInformationToolButton</emphasis> element, only the "
+"button to set the information of the tutorial will be highlighted.</para>"
+msgstr ""
+"<para>Ahora ya tienes la lista con los objetos a los que KTutorial puede "
+"acceder en la aplicación objetivo.</para>\n"
+"\n"
+"<para>Ten en cuenta que cuando seleccionas un widget en la lista el widget "
+"se remarca en la aplicación objetivo. Por ejemplo, selecciona el objeto "
+"llamado <emphasis>centralTreeView</emphasis>. Verás que, en la aplicación "
+"objetivo, se remarca la vista en árbol que muestra el tutorial que se está "
+"diseñando.</para>\n"
+"\n"
+"<para>La lista también muestra la relación padre/hijo entre los objetos. Por "
+"ejemplo, selecciona <emphasis>editTutorialDock</emphasis>. Se remarca todo "
+"el panel de acoplamiento.</para>\n"
+"\n"
+"<para>Ahora, selecciona el objeto sin nombre de la clase ActionListWidget "
+"que aparece en la lista como elemento hijo de <emphasis>editTutorialDock</"
+"emphasis>. Ahora sólo se remarcan los botones del panel de acoplamiento, ya "
+"que son parte de ese widget.</para>\n"
+"\n"
+"<para>Y finalmente, si seleccionas el elemento "
+"<emphasis>setTutorialInformationToolButton</emphasis>, sólo se remarcará el "
+"botón para establecer la información del tutorial.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:227
+msgctxt "@info"
+msgid ""
+"<para>You may have noticed that the list does not contain the object we are "
+"looking for, that is, the dialog that is shown to add a new step. The reason "
+"is that the list does not contain all the objects that may exist in the "
+"target application at any time. Instead, it is dynamic. When a new object is "
+"added or an existing one removed from the target application the list "
+"reflects that.</para>\n"
+"\n"
+"<para>So, in the target application, show the dialog to add a new step. Once "
+"you do this, a new object (and all its children) will be added to the end of "
+"the list. The object is called <emphasis>StepDataDialog</emphasis> and, yes, "
+"it is the dialog that has just been shown.</para>\n"
+"\n"
+"<para>Select the <emphasis>StepDataDialog</emphasis> element in the list and "
+"<link url=\"widget:RemoteObjectChooser/okButton\">accept the dialog</link>.</"
+"para>"
+msgstr ""
+"<para>Puede que te hayas dado cuenta de que la lista no contiene el objeto "
+"que estamos buscando, es decir, el diálogo que se muestra para añadir un "
+"nuevo paso. El motivo es que la lista no contiene todos los objetos que "
+"puedan existir en la aplicación en cualquier momento. En cambio, es "
+"dinámica. Cuando se añade un objeto o se elimina uno existente de la "
+"aplicación objetivo la lista lo refleja.</para>\n"
+"\n"
+"<para>Así que, en la aplicación objetivo, muestra el diálogo para añadir un "
+"nuevo paso. Cuando lo hagas un nuevo objeto (y todos sus hijos) se añadirá "
+"al al final de la lista. El objeto se llama <emphasis>StepDataDialog</"
+"emphasis> y, sí, es el diálogo que se acaba de mostrar.</para>\n"
+"\n"
+"<para>Selecciona el elemento <emphasis>StepDataDialog</emphasis> en la lista "
+"y <link url=\"widget:RemoteObjectChooser/okButton\">acepta el diálogo</link>."
+"</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:241
+msgctxt "@info"
+msgid ""
+"<para>Now that the name of the window was set <link url=\"widget:"
+"editWaitForWindowDialog/okButton\">accept the dialog</link>.</para>"
+msgstr ""
+"<para>Ahora que se estableció el nombre de la ventana <link url=\"widget:"
+"editWaitForWindowDialog/okButton\">acepta el diálogo.</link>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:255
+msgctxt "@info"
+msgid ""
+"<para>We want to change to another step when the window is shown, so now it "
+"is time to set the name of that other step.</para>\n"
+"\n"
+"<para>Set the <link url=\"widget:responseStepLineEdit\">step to change to</"
+"link> to <emphasis>acceptDialog</emphasis>.</para>"
+msgstr ""
+"<para>Queremos cambiar a otro paso cuando se muestre la ventana, así que "
+"ahora es el momento de poner el nombre de ese otro paso.</para>\n"
+"\n"
+"<para>Pon <emphasis>acceptDialog</emphasis> como el <link url=\"widget:"
+"responseStepLineEdit\">paso al que cambiar</link>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:276
+#: tutorials/InteractingWithTheTargetApplication.js:347
+#: tutorials/InteractingWithTheTargetApplication.js:564
+#: tutorials/InteractingWithTheTargetApplication.js:634
+msgctxt "@info"
+msgid ""
+"<para>And finally <link url=\"widget:okButton\">accept the dialog</link>.</"
+"para>"
+msgstr ""
+"<para>Y finalmente <link url=\"widget:okButton\">acepta el diálogo</link>.</"
+"para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:290
+msgctxt "@info"
+msgid ""
+"<para>We are done with the first step. Now we will take care of the second "
+"one, that will wait until the user accepts the dialog.</para>\n"
+"\n"
+"<para>Of course, the first thing to do is to <link url=\"widget:"
+"addStepToolButton\">add a new step</link>.</para>"
+msgstr ""
+"<para>Ya terminamos con el primer paso. Ahora nos encargaremos del segundo, "
+"que esperará hasta que el usuario acepte el diálogo.</para>\n"
+"\n"
+"<para>Por supuesto, lo primero que hay que hacer es <link url=\"widget:"
+"addStepToolButton\">añadir un nuevo paso</link>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:304
+msgctxt "@info"
+msgid ""
+"<para>Set the <link url=\"widget:idLineEdit\">id of the step</link> to "
+"<emphasis>acceptDialog</emphasis>.</para>"
+msgstr ""
+"<para>Pon <emphasis>acceptDialog</emphasis> como el <link url=\"widget:"
+"idLineEdit\">identificador del paso</link>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:325
+msgctxt "@info"
+msgid ""
+"<para>Set the <link url=\"widget:textTextEdit\">text of the step</link> to:</"
+"para>\n"
+"\n"
+"<para><emphasis>Set the id to &lt;emphasis&gt;start&lt;/emphasis&gt; and the "
+"text to &lt;emphasis&gt;First step&lt;/emphasis&gt;, then accept the dialog."
+"</emphasis></para>\n"
+"\n"
+"<para>Remember that you can copy the text above and paste it in the text "
+"area, you don't need to write it yourself.</para>"
+msgstr ""
+"<para>Pon como <link url=\"widget:textTextEdit\">texto del paso</link>:</"
+"para>\n"
+"\n"
+"<para><emphasis>Pon &lt;emphasis&gt;start&lt;/emphasis&gt; como "
+"identificador y &lt;emphasis&gt;Primer paso&lt;/emphasis&gt; como texto, "
+"luego acepta el diálogo.</emphasis></para>\n"
+"\n"
+"<para>Recuerda que puedes copiar el texto de encima y pegarlo en el área de "
+"texto, no tienes que escribirlo por ti mismo.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:338
+msgid ""
+"Set the id to &lt;emphasis&gt;start&lt;/emphasis&gt; and the text to &lt;"
+"emphasis&gt;First step&lt;/emphasis&gt;, then accept the dialog."
+msgstr ""
+"Pon &lt;emphasis&gt;start&lt;/emphasis&gt; como identificador y &lt;"
+"emphasis&gt;Primer paso&lt;/emphasis&gt; como texto, luego acepta el diálogo."
+
+#: tutorials/InteractingWithTheTargetApplication.js:361
+msgctxt "@info"
+msgid ""
+"<para>Now, select the <emphasis>acceptDialog</emphasis> step and add a new "
+"reaction to it.</para>"
+msgstr ""
+"<para>Ahora, selecciona el paso <emphasis>acceptDialog</emphasis> y añádele "
+"una nueva reacción.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:403
+msgctxt "@info"
+msgid ""
+"<para>To wait for the user to accept the dialog we will wait for the user to "
+"click on the <interface>Ok</interface> button.</para>\n"
+"\n"
+"<para>Buttons emit a signal whenever they are clicked, so select "
+"<emphasis>The specified signal is emitted</emphasis> in the <link url="
+"\"widget:waitForTypeComboBox\">combo box</link>.</para>"
+msgstr ""
+"<para>Para esperar a que el usuario acepte el diálogo esperaremos a que el "
+"usuario haga click en el botón <interface>Aceptar</interface>.</para>\n"
+"\n"
+"<para>Los botones emiten una señal cuando se hace click en ellos, así que "
+"selecciona <emphasis>Se emite la señal especificada</emphasis> en la <link "
+"url=\"widget:waitForTypeComboBox\">lista desplegable</link>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:415 rc.cpp:49
+msgctxt "@item:inlistbox"
+msgid "The specified signal is emitted"
+msgstr "Se emite la señal especificada"
+
+#: tutorials/InteractingWithTheTargetApplication.js:452
+msgctxt "@info"
+msgid ""
+"<para>We are again in a point where we need to know the name of an object, "
+"in this case, the name of the <interface>Ok</interface> button. This time, "
+"though, we will not choose it from the list. We will see another little "
+"<application>KTutorial editor</application> feature instead.</para>\n"
+"\n"
+"<para>When there is a target application running (if you closed it, start it "
+"again clicking on <interface>Choose...</interface> and then closing the "
+"list), the field to set an object name offers text completion with the names "
+"of the objects in the target application. Like the list to select an object, "
+"the completion list is dynamic, so entries are added and removed based on "
+"objects added and removed in the target application.</para>\n"
+"\n"
+"<para>Ensure that the target application is running and that, in that target "
+"application, the dialog to add a new step is open. Then just write "
+"<emphasis>o</emphasis> in the <link url=\"widget:objectNameLineEdit"
+"\">emitter name field</link> and watch the completion list pop up.</para>"
+msgstr ""
+"<para>De nuevo llegamos a un punto en el que necesitamos saber el nombre de "
+"un objeto, en este caso, el nombre del botón <interface>Aceptar</interface>. "
+"Esta vez, no obstante, no lo escogeremos de la lista. En su lugar veremos "
+"otra pequeña característica de <application>KTutorial editor</application>.</"
+"para>\n"
+"\n"
+"<para>Cuando hay una aplicación objetivo en funcionamiento (si la cerraste, "
+"arráncala de nuevo haciendo click en <interface>Escoger...</interface> y "
+"luego cerrando la lista), el campo para establecer el nombre de un objeto "
+"ofrece completado de texto con los nombres de los objetos de la aplicación "
+"objetivo. Como la lista para seleccionar un objeto, la lista de completado "
+"es dinámica, por lo que las entradas se añaden y eliminan en base a los "
+"objetos añadidos y eliminados en la aplicación objetivo.</para>\n"
+"\n"
+"<para>Asegúrate de que la aplicación objetivo está en funcionamiento y que, "
+"en dicha aplicación objetivo, el diálogo para añadir un nuevo paso está "
+"abierto. Luego escribe simplemente <emphasis>o</emphasis> en el <link url="
+"\"widget:objectNameLineEdit\">campo del nombre del emisor</link> y ve cómo "
+"aparece la lista de completado.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:473
+msgctxt "@info"
+msgid ""
+"<para>As you can see, the completion list proposes <emphasis>okButton</"
+"emphasis>, as it is the only object in the target application whose name "
+"starts with <emphasis>o</impact>. The completion list proposes all the "
+"objects in the target application whose name starts with the text written in "
+"the emitter name field.</para>\n"
+"\n"
+"<para>You should set the emitter name to <emphasis>okButton</emphasis>, but "
+"instead of writing it use the completion list. To use some proposed "
+"completion click on it with the mouse, or traverse the list using the up and "
+"down keys pressing enter when you reach the desired one.</para>"
+msgstr ""
+"<para>Como puedes ver, la lista de completado propone <emphasis>okButton</"
+"emphasis>, ya que es el único objeto de la aplicación objetivo cuyo nombre "
+"empieza por <emphasis>o</impact>. La lista de completado propone todos los "
+"objetos de la aplicación objetivo cuyo nombre comienza con el texto escrito "
+"en el campo del nombre del emisor.</para>\n"
+"\n"
+"<para>Deberías poner <emphasis>okButton</emphasis> como nombre del emisor, "
+"pero en lugar de escribirlo utiliza la lista de completado. Para utilizar "
+"cierta propuesta de completado haz click sobre ella con el ratón, o recorre "
+"la lista utilizando las teclas de arriba y abajo pulsando intro cuando "
+"llegues a la deseada.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:494
+msgctxt "@info"
+msgid ""
+"<para>The signal name field also provides completion when the target "
+"application is running and the emitter name was set.</para>\n"
+"\n"
+"<para>Note that the completion list can also be triggered using the standard "
+"shortcut <shortcut>Ctrl+T</shortcut> when the focus is on a text edition "
+"widget. Click on the <link url=\"widget:signalNameLineEdit\">signal name "
+"field</link> to give it the focus, then press <shortcut>Ctrl+T</shortcut> to "
+"show all the signals that can be emitted by the <interface>Ok</interface> "
+"button.</para>"
+msgstr ""
+"<para>El campo del nombre de la señal también tiene completado cuando la "
+"aplicación objetivo está en funcionamiento y se estableció el nombre del "
+"emisor.</para>\n"
+"\n"
+"<para>Ten en cuenta que la lista de completado también se puede activar "
+"utilizando el atajo de teclado por defecto <shortcut>Ctrl+T</shortcut> "
+"cuando el foco está en un widget de edición de texto. Haz click en el <link "
+"url=\"widget:signalNameLineEdit\">campo del nombre de la señal</link> para "
+"darle el foco, luego presiona <shortcut>Ctrl+T</shortcut> para mostrar todas "
+"las señales que puede emitir el botón <interface>Aceptar</interface>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:508
+msgctxt "@info"
+msgid ""
+"<para>As it was explained before, we want to react when the <interface>Ok</"
+"interface> button is clicked, so select the <emphasis>clicked()</emphasis> "
+"signal from the completion list.</para>"
+msgstr ""
+"<para>Como se explicó anteriormente, queremos reaccionar cuando se haga "
+"click en el botón <interface>Aceptar</interface>, así que selecciona la "
+"señal <emphasis>clicked()</emphasis> de la lista de completado.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:529
+msgctxt "@info"
+msgid ""
+"<para>Now that the emitter and signal names were set <link url=\"widget:"
+"editWaitForSignalDialog/okButton\">accept the dialog</link>.</para>"
+msgstr ""
+"<para>Ahora que se establecieron los nombres del emisor y la señal <link url="
+"\"widget:editWaitForSignalDialog/okButton\">acepta el diálogo</link>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:543
+msgctxt "@info"
+msgid ""
+"<para>The user accepting the dialog to add a new step will make our example "
+"tutorial to change to its last step.</para>\n"
+"\n"
+"<para>Set the <link url=\"widget:responseStepLineEdit\">step to change to</"
+"link> to <emphasis>end</emphasis>.</para>"
+msgstr ""
+"<para>Que el usuario acepte el diálogo para añadir un nuevo paso hará que "
+"nuestro tutorial de ejemplo cambie a su último paso.</para>\n"
+"\n"
+"<para>Pon <emphasis>end</emphasis> como el <link url=\"widget:"
+"responseStepLineEdit\">paso al que cambiar</link>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:578
+msgctxt "@info"
+msgid ""
+"<para>The last step in the tutorial will just inform the user that the "
+"tutorial is done.</para>\n"
+"\n"
+"<para>As with the previous ones, we have to start by <link url=\"widget:"
+"addStepToolButton\">adding a new step</link>.</para>"
+msgstr ""
+"<para>El último paso del tutorial simplemente informará al usuario de que se "
+"terminó el tutorial.</para>\n"
+"\n"
+"<para>Como con los anteriores, tenemos que empezar por <link url=\"widget:"
+"addStepToolButton\">añadir un nuevo paso</link>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:592
+msgctxt "@info"
+msgid ""
+"<para>Set the <link url=\"widget:idLineEdit\">id of the step</link> to "
+"<emphasis>end</emphasis>.</para>"
+msgstr ""
+"<para>Pon <emphasis>end</emphasis> como <link url=\"widget:idLineEdit"
+"\">identificador del paso</link>.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:613
+msgctxt "@info"
+msgid ""
+"<para>Set the <link url=\"widget:textTextEdit\">text of the step</link> to:</"
+"para>\n"
+"\n"
+"<para><emphasis>And that's all!</emphasis></para>"
+msgstr ""
+"<para>Pon como <link url=\"widget:textTextEdit\">texto del paso</link>:</"
+"para>\n"
+"\n"
+"<para><emphasis>¡Y eso es todo!</emphasis></para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:625
+msgid "And that's all!"
+msgstr "¡Y eso es todo!"
+
+#: tutorials/InteractingWithTheTargetApplication.js:648
+msgctxt "@info"
+msgid ""
+"<para>Well, now that we have added that last step the example tutorial is "
+"done. But, when designing a tutorial, how can we know that it does what we "
+"expect it to do?</para>\n"
+"\n"
+"<para><application>KTutorial editor</application> is able to start the "
+"tutorial being designed in its target application without having to manually "
+"export and install the tutorial. This way you can truly check that the "
+"tutorial will behave as you expect.</para>\n"
+"\n"
+"<para>When testing a tutorial you are advised to use a target application in "
+"a clean state, like you would do when using a tutorial from that application."
+"</para>\n"
+"\n"
+"<para>So cancel the dialog to add a new step in the target application if "
+"you haven't done it yet. Then, to start in the target application the "
+"tutorial we have been editing click on <interface>Edit|Test tutorial</"
+"interface>, or the <interface>Test tutorial</interface> button in the "
+"toolbar.</para>"
+msgstr ""
+"<para>Bien, ahora que añadimos ese último paso ya terminamos nuestro "
+"tutorial de ejemplo. Pero, cuando se diseña un tutorial, ¿cómo podemos saber "
+"que hace lo que esperamos que haga?</para>\n"
+"\n"
+"<para><application>KTutorial editor</application> es capaz de empezar el "
+"tutorial que se está diseñando en su aplicación objetivo sin tener que "
+"exportar e instalar el tutorial manualmente. De este modo puedes comprobar "
+"realmente que el tutorial se comporta como esperas.</para>\n"
+"\n"
+"<para>Cuando se prueba un tutorial es mejor que utilices una aplicación "
+"objetivo en un estado limpio, como harías si usases un tutorial en esa "
+"aplicación.</para>\n"
+"\n"
+"<para>Así pues, cancela el diálogo para añadir un nuevo paso en la "
+"aplicación objetivo si no lo hiciste aún. Luego, para empezar en la "
+"aplicación objetivo el tutorial que hemos estado editando haz click en "
+"<interface>Editar|Probar tutorial</interface>, o en el botón "
+"<interface>Probar tutorial</interface> de la barra de herramientas.</para>"
+
+#: tutorials/InteractingWithTheTargetApplication.js:662
+msgctxt "@info"
+msgid ""
+"<para>The tutorial shown in the target application is the one we have been "
+"designing. If you add a new step, it will change to the second step, and if "
+"you accept the dialog it will change to the last step.</para>\n"
+"\n"
+"<para>Note, however, that when a tutorial is tested it is not installed. The "
+"tutorials must be installed to be available in the tutorial list of the "
+"target application.</para>\n"
+"\n"
+"<para>And that's all, the tutorial about the interaction with the target "
+"application ends here.</para>"
+msgstr ""
+"<para>El tutorial mostrado en la aplicación objetivo es el que hemos estado "
+"diseñando. Si añades un nuevo paso, cambiará al segundo paso, y si aceptas "
+"el diálogo cambiará al último paso.</para>\n"
+"\n"
+"<para>Ten en cuenta, no obstante, que cuando se prueba un tutorial no se "
+"instala. Los tutoriales deben instalarse para estar disponibles en la lista "
+"de tutoriales de la aplicación objetivo.</para>\n"
+"\n"
+"<para>Y eso es todo, aquí termina el tutorial sobre la interacción con la "
+"aplicación objetivo.</para>"
+
+#: TutorialTester.cpp:78
+msgctxt "@label"
+msgid ""
+"There was a problem when trying to save the tutorial to a temporary file (to "
+"be used by the target application to test the tutorial):<nl/>%1"
+msgstr ""
+"Ocurrió un problema cuando se intentaba guardar el tutorial a un archivo "
+"temporal (para usarse en la aplicación objetivo para probar el tutorial):<nl/"
+">%1"
+
+#: TutorialTester.cpp:96
+msgctxt "@label"
+msgid ""
+"There was a problem when trying to tell the target application to start the "
+"tutorial:<nl/>%1"
+msgstr ""
+"Ocurrió un problema cuando se intentaba decir a la aplicación objetivo que "
+"empezase el tutorial:<nl/>%1"
+
+#: TutorialTester.cpp:98
+msgctxt "@title:window"
+msgid "Tutorial could not be started"
+msgstr "No se pudo empezar el tutorial"
+
+#: view/ReactionTreeItem.cpp:50
+msgctxt "@item"
+msgid "Reaction"
+msgstr "Reacción"
+
+#: view/ReactionTreeItem.cpp:78
+msgctxt "@item"
+msgid "(No condition set)"
+msgstr "(Condición no establecida)"
+
+#: view/ReactionTreeItem.cpp:98
+msgctxt "@item"
+msgid "(option name not set)"
+msgstr "(nombre de la opción no establecido)"
+
+#: view/ReactionTreeItem.cpp:104
+msgctxt "@item"
+msgid "When the option %1 is selected"
+msgstr "Cuando se seleccione la opción %1"
+
+#: view/ReactionTreeItem.cpp:110
+msgctxt "@item"
+msgid "Execute the following code:"
+msgstr "Ejecutar el siguiente código:"
+
+#: view/ReactionTreeItem.cpp:119
+msgctxt "@item"
+msgid "(No code set)"
+msgstr "(Código no establecido)"
+
+#: view/ReactionTreeItem.cpp:134
+msgctxt "@item"
+msgid "(step id not set)"
+msgstr "(identificador del paso no establecido)"
+
+#: view/ReactionTreeItem.cpp:140
+msgctxt "@item"
+msgid "Change to step %1"
+msgstr "Cambiar al paso %1"
+
+#: view/RemoteObjectChooser.cpp:125
+msgctxt "@label"
+msgid ""
+"The target application has been closed, but it must be running to be able to "
+"choose the objects."
+msgstr ""
+"La aplicación objetivo ha sido cerrada, pero debe estar en funcionamiento "
+"para poder escoger los objetos."
+
+#: view/RemoteObjectChooser.cpp:127
+msgctxt "@title:window"
+msgid "Target application closed"
+msgstr "Aplicación objetivo cerrada"
+
+#: view/RemoteObjectChooser.cpp:143
+msgctxt "@label"
+msgid ""
+"<para>The <application>KTutorial editor</application> windows will be hidden "
+"and only the list with the objects in the target application will be shown. "
+"It is made to better view when a widget is highlighted in the target "
+"application.</para><para>The <application>KTutorial editor</application> "
+"windows will be shown again once the selection list is closed.</para>"
+msgstr ""
+"<para>Se ocultarán las ventanas de la aplicación <application>KTutorial "
+"editor</application> y únicamente se mostrará la lista con los objetos de la "
+"aplicación objetivo. Esto se hace para poder ver mejor cuando se remarca un "
+"widget en la aplicación objetivo.</para><para>Las ventanas de "
+"<application>KTutorial editor</application> se mostrarán de nuevo cuando se "
+"cierre la lista de selección.</para>"
+
+#: view/RemoteObjectChooser.cpp:149
+msgctxt "@title:window"
+msgid "<application>KTutorial editor</application> windows will be hidden"
+msgstr ""
+"Se ocultarán las ventanas de <application>KTutorial editor</application>"
+
+#: view/RemoteObjectNameWidget.cpp:203
+msgctxt "@label"
+msgid ""
+"The object name can not be set, there was a problem getting the name from "
+"the target application: %1"
+msgstr ""
+"No se puede establecer el nombre del objeto, hubo un problema obteniendo el "
+"nombre desde la aplicación objetivo: %1"
+
+#: view/RemoteObjectNameWidget.cpp:205
+msgctxt "@title"
+msgid "Can't communicate with the target application"
+msgstr "No se puede comunicar con la aplicación objetivo"
+
+#: view/RemoteObjectNameWidget.cpp:212
+msgctxt "@label"
+msgid ""
+"There is no unique name for the chosen object (at least, in the current "
+"state of the target application), so it is not possible to refer to that "
+"object in a tutorial. The target application must be modified to provide a "
+"unique name for that object."
+msgstr ""
+"No existe un nombre único para el objeto escogido (al menos, en el estado "
+"actual de la aplicación objetivo), por lo que no es posible referirse a "
+"dicho objeto desde un tutorial. La aplicación objetivo debe modificarse para "
+"asignarle un nombre único a dicho objeto."
+
+#: view/RemoteObjectNameWidget.cpp:216
+msgctxt "@title"
+msgid "The chosen object has no unique name"
+msgstr "El objeto escogido no tiene un nombre único"
+
+#: view/RemoteObjectTreeItem.cpp:41 view/RemoteObjectTreeItem.cpp:42
+msgctxt "@item"
+msgid "D-Bus Error!"
+msgstr "¡Error de D-Bus!"
+
+#: view/RemoteObjectTreeItem.cpp:46
+msgctxt "@item"
+msgid "Object without name!"
+msgstr "¡Objeto sin nombre!"
+
+#: view/RemoteObjectTreeItem.cpp:50
+msgctxt "@item"
+msgid "No class name!"
+msgstr "¡Sin nombre de clase!"
+
+#: view/RemoteObjectTreeItem.cpp:57
+msgctxt "@item Object name (Class name)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: view/SemanticMarkupEdition.cpp:54
+msgctxt "@info:tooltip"
+msgid "Emphasized text"
+msgstr "Texto enfatizado"
+
+#: view/SemanticMarkupEdition.cpp:56
+msgctxt "@info:whatsthis"
+msgid ""
+"Phrase tag to emphasize a word or phrase in the text.<nl/>Example: "
+"<emphasis>emphasized text</emphasis>"
+msgstr ""
+"Etiqueta de frase para enfatizar una palabra o frase en el texto.<nl/"
+">Ejemplo: <emphasis>texto enfatizado</emphasis>"
+
+#: view/SemanticMarkupEdition.cpp:66
+msgctxt "@info:tooltip"
+msgid "Strongly emphasized text"
+msgstr "Texto fuertemente enfatizado"
+
+#: view/SemanticMarkupEdition.cpp:68
+msgctxt "@info:whatsthis"
+msgid ""
+"Phrase tag to strongly emphasize a word or phrase in the text.<nl/>Example: "
+"<emphasis strong=\"1\">strongly emphasized text</emphasis>"
+msgstr ""
+"Etiqueta de frase para enfatizar fuertemente una palabra o frase en el texto."
+"<nl/>Ejemplo: <emphasis strong=\"1\">texto fuertemente enfatizado</emphasis>"
+
+#: view/SemanticMarkupEdition.cpp:78
+msgctxt "@info:tooltip"
+msgid "Filename or path"
+msgstr "Nombre de archivo o ruta"
+
+#: view/SemanticMarkupEdition.cpp:80
+msgctxt "@info:whatsthis"
+msgid ""
+"Phrase tag for file or folder name or path.<nl/>The path separators will be "
+"transformed into what is native to the platform.<nl/>Example: <filename>/"
+"home/user/Music/song.ogg</filename>"
+msgstr ""
+"Etiqueta de frase para rutas o nombres de archivos o de carpetas.<nl/>Los "
+"separadores de ruta se transformarán en los que sean nativos de la "
+"plataforma.<nl/>Ejemplo: <filename>/home/usuario/Música/canción.ogg</"
+"filename>"
+
+#: view/SemanticMarkupEdition.cpp:92
+msgctxt "@info:tooltip"
+msgid "GUI interface element"
+msgstr "Elemento de la interfaz gráfica de usuario"
+
+#: view/SemanticMarkupEdition.cpp:94
+msgctxt "@info:whatsthis"
+msgid ""
+"Phrase tag for paths to GUI interface elements.<nl/>If there is more than "
+"one element in the path, use \"|\" to delimit elements, which will be "
+"converted into canonical delimiter.<nl/>Example: <interface>File|Open</"
+"interface>"
+msgstr ""
+"Etiqueta de frase para rutas a elementos de la interfaz gráfica de usuario."
+"<nl/>Si hay más de un elemento en la ruta, utiliza \"|\" para delimitar los "
+"elementos, y éste será convertido al delimitador canónico.<nl/>Ejemplo: "
+"<interface>Archivo|Abrir</interface>"
+
+#: view/SemanticMarkupEdition.cpp:105
+msgctxt "@info:tooltip"
+msgid "Link to URL or widget"
+msgstr "Enlace a una URL o a un widget"
+
+#: view/SemanticMarkupEdition.cpp:107
+msgctxt "@info:whatsthis"
+msgid ""
+"Phrase tag to link to a URL-addressable resource.<nl/>Widgets in the target "
+"application interface can be linked using <emphasis>widget:"
+"theObjectNameOfTheWidget</emphasis><nl/>Example: <link url=\"http://www.kde."
+"org\">a link</link>"
+msgstr ""
+"Etiqueta de frase para enlaces a recursos direccionables mediante una URL."
+"<nl/>Se puede enlazar a widgets de la interfaz de la aplicación objetivo "
+"mediante <emphasis>widget:elNombreDeObjetoDelWidget</emphasis><nl/>Ejemplo: "
+"<link url=\"http://www.kde.org\">un enlace</link>"
+
+#: view/SemanticMarkupEdition.cpp:116
+msgctxt "@info:tooltip"
+msgid "Line break"
+msgstr "Salto de línea"
+
+#: view/SemanticMarkupEdition.cpp:118
+msgctxt "@info:whatsthis"
+msgid "Phrase tag for line breaks.<nl/>Example: line<nl/>break"
+msgstr ""
+"Etiqueta de frase para saltos de línea.<nl/>Ejemplo: salto de<nl/>línea"
+
+#: view/SemanticMarkupEdition.cpp:127
+msgctxt "@info:tooltip"
+msgid "Combination of keys to press"
+msgstr "Combinación de teclas a pulsar"
+
+#: view/SemanticMarkupEdition.cpp:129
+msgctxt "@info:whatsthis"
+msgid ""
+"Phrase tag for combinations of keys to press.<nl/>Separate the keys by \"+\" "
+"or \"-\", and the shortcut will be converted into canonical form.<nl/"
+">Example: <shortcut>Ctrl+N</shortcut>"
+msgstr ""
+"Etiqueta de frase para combinaciones de teclas a pulsar.<nl/>Separa las "
+"teclas mediante \"+\" o \"-\", y el atajo de teclado se convertirá a la "
+"forma canónica.<nl/>Ejemplo: <shortcut>Ctrl+N</shortcut>"
+
+#: view/SemanticMarkupEdition.cpp:140
+msgctxt "@info:tooltip"
+msgid "Paragraph"
+msgstr "Párrafo"
+
+#: view/SemanticMarkupEdition.cpp:142
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Structure tag for text paragraphs.<nl/>Example: one paragraph</"
+"para><para>Other paragraph</para>"
+msgstr ""
+"<para>Etiqueta de estructura para párrafos de texto.<nl/>Ejemplo: un "
+"párrafo</para><para>Otro párrafo</para>"
+
+#: view/SemanticMarkupEdition.cpp:150
+msgctxt "@info:tooltip"
+msgid "List of items"
+msgstr "Lista de elementos"
+
+#: view/SemanticMarkupEdition.cpp:152
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Structure tag for lists of items.<nl/>Can contain only &lt;item&gt; as "
+"subtags. List is considered an element of the paragraph, so the &lt;list&gt; "
+"must be found inside &lt;para&gt;.<nl/>Example: <list>            <item>One "
+"item</item>            <item>Other item</item>         </list></para>"
+msgstr ""
+"<para>Etiqueta de estructura para listas de elementos.<nl/>La única etiqueta "
+"hija que puede contener es &lt;item&gt;. Las listas se consideran elementos "
+"de un párrafo, por lo que &lt;list&gt; debe aparecer dentro de &lt;para&gt;."
+"<nl/>Ejemplo: <list>            <item>Un elemento</item>            "
+"<item>Otro elemento</item>         </list></para>"
+
+#: view/SemanticMarkupEdition.cpp:166
+msgctxt "@info:tooltip"
+msgid "List items"
+msgstr "Elementos de una lista"
+
+#: view/SemanticMarkupEdition.cpp:168
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Structure tag for list items.<nl/>Example: <list>            <item>One "
+"item</item>            <item>Other item</item>         </list></para>"
+msgstr ""
+"<para>Etiqueta de estructura para elementos de una lista.<nl/>Ejemplo: "
+"<list>            <item>Un elemento</item>            <item>Otro elemento</"
+"item>         </list></para>"
+
+#: view/StepCustomCodeWidget.cpp:40
+msgctxt "@title"
+msgid "Step setup code"
+msgstr "Código de inicialización del paso"
+
+#: view/StepCustomCodeWidget.cpp:41
+msgctxt "@title"
+msgid "Set the step setup code"
+msgstr "Establecer el código de inicialización del paso"
+
+#: view/StepCustomCodeWidget.cpp:42
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Set the code to be executed when the tutorials passes to the step.</"
+"para><para>The code will be written as is to the setup of the step, after "
+"the setup code generated automatically by the editor. This means that the "
+"code must be written in the same programming language the tutorial will be "
+"exported to.</para>"
+msgstr ""
+"<para>Establece el código que se ejecutará cuando el tutorial cambie al paso."
+"</para><para>El código se escribirá tal cuál en la inicialización del paso, "
+"tras el código de inicialización generado automáticamente por el editor. "
+"Esto quiere decir que el código debe estar escrito en el mismo lenguaje de "
+"programación que en el que se exportará el tutorial.</para>"
+
+#: view/StepCustomCodeWidget.cpp:51
+msgctxt "@title"
+msgid "Step tear down code"
+msgstr "Código de finalización del paso"
+
+#: view/StepCustomCodeWidget.cpp:52
+msgctxt "@title"
+msgid "Set the step tear down code"
+msgstr "Establecer el código de finalización del paso"
+
+#: view/StepCustomCodeWidget.cpp:53
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Set the code to be executed when the tutorial changes from this step "
+"to another.</para><para>The code will be written as is to the tear down of "
+"the step, before the tear down code generated automatically by the editor. "
+"This means that the code must be written in the same programming language "
+"the tutorial will be exported to.</para>"
+msgstr ""
+"<para>Establece el código que se ejecutará cuando el tutorial cambie de este "
+"paso a otro.</para><para>El código se escribirá tal cuál en la finalización "
+"del paso, tras el código de finalización generado automáticamente por el "
+"editor. Esto quiere decir que el código debe estar escrito en el mismo "
+"lenguaje de programación que en el que se exportará el tutorial.</para>"
+
+#: view/StepTreeItem.cpp:56
+msgctxt "@item"
+msgid "(id not set)"
+msgstr "(identificador no establecido)"
+
+#: view/StepTreeItem.cpp:59
+msgctxt "@item Noun, a step in a tutorial"
+msgid "Step %1"
+msgstr "Paso %1"
+
+#: view/StepTreeItem.cpp:94
+msgctxt "@item"
+msgid "(text not set)"
+msgstr "(texto no establecido)"
+
+#: view/StepTreeItem.cpp:98
+msgctxt "@item"
+msgid "Text: %1"
+msgstr "Texto: %1"
+
+#: view/StepTreeItem.cpp:106 view/TutorialTreeItem.cpp:119
+msgctxt "@item"
+msgid "Setup:"
+msgstr "Inicialización:"
+
+#: view/StepTreeItem.cpp:116 view/TutorialTreeItem.cpp:129
+msgctxt "@item"
+msgid "Tear down:"
+msgstr "Finalización:"
+
+#: view/TargetApplicationView.cpp:100
+msgctxt "@title:window"
+msgid "Problem starting the target application"
+msgstr "Problema arrancando la aplicación objetivo"
+
+#: view/TargetApplicationView.cpp:105
+msgctxt "@label"
+msgid ""
+"The selected application could not be executed. Check the executable file "
+"permissions."
+msgstr ""
+"No se pudo ejecutar la aplicación seleccionada. Comprueba los permisos del "
+"archivo ejecutable."
+
+#: view/TargetApplicationView.cpp:108
+msgctxt "@label"
+msgid ""
+"The selected application does not seem to have the KTutorial editor support "
+"module enabled. This can happen because the application does not use "
+"KTutorial, or because it took it too much time to start."
+msgstr ""
+"La aplicación seleccionada no parece tener activo el módulo de soporte para "
+"KTutorial editor. Esto puede ocurrir porque la aplicación no utiliza "
+"KTutorial, o porque le llevó demasiado tiempo arrancar."
+
+#: view/TargetApplicationView.cpp:113
+msgctxt "@label"
+msgid ""
+"Cannot connect to the D-Bus session bus.There is no way to communicate with "
+"the target application."
+msgstr ""
+"No se puede conectar con el bus de sesión de D-Bus. No hay forma de "
+"comunicarse con la aplicación objetivo."
+
+#: view/TutorialCustomCodeWidget.cpp:41
+msgctxt "@title"
+msgid "Tutorial setup code"
+msgstr "Código de inicialización del tutorial"
+
+#: view/TutorialCustomCodeWidget.cpp:42
+msgctxt "@title"
+msgid "Set the tutorial setup code"
+msgstr "Establecer el código de inicialización del tutorial"
+
+#: view/TutorialCustomCodeWidget.cpp:43
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Set the code to be executed when the tutorial starts.</para><para>The "
+"code will be written as is to the setup of the tutorial, after the setup "
+"code generated automatically by the editor. This means that the code must be "
+"written in the same programming language the tutorial will be exported to.</"
+"para>"
+msgstr ""
+"<para>Establece el código que se ejecutará cuando el tutorial comience.</"
+"para><para>El código se escribirá tal cuál en la inicialización del "
+"tutorial, tras el código de inicialización generado automáticamente por el "
+"editor. Esto quiere decir que el código debe estar escrito en el mismo "
+"lenguaje de programación que en el que se exportará el tutorial.</para>"
+
+#: view/TutorialCustomCodeWidget.cpp:52
+msgctxt "@title"
+msgid "Tutorial tear down code"
+msgstr "Código de finalización del tutorial"
+
+#: view/TutorialCustomCodeWidget.cpp:53
+msgctxt "@title"
+msgid "Set the tutorial tear down code"
+msgstr "Establecer el código de finalización del tutorial..."
+
+#: view/TutorialCustomCodeWidget.cpp:54
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Set the code to be executed when the tutorial finishes.</"
+"para><para>The code will be written as is to the tear down of the tutorial, "
+"before the tear down code generated automatically by the editor. This means "
+"that the code must be written in the same programming language the tutorial "
+"will be exported to.</para>"
+msgstr ""
+"<para>Establece el código que se ejecutará cuando el tutorial termine.</"
+"para><para>El código se escribirá tal cuál en la finalización del tutorial, "
+"tras el código de finalización generado automáticamente por el editor. Esto "
+"quiere decir que el código debe estar escrito en el mismo lenguaje de "
+"programación que en el que se exportará el tutorial.</para>"
+
+#: view/TutorialTreeItem.cpp:57
+msgctxt "@item"
+msgid "Tutorial"
+msgstr "Tutorial"
+
+#: view/TutorialTreeItem.cpp:60
+msgctxt "@item"
+msgid "Tutorial %1"
+msgstr "Tutorial %1"
+
+#: view/TutorialTreeItem.cpp:80
+msgctxt "@item"
+msgid "(name not set)"
+msgstr "(nombre no establecido)"
+
+#: view/TutorialTreeItem.cpp:93
+msgctxt "@item Noun, the name of a tutorial"
+msgid "Name: %1"
+msgstr "Nombre: %1"
+
+#: view/TutorialTreeItem.cpp:97
+msgctxt "@item"
+msgid "(description not set)"
+msgstr "(descripción no establecida)"
+
+#: view/TutorialTreeItem.cpp:101
+msgctxt "@item"
+msgid "Description: %1"
+msgstr "Descripción: %1"
+
+#: view/TutorialTreeItem.cpp:109
+msgctxt "@item"
+msgid "License:"
+msgstr "Licencia:"
+
+#: view/WaitForComposedTreeItem.cpp:46
+msgctxt "@item"
+msgid "When all the contained conditions match"
+msgstr "Cuando todas las condiciones contenidas se cumplan"
+
+#: view/WaitForComposedTreeItem.cpp:49
+msgctxt "@item"
+msgid "When any of the contained conditions match"
+msgstr "Cuando alguna de las condiciones contenidas se cumpla"
+
+#: view/WaitForEventTreeItem.cpp:40 view/WaitForSignalTreeItem.cpp:40
+msgctxt "@item"
+msgid "(object not set)"
+msgstr "(objeto no establecido)"
+
+#: view/WaitForEventTreeItem.cpp:47
+msgctxt "@item"
+msgid "(event not set)"
+msgstr "(evento no establecido)"
+
+#: view/WaitForEventTreeItem.cpp:52
+msgctxt "@item"
+msgid "When the event %1 is received by object %2"
+msgstr "Cuando se reciba el evento %1 en el objeto %2"
+
+#: view/WaitForNotTreeItem.cpp:39
+msgctxt "@item"
+msgid "The contained condition can't have been met"
+msgstr "La condición contenida no se puede haber cumplido"
+
+#: view/WaitForPropertyTreeItem.cpp:42 view/WaitForWindowTreeItem.cpp:39
+msgctxt "@item"
+msgid "(object name not set)"
+msgstr "(nombre de objeto no establecido)"
+
+#: view/WaitForPropertyTreeItem.cpp:49
+msgctxt "@item"
+msgid "(property not set)"
+msgstr "(propiedad no establecida)"
+
+#: view/WaitForPropertyTreeItem.cpp:56
+msgctxt "@item"
+msgid "(value not set)"
+msgstr "(valor no establecido)"
+
+#: view/WaitForPropertyTreeItem.cpp:61
+msgctxt "@item"
+msgid "When the property %1 in the object %2 has the value %3"
+msgstr "Cuando la propiedad %1 del objeto %2 tenga el valor %3"
+
+#: view/WaitForSignalTreeItem.cpp:47
+msgctxt "@item"
+msgid "(signal not set)"
+msgstr "(señal no establecida)"
+
+#: view/WaitForSignalTreeItem.cpp:52
+msgctxt "@item"
+msgid "When the signal %1 is emitted by object %2"
+msgstr "Cuando se emita la señal %1 por el objeto %2"
+
+#: view/WaitForStepActivationTreeItem.cpp:34
+msgctxt "@item"
+msgid "When the step is activated"
+msgstr "Cuando se active el paso"
+
+#: view/WaitForWindowTreeItem.cpp:44
+msgctxt "@item"
+msgid "When the window %1 is shown"
+msgstr "Cuando se muestre la ventana %1"
+
+#: rc.cpp:3
+msgctxt "@title:menu"
+msgid "Tutorial"
+msgstr "Tutorial"
+
+#: rc.cpp:6
+msgctxt "@title:menu Noun, a step in a tutorial"
+msgid "Step"
+msgstr "Paso"
+
+#: rc.cpp:9
+msgctxt "@title:menu Noun, a reaction in a step"
+msgid "Reaction"
+msgstr "Reacción"
+
+#: rc.cpp:12
+msgctxt "@title:menu"
+msgid "Panels"
+msgstr "Paneles"
+
+#: rc.cpp:15
+msgctxt "@title:menu"
+msgid "Main Toolbar"
+msgstr "Barra de herramientas principal"
+
+#: rc.cpp:18
+msgctxt "@title"
+msgid "Set tutorial license"
+msgstr "Establecer la licencia del tutorial"
+
+#: rc.cpp:21
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Set the license of the tutorial.</para>\n"
+"<para>The license is copied, commented, to the top of the exported tutorial "
+"file. That is, you don't have to worry about how comments are written in the "
+"programming language the tutorial will be exported to. Just set the pure "
+"text of the license, and the editor will take care of adding the necessary "
+"characters in each line to mark them as comments instead of source code.</"
+"para>"
+msgstr ""
+"<para>Establece la licencia del tutorial.</para>\n"
+"<para>La licencia se copia, comentada, en la parte superior del archivo al "
+"que se exporta el tutorial. Es decir, no tienes que preocuparte de cómo se "
+"escriben los comentarios en el lenguaje de programación en el que se "
+"exportará. Simplemente establece el texto puro de la licencia, y el editor "
+"se encargará de añadirle los caracteres necesarios en cada línea para "
+"indicar que son comentarios en lugar de código fuente.</para>"
+
+#: rc.cpp:25
+msgctxt "@title"
+msgid "License text"
+msgstr "Texto de la licencia"
+
+#: rc.cpp:28
+msgctxt "@title"
+msgid "New condition to wait for"
+msgstr "Nueva condición por la que esperar"
+
+#: rc.cpp:31
+msgctxt "@info:whatsthis"
+msgid "<para>Selects the type of the new condition.</para>"
+msgstr "<para>Selecciona el tipo de la nueva condición.</para>"
+
+#: rc.cpp:34
+msgctxt "@title"
+msgid "Condition to wait for type"
+msgstr "Tipo de la condición por la que esperar"
+
+#: rc.cpp:37
+msgctxt "@label:listbox"
+msgid "Type:"
+msgstr "Tipo:"
+
+#: rc.cpp:40
+msgctxt "@item:inlistbox"
+msgid "All the contained conditions must match"
+msgstr "Todas las condiciones contenidas deben cumplirse"
+
+#: rc.cpp:43
+msgctxt "@item:inlistbox"
+msgid "Any of the contained conditions must match"
+msgstr "Alguna de las condiciones contenidas debe cumplirse"
+
+#: rc.cpp:46
+msgctxt "@item:inlistbox"
+msgid "The contained condition can't match"
+msgstr "La condición contenida no puede cumplirse"
+
+#: rc.cpp:52
+msgctxt "@item:inlistbox"
+msgid "The specified event is received"
+msgstr "Se recibe el evento especificado"
+
+#: rc.cpp:58
+msgctxt "@item:inlistbox"
+msgid "The specified property has certain value"
+msgstr "La propiedad especificada tiene cierto valor"
+
+#: rc.cpp:61
+msgctxt "@item:inlistbox"
+msgid "The step is activated"
+msgstr "Se activa el paso"
+
+#: rc.cpp:67
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Edit the response of a step to certain trigger.</para>\n"
+"<para>When a step is active, the actions of the user can trigger a response "
+"in the tutorial. A trigger can be an option in the step selected by the "
+"user, or a condition that was met. The response can be changing to another "
+"step, or executing some custom code.</para>"
+msgstr ""
+"<para>Editar la respuesta de un paso ante cierto activador.</para>\n"
+"<para>Cuando un paso está activo, las acciones del usuario pueden provocar "
+"una respuesta en el tutorial. Un activador puede ser una opción en el paso "
+"seleccionada por el usuario, o una condición que se cumplió. La respuesta "
+"puede ser cambiar a otro paso, o ejecutar cierto código propio.</para>"
+
+#: rc.cpp:71
+msgctxt "@title:group Something that causes a response"
+msgid "Trigger"
+msgstr "Activador"
+
+#: rc.cpp:74
+msgctxt "@option:radio"
+msgid "Option:"
+msgstr "Opción:"
+
+#: rc.cpp:77
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>The name of the option.</para>\n"
+"<para>An option with this name will be added to the step, so the same name "
+"set here will be shown to the user.</para>"
+msgstr ""
+"<para>El nombre de la opción.</para>\n"
+"<para>Una opción con ese nombre se añadirá al paso, por lo que el mismo "
+"nombre establecido aquí será el mostrado al usuario.</para>"
+
+#: rc.cpp:81
+msgctxt "@option:radio"
+msgid "Condition met:"
+msgstr "Condición cumplida:"
+
+#: rc.cpp:84
+msgctxt "@title:group"
+msgid "Response"
+msgstr "Respuesta"
+
+#: rc.cpp:87
+msgctxt "@option:radio"
+msgid "Change to step:"
+msgstr "Cambiar al paso:"
+
+#: rc.cpp:90
+msgctxt "@info:whatsthis"
+msgid "<para>The id of the step to change to.</para>"
+msgstr "<para>El identificador del paso al que cambiar.</para>"
+
+#: rc.cpp:93
+msgctxt "@option:radio"
+msgid "Custom response code:"
+msgstr "Código propio de respuesta:"
+
+#: rc.cpp:96
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>The custom code to execute.</para>\n"
+"<para>The code will be written as is into a new function called when the "
+"response is triggered. This means that the code must be written in the same "
+"programming language the tutorial will be exported to.</para>\n"
+"<para>Also note that you only have to provide the body of the function. The "
+"signature is automatically generated.</para>"
+msgstr ""
+"<para>El código propio a ejecutar.</para>\n"
+"<para>El código se escribirá tal cuál en una nueva función que se ejecutará "
+"cuando se cause la respuesta. Esto quiere decir que el código debe estar "
+"escrito en el mismo lenguaje de programación que en el que se exportará el "
+"tutorial.</para>\n"
+"<para>Además, ten en cuenta que sólo tienes que especificar el cuerpo de la "
+"función. La signatura se genera automáticamente.</para>"
+
+#: rc.cpp:101
+msgctxt "@title:window"
+msgid "Target application objects"
+msgstr "Objetos de la aplicación objetivo"
+
+#: rc.cpp:104
+msgctxt "@info:whatsthis"
+msgid ""
+"<p>Chooser for objects in the target application.</p>\n"
+"<p>The objects shown in the list are all the objects accessible through "
+"KTutorial. They are shown in a tree structure to represent the parent and "
+"child relationships the objects have.</p>\n"
+"<p>Note, however, that not all the objects have a name set in the target "
+"application. KTutorial needs to know the name of the object to find it, so "
+"if an object does not have a name KTutorial will not be able to use it.</p>"
+msgstr ""
+"<p>Selector para objetos de la aplicación objetivo.</p>\n"
+"<p>Los objetos mostrados en la lista son todos los objetos a lo que puede "
+"accederse mediante KTutorial. Se muestran en una estructura de árbol para "
+"reflejar las relaciones de parentesco que tienen esos objetos.</p>\n"
+"<p>Ten en cuenta, no obstante, que no todos los objetos tienen un nombre "
+"establecido en la aplicación objetivo. KTutorial necesita saber el nombre "
+"del objeto para encontrarlo, por lo que si un objeto no tiene nombre "
+"KTutorial no podrá utilizarlo.</p>"
+
+#: rc.cpp:109
+msgctxt "@info:whatsthis"
+msgid ""
+"<p>Filters the objects shown in the list.</p>\n"
+"\n"
+"<p>Note, however, that if an object has to be shown in the list its parent "
+"object is also shown even if it should have been filtered.</p>"
+msgstr ""
+"<p>Filtra los objetos mostrados en la lista.</p>\n"
+"\n"
+"<p>Ten en cuenta, no obstante, que si se muestra un objeto en la lista "
+"también se mostrará su objeto padre, incluso si éste debería estar filtrado."
+"</p>"
+
+#: rc.cpp:114
+msgctxt "@title:group"
+msgid "Filters"
+msgstr "Filtros"
+
+#: rc.cpp:117
+msgctxt "@option:check"
+msgid "Show only named objects"
+msgstr "Mostrar sólo objetos con nombre"
+
+#: rc.cpp:120
+msgctxt "@option:check"
+msgid "Show only widgets"
+msgstr "Mostrar sólo widgets"
+
+#: rc.cpp:123
+msgctxt "@title"
+msgid "Choose the remote object name"
+msgstr "Escoger el nombre del objeto remoto"
+
+#: rc.cpp:126
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Choose the name of the remote object.</para>\n"
+"<para>If the name is known, it can be directly written. Else, it can be "
+"chosen from all the objects currently available in the target application.</"
+"para>"
+msgstr ""
+"<para>Escoger el nombre del objeto remoto.</para>\n"
+"<para>Si se sabe el nombre se puede escribir directamente. Sino, puede "
+"escogerse de entre todos los objetos disponibles actualmente en la "
+"aplicación objetivo.</para>"
+
+#: rc.cpp:130
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>The name of the QObject.</para>\n"
+"<para>Note that the name is not the class of the object, but the string "
+"returned by its objectName() method.</para>"
+msgstr ""
+"<para>El nombre del QObject.</para>\n"
+"<para>Ten en cuenta que el nombre no es la clase del objeto, sino la cadena "
+"devuelta por su método objectName().</para>"
+
+#: rc.cpp:134
+msgctxt "@info:tooltip"
+msgid ""
+"Choose the object name from a list with all the objects in the target "
+"application"
+msgstr ""
+"Escoger el nombre del objeto desde una lista con todos los objetos de la "
+"aplicación objetivo"
+
+#: rc.cpp:137
+msgctxt "@info:whatsthis"
+msgid ""
+"<p>Opens the list with all the objects in the target application to select "
+"the object from them.</p>\n"
+"<p>The object list must be gotten from a running application. The first time "
+"that you try to choose the object name you will be asked for the target "
+"application of the tutorial. A new instance of the application will then be "
+"started to know the available objects.</p>\n"
+"<p>The next time that you try to choose the object name the already running "
+"application will be used. If it is quitted, a new instance will be started "
+"again.</p>\n"
+"<p>When the target application is started all the KTutorial editor windows, "
+"except the one with the list, will be hidden. When the list is closed, the "
+"windows will be shown again.</p>"
+msgstr ""
+"<p>Abre la lista con todos los objetos de la aplicación objetivo para "
+"seleccionar el objeto de entre ellos.</p>\n"
+"<p>La lista de objetos debe obtenerse de una aplicación en funcionamiento. "
+"La primera vez que intentes escoger el nombre del objeto se te preguntará "
+"por la aplicación objetivo del tutorial. Entonces una nueva instancia de la "
+"aplicación se arrancará para saber qué objetos están disponibles.</p>\n"
+"<p>La siguiente vez que intentes escoger el nombre del objeto se utilizará "
+"la aplicación que ya está en funcionamiento. Si se sale de ella, una nueva "
+"instancia se arrancará de nuevo.</p>\n"
+"<p>Cuando la aplicación objetivo arranque todas las ventanas de KTutorial "
+"editor, salvo la que tiene la lista, se ocultarán. Cuando se cierre la "
+"lista, las ventanas volverán a mostrarse de nuevo.</p>"
+
+#: rc.cpp:143
+msgctxt "@action:button"
+msgid "Choose..."
+msgstr "Escoger..."
+
+#: rc.cpp:146
+msgctxt "@title"
+msgid "URL for <emphasis>link</emphasis> element"
+msgstr "URL para el elemento <emphasis>link</emphasis>"
+
+#: rc.cpp:149
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Set the <emphasis>url</emphasis> attribute for the <emphasis>link</"
+"emphasis> semantic element.</para>\n"
+"\n"
+"<para>Any URL can be set in the <interface>Generic</interface> field. For "
+"example, the URL of a webpage or the URL to link to a widget.</para>\n"
+"\n"
+"<para>However, to link to a widget it is better to just write the object "
+"name of the desired widget in the <interface>Widget</interface> field. "
+"Moreover, that field provides also text completion for the names and a "
+"dialog to choose the widget from a running target application.</para>\n"
+"\n"
+"<para>These advanced features, though, are not available in every system; if "
+"<application>KTutorial editor</application> was not built with "
+"<application>QtDBus</application> support only a plain text line will be "
+"shown. Again, only the name has to be written in the text line for the "
+"widget; <emphasis>widget:</emphasis> is automatically added to the URL when "
+"the dialog is accepted.</para>"
+msgstr ""
+"<para>Establecer el atributo <emphasis>url</emphasis> del elemento semántico "
+"<emphasis>link</emphasis>.</para>\n"
+"\n"
+"<para>Se puede establecer cualquier URL en el campo <interface>Genérica</"
+"interface>. Por ejemplo, la URL de una página web o la URL para enlazar a un "
+"widget.</para>\n"
+"\n"
+"<para>Sin embargo, para enlazar a un widget es mejor escribir en el campo "
+"<interface>Widget</interface> simplemente el nombre de objeto del widget al "
+"que se quiere enlazar. Además, dicho campo proporciona completado de texto "
+"para los nombres y un diálogo para escoger el widget desde una aplicación "
+"objetivo en funcionamiento.</para>\n"
+"\n"
+"<para>Estas características avanzadas, no obstante, no están disponibles en "
+"todos los sistemas; si <application>KTutorial editor</application> no se "
+"construyó con soporte para <application>QtDBus</application> sólo se "
+"mostrará una simple línea de texto. En este caso sigue siendo suficiente con "
+"escribir únicamente el nombre en la línea de texto para el widget; "
+"<emphasis>widget:</emphasis> se añade automáticamente a la URL cuando se "
+"acepta el diálogo.</para>"
+
+#: rc.cpp:158
+msgctxt "@option:radio Generic link URL"
+msgid "Generic"
+msgstr "Genérica"
+
+#: rc.cpp:161
+msgctxt "@option:radio Widget link URL"
+msgid "Widget"
+msgstr "Widget"
+
+#: rc.cpp:164
+msgctxt "@title"
+msgid "Set step data"
+msgstr "Establecer datos del paso"
+
+#: rc.cpp:167
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Set the id and the text of the step</para>\n"
+"<para>The text is shown to the user when the tutorial changes to that step.</"
+"para>\n"
+"<para>On the other hand, the id is only used internally and never shown to "
+"the user. It is used to identify the steps in the tutorial when it has to "
+"change from one to step to another.</para>"
+msgstr ""
+"<para>Establecer el identificador y el texto del paso</para>\n"
+"<para>El texto se muestra al usuario cuando el tutorial cambia a ese paso.</"
+"para>\n"
+"<para>En cambio, el identificador sólo se utiliza internamente y nunca se "
+"muestra al usuario. Se utiliza para identificar los pasos en el tutorial "
+"cuando tiene que cambiar de un paso a otro.</para>"
+
+#: rc.cpp:172
+msgctxt "@title"
+msgid "Step data"
+msgstr "Datos del paso"
+
+#: rc.cpp:175
+msgctxt "@label:textbox"
+msgid "Id:"
+msgstr "Identificador:"
+
+#: rc.cpp:178
+msgctxt "@label:textbox"
+msgid "Text:"
+msgstr "Texto:"
+
+#: rc.cpp:181
+msgctxt "@title"
+msgid "Set tutorial information"
+msgstr "Establecer la información del tutorial"
+
+#: rc.cpp:184
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Set the name and description of the tutorial.</para>\n"
+"<para>The name and the description are shown in the dialog where the "
+"tutorial to be started is selected.</para>"
+msgstr ""
+"<para>Establecer el nombre y la descripción del tutorial.</para>\n"
+"<para>El nombre y la descripción se muestran en el diálogo en el que se "
+"selecciona qué tutorial se empezará.</para>"
+
+#: rc.cpp:188
+msgctxt "@title"
+msgid "Tutorial information"
+msgstr "Información del tutorial"
+
+#: rc.cpp:191
+msgctxt "@label:textbox Noun, the name of a tutorial"
+msgid "Name:"
+msgstr "Nombre:"
+
+#: rc.cpp:194
+msgctxt "@label:textbox"
+msgid "Description:"
+msgstr "Descripción:"
+
+#: rc.cpp:197
+msgctxt "@title"
+msgid "Edit event to wait for"
+msgstr "Editar el evento por el que esperar"
+
+#: rc.cpp:200
+msgctxt "@info:whatsthis"
+msgid "<para>Set the receiver name and the event to wait for.</para>"
+msgstr ""
+"<para>Establece el nombre del receptor y el evento por el que esperar.</para>"
+
+#: rc.cpp:203
+msgctxt "@title:group"
+msgid "Wait for event"
+msgstr "Esperar por el evento"
+
+#: rc.cpp:206
+msgctxt "@label:textbox"
+msgid "Receiver name:"
+msgstr "Nombre del receptor:"
+
+#: rc.cpp:209
+msgctxt "@label:textbox"
+msgid "Event name:"
+msgstr "Nombre del evento:"
+
+#: rc.cpp:212
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>The name of the QObject that receives the event.</para>\n"
+"<para>Note that the name is not the class of the object, but the string "
+"returned by its objectName() method.</para>"
+msgstr ""
+"<para>El nombre del QObject que recibe el evento.</para>\n"
+"<para>Ten en cuenta que el nombre no es la clase del objeto, sino la cadena "
+"devuelta por su método objectName().</para>"
+
+#: rc.cpp:216
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>The name of the event.</para>\n"
+"<para>The name must not contain the \"QEvent::\" prefix, only the pure name "
+"of the event.</para>"
+msgstr ""
+"<para>El nombre del evento.</para>\n"
+"<para>El nombre no debe contener el prefijo \"QEvent::\", sólo el nombre "
+"puro del evento.</para>"
+
+#: rc.cpp:220
+msgctxt "@title"
+msgid "Edit property to wait for"
+msgstr "Editar la propiedad por la que esperar"
+
+#: rc.cpp:223
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Set the object name, the property name and the value to wait for.</"
+"para>"
+msgstr ""
+"<para>Establece el nombre del objeto, el nombre de la propiedad y el valor "
+"por el que esperar.</para>"
+
+#: rc.cpp:226
+msgctxt "@title:group"
+msgid "Wait for property"
+msgstr "Esperar por la propiedad"
+
+#: rc.cpp:229
+msgctxt "@label:textbox"
+msgid "Object name:"
+msgstr "Nombre del objeto:"
+
+#: rc.cpp:232
+msgctxt "@label:textbox"
+msgid "Property name:"
+msgstr "Nombre de la propiedad:"
+
+#: rc.cpp:235
+msgctxt "@label:textbox"
+msgid "Value:"
+msgstr "Valor:"
+
+#: rc.cpp:238
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>The name of the QObject that contains the property.</para>\n"
+"<para>Note that the name is not the class of the object, but the string "
+"returned by its objectName() method.</para>"
+msgstr ""
+"<para>El nombre del QObject que contiene la propiedad.</para>\n"
+"<para>Ten en cuenta que el nombre no es la clase del objeto, sino la cadena "
+"devuelta por su método objectName().</para>"
+
+#: rc.cpp:242
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>The name of the property.</para>\n"
+"<para>Not every property can be used to wait until its value changes to the "
+"expected one. Only properties that have a notify signal can be used with "
+"that purpose.</para>\n"
+"<para>Properties that do not have a notify signal can still be used to "
+"enrich other conditions (for example, waiting for a signal to be emitted but "
+"only changing to the next step if, in addition, some property has some "
+"value), but they can not be used alone as single conditions in a reaction.</"
+"para>"
+msgstr ""
+"<para>El nombre de la propiedad.</para>\n"
+"<para>No todas las propiedades se pueden usar para esperar hasta que su "
+"valor cambie al esperado. Sólo se pueden utilizar para dicho propósito las "
+"propiedades que tienen una señal de notificación.</para>\n"
+"<para>Aún con todo, las propiedades que no tienen una señal de notificación "
+"pueden usarse para enriquecer otras condiciones (por ejemplo, esperar a que "
+"se emita una señal pero cambiar al siguiente paso sólo si, además, cierta "
+"propiedad tiene cierto valor), pero no pueden utilizarse en solitario como "
+"las únicas condiciones de una reacción.</para>"
+
+#: rc.cpp:247
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>The expected value of the property.</para>\n"
+"<para>The value is copied as is to the script. That means that it has to be "
+"written with the syntax of the script language that the tutorial is going to "
+"be exported to. For example, if the tutorial is going to be exported to "
+"Javascript and the value to wait for is a text, the value has to be written "
+"as <em>\"The expected text\"</em> (wrapped in quotes).</para>\n"
+"<para>The value can even contain a programming expression in the script "
+"language. For example, something like <em>t.i18nc(\"@item:inlistbox\", "
+"\"Certain item text\")</em> would be used to wait for the localized text of "
+"an item in a combo box.</para>"
+msgstr ""
+"<para>El valor esperado de la propiedad.</para>\n"
+"<para>El valor se copia tal cuál en el script. Esto quiere decir que tiene "
+"que escribirse con la sintaxis del lenguaje de script al que se va a "
+"exportar el tutorial. Por ejemplo, si el tutorial se va a exportar en "
+"Javascript y el valor por el que esperar es un texto, el valor tiene que "
+"escribirse así: <em>\"El texto esperado\"</em> (es decir, entrecomillado).</"
+"para>\n"
+"<para>El valor puede contener incluso una expresión de programación en el "
+"lenguaje de script. Por ejemplo, algo similar a <em>t.i18nc(\"@item:inlistbox"
+"\", \"Certain item text\")</em> se utilizaría para esperar por el texto "
+"localizado de un elemento en una lista desplegable.</para>"
+
+#: rc.cpp:252
+msgctxt "@title"
+msgid "Edit signal to wait for"
+msgstr "Editar la señal por la que esperar"
+
+#: rc.cpp:255
+msgctxt "@info:whatsthis"
+msgid "<para>Set the emitter name and the signal to wait for.</para>"
+msgstr ""
+"<para>Establece el nombre del emisor y la señal por la que esperar.</para>"
+
+#: rc.cpp:258
+msgctxt "@title:group"
+msgid "Wait for signal"
+msgstr "Esperar por la señal"
+
+#: rc.cpp:261
+msgctxt "@label:textbox"
+msgid "Emitter name:"
+msgstr "Nombre del emisor:"
+
+#: rc.cpp:264
+msgctxt "@label:textbox"
+msgid "Signal name:"
+msgstr "Nombre de la señal:"
+
+#: rc.cpp:267
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>The name of the QObject that emits the signal.</para>\n"
+"<para>Note that the name is not the class of the object, but the string "
+"returned by its objectName() method.</para>"
+msgstr ""
+"<para>El nombre del QObject que emite la señal.</para>\n"
+"<para>Ten en cuenta que el nombre no es la clase del objeto, sino la cadena "
+"devuelta por su método objectName().</para>"
+
+#: rc.cpp:271
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>The name of the signal.</para>\n"
+"<para>The name must be written as <em>signalName(TypeOfFirstArgument, "
+"TypeOfSecondArgument, TypeOfThirdArgument...)</em>, without including "
+"<em>SIGNAL()</em> wrapping text.</para>"
+msgstr ""
+"<para>El nombre de la señal.</para>\n"
+"<para>El nombre debe estar escrito como <em>nombreDeLaSeñal"
+"(TipoDelPrimerArgumento, TipoDelSegundoArgumento, TipoDelTercerArgumento...)"
+"</em>, sin estar envuelto en el texto <em>SIGNAL()</em>.</para>"
+
+#: rc.cpp:275
+msgctxt "@title"
+msgid "Edit condition to wait for"
+msgstr "Editar la condición por la que esperar"
+
+#: rc.cpp:278
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Edit a condition to wait for until it is met.</para>\n"
+"<para>A condition can be a plain condition or a composed condition. Plain "
+"conditions wait for some specific thing to happen, for example, they wait "
+"until a signal is emitted. Composed conditions contain other conditions "
+"(plain or also composed) and wait until something happens in its contained "
+"conditions, for example, wait until all the contained conditions were met.</"
+"para>"
+msgstr ""
+"<para>Editar la condición por la que esperar hasta que se cumpla.</para>\n"
+"<para>Una condición puede ser una condición simple o una condición "
+"compuesta. Las condiciones simples esperan hasta que algo concreto ocurra, "
+"por ejemplo, esperan hasta que se emita una señal. Las condiciones "
+"compuestas contienen otras condiciones (simples o también compuestas) y "
+"esperan hasta que algo ocurra en las condiciones que contienen, por ejemplo, "
+"esperan hasta que todas las condiciones que contienen se hayan cumplido.</"
+"para>"
+
+#: rc.cpp:282
+msgctxt "@info:tooltip"
+msgid "Add a new condition"
+msgstr "Añadir una nueva condición"
+
+#: rc.cpp:285
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Adds a new condition.</para>\n"
+"<para>A condition has to be added to composed conditions, that is, "
+"conditions that contain other conditions, or as the root condition when "
+"there is no other condition.</para>"
+msgstr ""
+"<para>Añade una nueva condición.</para>\n"
+"<para>Una condición tiene que añadirse a condiciones compuestas, es decir, "
+"condiciones que contienen otras condiciones, o como la condición base cuando "
+"no hay más condiciones.</para>"
+
+#: rc.cpp:289
+msgctxt "@action:button"
+msgid "Add..."
+msgstr "Añadir..."
+
+#: rc.cpp:292
+msgctxt "@info:tooltip"
+msgid "Edit the selected condition"
+msgstr "Editar la condición seleccionada"
+
+#: rc.cpp:295
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Edits the selected condition.</para>\n"
+"<para>Only plain conditions, that is, conditions that aren't composed by "
+"other conditions, can be edited.</para>"
+msgstr ""
+"<para>Edita la condición seleccionada.</para>\n"
+"<para>Sólo las condiciones simples, es decir, las condiciones que no están "
+"compuestas por otras condiciones, pueden editarse.</para>"
+
+#: rc.cpp:299
+msgctxt "@action:button"
+msgid "Edit..."
+msgstr "Editar..."
+
+#: rc.cpp:302
+msgctxt "@info:tooltip"
+msgid "Remove the selected condition"
+msgstr "Eliminar la condición seleccionada"
+
+#: rc.cpp:305
+msgctxt "@info:whatsthis"
+msgid "Removes the selected condition."
+msgstr "Elimina la condición seleccionada."
+
+#: rc.cpp:308
+msgctxt "@action:button"
+msgid "Remove"
+msgstr "Eliminar"
+
+#: rc.cpp:311
+msgctxt "@title"
+msgid "Edit window to wait for"
+msgstr "Editar la ventana por la que esperar"
+
+#: rc.cpp:314
+msgctxt "@info:whatsthis"
+msgid "<para>Set the object name of the window to wait for.</para>"
+msgstr ""
+"<para>Establece el nombre del objeto de la ventana por la que esperar.</para>"
+
+#: rc.cpp:317
+msgctxt "@title:group"
+msgid "Wait for window"
+msgstr "Esperar por la ventana"
+
+#: rc.cpp:320
+msgctxt "@label:textbox"
+msgid "Window name:"
+msgstr "Nombre de la ventana:"
+
+#: rc.cpp:323
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>The name of the window to be shown.</para>\n"
+"<para>Note that the name is not the title of the window or its class name, "
+"but the string returned by its objectName() method.</para>\n"
+"<para>Also note that it can wait either for windows or for dialogs, not just "
+"for windows.</para>"
+msgstr ""
+"<para>El nombre de la ventana a mostrar.</para>\n"
+"<para>Ten en cuenta que el nombre no es el título de la ventana ni la clase "
+"del objeto, sino la cadena devuelta por su método objectName().</para>\n"
+"<para>Además ten en cuenta que puede esperar tanto por ventanas como por "
+"diálogos, no solo por ventanas.</para>"
+
+#: rc.cpp:326
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Daniel Calviño Sánchez"
+
+#: rc.cpp:327
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "danxuliu@gmail.com"
+
+#~ msgctxt "@title"
+#~ msgid "Select Executable"
+#~ msgstr "Seleccionar ejecutable"
+
+#~ msgctxt "@label"
+#~ msgid ""
+#~ "The receiver name can not be set, there was a problem getting the name "
+#~ "from the target application: %1"
+#~ msgstr ""
+#~ "No se puede establecer el nombre del receptor, hubo un problema "
+#~ "obteniendo el nombre desde la aplicación objetivo: %1"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<p>Opens the list with all the objects in the target application to "
+#~ "select the receiver from them.</p>\n"
+#~ "<p>The object list must be gotten from a running application. The first "
+#~ "time that you try to choose the receiver name you will be asked for the "
+#~ "target application of the tutorial. A new instance of the application "
+#~ "will then be started to know the available objects.</p>\n"
+#~ "<p>The next time that you try to choose the receiver name the already "
+#~ "running application will be used. If it is quitted, a new instance will "
+#~ "be started again.</p>\n"
+#~ "<p>When the target application is started all the KTutorial editor "
+#~ "windows, except the one with the list, will be hidden. When the list is "
+#~ "closed, the windows will be shown again.</p>"
+#~ msgstr ""
+#~ "<p>Abre la lista con todos los objetos de la aplicación objetivo para "
+#~ "seleccionar el receptor de entre ellos.</p>\n"
+#~ "<p>La lista de objetos debe obtenerse de una aplicación en "
+#~ "funcionamiento. La primera vez que intentes escoger el nombre del "
+#~ "receptor se te preguntará por la aplicación objetivo del tutorial. "
+#~ "Entonces una nueva instancia de la aplicación se arrancará para saber qué "
+#~ "objetos están disponibles.</p>\n"
+#~ "<p>La siguiente vez que intentes escoger el nombre del receptor se "
+#~ "utilizará la aplicación que ya está en funcionamiento. Si se sale de "
+#~ "ella, una nueva instancia se arrancará de nuevo.</p>\n"
+#~ "<p>Cuando la aplicación objetivo se arranca todas las ventanas de "
+#~ "KTutorial editor, salvo la que tiene la lista, se ocultarán. Cuando se "
+#~ "cierre la lista, las ventanas volverán a mostrarse de nuevo.</p>"
+
+#~ msgctxt "@item Noun, a step in a tutorial"
+#~ msgid "Step"
+#~ msgstr "Paso"
+
+#~ msgctxt "@item"
+#~ msgid "Steps:"
+#~ msgstr "Pasos:"

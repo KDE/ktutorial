@@ -1,0 +1,8 @@
+add_subdirectory(commands)
+add_subdirectory(data)
+add_subdirectory(serialization)
+if (QT_QTDBUS_FOUND)
+    add_subdirectory(targetapplication)
+endif (QT_QTDBUS_FOUND)
+add_subdirectory(util)
+add_subdirectory(view)

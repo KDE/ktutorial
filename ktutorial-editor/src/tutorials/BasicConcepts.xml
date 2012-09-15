@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tutorial name="Basic concepts">
+    <description>This tutorial shows how to design a basic tutorial for the KTutorial test application.</description>
+    <license>Copyright (C) 2010 by Daniel Calviño Sánchez &lt;danxuliu@gmail.com&gt;
+Copyright (C) 2012 by Daniel Calviño Sánchez &lt;danxuliu@gmail.com&gt;
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; If not, see &lt;http://www.gnu.org/licenses/&gt;.</license>
+    <step id="start">
+        <text>&lt;para&gt;Welcome to the tutorial to learn the basic concepts in &lt;application&gt;KTutorial editor&lt;/application&gt;.&lt;/para&gt;
+
+&lt;para&gt;When you end this tutorial you will have written a tutorial for the KTutorial test application that teaches the user how to clear the text area. First it will ask the user to write something in the text area, and then clear it using a menu item or a toolbar button.&lt;/para&gt;
+
+&lt;para&gt;We will start setting the tutorial information. This information is shown to the user in the tutorial selection dialog as a way to know the purpose of a tutorial before starting it.&lt;/para&gt;
+
+&lt;para&gt;Click the &lt;link url=&quot;widget:setTutorialInformationToolButton&quot;&gt;&lt;interface&gt;Set information&lt;/interface&gt;&lt;/link&gt; direct access in the dock panels, or in &lt;interface&gt;Edit|Tutorial|Set information...&lt;/interface&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="TutorialInformationDialog"/>
+            <nextStep id="tutorialInformationDialog"/>
+        </reaction>
+    </step>
+    <step id="tutorialInformationDialog">
+        <text>Now, set the name of the tutorial to &quot;Example&quot; and its description to &quot;Example tutorial&quot; and accept the dialog clicking in &lt;link url=&quot;widget:okButton&quot;&gt;&lt;interface&gt;Ok&lt;/interface&gt; button&lt;/link&gt;.</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="okButton" signalName="clicked()"/>
+            <nextStep id="addStartStep"/>
+        </reaction>
+    </step>
+    <step id="addStartStep">
+        <text>&lt;para&gt;Now it is time to add the first step of the tutorial. Every tutorial must have a step called &quot;start&quot;, so KTutorial can know where the tutorial starts.&lt;/para&gt;
+
+&lt;para&gt;Click the &lt;link url=&quot;widget:addStepToolButton&quot;&gt;&lt;interface&gt;Add step&lt;/interface&gt;&lt;/link&gt; direct access in the dock panels, or in &lt;interface&gt;Edit|Step|Add step...&lt;/interface&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="StepDataDialog"/>
+            <nextStep id="setStartStepData"/>
+        </reaction>
+    </step>
+    <step id="setStartStepData">
+        <text>&lt;para&gt;Set the id of the step to &lt;emphasis&gt;start&lt;/emphasis&gt; and the text to &lt;emphasis&gt;Write &amp;lt;emphasis&amp;gt;Hello world!&amp;lt;/emphasis&amp;gt; in the text area.&lt;/emphasis&gt;, then accept the dialog.&lt;/para&gt;
+
+&lt;para&gt;&lt;emphasis&gt;&amp;lt;emphasis&amp;gt;&lt;/emphasis&gt; is a special markup that is not shown in the tutorial. Instead, the text between &lt;emphasis&gt;&amp;lt;emphasis&amp;gt;&lt;/emphasis&gt; and &lt;emphasis&gt;&amp;lt;/emphasis&amp;gt;&lt;/emphasis&gt; will be written in italics.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="okButton" signalName="clicked()"/>
+            <nextStep id="addReactionToStartStep"/>
+        </reaction>
+    </step>
+    <step id="addReactionToStartStep">
+        <text>&lt;para&gt;The start step will wait until the user writes &lt;emphasis&gt;Hello world!&lt;/emphasis&gt; in the text area of the KTutorial test application.&lt;/para&gt;
+
+&lt;para&gt;For the step to do that we have to add a reaction to it. To add a reaction, in the &lt;link url=&quot;widget:centralTreeView&quot;&gt;tutorial tree view&lt;/link&gt; select the step to add the reaction to and click the &lt;link url=&quot;widget:addReactionToolButton&quot;&gt;&lt;interface&gt;Add reaction&lt;/interface&gt;&lt;/link&gt; direct access in the dock panels, or in &lt;interface&gt;Edit|Reaction|Add reaction...&lt;/interface&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="ReactionDialog"/>
+            <nextStep id="setTriggerInStartStepReaction"/>
+        </reaction>
+    </step>
+    <step id="setTriggerInStartStepReaction">
+        <text>&lt;para&gt;A reaction can be triggered when the user selects some option or when a condition is met, but not both in the same reaction (although several reactions can be added to the same step).&lt;/para&gt;
+
+&lt;para&gt;We want the step to react when something happens, that is, when a condition is met, so select the &lt;link url=&quot;widget:triggerConditionRadioButton&quot;&gt;&lt;interface&gt;condition met&lt;/interface&gt; radio button&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="triggerConditionRadioButton" signalName="clicked(bool)"/>
+            <nextStep id="addNewWaitForInStartStepReaction"/>
+        </reaction>
+    </step>
+    <step id="addNewWaitForInStartStepReaction">
+        <text>&lt;para&gt;Once the &lt;interface&gt;condition met&lt;/interface&gt; button is selected we can add a new condition to the reaction. Only one condition can be added to each reaction, although the condition can be composed of other conditions.&lt;/para&gt;
+
+&lt;para&gt;Click &lt;link url=&quot;widget:addButton&quot;&gt;&lt;interface&gt;Add...&lt;/interface&gt; button&lt;/link&gt; to show the dialog to add new conditions.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="addWaitForDialog"/>
+            <nextStep id="newWaitForSignalForStartStepReaction"/>
+        </reaction>
+    </step>
+    <step id="newWaitForSignalForStartStepReaction">
+        <text>&lt;para&gt;In the dialog you can select the type of condition to wait for.&lt;/para&gt;
+
+&lt;para&gt;There are simple and composed conditions. Simple conditions wait for something specific. Composed conditions wait for other conditions to be met.&lt;/para&gt;
+
+&lt;para&gt;In this case, as it will be explained later, we want to wait for a signal, so select &quot;The specified signal is emitted&quot; in the &lt;link url=&quot;widget:waitForTypeComboBox&quot;&gt;combobox&lt;/link&gt; and accept the dialog.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="addWaitForDialog/okButton" signalName="clicked()"/>
+            <nextStep id="editWaitForSignalInStartStepReaction"/>
+        </reaction>
+    </step>
+    <step id="editWaitForSignalInStartStepReaction">
+        <text>&lt;para&gt;Just adding the condition is not enough to define it. Which signal will it wait for? Emitted by which object? Simple conditions have to be edited after being added to set its parameters.&lt;/para&gt;
+
+&lt;para&gt;Composed conditions, on the other hand, have no parameters to be set. They are defined by its own type and its child conditions.&lt;/para&gt;
+
+&lt;para&gt;To edit a condition, select it in the &lt;link url=&quot;widget:waitForTreeView&quot;&gt;condition tree&lt;/link&gt; and then click the &lt;link url=&quot;widget:editButton&quot;&gt;&lt;interface&gt;Edit...&lt;/interface&gt; button&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="editWaitForSignalDialog"/>
+            <nextStep id="setWaitForSignalTextChangedData"/>
+        </reaction>
+    </step>
+    <step id="setWaitForSignalTextChangedData">
+        <text>&lt;para&gt;The parameters that have to be set depend on the type of the condition. In this case, the name of the object that emits the signal and the name of the signal are needed.&lt;/para&gt;
+
+&lt;para&gt;&lt;application&gt;KTutorial editor&lt;/application&gt; is able to &lt;emphasis&gt;talk&lt;/emphasis&gt; to the application that the tutorial is being designed for and show you the name of the objects and the signals they emit. However, this will be seen in another tutorial. In this one you will be given all the values you need.&lt;/para&gt;
+
+&lt;para&gt;Ok, back to the condition. We have asked the user to write &lt;emphasis&gt;Hello world!&lt;/emphasis&gt; in the text area, so we want to react when the text in the text area changes.&lt;/para&gt;
+
+&lt;para&gt;The text area is appropriately named &lt;emphasis&gt;textArea&lt;/emphasis&gt;, and it emits the signal &lt;emphasis&gt;textChanged()&lt;/emphasis&gt;. Set those values in the &lt;link url=&quot;widget:objectNameLineEdit&quot;&gt;&lt;interface&gt;emitter name&lt;/interface&gt; field&lt;/link&gt; and in the &lt;link url=&quot;widget:signalNameLineEdit&quot;&gt;&lt;interface&gt;signal name&lt;/interface&gt; field&lt;/link&gt;, respectively, and accept the dialog.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="editWaitForSignalDialog/okButton" signalName="clicked()"/>
+            <nextStep id="setResponseInStartStepReaction"/>
+        </reaction>
+    </step>
+    <step id="setResponseInStartStepReaction">
+        <text>&lt;para&gt;Now that the parameters of the condition are set, the step will react whenever the user writes something in the text area. But, how should it react?&lt;/para&gt;
+
+&lt;para&gt;We want to advance to the next step when the user writes &lt;emphasis&gt;Hello world!&lt;/emphasis&gt;, but textChanged() is emitted whenever the text was changed no matter what was written. So, before changing to the next step, we must check that the text area contains the expected text.&lt;/para&gt;
+
+&lt;para&gt;The checks will be made using some custom Javascript code, so select the &lt;link url=&quot;widget:responseCodeRadioButton&quot;&gt;&lt;interface&gt;custom response code&lt;/interface&gt; radio button.&lt;/link&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="responseCodeRadioButton" signalName="clicked()"/>
+            <nextStep id="setCodeToCheckTheText"/>
+        </reaction>
+    </step>
+    <step id="setCodeToCheckTheText">
+        <text>&lt;para&gt;The following code snippet gets the text area object, checks if it contains the text &lt;emphasis&gt;Hello world!&lt;/emphasis&gt; (without taking into account upper and lower cases) and, in that case, changes to the step &lt;emphasis&gt;clearText&lt;/emphasis&gt;:&lt;/para&gt;
+
+&lt;pre&gt;textArea = ktutorial.findObject(&quot;textArea&quot;);
+if (textArea.plainText.toLowerCase() == t.i18n(&quot;Hello world!&quot;).toLowerCase()) {
+    tutorial.nextStep(&quot;clearText&quot;);
+}&lt;/pre&gt;
+
+&lt;para&gt;You can copy the code selecting it with the mouse, clicking with the right mouse button on the selection and then clicking on &lt;interface&gt;Copy&lt;/interface&gt;. To paste it, click with the right mouse button on the &lt;link url=&quot;widget:responseCodeTextEdit&quot;&gt;custom response code area&lt;/link&gt; and then on &lt;interface&gt;Paste&lt;/interface&gt;. Once done, accept the dialog.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="okButton" signalName="clicked()"/>
+            <nextStep id="addClearTextStep"/>
+        </reaction>
+    </step>
+    <step id="addClearTextStep">
+        <text>&lt;para&gt;Well, we have just created the start step of the tutorial. It waits for the user to write &lt;emphasis&gt;Hello world!&lt;/emphasis&gt; in the text area and then changes to the clearText step.&lt;/para&gt;
+
+&lt;para&gt;Now we will take care of the clearText step. Let's begin by adding a new step.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="StepDataDialog"/>
+            <nextStep id="setClearTextStepData"/>
+        </reaction>
+    </step>
+    <step id="setClearTextStepData">
+        <text>&lt;para&gt;Set the id of the step to &lt;emphasis&gt;clearText&lt;/emphasis&gt; and the text to &lt;emphasis&gt;Now you have to trigger the clear action. To do this you can click in &amp;lt;interface&amp;gt;File|Clear&amp;lt;/interface&amp;gt;, or in the toolbar button called &amp;lt;interface&amp;gt;Clear&amp;lt;/interface&amp;gt;.&lt;/emphasis&gt;, then accept the dialog.&lt;/para&gt;
+
+&lt;para&gt;Like &lt;emphasis&gt;&amp;lt;emphasis&amp;gt;&lt;/emphasis&gt; in the text of the start step, &lt;emphasis&gt;&amp;lt;interface&amp;gt;&lt;/emphasis&gt; is another special markup used when referring to something in the graphical user interface.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="okButton" signalName="clicked()"/>
+            <nextStep id="addReactionToClearTextStep"/>
+        </reaction>
+    </step>
+    <step id="addReactionToClearTextStep">
+        <text>&lt;para&gt;The clearText step will wait for the user to trigger the clear action (that is, clicking &lt;interface&gt;Clear&lt;/interface&gt; button in the tool bar or &lt;interface&gt;File|Clear&lt;/interface&gt; in the menu).&lt;/para&gt;
+
+&lt;para&gt;So we have to add a reaction to the clearText step. Like we did with the start step, select the clearText step in the tutorial tree view and click on &lt;interface&gt;Add reaction&lt;/interface&gt;.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="ReactionDialog"/>
+            <nextStep id="addWaitForSignalToClearTextStepReaction"/>
+        </reaction>
+    </step>
+    <step id="addWaitForSignalToClearTextStepReaction">
+        <text>&lt;para&gt;Again, to wait for something to happen we have to add a condition. And again, that condition is a signal being emitted.&lt;/para&gt;
+
+&lt;para&gt;Add a new condition to wait for a signal and edit it to set its parameters.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="editWaitForSignalDialog"/>
+            <nextStep id="editWaitForSignalInClearTextStep"/>
+        </reaction>
+    </step>
+    <step id="editWaitForSignalInClearTextStep">
+        <text>&lt;para&gt;Usually, buttons in tool bars and menu entries are graphical representations of the so called &lt;emphasis&gt;actions&lt;/emphasis&gt;. Actions are commands given to the application, for example, &lt;emphasis&gt;add step&lt;/emphasis&gt; or &lt;emphasis&gt;save file&lt;/emphasis&gt;, and they behave the same no matter if they were triggered from a tool bar or from the menu.&lt;/para&gt;
+
+&lt;para&gt;So, as a rule of thumb, when you expect the user to click on a menu item or in a tool bar button, wait for the &lt;emphasis&gt;triggered()&lt;/emphasis&gt; signal of the action they represent, instead of the &lt;emphasis&gt;clicked()&lt;/emphasis&gt; signal of the button.&lt;/para&gt;
+
+&lt;para&gt;In this case, the object name of the action is just &lt;emphasis&gt;clear&lt;/emphasis&gt;. Set it in the emitter name, set the signal name to &lt;emphasis&gt;triggered()&lt;/emphasis&gt; and accept the dialog.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="editWaitForSignalDialog/okButton" signalName="clicked()"/>
+            <nextStep id="setResponseInClearTextStepReaction"/>
+        </reaction>
+    </step>
+    <step id="setResponseInClearTextStepReaction">
+        <text>&lt;para&gt;This time there is nothing else to be checked once the condition is met. When the clear action is triggered the text area is cleared, so the signal being emitted is enough to change to the next step in the tutorial.&lt;/para&gt;
+
+&lt;para&gt;Just set the name of the step to change to, which we will call &lt;emphasis&gt;end&lt;/emphasis&gt;, in the &lt;link url=&quot;widget:responseStepLineEdit&quot;&gt;&lt;interface&gt;change to step&lt;/interface&gt; field&lt;/link&gt; and accept the dialog.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="okButton" signalName="clicked()"/>
+            <nextStep id="addEndStep"/>
+        </reaction>
+    </step>
+    <step id="addEndStep">
+        <text>&lt;para&gt;We are almost done. Add another step, the last one.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForWindow windowObjectName="StepDataDialog"/>
+            <nextStep id="setEndStepData"/>
+        </reaction>
+    </step>
+    <step id="setEndStepData">
+        <text>&lt;para&gt;Set the id of the step to &lt;emphasis&gt;end&lt;/emphasis&gt; and its text to &lt;emphasis&gt;And that's all. Now you can close the tutorial.&lt;/emphasis&gt;, then accept the dialog.&lt;/para&gt;</text>
+        <reaction triggerType="ConditionMet" responseType="NextStep">
+            <waitForSignal emitterName="okButton" signalName="clicked()"/>
+            <nextStep id="end"/>
+        </reaction>
+    </step>
+    <step id="end">
+        <text>&lt;para&gt;The last step does not need a reaction, as it just informs the user that the tutorial has ended and that it can be closed.&lt;/para&gt;
+
+&lt;para&gt;Finally, to install the tutorial you have just made you would have to export it (&lt;interface&gt;File|Export...&lt;/interface&gt; or &lt;interface&gt;Export&lt;/interface&gt; button in the tool bar) to a Javascript file and save it in the tutorials subdirectory of the data directory of KTutorial test application.&lt;/para&gt;
+
+&lt;para&gt;Of course, this is too cumbersome to test a tutorial while it is being designed. &lt;application&gt;KTutorial editor&lt;/application&gt; is able to launch an application and start the tutorial being designed on it, but this will be shown in another tutorial.&lt;/para&gt;
+
+&lt;para&gt;That's all, this basic &lt;application&gt;KTutorial editor&lt;/application&gt; walkthrough ends here.&lt;/para&gt;</text>
+    </step>
+</tutorial>

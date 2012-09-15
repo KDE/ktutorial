@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=KTutorial editor
+Name[es]=KTutorial editor
+GenericName=Editor for KTutorial tutorials
+GenericName[es]=Editor para tutoriales de KTutorial
+Exec=ktutorial-editor
+Type=Application
+Categories=Qt;KDE;Development;Documentation;
+Terminal=false

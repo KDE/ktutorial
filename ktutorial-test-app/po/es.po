@@ -1,0 +1,255 @@
+# translation of es.po to Español
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Daniel Calviño Sánchez <danxuliu@gmail.com>, 2008, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: es\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/tracker/?"
+"group_id=301227&atid=1270278\n"
+"POT-Creation-Date: 2010-10-26 04:11+0200\n"
+"PO-Revision-Date: 2010-10-25 19:02+0200\n"
+"Last-Translator: Daniel Calviño Sánchez <danxuliu@gmail.com>\n"
+"Language-Team: Español\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: main.cpp:27
+msgctxt "@title"
+msgid "Test application for <application>KTutorial</application>"
+msgstr "Aplicación de prueba para <application>KTutorial</application>"
+
+#: main.cpp:28
+msgctxt "@title"
+msgid "A simple test application for <application>KTutorial</application>."
+msgstr ""
+"Una sencilla aplicación de prueba para <application>KTutorial</application>."
+
+#: main.cpp:30
+msgctxt "@info:credit"
+msgid "Copyright (c) 2008 KDE TechBase Developers"
+msgstr "Copyright (c) 2008 Desarrolladores de KDE TechBase"
+
+#: main.cpp:31
+msgctxt "@info"
+msgid ""
+"Code borrowed from <link>http://techbase.kde.org/index.php?title=Development/"
+"Tutorials/Saving_and_loading</link>"
+msgstr ""
+"Código cogido prestado de <link>http://techbase.kde.org/index.php?"
+"title=Development/Tutorials/Saving_and_loading</link>"
+
+#: main.cpp:32
+msgctxt "@info:credit"
+msgid "Daniel Calviño Sánchez"
+msgstr "Daniel Calviño Sánchez"
+
+#: main.cpp:33
+msgctxt "@info:credit"
+msgid "KTutorial integration and tutorials"
+msgstr "Integración con KTutorial y tutoriales"
+
+#: po/rc.cpp:3 rc.cpp:3
+msgid "Main Toolbar"
+msgstr "Barra de herramientas principal"
+
+#: po/rc.cpp:4 rc.cpp:4
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Daniel Calviño Sánchez"
+
+#: po/rc.cpp:5 rc.cpp:5
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "danxuliu@gmail.com"
+
+#: TestApp.cpp:53
+msgctxt "@action"
+msgid "Clear"
+msgstr "Limpiar"
+
+#: TutorialClearText.cpp:33 TutorialClearText.js:21 TutorialClearText.py:24
+msgid "Clear the text area"
+msgstr "Limpiar el área de texto"
+
+#: TutorialClearText.cpp:34 TutorialClearText.js:22 TutorialClearText.py:25
+msgid "This tutorial shows how to clean the text area with ease"
+msgstr "Este tutorial muestra cómo limpiar el área de texto con facilidad"
+
+#: TutorialClearText.cpp:38 TutorialClearText.cpp:68 TutorialClearText.js:26
+#: TutorialClearText.js:35 TutorialClearText.py:29 TutorialClearText.py:38
+#: TutorialMoveText.cpp:76 TutorialMoveText.cpp:168 TutorialMoveText.py:84
+#: TutorialMoveText.py:91
+msgid "Hello world"
+msgstr "Hola mundo"
+
+#: TutorialClearText.cpp:38 TutorialClearText.js:26 TutorialClearText.py:29
+msgctxt "@info"
+msgid ""
+"In this tutorial you will learn how to clear text in the test application."
+"<nl/>First, write \"%1\" (without quotes) in the text area"
+msgstr ""
+"En este tutorial aprenderás cómo limpiar el texto en la aplicación de prueba."
+"<nl/>Primero, escribe \"%1\" (sin las comillas) en el área de texto"
+
+#: TutorialClearText.cpp:48 TutorialClearText.js:44 TutorialClearText.py:45
+msgctxt "@info"
+msgid ""
+"Now, you must trigger the clear action.<nl/>To do this, you can click in "
+"<interface>File|Clear</interface>, or in the toolbar button called "
+"<interface>Clear</interface>"
+msgstr ""
+"Ahora, debes activar la acción de Limpiar.<nl/>Para hacer esto, puedes hacer "
+"click en <interface>Archivo|Limpiar</interface>, o en el botón de la barra "
+"de herramientas llamado <interface>Limpiar</interface>."
+
+#: TutorialClearText.cpp:58 TutorialClearText.js:56 TutorialClearText.py:57
+msgctxt "@info"
+msgid "And that's all.<nl/>Now you can close the tutorial."
+msgstr "Y eso es todo.<nl/>Ahora puedes cerrar el tutorial."
+
+#: TutorialMoveText.cpp:58 TutorialMoveText.py:24
+msgid "Move text in the text area"
+msgstr "Mover texto en el área de texto"
+
+#: TutorialMoveText.cpp:59 TutorialMoveText.py:25
+msgid "This tutorial shows how to move text in the text area"
+msgstr "Este tutorial muestra cómo mover texto en el área de texto"
+
+#: TutorialMoveText.cpp:67 TutorialMoveText.py:66
+msgctxt "@info"
+msgid ""
+"In this tutorial you will learn how to move text in the test application.<nl/"
+">Text can be moved using the mouse or the keyboard. What do you prefer?"
+msgstr ""
+"En este tutorial aprenderás cómo mover texto en la aplicación de prueba.<nl/"
+">El texto puede moverse utilizando el ratón o el teclado. ¿Qué prefieres?"
+
+#: TutorialMoveText.cpp:69 TutorialMoveText.py:68
+msgid "Mouse"
+msgstr "Ratón"
+
+#: TutorialMoveText.cpp:70 TutorialMoveText.py:74
+msgid "Keyboard"
+msgstr "Teclado"
+
+#: TutorialMoveText.cpp:76 TutorialMoveText.py:84
+msgctxt "@info"
+msgid "First of all, clean the text area and write \"%1\" (without quotes)"
+msgstr ""
+"Lo primero de todo, limpia el área de texto y escribe \"%1\" (sin comillas)"
+
+#: TutorialMoveText.cpp:85 TutorialMoveText.cpp:175 TutorialMoveText.py:98
+#: TutorialMoveText.py:105
+msgid "world"
+msgstr "mundo"
+
+#: TutorialMoveText.cpp:85 TutorialMoveText.py:98
+msgctxt "@info"
+msgid "Now, select the text \"%1\" in the text area"
+msgstr "Ahora, selecciona el texto \"%1\" en el área de texto"
+
+#: TutorialMoveText.cpp:94 TutorialMoveText.py:115
+msgctxt "@info"
+msgid ""
+"The next thing to do is cut the selected text. Cutting it will remove it "
+"from the text area, but in some Steps we will make it appear again. To cut "
+"the selected text, click in <interface>Edit|Cut</interface> or in the button "
+"of the toolbar"
+msgstr ""
+"Lo siguiente es cortar el texto seleccionado. Al cortarlo se eliminará del "
+"área de texto, pero dentro de unos pasos lo haremos aparecer de nuevo. Para "
+"cortar el texto seleccionado, haz click en <interface>Editar|Cortar</"
+"interface> o en el botón de la barra de tareas"
+
+#: TutorialMoveText.cpp:104 TutorialMoveText.py:126
+msgid "Hello"
+msgstr "Hola"
+
+#: TutorialMoveText.cpp:104 TutorialMoveText.py:126
+msgctxt "@info"
+msgid "Move the cursor to the beginning of the document, before \"%1\" text"
+msgstr "Mueve el cursor al principio del documento, antes del texto \"%1\""
+
+#: TutorialMoveText.cpp:113 TutorialMoveText.py:140
+msgctxt "@info"
+msgid ""
+"Finally, paste the text you have cut previously. To do this, click in "
+"<interface>Edit|Paste</interface> or in the button in the toolbar"
+msgstr ""
+"Finalmente, pega el texto que cortaste previamente. Para hacer esto, haz "
+"click en <interface>Editar|Pegar</interface> o en el botón de la barra de "
+"herramientas"
+
+#: TutorialMoveText.cpp:123
+msgctxt "@info"
+msgid ""
+"Press with the left button of the mouse on the selected text. You must press "
+"on it, or the selection will change, and you will have to select it again. "
+"Don't release the button yet."
+msgstr ""
+"Pulsa con el botón izquierdo del ratón en el texto seleccionado. Debes "
+"pulsar sobre él, o la selección cambiará, y deberás seleccionarlo de nuevo.  "
+"No sueltes el botón aún."
+
+#: TutorialMoveText.cpp:132 TutorialMoveText.py:169
+msgctxt "@info"
+msgid ""
+"Without releasing the mouse button, move the cursor to the desired position, "
+"for example the beginning of the text.<nl/>Once the cursor is there, you can "
+"release the mouse button, and the text will be moved."
+msgstr ""
+"Sin soltar el botón del ratón, mueve el cursor a la posición deseada, por "
+"ejemplo el principio del texto.<nl/>Una vez que el cursor esté ahí, puedes "
+"soltar el botón del ratón, y el texto será movido."
+
+#: TutorialMoveText.cpp:141 TutorialMoveText.py:185
+msgctxt "@info"
+msgid ""
+"As explained, there are two ways to move text in a text area: using the "
+"mouse and using the keyboard. Do you want to see the other way?"
+msgstr ""
+"Como se dijo, existen dos formas de mover el texto en un área de texto: "
+"usando el ratón y usando el teclado. ¿Quieres ver la otra forma?"
+
+#: TutorialMoveText.cpp:143 TutorialMoveText.py:187
+msgid "Yes, please"
+msgstr "Sí, por favor"
+
+#: TutorialMoveText.cpp:144 TutorialMoveText.py:197
+msgid "No, thanks"
+msgstr "No, gracias"
+
+#: TutorialMoveText.cpp:150 TutorialMoveText.py:203
+msgctxt "@info"
+msgid "That's all.<nl/>Now you can close the tutorial."
+msgstr "Y eso es todo.<nl/>Ahora puedes cerrar el tutorial."
+
+#: TutorialMoveText.py:157
+msgctxt "@info"
+msgid ""
+"<para><emphasis>Warning:</emphasis> due to <link url=\"https://bugs.kde.org/"
+"show_bug.cgi?id=219787\">Kross bug 219787</link>, this step will crash "
+"KTutorial test app. Hopefully, soon the patch given in the bug will be "
+"applied and there will be no more crashes ;)</para><para>If you are "
+"wondering why a tutorial that crashes was included in KTutorial test app, "
+"the answer is because although it crashes, it also contains examples of "
+"advanced tutorial scripting using Python.</para><para>Press with the left "
+"button of the mouse on the selected text. You must press on it, or the "
+"selection will change, and you will have to select it again. Don't release "
+"the button yet.</para>"
+msgstr ""
+"<para><emphasis>Atención:</emphasis> debido al <link url=\"https://bugs.kde."
+"org/show_bug.cgi?id=219787\">bug 219787 de Kross</link>,  este paso hará que "
+"la aplicación de prueba de KTutorial casque. Con suerte, pronto se aplicará "
+"el parche indicado en el bug y dejará de cascar ;)</para><para>Si te "
+"preguntas por qué se incluyó un tutorial que casca en la aplicación de "
+"prueba de KTutorial, la respuesta es porque aunque casca, también contiene "
+"ejemplos de tutoriales en script avanzados usando Python.</para><para>Pulsa "
+"con el botón izquierdo del ratón en el texto seleccionado. Debes pulsar "
+"sobre él, o la selección cambiará, y deberás seleccionarlo de nuevo. No "
+"sueltes el botón aún.</para>"

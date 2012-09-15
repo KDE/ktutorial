@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SemanticMarkupLinkWidget</class>
+ <widget class="QWidget" name="SemanticMarkupLinkWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string comment="@title">URL for &lt;emphasis&gt;link&lt;/emphasis&gt; element</string>
+  </property>
+  <property name="whatsThis">
+   <string comment="@info:whatsthis">&lt;para&gt;Set the &lt;emphasis&gt;url&lt;/emphasis&gt; attribute for the &lt;emphasis&gt;link&lt;/emphasis&gt; semantic element.&lt;/para&gt;
+
+&lt;para&gt;Any URL can be set in the &lt;interface&gt;Generic&lt;/interface&gt; field. For example, the URL of a webpage or the URL to link to a widget.&lt;/para&gt;
+
+&lt;para&gt;However, to link to a widget it is better to just write the object name of the desired widget in the &lt;interface&gt;Widget&lt;/interface&gt; field. Moreover, that field provides also text completion for the names and a dialog to choose the widget from a running target application.&lt;/para&gt;
+
+&lt;para&gt;These advanced features, though, are not available in every system; if &lt;application&gt;KTutorial editor&lt;/application&gt; was not built with &lt;application&gt;QtDBus&lt;/application&gt; support only a plain text line will be shown. Again, only the name has to be written in the text line for the widget; &lt;emphasis&gt;widget:&lt;/emphasis&gt; is automatically added to the URL when the dialog is accepted.&lt;/para&gt;</string>
+  </property>
+  <layout class="QVBoxLayout" name="SemanticMarkupLinkWidgetLayout">
+   <item>
+    <layout class="QHBoxLayout" name="semanticMarkupLinkWidgetHorizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="radioButtonVerticalLayout">
+       <item>
+        <widget class="QRadioButton" name="genericLinkRadioButton">
+         <property name="text">
+          <string comment="@option:radio Generic link URL">Generic</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="widgetLinkRadioButton">
+         <property name="text">
+          <string comment="@option:radio Widget link URL">Widget</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="valueVerticalLayout">
+       <item>
+        <widget class="KLineEdit" name="genericLinkLineEdit"/>
+       </item>
+       <item>
+        <widget class="KLineEdit" name="widgetLinkLineEdit"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="semanticMarkupLinkWidgetSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::MinimumExpanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>klineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

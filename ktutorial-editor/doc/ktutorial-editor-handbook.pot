@@ -1,0 +1,2020 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/tracker/?"
+"group_id=301227&atid=1270278\n"
+"POT-Creation-Date: 2012-08-20 11:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: index.docbook:22
+#, no-c-format
+msgid "The &ktutorial-editor; Handbook"
+msgstr ""
+
+#. Tag: author
+#: index.docbook:25
+#, no-c-format
+msgid ""
+"<personname> <firstname>Daniel</firstname> <surname>Calviño Sánchez</"
+"surname> </personname> <email>danxuliu@gmail.com</email>"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:34
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+
+#. Tag: holder
+#: index.docbook:40
+#, no-c-format
+msgid "Daniel Calviño Sánchez"
+msgstr ""
+
+#. Tag: date
+#: index.docbook:54
+#, no-c-format
+msgid "2012-08-18"
+msgstr ""
+
+#. Tag: releaseinfo
+#: index.docbook:55
+#, no-c-format
+msgid "<releaseinfo>0.5</releaseinfo>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:60 index.docbook:76
+#, no-c-format
+msgid "&ktutorial-editor; is a graphical editor for KTutorial tutorials."
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:64
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:65
+#, no-c-format
+msgid "KTutorial editor"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:66
+#, no-c-format
+msgid "KTutorial"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:67
+#, no-c-format
+msgid "tutorial"
+msgstr ""
+
+#. Tag: keyword
+#: index.docbook:68
+#, no-c-format
+msgid "editor"
+msgstr ""
+
+#. Tag: title
+#: index.docbook:74
+#, no-c-format
+msgid "Introduction"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:77
+#, no-c-format
+msgid ""
+"KTutorial is a interactive tutorial system for KDE 4. You can get more "
+"information about KTutorial in its webpage: <ulink url=\"http://ktutorial."
+"sourceforge.net\">http://ktutorial.sourceforge.net</ulink>."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:78
+#, no-c-format
+msgid ""
+"Using &ktutorial-editor; you can design a tutorial for some application "
+"specifying the steps that it will be composed of. For each step, you can "
+"specify how the tutorial will react, for example, when the user selects an "
+"option, closes a dialog, writes some text..."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:79
+#, no-c-format
+msgid ""
+"Once the tutorial has been designed, it can be exported by &ktutorial-"
+"editor; to a scripted tutorial. Once the scripted tutorial is placed in the "
+"appropriate directory, it can be read by KTutorial library and started by "
+"the user of the application."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:80
+#, no-c-format
+msgid ""
+"Tutorials created by &ktutorial-editor; are not as powerful as fully hand "
+"made tutorials. However, they are way easier to create and the generated "
+"source code can be used as a skeleton to be manually completed if the "
+"tutorial requires something not supported by &ktutorial-editor;."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:91
+#, no-c-format
+msgid "Credits and License"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:93
+#, no-c-format
+msgid "&ktutorial-editor;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:96
+#, no-c-format
+msgid ""
+"Program Copyright 2010-2012 Daniel Calviño Sánchez <email>danxuliu@gmail."
+"com</email>"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:100
+#, no-c-format
+msgid ""
+"Documentation Copyright 2010-2012 Daniel Calviño Sánchez "
+"<email>danxuliu@gmail.com</email>"
+msgstr ""
+
+#. Tag: trans_comment
+#: index.docbook:104
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+
+#. Tag: chapter
+#: index.docbook:104
+#, no-c-format
+msgid "&underFDL; &underGPL;"
+msgstr ""
+
+#. Tag: title
+#: using.docbook:8
+#, no-c-format
+msgid "Using &ktutorial-editor;"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:10
+#, no-c-format
+msgid ""
+"In this chapter you should find all the information you need to use "
+"&ktutorial-editor;. However, some general information about KTutorial is "
+"also given here, as it is needed to fully understand the purpose of "
+"&ktutorial-editor;."
+msgstr ""
+
+#. Tag: title
+#: using.docbook:13
+#, no-c-format
+msgid "Getting extended information"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:15
+#, no-c-format
+msgid ""
+"You can also get extended information about a lot of widgets throughout "
+"&ktutorial-editor; using the <emphasis>What's This?</emphasis> help. "
+"<emphasis>What's This?</emphasis> help can be shown with the keyboard "
+"shortcut <keycombo action=\"simul\">&Shift;<keycap>F1</keycap></keycombo>, "
+"selecting <guimenuitem>What's This?</guimenuitem> from the <guimenu>Help</"
+"guimenu> menu or, with some window decorations, clicking on the What's This? "
+"button in the window's titlebar (usually a question mark), and then clicking "
+"on the widget to get its extended help."
+msgstr ""
+
+#. Tag: title
+#: using.docbook:19
+#, no-c-format
+msgid "Understanding KTutorial"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:21
+#, no-c-format
+msgid ""
+"&ktutorial-editor; is just a graphical editor to create tutorials to be used "
+"by KTutorial. That is why you should at least have some little notions of "
+"how KTutorial works to fully understand the purpose of &ktutorial-editor;."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:23
+#, no-c-format
+msgid ""
+"A tutorial is a little guide to help the user to learn how to use an "
+"application. For example, it shows the user how some feature works, or how "
+"to accomplish some task. A tutorial is composed of several steps, each one "
+"containing a bit of information."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:25
+#, no-c-format
+msgid ""
+"The most interesting feature is that, with KTutorial, applications can "
+"explain to the user how to do something in an interactive way. Each step "
+"contains one or more reactions. A reaction is composed by a trigger and a "
+"response: when the reaction is triggered, the response is executed."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:27
+#, no-c-format
+msgid ""
+"There are two types of triggers: options and conditions to wait for. Options "
+"are shown to the user as buttons below the text of the step, and the "
+"response is executed when the user selects the option. Conditions to wait "
+"for are not shown in any way to the user, and the response is executed when "
+"the condition is met. For example, when an object receives an event, or when "
+"an object emits a signal."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:29
+#, no-c-format
+msgid ""
+"There are also two types of responses: changing to another step, or "
+"executing some custom code."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:31
+#, no-c-format
+msgid ""
+"Finally, KTutorial provides a system to execute some actions when a tutorial "
+"starts or finishes, or when the tutorial enters or exists from a step."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:33
+#, no-c-format
+msgid ""
+"All this abstract concepts are fine but, how do you tell KTutorial all those "
+"things? KTutorial is a software package, how does it know that it has to "
+"wait for something to happen, or show the user some text, or whatever? "
+"KTutorial tutorials are specified as source code, be it C++ or a script "
+"language."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:35
+#, no-c-format
+msgid ""
+"C++ tutorials must be embedded in the application source code itself, and "
+"they have to be compiled with it when the application is compiled."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:37
+#, no-c-format
+msgid ""
+"On the other hand, scripted tutorials are external data to the application. "
+"When an application that supports KTutorial starts, it looks for scripted "
+"tutorials in some specific directories and loads those found. If you add new "
+"scripted tutorials to the directories, the next time the application starts "
+"they will be available. You don't have to compile again the application, not "
+"even to reinstall it."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:39
+#, no-c-format
+msgid ""
+"Scripted tutorials are looked for in the <filename class=\"directory"
+"\">tutorials/</filename> subdirectory of the application data directory. The "
+"application data directory is <filename class=\"directory\">KDE_PREFIX/share/"
+"apps/applicationName/</filename>. Special cases aside, the "
+"<emphasis>KDE_PREFIX</emphasis> can be the &kde; installation prefix "
+"(usually <filename class=\"directory\">/usr/</filename>) or the user &kde; "
+"configuration directory (<filename class=\"directory\">/home/userName/.kde4/"
+"</filename>)."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:41
+#, no-c-format
+msgid ""
+"When the scripted tutorial is part of an application (it is installed with "
+"the rest of the application data when the application is installed), the "
+"strings in the scripted tutorial can be extracted to be localized before the "
+"installation like any other string in the C++ code, as explained in "
+"KTutorial documentation. Scripted tutorials that are added after the "
+"application was installed, however, can not be localized, as KTutorial uses "
+"the same translation file as the rest of the application where it is used."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:43
+#, no-c-format
+msgid ""
+"As you may have guessed already, &ktutorial-editor; creates scripted "
+"tutorials. Right now, only Javascript is supported by &ktutorial-editor;, as "
+"&kde; libraries offer out of the box support for Javascript scripts. Python "
+"or Ruby, on the other hand, require some specific packages to be installed "
+"in the system."
+msgstr ""
+
+#. Tag: title
+#: using.docbook:47
+#, no-c-format
+msgid "Main Window"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:49
+#, no-c-format
+msgid ""
+"&ktutorial-editor; main window shows the tutorial being worked on, and "
+"provides actions to modify it."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:51
+#, no-c-format
+msgid ""
+"A tutorial can be seen as a hierarchical structure: a tutorial contains "
+"several steps, each step may contain several reactions, and each reaction "
+"may contain a composed condition. Also, tutorial, step and reactions contain "
+"other properties, like the name in a tutorial or the response code in a "
+"reaction, that can be seen as children of their element. With all this, a "
+"tutorial is shown as a tree in the main window."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:53
+#, no-c-format
+msgid ""
+"The tree only shows properties already set. For example, if there is no "
+"custom setup code for a step, no item is shown, not even to say that there "
+"is no setup code. The exception to this behavior happens when a property is "
+"mandatory, for example, the id of a step. In that case, if the property is "
+"not set, an item with a warning is shown."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:55
+#, no-c-format
+msgid ""
+"The actions to modify the tutorial and its elements can be always accessed "
+"from the <guimenu>Edit</guimenu> menu. Most actions will open a edition "
+"dialog to edit the desired element, which means that, in some cases, you "
+"have to select an element before being able to use an action. For example, "
+"to use <action>Set reaction data</action>, you first have to select the "
+"reaction to edit in the tutorial. Otherwise, the action will be disabled and "
+"it could not be executed (which is logical, as it will not know which "
+"reaction to edit)."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:57
+#, no-c-format
+msgid ""
+"As well as being shown in the <guimenu>Edit</guimenu> menu, the actions to "
+"edit a tutorial, a step and a reaction are shown in three panels provided "
+"for convenience. The panels can be shown or hidden from <guimenu>View</"
+"guimenu> menu, and can be docked to the top, bottom, right or left side of "
+"the main window. If desired, they can also be dragged out of the window to "
+"make them floating panels."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:59
+#, no-c-format
+msgid ""
+"Every edition action can be undone and redone using the typical undo/redo "
+"system. Note, however, that the whole action is undone/redone, and not each "
+"tiny change that make up the action. That is, when an edition dialog is "
+"opened, several changes are made in the dialog, the dialog is accepted and "
+"then the action is undone, the tutorial will get back to the state it had "
+"before the edition dialog was opened, no matter what or how many changes "
+"were made while the dialog was opened."
+msgstr ""
+
+#. Tag: screeninfo
+#: using.docbook:62
+#, no-c-format
+msgid "The main window of &ktutorial-editor; with a tutorial being worked on"
+msgstr ""
+
+#. Tag: phrase
+#: using.docbook:68
+#, no-c-format
+msgid "&ktutorial-editor; Main Window"
+msgstr ""
+
+#. Tag: title
+#: using.docbook:75
+#, no-c-format
+msgid "Edition dialogs"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:77
+#, no-c-format
+msgid ""
+"There are several edition dialogs, each one to set some property or "
+"properties of an element."
+msgstr ""
+
+#. Tag: title
+#: using.docbook:80
+#, no-c-format
+msgid "Tutorial edition"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:82
+#, no-c-format
+msgid ""
+"The tutorial information dialog is used to set the name and description of a "
+"tutorial. The name and description are mandatory properties, as through the "
+"name the user can identify a tutorial and with the description he can know "
+"the purpose of the tutorial."
+msgstr ""
+
+#. Tag: screeninfo
+#: using.docbook:85
+#, no-c-format
+msgid "The dialog to set the name and description of a tutorial"
+msgstr ""
+
+#. Tag: phrase
+#: using.docbook:91
+#, no-c-format
+msgid "Tutorial information edition dialog"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:96
+#, no-c-format
+msgid ""
+"The license text dialog is used to set a license for the tutorial, for "
+"example, if the exported scripted tutorial is going to be distributed with "
+"its application. When the tutorial is exported, the license text is "
+"automatically wrapped in comments appropriate for the script language. For "
+"example, the following license text: <programlisting>The license text, which "
+"should be\n"
+"wrapped\n"
+"</programlisting> is exported to Javascript as:"
+msgstr ""
+
+#. Tag: programlisting
+#: using.docbook:98
+#, no-c-format
+msgid ""
+"/*****************************************\n"
+" *   The license text, which should be   *\n"
+" *   wrapped                             *\n"
+" *****************************************/"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:101
+#, no-c-format
+msgid ""
+"The setup and tear down code dialogs just provide a text editor to write the "
+"custom code to be executed when the tutorial starts or finishes. Note that "
+"you have to provide just the body of the function, as the signature is "
+"automatically written when exported. For example, the following setup code: "
+"<programlisting>alert(\"Hello world!\");</programlisting> is exported to "
+"Javascript as:"
+msgstr ""
+
+#. Tag: programlisting
+#: using.docbook:103
+#, no-c-format
+msgid ""
+"function tutorialSetup(tutorial) {\n"
+"    alert(\"Hello world!\");\n"
+"}"
+msgstr ""
+
+#. Tag: title
+#: using.docbook:108
+#, no-c-format
+msgid "Step edition"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:110
+#, no-c-format
+msgid ""
+"The step data dialog is used to set the id and text of a step. The id and "
+"text are mandatory properties, as the id is used by other steps to change to "
+"this step, and the text is shown to the user to explain him what must be "
+"done. Thus, the id must be unique for every step in the same tutorial."
+msgstr ""
+
+#. Tag: title
+#: using.docbook:112
+#, no-c-format
+msgid "Rich text and widget higlighting"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:113
+#, no-c-format
+msgid ""
+"When writing the text of a step you can use the <ulink url=\"http://doc."
+"trolltech.com/richtext-html-subset.html\">supported subset of HTML tags</"
+"ulink> or the <ulink url=\"http://techbase.kde.org/Development/Tutorials/"
+"Localization/i18n_Semantics#Semantic_Tags\">KDE semantic markup tags</ulink> "
+"to enrich the text. For example, <emphasis>&lt;strong&gt;Hello world!&lt;/"
+"strong&gt;</emphasis> will appear as <emphasis role=\"strong\">Hello world!</"
+"emphasis> when shown in the tutorial."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:114
+#, no-c-format
+msgid ""
+"KTutorial also provides a special type of link that highlights the "
+"referenced widget in order to be found easily. For example, <emphasis>&lt;a "
+"href=\"widget:theWidgetObjectName\"&gt;this is a link&lt;/a&gt;</emphasis> "
+"(if the HTML subset is used) or <emphasis>&lt;link url=\"widget:"
+"theWidgetObjectName\"&gt;this is a link&lt;/link&gt;</emphasis> (if KDE "
+"semantic markup is used) will show <emphasis>this is a link</emphasis> with "
+"a link appearance (underlined and with some special color) and, when the "
+"link is clicked, the widget with the given object name will be highlighted. "
+"Clicking the link again will stop highlighting the widget."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:115
+#, no-c-format
+msgid ""
+"To ease all these things, &ktutorial-editor; provides several buttons in the "
+"step data dialog that help writing KDE semantic markup tags. These buttons "
+"insert the start and end tags for an element as needed, and are enabled or "
+"disabled based on the position of the cursor in the text. For example, the "
+"button to insert a paragraph tag will be disabled if the cursor is inside a "
+"link, but the button to insert a link tag will be enabled if the cursor is "
+"inside a paragraph."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:117
+#, no-c-format
+msgid ""
+"The step data dialog is also shown when a new step is added. If the dialog "
+"is accepted, the step is added. If the dialog is cancelled, the step is not "
+"added."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:118
+#, no-c-format
+msgid ""
+"Also note that, in every tutorial, there must be one step with id "
+"<emphasis>start</emphasis>, so KTutorial knows where to start the tutorial."
+msgstr ""
+
+#. Tag: screeninfo
+#: using.docbook:121
+#, no-c-format
+msgid "The dialog to set the id and text of a step"
+msgstr ""
+
+#. Tag: phrase
+#: using.docbook:127
+#, no-c-format
+msgid "Step data edition dialog"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:132
+#, no-c-format
+msgid ""
+"The setup and tear down code dialogs behave like the tutorial ones. The only "
+"difference is that the code is executed when the tutorial changes to the "
+"step or when the tutorial changes from this step to another one."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:133
+#, no-c-format
+msgid ""
+"Also note that the exported scripted tutorial creates all the reactions in "
+"the setup method of a step. The custom setup code is added after that code."
+msgstr ""
+
+#. Tag: title
+#: using.docbook:137
+#, no-c-format
+msgid "Reaction edition"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:139
+#, no-c-format
+msgid ""
+"The reaction dialog is used to set the trigger and response of a reaction. "
+"The trigger and response are mandatory properties, as they define how the "
+"reaction behaves."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:140
+#, no-c-format
+msgid ""
+"The trigger can be either an option selected or a condition met, but not "
+"both. If the trigger type is the option, its name will be shown to the user "
+"in the step and the response will be executed when the user selects it. If "
+"the type is the condition, the response will be executed when the condition "
+"is met."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:141
+#, no-c-format
+msgid ""
+"Likely, the response can be changing to another step or executing some "
+"custom code, but not both. If the response type is the custom code, it will "
+"be used as the body of a function called when the reaction is triggered. "
+"Again, the signature of the function is automatically provided and you have "
+"to set only the body."
+msgstr ""
+
+#. Tag: screeninfo
+#: using.docbook:144
+#, no-c-format
+msgid "The dialog to set the trigger and response of a reaction"
+msgstr ""
+
+#. Tag: phrase
+#: using.docbook:150
+#, no-c-format
+msgid "Set reaction data edition dialog"
+msgstr ""
+
+#. Tag: title
+#: using.docbook:156
+#, no-c-format
+msgid "Condition edition"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:158
+#, no-c-format
+msgid ""
+"The condition that acts as a trigger of a reaction can be a simple condition "
+"or a composed condition. Simple conditions wait for something to happen, "
+"like a signal emitted by an object. Composed conditions wait for its child "
+"conditions. For example, waiting until a signal is emitted by an object or "
+"an event is received in another object, whatever comes first."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:159
+#, no-c-format
+msgid ""
+"Due to this, conditions are represented in a tree, and it also affects how "
+"they are edited."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:160
+#, no-c-format
+msgid ""
+"A condition can be added as the root condition when there are no other "
+"conditions set, or as a child of the selected composed condition, but not "
+"when a simple condition is selected. When a new condition is added, you must "
+"select its type. Note that the type of the condition can not be changed "
+"later, you will have to remove the condition and set a new one."
+msgstr ""
+
+#. Tag: screeninfo
+#: using.docbook:163
+#, no-c-format
+msgid "The dialog to select the type of the new condition to add"
+msgstr ""
+
+#. Tag: phrase
+#: using.docbook:169
+#, no-c-format
+msgid "New condition dialog"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:174
+#, no-c-format
+msgid ""
+"Only simple conditions (waiting for an event, waiting for a signal, waiting "
+"for a window to be shown and waiting for a property to have certain value) "
+"can be edited, showing specific dialogs for it. Composed conditions only "
+"group other conditions, so they don't have properties to be edited. The "
+"condition to wait for its step to be activated, despite being a simple "
+"condition, can not be edited either."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:175
+#, no-c-format
+msgid ""
+"Any condition can be removed from its parent composed condition, or from the "
+"reaction if it is the root condition."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:177
+#, no-c-format
+msgid ""
+"There is a special type of condition that verifies that its negated "
+"condition wasn't met which purpose is to be used only as a child of a "
+"composed condition that waits until all its child conditions were met. The "
+"idea is that, when the negated condition wasn't met, the special condition "
+"is met. When the negated condition is met, the special condition is no "
+"longer met. It can be used, for example, to make a reaction wait for the "
+"user to write something in a text line, provided he has not pressed a button "
+"before. Note that a fallback reaction should be added in cases like this one."
+msgstr ""
+
+#. Tag: title
+#: using.docbook:180
+#, no-c-format
+msgid "Conditions and modal dialogs"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:181
+#, no-c-format
+msgid ""
+"Modal dialogs are those that block the interaction with the windows of the "
+"application under them (for example, an error message). When a modal dialog "
+"is shown by the application after the user clicks a button, the condition to "
+"wait for must be the dialog being shown, but never the button being clicked. "
+"The reason has to do with Qt's internals and it is out of the scope for this "
+"document."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:182
+#, no-c-format
+msgid ""
+"Take, for example, an <emphasis>Open file</emphasis> dialog. If the "
+"condition to change to the next step is waiting for the <function>clicked()</"
+"function> signal to be emitted by the button that shows the dialog, the step "
+"will freeze until the <emphasis>Open file</emphasis> dialog is closed, and "
+"then it will change to the next step. Instead, the condition to change to "
+"the next step must be waiting for the <emphasis>Open file</emphasis> dialog "
+"to be shown."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:183
+#, no-c-format
+msgid ""
+"The condition to wait for windows to be shown supports both windows and "
+"dialogs, so whenever a window or dialog is shown you can safely use that "
+"condition without worrying about whether it is a window, a modal dialog or a "
+"modeless dialog."
+msgstr ""
+
+#. Tag: title
+#: using.docbook:190
+#, no-c-format
+msgid "Interacting with the target application"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:192
+#, no-c-format
+msgid ""
+"When a tutorial is being designed it is usually necessary to know some "
+"internals about the target application of the tutorial. For example, in "
+"order to wait for a signal emitted by an object the name of the object must "
+"be known. However, it is very unlikely that even the developers of the "
+"application know those things by heart."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:193
+#, no-c-format
+msgid ""
+"To help with this problem &ktutorial-editor; is able to \"talk\" with any "
+"application using KTutorial to provide the tutorial designer internal "
+"information about the target application. For example, it can provide a list "
+"with the names of all the objects accessible by KTutorial in the target "
+"application."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:194
+#, no-c-format
+msgid ""
+"Note, however, that the intercommunication system between &ktutorial-editor; "
+"and KTutorial works only if they were built with D-Bus system support. Don't "
+"worry, though, as it would be very unlikely that the packages of your GNU/"
+"Linux distribution were not built with D-Bus support, and if you are "
+"building it yourself you probably know what all this means ;)"
+msgstr ""
+
+#. Tag: title
+#: using.docbook:197
+#, no-c-format
+msgid "Starting the target application"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:199
+#, no-c-format
+msgid ""
+"&ktutorial-editor; requires an instance of the target application to be "
+"running in order to talk with it, although that instance must have been "
+"launched by &ktutorial-editor; itself."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:200
+#, no-c-format
+msgid ""
+"So, how can the target application be started from &ktutorial-editor;? When "
+"you execute some action that requires &ktutorial-editor; to talk to the "
+"target application a dialog to choose the application is shown to you. The "
+"application can be selected from the proposed application list, or the full "
+"path to the application can be manually specified."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:201
+#, no-c-format
+msgid ""
+"Note that the application list contains all the known KDE applications in "
+"the system, instead of just those that use KTutorial. &ktutorial-editor; "
+"will warn you after launching the application if it is not a valid "
+"application."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:202
+#, no-c-format
+msgid ""
+"Once a valid target application has been specified it will be used "
+"automatically until the tutorial being designed is closed. If the target "
+"application instance is closed, &ktutorial-editor; will launch another "
+"instance automatically when it needs to talk again to the target application."
+msgstr ""
+
+#. Tag: title
+#: using.docbook:206
+#, no-c-format
+msgid "Choosing an object in the target application"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:208
+#, no-c-format
+msgid ""
+"When you want to choose an object from the target application a list with "
+"all the objects accessible by &ktutorial-editor; in the target application "
+"is shown. The name and class of each object is shown in their entry of the "
+"list. The list is an hierarchical structure, thus the parent-child "
+"relationship between objects is also shown."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:209
+#, no-c-format
+msgid ""
+"The list is updated when there are changes in the target application. For "
+"example, if a new dialog is shown in the target application, the dialog and "
+"all its children will be shown in the list."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:210
+#, no-c-format
+msgid ""
+"Usually, the objects used in tutorials are widgets, so when a widget is "
+"selected in the list it is highlighted in the target application. Plain "
+"objects obviously are not, as they do not have a graphical representation."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:211
+#, no-c-format
+msgid ""
+"As widgets are the most used objects in tutorials, plain objects can be "
+"filtered from the list. In the same way, objects without name can also be "
+"filtered. However, some objects may appear in the list even if they should "
+"be hidden when they have any descendant that passes the enabled filters."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:212
+#, no-c-format
+msgid ""
+"When the list with the objects is shown, the rest of the &ktutorial-editor; "
+"windows are hidden. It is made to better view the widgets when they are "
+"highlighted in the target application. The &ktutorial-editor; windows are "
+"shown again once the selection list is closed."
+msgstr ""
+
+#. Tag: title
+#: using.docbook:214
+#, no-c-format
+msgid "Objects with duplicated names"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:215
+#, no-c-format
+msgid ""
+"Usually, the name of an object in the target application will identify that "
+"and only that object. However, sometimes there could be two or more objects "
+"with the same name. For example, if there are two or more dialogs opened, "
+"there will probably be two or more objects named <literal>Ok button</"
+"literal>."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:216
+#, no-c-format
+msgid ""
+"Therefore, when two or more objects have the same name, they can not be "
+"identified by their name alone. Instead, their name must be qualified with "
+"the name of one or more ancestor objects. For example, "
+"<literal>Configuration dialog/Ok button</literal>. When an object is chosen "
+"in the list, &ktutorial-editor; takes care of all this and gets a unique "
+"name for the object."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:217
+#, no-c-format
+msgid ""
+"Under some circumstances, an object may not have a unique name. When a name "
+"represents two or more objects, KTutorial applies a set of ambiguity solving "
+"rules. &ktutorial-editor; takes that into account too, and tries to get a "
+"name that identifies the chosen object, even if the name is not unique. But, "
+"if even after applying the ambiguity solving rules there is no name that "
+"identifies just the chosen object, a warning is shown."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:218
+#, no-c-format
+msgid ""
+"However, note that a name and the object it represents depends on the state "
+"of the target application. For example, if there is a dialog named "
+"<literal>Configuration dialog</literal> with a button named <literal>Ok "
+"button</literal>, its unique name could be just <literal>Ok button</"
+"literal>. However, if another dialog named <literal>File information dialog</"
+"literal> were opened while the <literal>Configuration dialog</literal> was "
+"still opened, and <literal>File information dialog</literal> had a also "
+"button called <literal>Ok button</literal>, now the unique name of the first "
+"button would be <literal>Configuration dialog/Ok button</literal>. In this "
+"situation, <literal>Ok button</literal> would not represent a specific "
+"object in the target application."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:219
+#, no-c-format
+msgid ""
+"All that means that, when choosing an object from the target application, "
+"the target application should be in the same state as it would be when "
+"following the tutorial and getting to the current step."
+msgstr ""
+
+#. Tag: title
+#: using.docbook:224
+#, no-c-format
+msgid "Testing a tutorial in the target application"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:226
+#, no-c-format
+msgid ""
+"Designing a tutorial is not a failproof task. Maybe your custom code does "
+"not work as expected, or you are not waiting for the right signal to be "
+"emitted, or you forgot some step, or... so the tutorial will have to be "
+"tested at least once, but more likely several times."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:227
+#, no-c-format
+msgid ""
+"Exporting the tutorial to the application data directory and then starting "
+"the target application each time you want to test the tutorial can be very "
+"tedious. To ease testing the tutorial, &ktutorial-editor; is able to start "
+"the tutorial being designed directly in the target application. The tutorial "
+"can be started from the beginning or from the currently selected step."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:228
+#, no-c-format
+msgid ""
+"Note, however, that after closing the tutorial the target application will "
+"know nothing about it. You will have to use the test action in &ktutorial-"
+"editor; to start it again, or <link linkend=\"export-tutorial\">export</"
+"link> it to a directory known by KTutorial if you want to start it from the "
+"application itself."
+msgstr ""
+
+#. Tag: title
+#: using.docbook:232
+#, no-c-format
+msgid "Other less noticeable features"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:234
+#, no-c-format
+msgid ""
+"Besides those already mentioned, &ktutorial-editor; uses a running target "
+"application to provide other small yet useful features."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:235
+#, no-c-format
+msgid ""
+"The one-line text editors to set the name of an object have text completion, "
+"so if instead of choosing the object its name is written directly in the "
+"text editor it will suggest the name based on the objects in the target "
+"application. The completion will try to suggest unique names; however, two "
+"or more proposed names can be duplicated if the objects they represent do "
+"not have a unique name, even after applying the ambiguity solving rules."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:236
+#, no-c-format
+msgid ""
+"The one-line text editor to set the name of a signal also has text "
+"completion, so when the object name was set, the text editor will suggest "
+"the signal name based on the signals that can be emitted by that object. The "
+"same schema is used for the name of properties."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:237
+#, no-c-format
+msgid ""
+"The one-line text editors for step ids in the step data and reaction dialogs "
+"have text completion too. The first one will suggest the ids not assigned "
+"yet (from the <emphasis>change to step</emphasis> field of the reactions), "
+"and the second one will suggest the ids already set in the steps."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:238
+#, no-c-format
+msgid ""
+"The text completion uses the standard KDE text completion system, so all the "
+"standard keyboard shortcuts can be used (like <keycombo action=\"simul"
+"\">&Ctrl;<keycap>T</keycap></keycombo> to show all the available "
+"completions)."
+msgstr ""
+
+#. Tag: screeninfo
+#: using.docbook:241
+#, no-c-format
+msgid "An example of text completion for a signal name"
+msgstr ""
+
+#. Tag: phrase
+#: using.docbook:247
+#, no-c-format
+msgid "Signal name completion"
+msgstr ""
+
+#. Tag: title
+#: using.docbook:255
+#, no-c-format
+msgid "Saving and loading again the tutorial"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:257
+#, no-c-format
+msgid ""
+"&ktutorial-editor; supports saving a tutorial being designed so it can be "
+"loaded later to continue working on it. To do this, just use the standard "
+"<menuchoice><guimenu>File</guimenu><guimenuitem>Save</guimenuitem></"
+"menuchoice> and <menuchoice><guimenu>File</guimenu><guimenuitem>Open...</"
+"guimenuitem></menuchoice> menu entries."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:258
+#, no-c-format
+msgid ""
+"Note that tutorials are saved in an XML format specific to &ktutorial-"
+"editor;. A tutorial saved by &ktutorial-editor; can not be used in "
+"KTutorial. The tutorial must be <link linkend=\"export-tutorial\">exported</"
+"link> before KTutorial can understand it."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:259
+#, no-c-format
+msgid ""
+"Also note that loading and saving a tutorial does not need to be done from "
+"or to a local file. Both the dialog to open a tutorial and the dialog to "
+"save it support remote directories (via <acronym>FTP</acronym>, "
+"<acronym>SSH</acronym>, etc)."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:260
+#, no-c-format
+msgid ""
+"When a tutorial is loaded or saved it is added to the recently used file "
+"list. <menuchoice><guimenu>File</guimenu><guimenuitem>Open Recent</"
+"guimenuitem></menuchoice> provides a quick way to load a recently used "
+"tutorial from that list."
+msgstr ""
+
+#. Tag: title
+#: using.docbook:264
+#, no-c-format
+msgid "Exporting the tutorial"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:266
+#, no-c-format
+msgid ""
+"Once you have finished designing the tutorial you can export it to a "
+"scripted tutorial. To do this, just use <menuchoice><guimenu>File</"
+"guimenu><guimenuitem>Export...</guimenuitem></menuchoice>, select where to "
+"save the file and you are done. Remember that you have to export the file to "
+"some specific directory to be found by KTutorial, as explained in <xref "
+"linkend=\"understanding-ktutorial\"/>."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:267
+#, no-c-format
+msgid ""
+"The export dialog also supports exporting to remote directories, although it "
+"will be very strange that you need to use that."
+msgstr ""
+
+#. Tag: title
+#: using.docbook:271
+#, no-c-format
+msgid "Command Line Options"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:273
+#, no-c-format
+msgid ""
+"Though &ktutorial-editor; will be usually started from the &kde; program "
+"menu, or a desktop icon, it can also be opened from the command line prompt "
+"of a terminal window. There are a few options that are available when doing "
+"this."
+msgstr ""
+
+#. Tag: para
+#: using.docbook:275
+#, no-c-format
+msgid ""
+"Apart from generic &kde; command line options, &ktutorial-editor; optionally "
+"accepts an URL to load a tutorial from it:"
+msgstr ""
+
+#. Tag: cmdsynopsis
+#: using.docbook:276
+#, no-c-format
+msgid ""
+"<command>ktutorial-editor</command> <arg choice=\"opt\" rep=\"norepeat"
+"\">URL</arg>"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:277
+#, no-c-format
+msgid ""
+"The URL does not need to be a local file; remote directories are also "
+"supported."
+msgstr ""
+
+#. Tag: title
+#: using.docbook:280
+#, no-c-format
+msgid "Default &kde; Command Line Options"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:282
+#, no-c-format
+msgid "The following command line help options are available:"
+msgstr ""
+
+#. Tag: command
+#: using.docbook:287
+#, no-c-format
+msgid "ktutorial-editor <option>--help</option>"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:290
+#, no-c-format
+msgid "This lists the most basic options available at the command line."
+msgstr ""
+
+#. Tag: command
+#: using.docbook:296
+#, no-c-format
+msgid "ktutorial-editor <option>--help-qt</option>"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:299
+#, no-c-format
+msgid ""
+"This lists the options available for changing the way &ktutorial-editor; "
+"interacts with &Qt;."
+msgstr ""
+
+#. Tag: command
+#: using.docbook:305
+#, no-c-format
+msgid "ktutorial-editor <option>--help-kde</option>"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:308
+#, no-c-format
+msgid ""
+"This lists the options available for changing the way &ktutorial-editor; "
+"interacts with &kde;."
+msgstr ""
+
+#. Tag: command
+#: using.docbook:314
+#, no-c-format
+msgid "ktutorial-editor <option>--help-all</option>"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:317
+#, no-c-format
+msgid "This lists all of the command line options."
+msgstr ""
+
+#. Tag: command
+#: using.docbook:323
+#, no-c-format
+msgid "ktutorial-editor <option>--author</option>"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:326
+#, no-c-format
+msgid "Lists &ktutorial-editor;'s author in the terminal window."
+msgstr ""
+
+#. Tag: command
+#: using.docbook:332
+#, no-c-format
+msgid "ktutorial-editor <option>--version</option>"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:335
+#, no-c-format
+msgid ""
+"Lists version information for &Qt;, &kde;, and &ktutorial-editor;. Also "
+"available through <command>ktutorial-editor <option>-v</option></command>."
+msgstr ""
+
+#. Tag: command
+#: using.docbook:341
+#, no-c-format
+msgid "ktutorial-editor <option>--license</option>"
+msgstr ""
+
+#. Tag: para
+#: using.docbook:344
+#, no-c-format
+msgid "Shows &ktutorial-editor;'s license text in the terminal window."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:8
+#, no-c-format
+msgid "Command Reference"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:11
+#, no-c-format
+msgid "The main &ktutorial-editor; window"
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:14
+#, no-c-format
+msgid "The <guimenu>File</guimenu> Menu"
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:19
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>New</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:29
+#, no-c-format
+msgid "Creates a new tutorial."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:35
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Open...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:45
+#, no-c-format
+msgid "Opens a saved tutorial."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:51
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Open Recent</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:58
+#, no-c-format
+msgid "Opens a tutorial from the list of the most recently used tutorials."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:64
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Save</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:74
+#, no-c-format
+msgid "Saves the tutorial to the current file."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:80
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Save As...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:87
+#, no-c-format
+msgid "Saves the tutorial to the selected file."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:93
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Export...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:100
+#, no-c-format
+msgid "Exports the tutorial to a script."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:106
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:116
+#, no-c-format
+msgid "Quits &ktutorial-editor;."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:125
+#, no-c-format
+msgid "The <guimenu>Edit</guimenu> Menu"
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:130
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo> </"
+"shortcut> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:140
+#, no-c-format
+msgid "Undoes the last edition action not undone yet."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:146
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;&Shift;<keycap>Z</keycap></"
+"keycombo> </shortcut> <guimenu>Edit</guimenu> <guimenuitem>Redo</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:156
+#, no-c-format
+msgid "Does again the last undone edition action not redone yet."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:162
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Tutorial</guimenu> <guimenuitem>Set "
+"information...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:170
+#, no-c-format
+msgid "Opens the dialog to set the name and description of the tutorial."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:176
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Tutorial</guimenu> <guimenuitem>Set "
+"license...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:184
+#, no-c-format
+msgid "Opens the dialog to set the license text of the tutorial."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:190
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Tutorial</guimenu> <guimenuitem>Set setup "
+"code...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:198
+#, no-c-format
+msgid ""
+"Opens the dialog to set the custom code to be executed when the tutorial "
+"starts."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:204
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Tutorial</guimenu> <guimenuitem>Set tear "
+"down code...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:212
+#, no-c-format
+msgid ""
+"Opens the dialog to set the custom code to be executed when the tutorial "
+"finishes."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:218
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Step</guimenu> <guimenuitem>Add step...</"
+"guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:226
+#, no-c-format
+msgid "Opens the dialog to add a new step to the tutorial."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:232
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Step</guimenu> <guimenuitem>Set data...</"
+"guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:240
+#, no-c-format
+msgid ""
+"Opens the dialog to set the name and text of the currently selected step."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:246
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Step</guimenu> <guimenuitem>Set setup "
+"code...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:254
+#, no-c-format
+msgid ""
+"Opens the dialog to set the custom code to be executed when the tutorial "
+"passes to the currently selected step."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:260
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Step</guimenu> <guimenuitem>Set tear down "
+"code...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:268
+#, no-c-format
+msgid ""
+"Opens the dialog to set the custom code to be executed when the tutorial "
+"changes from the currently selected step to another step."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:274
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Step</guimenu> <guimenuitem>Remove step</"
+"guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:282
+#, no-c-format
+msgid "Removes the currently selected step from the tutorial."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:288
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Reaction</guimenu> <guimenuitem>Add "
+"reaction...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:296
+#, no-c-format
+msgid "Opens the dialog to add a new reaction to the selected step."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:302
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Reaction</guimenu> <guimenuitem>Set data..."
+"</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:310
+#, no-c-format
+msgid ""
+"Opens the dialog to set the trigger and response of the currently selected "
+"reaction."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:316
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Reaction</guimenu> <guimenuitem>Remove "
+"reaction</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:324
+#, no-c-format
+msgid "Removes the currently selected reaction from its step."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:330
+#, no-c-format
+msgid "<guimenu>Edit</guimenu> <guimenuitem>Test tutorial</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:337
+#, no-c-format
+msgid "Starts the tutorial in the target application."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:343
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenuitem>Test tutorial from current step</"
+"guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:350
+#, no-c-format
+msgid ""
+"Starts the tutorial in the target application from the currently selected "
+"step."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:359
+#, no-c-format
+msgid "The <guimenu>View</guimenu> Menu"
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:364
+#, no-c-format
+msgid ""
+"<guimenu>View</guimenu> <guimenuitem>Panels</guimenuitem> <guimenuitem>Edit "
+"tutorial</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:372
+#, no-c-format
+msgid "Shows or hides the panel with the shorcuts to tutorial edition actions."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:378
+#, no-c-format
+msgid ""
+"<guimenu>View</guimenu> <guimenuitem>Panels</guimenuitem> <guimenuitem>Edit "
+"step</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:386
+#, no-c-format
+msgid "Shows or hides the panel with the shorcuts to step edition actions."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:392
+#, no-c-format
+msgid ""
+"<guimenu>View</guimenu> <guimenuitem>Panels</guimenuitem> <guimenuitem>Edit "
+"reaction</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:400
+#, no-c-format
+msgid "Shows or hides the panel with the shorcuts to reaction edition actions."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:409
+#, no-c-format
+msgid "The <guimenu>Settings</guimenu> Menu"
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:414
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Toolbar</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:421
+#, no-c-format
+msgid "Shows or hides the main toolbar."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:427
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Statusbar</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:434
+#, no-c-format
+msgid "Shows or hides the statusbar."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:440
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Configure Shortcuts...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:447
+#, no-c-format
+msgid "Opens a configure dialog for binding keys to actions."
+msgstr ""
+
+#. Tag: menuchoice
+#: commands.docbook:453
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Configure Toolbars...</guimenuitem>"
+msgstr ""
+
+#. Tag: action
+#: commands.docbook:460
+#, no-c-format
+msgid ""
+"Opens a configure dialog for selecting the actions to show in the toolbar."
+msgstr ""
+
+#. Tag: title
+#: commands.docbook:469
+#, no-c-format
+msgid "The <guimenu>Help</guimenu> Menu"
+msgstr ""
+
+#. Tag: sect2
+#: commands.docbook:469
+#, no-c-format
+msgid "&help.menu.documentation;"
+msgstr ""
+
+#. Tag: title
+#: installation.docbook:8
+#, no-c-format
+msgid "Installation"
+msgstr ""
+
+#. Tag: title
+#: installation.docbook:11
+#, no-c-format
+msgid "How to obtain &ktutorial-editor;"
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:13
+#, no-c-format
+msgid ""
+"&ktutorial-editor; is part of KTutorial package, which is hosted at <ulink "
+"url=\"http://sourceforge.net/\">SourceForge.net</ulink>."
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:15
+#, no-c-format
+msgid ""
+"KTutorial can be downloaded from the <ulink url=\"http://sourceforge.net/"
+"projects/ktutorial/files/\">files section</ulink> of the <ulink url=\"http://"
+"sourceforge.net/projects/ktutorial/\">KTutorial project in SourceForge.net</"
+"ulink>."
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:17
+#, no-c-format
+msgid ""
+"You are encouraged to visit, however, the <ulink url=\"http://ktutorial."
+"sourceforge.net/download.html\">download section</ulink> of the <ulink url="
+"\"http://ktutorial.sourceforge.net/\">webpage</ulink>, as a lot more "
+"information can be found there apart of only the files."
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:19
+#, no-c-format
+msgid ""
+"If you are brave enough, in the download section you will also find "
+"instructions to install KTutorial from <acronym>SVN</acronym>. However, this "
+"is only recommended for developers."
+msgstr ""
+
+#. Tag: title
+#: installation.docbook:23
+#, no-c-format
+msgid "Requirements"
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:25
+#, no-c-format
+msgid ""
+"In order to successfully build and use KTutorial, you need &kde; (at least "
+"version 4.3) and, therefore, &Qt; (at least version 4.6)."
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:27
+#, no-c-format
+msgid ""
+"To use the full feature set of &ktutorial-editor; you will also need the "
+"QtDBus module of Qt, only available in Unix systems. Without that module "
+"&ktutorial-editor; can not talk to the target application, for example to "
+"know the name of its objects."
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:29
+#, no-c-format
+msgid ""
+"Also, <application>CMake</application> build system is required to build "
+"KTutorial, as required to build any other &kde; application."
+msgstr ""
+
+#. Tag: title
+#: installation.docbook:33
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:35
+#, no-c-format
+msgid ""
+"In order to compile KTutorial on your system, extract the KTutorial package "
+"you downloaded and type the following in the base directory of the extracted "
+"package:"
+msgstr ""
+
+#. Tag: screen
+#: installation.docbook:37
+#, no-c-format
+msgid ""
+"<prompt>$</prompt> <userinput><command>mkdir</command> build &amp;&amp; "
+"<command>cd</command> build</userinput>\n"
+"<prompt>$</prompt> <userinput><command>cmake</command> ..</userinput>\n"
+"<prompt>$</prompt> <userinput><command>make</command></userinput>"
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:39
+#, no-c-format
+msgid ""
+"That will create a <filename class=\"directory\">build</filename> directory, "
+"change to it, prepare the build directory to build KTutorial on it and "
+"finally build KTutorial. If <command>cmake</command> complains, you have to "
+"install the required dependencies asked in the error message."
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:41
+#, no-c-format
+msgid "To install KTutorial, become root user and run:"
+msgstr ""
+
+#. Tag: screen
+#: installation.docbook:43
+#, no-c-format
+msgid ""
+"<prompt>#</prompt> <userinput><command>make</command> install</userinput>"
+msgstr ""
+
+#. Tag: title
+#: installation.docbook:46
+#, no-c-format
+msgid ""
+"Installing &ktutorial-editor; in <filename class=\"directory\">/usr/local/</"
+"filename>"
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:48
+#, no-c-format
+msgid ""
+"In order to keep a proper organization of your system and not mess up the "
+"packages installed by your distribution package manager and those installed "
+"manually by you, you are encouraged to install KTutorial in <filename class="
+"\"directory\">/usr/local/</filename>."
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:50
+#, no-c-format
+msgid ""
+"This is the directory that should be used for manually installed packages. "
+"To do this, instead of executing <command>cmake</command> as stated before, "
+"execute this:"
+msgstr ""
+
+#. Tag: screen
+#: installation.docbook:52
+#, no-c-format
+msgid ""
+"<prompt>$</prompt> <userinput><command>cmake</command> <parameter class="
+"\"command\">-DCMAKE_INSTALL_PREFIX=<filename class=\"directory\">/usr/local/"
+"</filename></parameter></userinput>"
+msgstr ""
+
+#. Tag: title
+#: installation.docbook:57
+#, no-c-format
+msgid "Configuration"
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:59
+#, no-c-format
+msgid ""
+"Depending on your distribution and where KTutorial was installed (if you "
+"installed it from sourcecode), you may need a last step before being able to "
+"make KTutorial run properly."
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:61
+#, no-c-format
+msgid ""
+"To check this, launch &ktutorial-editor; and take a look to the help. If "
+"&ktutorial-editor; manual cannot be found, go on reading to know what must "
+"be configured. If the manual is shown, congratulations, just enjoy! :)"
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:63
+#, no-c-format
+msgid ""
+"If the manual wasn't found, you must configure your &kde; prefixes. To do "
+"this, create the file <filename>/etc/kderc</filename> and add the following "
+"content:"
+msgstr ""
+
+#. Tag: programlisting
+#: installation.docbook:65
+#, no-c-format
+msgid ""
+"[Directories]\n"
+"prefixes=/the/prefix/where/ktutorial/was/installed/"
+msgstr ""
+
+#. Tag: para
+#: installation.docbook:67
+#, no-c-format
+msgid ""
+"If <filename>/etc/kderc</filename> already existed and had a prefixes rule, "
+"add the prefix of KTutorial separating it from the previous prefixes with a "
+"\",\" like this:"
+msgstr ""
+
+#. Tag: programlisting
+#: installation.docbook:69
+#, no-c-format
+msgid ""
+"[Directories]\n"
+"prefixes=/previous/prefixes/,/the/prefix/where/ktutorial/was/installed/"
+msgstr ""

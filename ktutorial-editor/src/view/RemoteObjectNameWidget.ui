@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RemoteObjectNameWidget</class>
+ <widget class="QWidget" name="RemoteObjectNameWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string comment="@title">Choose the remote object name</string>
+  </property>
+  <property name="whatsThis">
+   <string comment="@info:whatsthis">&lt;para&gt;Choose the name of the remote object.&lt;/para&gt;
+&lt;para&gt;If the name is known, it can be directly written. Else, it can be chosen from all the objects currently available in the target application.&lt;/para&gt;</string>
+  </property>
+  <layout class="QHBoxLayout" name="RemoteObjectNameWidgetHorizontalLayout">
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="KLineEdit" name="objectNameLineEdit">
+     <property name="whatsThis">
+      <string comment="@info:whatsthis">&lt;para&gt;The name of the QObject.&lt;/para&gt;
+&lt;para&gt;Note that the name is not the class of the object, but the string returned by its objectName() method.&lt;/para&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="KPushButton" name="objectNamePushButton">
+     <property name="toolTip">
+      <string comment="@info:tooltip">Choose the object name from a list with all the objects in the target application</string>
+     </property>
+     <property name="whatsThis">
+      <string comment="@info:whatsthis">&lt;p&gt;Opens the list with all the objects in the target application to select the object from them.&lt;/p&gt;
+&lt;p&gt;The object list must be gotten from a running application. The first time that you try to choose the object name you will be asked for the target application of the tutorial. A new instance of the application will then be started to know the available objects.&lt;/p&gt;
+&lt;p&gt;The next time that you try to choose the object name the already running application will be used. If it is quitted, a new instance will be started again.&lt;/p&gt;
+&lt;p&gt;When the target application is started all the KTutorial editor windows, except the one with the list, will be hidden. When the list is closed, the windows will be shown again.&lt;/p&gt;</string>
+     </property>
+     <property name="text">
+      <string comment="@action:button">Choose...</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KPushButton</class>
+   <extends>QPushButton</extends>
+   <header>kpushbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>klineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

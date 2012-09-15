@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RemoteObjectChooser</class>
+ <widget class="QWidget" name="RemoteObjectChooser">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string comment="@title:window">Target application objects</string>
+  </property>
+  <property name="whatsThis">
+   <string comment="@info:whatsthis">&lt;p&gt;Chooser for objects in the target application.&lt;/p&gt;
+&lt;p&gt;The objects shown in the list are all the objects accessible through KTutorial. They are shown in a tree structure to represent the parent and child relationships the objects have.&lt;/p&gt;
+&lt;p&gt;Note, however, that not all the objects have a name set in the target application. KTutorial needs to know the name of the object to find it, so if an object does not have a name KTutorial will not be able to use it.&lt;/p&gt;</string>
+  </property>
+  <layout class="QVBoxLayout" name="remoteObjectChooserVerticalLayout">
+   <item>
+    <widget class="QGroupBox" name="filtersGroupBox">
+     <property name="whatsThis">
+      <string comment="@info:whatsthis">&lt;p&gt;Filters the objects shown in the list.&lt;/p&gt;
+
+&lt;p&gt;Note, however, that if an object has to be shown in the list its parent object is also shown even if it should have been filtered.&lt;/p&gt;</string>
+     </property>
+     <property name="title">
+      <string comment="@title:group">Filters</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QCheckBox" name="showOnlyNamedObjectsCheckBox">
+        <property name="text">
+         <string comment="@option:check">Show only named objects</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="showOnlyWidgetsCheckBox">
+        <property name="text">
+         <string comment="@option:check">Show only widgets</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="AutoExpandableTreeView" name="remoteObjectsTreeView"/>
+   </item>
+   <item>
+    <widget class="KDialogButtonBox" name="dialogButtonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KDialogButtonBox</class>
+   <extends>QDialogButtonBox</extends>
+   <header>kdialogbuttonbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>AutoExpandableTreeView</class>
+   <extends>QTreeView</extends>
+   <header>AutoExpandableTreeView.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

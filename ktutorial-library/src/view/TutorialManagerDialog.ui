@@ -1,0 +1,52 @@
+<ui version="4.0" >
+ <class>TutorialManagerDialog</class>
+ <widget class="QWidget" name="TutorialManagerDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string comment="@title:window" >Tutorial manager</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QListView" name="tutorialsList" >
+     <property name="toolTip" >
+      <string comment="@info:tooltip" >Available tutorials</string>
+     </property>
+     <property name="whatsThis" >
+      <string comment="@info:whatsthis" >This is the list with the available tutorials.&lt;nl/>Select a tutorial and click &lt;interface>Start&lt;/interface> button.</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox" >
+     <property name="title" >
+      <string comment="@title" >Description</string>
+     </property>
+     <layout class="QHBoxLayout" >
+      <item>
+       <widget class="QLabel" name="descriptionLabel" >
+        <property name="toolTip" >
+         <string comment="@info:tooltip" >Description of the selected tutorial</string>
+        </property>
+        <property name="whatsThis" >
+         <string comment="@info:whatsthis" >This is the description of the selected tutorial.</string>
+        </property>
+        <property name="wordWrap" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
