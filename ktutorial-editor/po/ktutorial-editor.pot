@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/tracker/?"
 "group_id=301227&atid=1270278\n"
-"POT-Creation-Date: 2012-08-20 13:00+0200\n"
+"POT-Creation-Date: 2012-09-17 04:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,12 +68,12 @@ msgctxt "@action"
 msgid "Set step tear down code"
 msgstr ""
 
-#: commands/StepCommands.cpp:141 EditActions.cpp:290
+#: commands/StepCommands.cpp:141 EditActions.cpp:291
 msgctxt "@action"
 msgid "Add reaction"
 msgstr ""
 
-#: commands/StepCommands.cpp:186 EditActions.cpp:203
+#: commands/StepCommands.cpp:186 EditActions.cpp:204
 msgctxt "@action"
 msgid "Remove reaction"
 msgstr ""
@@ -103,116 +103,116 @@ msgctxt "@action"
 msgid "Set tutorial tear down code"
 msgstr ""
 
-#: commands/TutorialCommands.cpp:164 EditActions.cpp:248
+#: commands/TutorialCommands.cpp:164 EditActions.cpp:249
 msgctxt "@action"
 msgid "Add step"
 msgstr ""
 
-#: commands/TutorialCommands.cpp:209 EditActions.cpp:176
+#: commands/TutorialCommands.cpp:209 EditActions.cpp:177
 msgctxt "@action"
 msgid "Remove step"
 msgstr ""
 
-#: EditActions.cpp:107
+#: EditActions.cpp:108
 msgctxt "@action"
 msgid "Set information..."
 msgstr ""
 
-#: EditActions.cpp:108
+#: EditActions.cpp:109
 msgctxt "@info:status"
 msgid "Set the name and description of the tutorial."
 msgstr ""
 
-#: EditActions.cpp:116
+#: EditActions.cpp:117
 msgctxt "@action"
 msgid "Set license..."
 msgstr ""
 
-#: EditActions.cpp:117
+#: EditActions.cpp:118
 msgctxt "@info:status"
 msgid "Set the license text of the tutorial."
 msgstr ""
 
-#: EditActions.cpp:124 EditActions.cpp:157
+#: EditActions.cpp:125 EditActions.cpp:158
 msgctxt "@action"
 msgid "Set setup code..."
 msgstr ""
 
-#: EditActions.cpp:125
+#: EditActions.cpp:126
 msgctxt "@info:status"
 msgid "Set the custom code to be executed when the tutorial starts."
 msgstr ""
 
-#: EditActions.cpp:132 EditActions.cpp:166
+#: EditActions.cpp:133 EditActions.cpp:167
 msgctxt "@action"
 msgid "Set tear down code..."
 msgstr ""
 
-#: EditActions.cpp:133
+#: EditActions.cpp:134
 msgctxt "@info:status"
 msgid "Set the custom code to be executed when the tutorial finishes."
 msgstr ""
 
-#: EditActions.cpp:140
+#: EditActions.cpp:141
 msgctxt "@action"
 msgid "Add step..."
 msgstr ""
 
-#: EditActions.cpp:141
+#: EditActions.cpp:142
 msgctxt "@info:status"
 msgid "Add a new step to the tutorial."
 msgstr ""
 
-#: EditActions.cpp:148
+#: EditActions.cpp:149
 msgctxt "@action"
 msgid "Set step data..."
 msgstr ""
 
-#: EditActions.cpp:149
+#: EditActions.cpp:150
 msgctxt "@info:status"
 msgid "Set the name and text of the currently selected step."
 msgstr ""
 
-#: EditActions.cpp:158
+#: EditActions.cpp:159
 msgctxt "@info:status"
 msgid ""
 "Set the custom code to be executed when the tutorial passes to the currently "
 "selected step."
 msgstr ""
 
-#: EditActions.cpp:167
+#: EditActions.cpp:168
 msgctxt "@info:status"
 msgid ""
 "Set the custom code to be executed when the tutorial changes from the "
 "currently selected step to another step."
 msgstr ""
 
-#: EditActions.cpp:177
+#: EditActions.cpp:178
 msgctxt "@info:status"
 msgid "Removes the currently selected step from the tutorial."
 msgstr ""
 
-#: EditActions.cpp:185
+#: EditActions.cpp:186
 msgctxt "@action"
 msgid "Add reaction..."
 msgstr ""
 
-#: EditActions.cpp:186
+#: EditActions.cpp:187
 msgctxt "@info:status"
 msgid "Add a new reaction to the selected step."
 msgstr ""
 
-#: EditActions.cpp:194
+#: EditActions.cpp:195
 msgctxt "@action"
 msgid "Set reaction data..."
 msgstr ""
 
-#: EditActions.cpp:195
+#: EditActions.cpp:196
 msgctxt "@info:status"
 msgid "Set the trigger and the response of the currently selected reaction."
 msgstr ""
 
-#: EditActions.cpp:204
+#: EditActions.cpp:205
 msgctxt "@info:status"
 msgid "Removes the currently selected reaction from its step."
 msgstr ""
@@ -274,7 +274,7 @@ msgctxt "@label"
 msgid "There was a problem when trying to save the tutorial:<nl/>%1"
 msgstr ""
 
-#: FileActions.cpp:191 FileActions.cpp:226 TutorialTester.cpp:81
+#: FileActions.cpp:191 FileActions.cpp:226 TutorialTester.cpp:82
 msgctxt "@title:window"
 msgid "Tutorial could not be saved"
 msgstr ""
@@ -299,29 +299,29 @@ msgctxt "@title:window"
 msgid "Exported tutorial could not be saved"
 msgstr ""
 
-#: KTutorialEditor.cpp:166
+#: KTutorialEditor.cpp:167
 msgctxt "@title"
 msgid "Edit tutorial"
 msgstr ""
 
-#: KTutorialEditor.cpp:171
+#: KTutorialEditor.cpp:172
 msgctxt "@title"
 msgid "Edit step"
 msgstr ""
 
-#: KTutorialEditor.cpp:175 rc.cpp:64
+#: KTutorialEditor.cpp:176
 msgctxt "@title"
 msgid "Edit reaction"
 msgstr ""
 
-#: KTutorialEditor.cpp:252
+#: KTutorialEditor.cpp:253
 msgctxt ""
 "@title:window Window title for KTutorial editor when the tutorial has no "
 "associated URL"
 msgid "New file"
 msgstr ""
 
-#: KTutorialEditor.cpp:271
+#: KTutorialEditor.cpp:272
 msgctxt ""
 "@title:window Wrapper for the window title when the tutorial was modified "
 "but not saved yet"
@@ -368,11 +368,11 @@ msgctxt "@item:inlistbox A KFileDialog filter"
 msgid "*.js|Javascript file"
 msgstr ""
 
-#: serialization/TutorialReader.cpp:50
+#: serialization/TutorialReader.cpp:51
 msgid "XML document is not well formed: %1, line %2, column %3"
 msgstr ""
 
-#: serialization/TutorialReader.cpp:55
+#: serialization/TutorialReader.cpp:56
 msgid "Unknown root element, <emphasis>tutorial</emphasis> expected, got: %1"
 msgstr ""
 
@@ -396,17 +396,17 @@ msgctxt "@info:status"
 msgid "Starts the tutorial in the target application from the current step."
 msgstr ""
 
-#: tutorials/BasicConcepts.js:3
+#: tutorials/BasicConcepts.js:21
 msgid "Basic concepts"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:4
+#: tutorials/BasicConcepts.js:22
 msgid ""
 "This tutorial shows how to design a basic tutorial for the KTutorial test "
 "application."
 msgstr ""
 
-#: tutorials/BasicConcepts.js:8
+#: tutorials/BasicConcepts.js:26
 msgctxt "@info"
 msgid ""
 "<para>Welcome to the tutorial to learn the basic concepts in "
@@ -426,7 +426,7 @@ msgid ""
 "panels, or in <interface>Edit|Tutorial|Set information...</interface>.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:22
+#: tutorials/BasicConcepts.js:40
 msgctxt "@info"
 msgid ""
 "Now, set the name of the tutorial to \"Example\" and its description to "
@@ -434,7 +434,7 @@ msgid ""
 "okButton\"><interface>Ok</interface> button</link>."
 msgstr ""
 
-#: tutorials/BasicConcepts.js:36
+#: tutorials/BasicConcepts.js:54
 msgctxt "@info"
 msgid ""
 "<para>Now it is time to add the first step of the tutorial. Every tutorial "
@@ -446,7 +446,7 @@ msgid ""
 "Step|Add step...</interface>.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:50
+#: tutorials/BasicConcepts.js:68
 msgctxt "@info"
 msgid ""
 "<para>Set the id of the step to <emphasis>start</emphasis> and the text to "
@@ -459,7 +459,7 @@ msgid ""
 "italics.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:64
+#: tutorials/BasicConcepts.js:82
 msgctxt "@info"
 msgid ""
 "<para>The start step will wait until the user writes <emphasis>Hello world!</"
@@ -473,7 +473,7 @@ msgid ""
 "reaction...</interface>.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:78
+#: tutorials/BasicConcepts.js:96
 msgctxt "@info"
 msgid ""
 "<para>A reaction can be triggered when the user selects some option or when "
@@ -486,7 +486,7 @@ msgid ""
 "button</link>.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:92
+#: tutorials/BasicConcepts.js:110
 msgctxt "@info"
 msgid ""
 "<para>Once the <interface>condition met</interface> button is selected we "
@@ -498,7 +498,7 @@ msgid ""
 "button</link> to show the dialog to add new conditions.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:106
+#: tutorials/BasicConcepts.js:124
 msgctxt "@info"
 msgid ""
 "<para>In the dialog you can select the type of condition to wait for.</"
@@ -513,7 +513,7 @@ msgid ""
 "\"widget:waitForTypeComboBox\">combobox</link> and accept the dialog.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:120
+#: tutorials/BasicConcepts.js:138
 msgctxt "@info"
 msgid ""
 "<para>Just adding the condition is not enough to define it. Which signal "
@@ -528,7 +528,7 @@ msgid ""
 "\"widget:editButton\"><interface>Edit...</interface> button</link>.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:134
+#: tutorials/BasicConcepts.js:152
 msgctxt "@info"
 msgid ""
 "<para>The parameters that have to be set depend on the type of the "
@@ -553,7 +553,7 @@ msgid ""
 "the dialog.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:148
+#: tutorials/BasicConcepts.js:166
 msgctxt "@info"
 msgid ""
 "<para>Now that the parameters of the condition are set, the step will react "
@@ -570,7 +570,7 @@ msgid ""
 "code</interface> radio button.</link>.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:162
+#: tutorials/BasicConcepts.js:180
 msgctxt "@info"
 msgid ""
 "<para>The following code snippet gets the text area object, checks if it "
@@ -591,7 +591,7 @@ msgid ""
 "<interface>Paste</interface>. Once done, accept the dialog.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:176
+#: tutorials/BasicConcepts.js:194
 msgctxt "@info"
 msgid ""
 "<para>Well, we have just created the start step of the tutorial. It waits "
@@ -602,7 +602,7 @@ msgid ""
 "new step.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:190
+#: tutorials/BasicConcepts.js:208
 msgctxt "@info"
 msgid ""
 "<para>Set the id of the step to <emphasis>clearText</emphasis> and the text "
@@ -616,7 +616,7 @@ msgid ""
 "when referring to something in the graphical user interface.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:204
+#: tutorials/BasicConcepts.js:222
 msgctxt "@info"
 msgid ""
 "<para>The clearText step will wait for the user to trigger the clear action "
@@ -628,7 +628,7 @@ msgid ""
 "click on <interface>Add reaction</interface>.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:218
+#: tutorials/BasicConcepts.js:236
 msgctxt "@info"
 msgid ""
 "<para>Again, to wait for something to happen we have to add a condition. And "
@@ -638,7 +638,7 @@ msgid ""
 "parameters.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:232
+#: tutorials/BasicConcepts.js:250
 msgctxt "@info"
 msgid ""
 "<para>Usually, buttons in tool bars and menu entries are graphical "
@@ -657,7 +657,7 @@ msgid ""
 "<emphasis>triggered()</emphasis> and accept the dialog.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:246
+#: tutorials/BasicConcepts.js:264
 msgctxt "@info"
 msgid ""
 "<para>This time there is nothing else to be checked once the condition is "
@@ -671,12 +671,12 @@ msgid ""
 "</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:260
+#: tutorials/BasicConcepts.js:278
 msgctxt "@info"
 msgid "<para>We are almost done. Add another step, the last one.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:274
+#: tutorials/BasicConcepts.js:292
 msgctxt "@info"
 msgid ""
 "<para>Set the id of the step to <emphasis>end</emphasis> and its text to "
@@ -684,7 +684,7 @@ msgid ""
 "accept the dialog.</para>"
 msgstr ""
 
-#: tutorials/BasicConcepts.js:288
+#: tutorials/BasicConcepts.js:306
 msgctxt "@info"
 msgid ""
 "<para>The last step does not need a reaction, as it just informs the user "
@@ -705,18 +705,18 @@ msgid ""
 "walkthrough ends here.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:3
+#: tutorials/InteractingWithTheTargetApplication.js:21
 msgid "Interacting with the target application"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:4
+#: tutorials/InteractingWithTheTargetApplication.js:22
 msgid ""
 "This tutorial shows how KTutorial editor can interact with the target "
 "application of a tutorial, for example, to show the object names or test the "
 "tutorial without installing it."
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:8
+#: tutorials/InteractingWithTheTargetApplication.js:26
 msgctxt "@info"
 msgid ""
 "<para>Welcome to the tutorial to learn how <application>KTutorial editor</"
@@ -735,14 +735,14 @@ msgid ""
 "step</link>.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:22
+#: tutorials/InteractingWithTheTargetApplication.js:40
 msgctxt "@info"
 msgid ""
 "<para>Set the <link url=\"widget:idLineEdit\">id of the step</link> to "
 "<emphasis>start</emphasis>.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:43
+#: tutorials/InteractingWithTheTargetApplication.js:61
 msgctxt "@info"
 msgid ""
 "<para>Set the <link url=\"widget:textTextEdit\">text of the step</link> to:</"
@@ -751,41 +751,41 @@ msgid ""
 "<para><emphasis>Add a new step.</emphasis></para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:55
+#: tutorials/InteractingWithTheTargetApplication.js:73
 msgid "Add a new step."
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:64
+#: tutorials/InteractingWithTheTargetApplication.js:82
 msgctxt "@info"
 msgid ""
 "<para>And finally accept the dialog clicking in the <link url=\"widget:"
 "okButton\"><interface>Ok</interface> button</link>.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:78
+#: tutorials/InteractingWithTheTargetApplication.js:96
 msgctxt "@info"
 msgid ""
 "<para>Now, select the <emphasis>start</emphasis> step and add a new reaction "
 "to it.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:92
-#: tutorials/InteractingWithTheTargetApplication.js:375
+#: tutorials/InteractingWithTheTargetApplication.js:110
+#: tutorials/InteractingWithTheTargetApplication.js:393
 msgctxt "@info"
 msgid ""
 "<para>Set the trigger type to <link url=\"widget:triggerConditionRadioButton"
 "\"><interface>condition met</interface></link>.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:106
-#: tutorials/InteractingWithTheTargetApplication.js:389
+#: tutorials/InteractingWithTheTargetApplication.js:124
+#: tutorials/InteractingWithTheTargetApplication.js:407
 msgctxt "@info"
 msgid ""
 "<para><link url=\"widget:addButton\"><interface>Add</interface></link> a new "
 "condition.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:120
+#: tutorials/InteractingWithTheTargetApplication.js:138
 msgctxt "@info"
 msgid ""
 "<para>We want the step to react when the dialog to add a new step is shown, "
@@ -793,28 +793,28 @@ msgid ""
 "url=\"widget:waitForTypeComboBox\">combo box</link>.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:132 rc.cpp:55
+#: tutorials/InteractingWithTheTargetApplication.js:150
 msgctxt "@item:inlistbox"
 msgid "The specified window is shown"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:141
-#: tutorials/InteractingWithTheTargetApplication.js:424
+#: tutorials/InteractingWithTheTargetApplication.js:159
+#: tutorials/InteractingWithTheTargetApplication.js:442
 msgctxt "@info"
 msgid ""
 "<para><link url=\"widget:addWaitForDialog/okButton\">Accept the dialog</"
 "link> to add the condition to wait for.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:155
-#: tutorials/InteractingWithTheTargetApplication.js:438
+#: tutorials/InteractingWithTheTargetApplication.js:173
+#: tutorials/InteractingWithTheTargetApplication.js:456
 msgctxt "@info"
 msgid ""
 "<para>Select the condition just added and <link url=\"widget:editButton"
 "\">edit</link> it.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:169
+#: tutorials/InteractingWithTheTargetApplication.js:187
 msgctxt "@info"
 msgid ""
 "<para>Now it is time to set the name of the window/dialog that we want to "
@@ -836,7 +836,7 @@ msgid ""
 "select the object from the list.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:187
+#: tutorials/InteractingWithTheTargetApplication.js:205
 msgctxt "@info"
 msgid ""
 "<para>To show you the list with the objects in the target application "
@@ -854,7 +854,7 @@ msgid ""
 "in the text line, then accept the dialog.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:201
+#: tutorials/InteractingWithTheTargetApplication.js:219
 msgctxt "@info"
 msgid ""
 "<para><application>KTutorial editor</application> needs to know which "
@@ -872,13 +872,13 @@ msgid ""
 "tutorial :P</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:204
-#: tutorials/InteractingWithTheTargetApplication.js:217
+#: tutorials/InteractingWithTheTargetApplication.js:222
+#: tutorials/InteractingWithTheTargetApplication.js:235
 msgctxt "@action Tutorial option"
 msgid "Continue"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:214
+#: tutorials/InteractingWithTheTargetApplication.js:232
 msgctxt "@info"
 msgid ""
 "<para>Now you have the list with the objects that KTutorial can access in "
@@ -904,7 +904,7 @@ msgid ""
 "button to set the information of the tutorial will be highlighted.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:227
+#: tutorials/InteractingWithTheTargetApplication.js:245
 msgctxt "@info"
 msgid ""
 "<para>You may have noticed that the list does not contain the object we are "
@@ -924,14 +924,14 @@ msgid ""
 "para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:241
+#: tutorials/InteractingWithTheTargetApplication.js:259
 msgctxt "@info"
 msgid ""
 "<para>Now that the name of the window was set <link url=\"widget:"
 "editWaitForWindowDialog/okButton\">accept the dialog</link>.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:255
+#: tutorials/InteractingWithTheTargetApplication.js:273
 msgctxt "@info"
 msgid ""
 "<para>We want to change to another step when the window is shown, so now it "
@@ -941,17 +941,17 @@ msgid ""
 "link> to <emphasis>acceptDialog</emphasis>.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:276
-#: tutorials/InteractingWithTheTargetApplication.js:347
-#: tutorials/InteractingWithTheTargetApplication.js:564
-#: tutorials/InteractingWithTheTargetApplication.js:634
+#: tutorials/InteractingWithTheTargetApplication.js:294
+#: tutorials/InteractingWithTheTargetApplication.js:365
+#: tutorials/InteractingWithTheTargetApplication.js:582
+#: tutorials/InteractingWithTheTargetApplication.js:652
 msgctxt "@info"
 msgid ""
 "<para>And finally <link url=\"widget:okButton\">accept the dialog</link>.</"
 "para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:290
+#: tutorials/InteractingWithTheTargetApplication.js:308
 msgctxt "@info"
 msgid ""
 "<para>We are done with the first step. Now we will take care of the second "
@@ -961,14 +961,14 @@ msgid ""
 "addStepToolButton\">add a new step</link>.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:304
+#: tutorials/InteractingWithTheTargetApplication.js:322
 msgctxt "@info"
 msgid ""
 "<para>Set the <link url=\"widget:idLineEdit\">id of the step</link> to "
 "<emphasis>acceptDialog</emphasis>.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:325
+#: tutorials/InteractingWithTheTargetApplication.js:343
 msgctxt "@info"
 msgid ""
 "<para>Set the <link url=\"widget:textTextEdit\">text of the step</link> to:</"
@@ -982,20 +982,20 @@ msgid ""
 "area, you don't need to write it yourself.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:338
+#: tutorials/InteractingWithTheTargetApplication.js:356
 msgid ""
 "Set the id to &lt;emphasis&gt;start&lt;/emphasis&gt; and the text to &lt;"
 "emphasis&gt;First step&lt;/emphasis&gt;, then accept the dialog."
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:361
+#: tutorials/InteractingWithTheTargetApplication.js:379
 msgctxt "@info"
 msgid ""
 "<para>Now, select the <emphasis>acceptDialog</emphasis> step and add a new "
 "reaction to it.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:403
+#: tutorials/InteractingWithTheTargetApplication.js:421
 msgctxt "@info"
 msgid ""
 "<para>To wait for the user to accept the dialog we will wait for the user to "
@@ -1006,12 +1006,12 @@ msgid ""
 "\"widget:waitForTypeComboBox\">combo box</link>.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:415 rc.cpp:49
+#: tutorials/InteractingWithTheTargetApplication.js:433
 msgctxt "@item:inlistbox"
 msgid "The specified signal is emitted"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:452
+#: tutorials/InteractingWithTheTargetApplication.js:470
 msgctxt "@info"
 msgid ""
 "<para>We are again in a point where we need to know the name of an object, "
@@ -1032,7 +1032,7 @@ msgid ""
 "\">emitter name field</link> and watch the completion list pop up.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:473
+#: tutorials/InteractingWithTheTargetApplication.js:491
 msgctxt "@info"
 msgid ""
 "<para>As you can see, the completion list proposes <emphasis>okButton</"
@@ -1047,7 +1047,7 @@ msgid ""
 "down keys pressing enter when you reach the desired one.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:494
+#: tutorials/InteractingWithTheTargetApplication.js:512
 msgctxt "@info"
 msgid ""
 "<para>The signal name field also provides completion when the target "
@@ -1061,7 +1061,7 @@ msgid ""
 "button.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:508
+#: tutorials/InteractingWithTheTargetApplication.js:526
 msgctxt "@info"
 msgid ""
 "<para>As it was explained before, we want to react when the <interface>Ok</"
@@ -1069,14 +1069,14 @@ msgid ""
 "signal from the completion list.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:529
+#: tutorials/InteractingWithTheTargetApplication.js:547
 msgctxt "@info"
 msgid ""
 "<para>Now that the emitter and signal names were set <link url=\"widget:"
 "editWaitForSignalDialog/okButton\">accept the dialog</link>.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:543
+#: tutorials/InteractingWithTheTargetApplication.js:561
 msgctxt "@info"
 msgid ""
 "<para>The user accepting the dialog to add a new step will make our example "
@@ -1086,7 +1086,7 @@ msgid ""
 "link> to <emphasis>end</emphasis>.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:578
+#: tutorials/InteractingWithTheTargetApplication.js:596
 msgctxt "@info"
 msgid ""
 "<para>The last step in the tutorial will just inform the user that the "
@@ -1096,14 +1096,14 @@ msgid ""
 "addStepToolButton\">adding a new step</link>.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:592
+#: tutorials/InteractingWithTheTargetApplication.js:610
 msgctxt "@info"
 msgid ""
 "<para>Set the <link url=\"widget:idLineEdit\">id of the step</link> to "
 "<emphasis>end</emphasis>.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:613
+#: tutorials/InteractingWithTheTargetApplication.js:631
 msgctxt "@info"
 msgid ""
 "<para>Set the <link url=\"widget:textTextEdit\">text of the step</link> to:</"
@@ -1112,11 +1112,11 @@ msgid ""
 "<para><emphasis>And that's all!</emphasis></para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:625
+#: tutorials/InteractingWithTheTargetApplication.js:643
 msgid "And that's all!"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:648
+#: tutorials/InteractingWithTheTargetApplication.js:666
 msgctxt "@info"
 msgid ""
 "<para>Well, now that we have added that last step the example tutorial is "
@@ -1139,7 +1139,7 @@ msgid ""
 "toolbar.</para>"
 msgstr ""
 
-#: tutorials/InteractingWithTheTargetApplication.js:662
+#: tutorials/InteractingWithTheTargetApplication.js:680
 msgctxt "@info"
 msgid ""
 "<para>The tutorial shown in the target application is the one we have been "
@@ -1154,78 +1154,78 @@ msgid ""
 "application ends here.</para>"
 msgstr ""
 
-#: TutorialTester.cpp:78
+#: TutorialTester.cpp:79
 msgctxt "@label"
 msgid ""
 "There was a problem when trying to save the tutorial to a temporary file (to "
 "be used by the target application to test the tutorial):<nl/>%1"
 msgstr ""
 
-#: TutorialTester.cpp:96
+#: TutorialTester.cpp:97
 msgctxt "@label"
 msgid ""
 "There was a problem when trying to tell the target application to start the "
 "tutorial:<nl/>%1"
 msgstr ""
 
-#: TutorialTester.cpp:98
+#: TutorialTester.cpp:99
 msgctxt "@title:window"
 msgid "Tutorial could not be started"
 msgstr ""
 
-#: view/ReactionTreeItem.cpp:50
+#: view/ReactionTreeItem.cpp:51
 msgctxt "@item"
 msgid "Reaction"
 msgstr ""
 
-#: view/ReactionTreeItem.cpp:78
+#: view/ReactionTreeItem.cpp:79
 msgctxt "@item"
 msgid "(No condition set)"
 msgstr ""
 
-#: view/ReactionTreeItem.cpp:98
+#: view/ReactionTreeItem.cpp:99
 msgctxt "@item"
 msgid "(option name not set)"
 msgstr ""
 
-#: view/ReactionTreeItem.cpp:104
+#: view/ReactionTreeItem.cpp:105
 msgctxt "@item"
 msgid "When the option %1 is selected"
 msgstr ""
 
-#: view/ReactionTreeItem.cpp:110
+#: view/ReactionTreeItem.cpp:111
 msgctxt "@item"
 msgid "Execute the following code:"
 msgstr ""
 
-#: view/ReactionTreeItem.cpp:119
+#: view/ReactionTreeItem.cpp:120
 msgctxt "@item"
 msgid "(No code set)"
 msgstr ""
 
-#: view/ReactionTreeItem.cpp:134
+#: view/ReactionTreeItem.cpp:135
 msgctxt "@item"
 msgid "(step id not set)"
 msgstr ""
 
-#: view/ReactionTreeItem.cpp:140
+#: view/ReactionTreeItem.cpp:141
 msgctxt "@item"
 msgid "Change to step %1"
 msgstr ""
 
-#: view/RemoteObjectChooser.cpp:125
+#: view/RemoteObjectChooser.cpp:126
 msgctxt "@label"
 msgid ""
 "The target application has been closed, but it must be running to be able to "
 "choose the objects."
 msgstr ""
 
-#: view/RemoteObjectChooser.cpp:127
+#: view/RemoteObjectChooser.cpp:128
 msgctxt "@title:window"
 msgid "Target application closed"
 msgstr ""
 
-#: view/RemoteObjectChooser.cpp:143
+#: view/RemoteObjectChooser.cpp:144
 msgctxt "@label"
 msgid ""
 "<para>The <application>KTutorial editor</application> windows will be hidden "
@@ -1235,24 +1235,24 @@ msgid ""
 "windows will be shown again once the selection list is closed.</para>"
 msgstr ""
 
-#: view/RemoteObjectChooser.cpp:149
+#: view/RemoteObjectChooser.cpp:150
 msgctxt "@title:window"
 msgid "<application>KTutorial editor</application> windows will be hidden"
 msgstr ""
 
-#: view/RemoteObjectNameWidget.cpp:203
+#: view/RemoteObjectNameWidget.cpp:204
 msgctxt "@label"
 msgid ""
 "The object name can not be set, there was a problem getting the name from "
 "the target application: %1"
 msgstr ""
 
-#: view/RemoteObjectNameWidget.cpp:205
+#: view/RemoteObjectNameWidget.cpp:206
 msgctxt "@title"
 msgid "Can't communicate with the target application"
 msgstr ""
 
-#: view/RemoteObjectNameWidget.cpp:212
+#: view/RemoteObjectNameWidget.cpp:213
 msgctxt "@label"
 msgid ""
 "There is no unique name for the chosen object (at least, in the current "
@@ -1261,7 +1261,7 @@ msgid ""
 "unique name for that object."
 msgstr ""
 
-#: view/RemoteObjectNameWidget.cpp:216
+#: view/RemoteObjectNameWidget.cpp:217
 msgctxt "@title"
 msgid "The chosen object has no unique name"
 msgstr ""
@@ -1482,19 +1482,19 @@ msgctxt "@item"
 msgid "Tear down:"
 msgstr ""
 
-#: view/TargetApplicationView.cpp:100
+#: view/TargetApplicationView.cpp:101
 msgctxt "@title:window"
 msgid "Problem starting the target application"
 msgstr ""
 
-#: view/TargetApplicationView.cpp:105
+#: view/TargetApplicationView.cpp:106
 msgctxt "@label"
 msgid ""
 "The selected application could not be executed. Check the executable file "
 "permissions."
 msgstr ""
 
-#: view/TargetApplicationView.cpp:108
+#: view/TargetApplicationView.cpp:109
 msgctxt "@label"
 msgid ""
 "The selected application does not seem to have the KTutorial editor support "
@@ -1502,7 +1502,7 @@ msgid ""
 "KTutorial, or because it took it too much time to start."
 msgstr ""
 
-#: view/TargetApplicationView.cpp:113
+#: view/TargetApplicationView.cpp:114
 msgctxt "@label"
 msgid ""
 "Cannot connect to the D-Bus session bus.There is no way to communicate with "
@@ -1654,612 +1654,12 @@ msgctxt "@item"
 msgid "When the window %1 is shown"
 msgstr ""
 
-#: rc.cpp:3
-msgctxt "@title:menu"
-msgid "Tutorial"
-msgstr ""
-
-#: rc.cpp:6
-msgctxt "@title:menu Noun, a step in a tutorial"
-msgid "Step"
-msgstr ""
-
-#: rc.cpp:9
-msgctxt "@title:menu Noun, a reaction in a step"
-msgid "Reaction"
-msgstr ""
-
-#: rc.cpp:12
-msgctxt "@title:menu"
-msgid "Panels"
-msgstr ""
-
-#: rc.cpp:15
-msgctxt "@title:menu"
-msgid "Main Toolbar"
-msgstr ""
-
-#: rc.cpp:18
-msgctxt "@title"
-msgid "Set tutorial license"
-msgstr ""
-
-#: rc.cpp:21
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Set the license of the tutorial.</para>\n"
-"<para>The license is copied, commented, to the top of the exported tutorial "
-"file. That is, you don't have to worry about how comments are written in the "
-"programming language the tutorial will be exported to. Just set the pure "
-"text of the license, and the editor will take care of adding the necessary "
-"characters in each line to mark them as comments instead of source code.</"
-"para>"
-msgstr ""
-
-#: rc.cpp:25
-msgctxt "@title"
-msgid "License text"
-msgstr ""
-
-#: rc.cpp:28
-msgctxt "@title"
-msgid "New condition to wait for"
-msgstr ""
-
-#: rc.cpp:31
-msgctxt "@info:whatsthis"
-msgid "<para>Selects the type of the new condition.</para>"
-msgstr ""
-
-#: rc.cpp:34
-msgctxt "@title"
-msgid "Condition to wait for type"
-msgstr ""
-
-#: rc.cpp:37
-msgctxt "@label:listbox"
-msgid "Type:"
-msgstr ""
-
-#: rc.cpp:40
-msgctxt "@item:inlistbox"
-msgid "All the contained conditions must match"
-msgstr ""
-
-#: rc.cpp:43
-msgctxt "@item:inlistbox"
-msgid "Any of the contained conditions must match"
-msgstr ""
-
-#: rc.cpp:46
-msgctxt "@item:inlistbox"
-msgid "The contained condition can't match"
-msgstr ""
-
-#: rc.cpp:52
-msgctxt "@item:inlistbox"
-msgid "The specified event is received"
-msgstr ""
-
-#: rc.cpp:58
-msgctxt "@item:inlistbox"
-msgid "The specified property has certain value"
-msgstr ""
-
-#: rc.cpp:61
-msgctxt "@item:inlistbox"
-msgid "The step is activated"
-msgstr ""
-
-#: rc.cpp:67
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Edit the response of a step to certain trigger.</para>\n"
-"<para>When a step is active, the actions of the user can trigger a response "
-"in the tutorial. A trigger can be an option in the step selected by the "
-"user, or a condition that was met. The response can be changing to another "
-"step, or executing some custom code.</para>"
-msgstr ""
-
-#: rc.cpp:71
-msgctxt "@title:group Something that causes a response"
-msgid "Trigger"
-msgstr ""
-
-#: rc.cpp:74
-msgctxt "@option:radio"
-msgid "Option:"
-msgstr ""
-
-#: rc.cpp:77
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>The name of the option.</para>\n"
-"<para>An option with this name will be added to the step, so the same name "
-"set here will be shown to the user.</para>"
-msgstr ""
-
-#: rc.cpp:81
-msgctxt "@option:radio"
-msgid "Condition met:"
-msgstr ""
-
-#: rc.cpp:84
-msgctxt "@title:group"
-msgid "Response"
-msgstr ""
-
-#: rc.cpp:87
-msgctxt "@option:radio"
-msgid "Change to step:"
-msgstr ""
-
-#: rc.cpp:90
-msgctxt "@info:whatsthis"
-msgid "<para>The id of the step to change to.</para>"
-msgstr ""
-
-#: rc.cpp:93
-msgctxt "@option:radio"
-msgid "Custom response code:"
-msgstr ""
-
-#: rc.cpp:96
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>The custom code to execute.</para>\n"
-"<para>The code will be written as is into a new function called when the "
-"response is triggered. This means that the code must be written in the same "
-"programming language the tutorial will be exported to.</para>\n"
-"<para>Also note that you only have to provide the body of the function. The "
-"signature is automatically generated.</para>"
-msgstr ""
-
-#: rc.cpp:101
-msgctxt "@title:window"
-msgid "Target application objects"
-msgstr ""
-
-#: rc.cpp:104
-msgctxt "@info:whatsthis"
-msgid ""
-"<p>Chooser for objects in the target application.</p>\n"
-"<p>The objects shown in the list are all the objects accessible through "
-"KTutorial. They are shown in a tree structure to represent the parent and "
-"child relationships the objects have.</p>\n"
-"<p>Note, however, that not all the objects have a name set in the target "
-"application. KTutorial needs to know the name of the object to find it, so "
-"if an object does not have a name KTutorial will not be able to use it.</p>"
-msgstr ""
-
-#: rc.cpp:109
-msgctxt "@info:whatsthis"
-msgid ""
-"<p>Filters the objects shown in the list.</p>\n"
-"\n"
-"<p>Note, however, that if an object has to be shown in the list its parent "
-"object is also shown even if it should have been filtered.</p>"
-msgstr ""
-
-#: rc.cpp:114
-msgctxt "@title:group"
-msgid "Filters"
-msgstr ""
-
-#: rc.cpp:117
-msgctxt "@option:check"
-msgid "Show only named objects"
-msgstr ""
-
-#: rc.cpp:120
-msgctxt "@option:check"
-msgid "Show only widgets"
-msgstr ""
-
-#: rc.cpp:123
-msgctxt "@title"
-msgid "Choose the remote object name"
-msgstr ""
-
-#: rc.cpp:126
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Choose the name of the remote object.</para>\n"
-"<para>If the name is known, it can be directly written. Else, it can be "
-"chosen from all the objects currently available in the target application.</"
-"para>"
-msgstr ""
-
-#: rc.cpp:130
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>The name of the QObject.</para>\n"
-"<para>Note that the name is not the class of the object, but the string "
-"returned by its objectName() method.</para>"
-msgstr ""
-
-#: rc.cpp:134
-msgctxt "@info:tooltip"
-msgid ""
-"Choose the object name from a list with all the objects in the target "
-"application"
-msgstr ""
-
-#: rc.cpp:137
-msgctxt "@info:whatsthis"
-msgid ""
-"<p>Opens the list with all the objects in the target application to select "
-"the object from them.</p>\n"
-"<p>The object list must be gotten from a running application. The first time "
-"that you try to choose the object name you will be asked for the target "
-"application of the tutorial. A new instance of the application will then be "
-"started to know the available objects.</p>\n"
-"<p>The next time that you try to choose the object name the already running "
-"application will be used. If it is quitted, a new instance will be started "
-"again.</p>\n"
-"<p>When the target application is started all the KTutorial editor windows, "
-"except the one with the list, will be hidden. When the list is closed, the "
-"windows will be shown again.</p>"
-msgstr ""
-
-#: rc.cpp:143
-msgctxt "@action:button"
-msgid "Choose..."
-msgstr ""
-
-#: rc.cpp:146
-msgctxt "@title"
-msgid "URL for <emphasis>link</emphasis> element"
-msgstr ""
-
-#: rc.cpp:149
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Set the <emphasis>url</emphasis> attribute for the <emphasis>link</"
-"emphasis> semantic element.</para>\n"
-"\n"
-"<para>Any URL can be set in the <interface>Generic</interface> field. For "
-"example, the URL of a webpage or the URL to link to a widget.</para>\n"
-"\n"
-"<para>However, to link to a widget it is better to just write the object "
-"name of the desired widget in the <interface>Widget</interface> field. "
-"Moreover, that field provides also text completion for the names and a "
-"dialog to choose the widget from a running target application.</para>\n"
-"\n"
-"<para>These advanced features, though, are not available in every system; if "
-"<application>KTutorial editor</application> was not built with "
-"<application>QtDBus</application> support only a plain text line will be "
-"shown. Again, only the name has to be written in the text line for the "
-"widget; <emphasis>widget:</emphasis> is automatically added to the URL when "
-"the dialog is accepted.</para>"
-msgstr ""
-
-#: rc.cpp:158
-msgctxt "@option:radio Generic link URL"
-msgid "Generic"
-msgstr ""
-
-#: rc.cpp:161
-msgctxt "@option:radio Widget link URL"
-msgid "Widget"
-msgstr ""
-
-#: rc.cpp:164
-msgctxt "@title"
-msgid "Set step data"
-msgstr ""
-
-#: rc.cpp:167
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Set the id and the text of the step</para>\n"
-"<para>The text is shown to the user when the tutorial changes to that step.</"
-"para>\n"
-"<para>On the other hand, the id is only used internally and never shown to "
-"the user. It is used to identify the steps in the tutorial when it has to "
-"change from one to step to another.</para>"
-msgstr ""
-
-#: rc.cpp:172
-msgctxt "@title"
-msgid "Step data"
-msgstr ""
-
-#: rc.cpp:175
-msgctxt "@label:textbox"
-msgid "Id:"
-msgstr ""
-
-#: rc.cpp:178
-msgctxt "@label:textbox"
-msgid "Text:"
-msgstr ""
-
-#: rc.cpp:181
-msgctxt "@title"
-msgid "Set tutorial information"
-msgstr ""
-
-#: rc.cpp:184
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Set the name and description of the tutorial.</para>\n"
-"<para>The name and the description are shown in the dialog where the "
-"tutorial to be started is selected.</para>"
-msgstr ""
-
-#: rc.cpp:188
-msgctxt "@title"
-msgid "Tutorial information"
-msgstr ""
-
-#: rc.cpp:191
-msgctxt "@label:textbox Noun, the name of a tutorial"
-msgid "Name:"
-msgstr ""
-
-#: rc.cpp:194
-msgctxt "@label:textbox"
-msgid "Description:"
-msgstr ""
-
-#: rc.cpp:197
-msgctxt "@title"
-msgid "Edit event to wait for"
-msgstr ""
-
-#: rc.cpp:200
-msgctxt "@info:whatsthis"
-msgid "<para>Set the receiver name and the event to wait for.</para>"
-msgstr ""
-
-#: rc.cpp:203
-msgctxt "@title:group"
-msgid "Wait for event"
-msgstr ""
-
-#: rc.cpp:206
-msgctxt "@label:textbox"
-msgid "Receiver name:"
-msgstr ""
-
-#: rc.cpp:209
-msgctxt "@label:textbox"
-msgid "Event name:"
-msgstr ""
-
-#: rc.cpp:212
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>The name of the QObject that receives the event.</para>\n"
-"<para>Note that the name is not the class of the object, but the string "
-"returned by its objectName() method.</para>"
-msgstr ""
-
-#: rc.cpp:216
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>The name of the event.</para>\n"
-"<para>The name must not contain the \"QEvent::\" prefix, only the pure name "
-"of the event.</para>"
-msgstr ""
-
-#: rc.cpp:220
-msgctxt "@title"
-msgid "Edit property to wait for"
-msgstr ""
-
-#: rc.cpp:223
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Set the object name, the property name and the value to wait for.</"
-"para>"
-msgstr ""
-
-#: rc.cpp:226
-msgctxt "@title:group"
-msgid "Wait for property"
-msgstr ""
-
-#: rc.cpp:229
-msgctxt "@label:textbox"
-msgid "Object name:"
-msgstr ""
-
-#: rc.cpp:232
-msgctxt "@label:textbox"
-msgid "Property name:"
-msgstr ""
-
-#: rc.cpp:235
-msgctxt "@label:textbox"
-msgid "Value:"
-msgstr ""
-
-#: rc.cpp:238
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>The name of the QObject that contains the property.</para>\n"
-"<para>Note that the name is not the class of the object, but the string "
-"returned by its objectName() method.</para>"
-msgstr ""
-
-#: rc.cpp:242
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>The name of the property.</para>\n"
-"<para>Not every property can be used to wait until its value changes to the "
-"expected one. Only properties that have a notify signal can be used with "
-"that purpose.</para>\n"
-"<para>Properties that do not have a notify signal can still be used to "
-"enrich other conditions (for example, waiting for a signal to be emitted but "
-"only changing to the next step if, in addition, some property has some "
-"value), but they can not be used alone as single conditions in a reaction.</"
-"para>"
-msgstr ""
-
-#: rc.cpp:247
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>The expected value of the property.</para>\n"
-"<para>The value is copied as is to the script. That means that it has to be "
-"written with the syntax of the script language that the tutorial is going to "
-"be exported to. For example, if the tutorial is going to be exported to "
-"Javascript and the value to wait for is a text, the value has to be written "
-"as <em>\"The expected text\"</em> (wrapped in quotes).</para>\n"
-"<para>The value can even contain a programming expression in the script "
-"language. For example, something like <em>t.i18nc(\"@item:inlistbox\", "
-"\"Certain item text\")</em> would be used to wait for the localized text of "
-"an item in a combo box.</para>"
-msgstr ""
-
-#: rc.cpp:252
-msgctxt "@title"
-msgid "Edit signal to wait for"
-msgstr ""
-
-#: rc.cpp:255
-msgctxt "@info:whatsthis"
-msgid "<para>Set the emitter name and the signal to wait for.</para>"
-msgstr ""
-
-#: rc.cpp:258
-msgctxt "@title:group"
-msgid "Wait for signal"
-msgstr ""
-
-#: rc.cpp:261
-msgctxt "@label:textbox"
-msgid "Emitter name:"
-msgstr ""
-
-#: rc.cpp:264
-msgctxt "@label:textbox"
-msgid "Signal name:"
-msgstr ""
-
-#: rc.cpp:267
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>The name of the QObject that emits the signal.</para>\n"
-"<para>Note that the name is not the class of the object, but the string "
-"returned by its objectName() method.</para>"
-msgstr ""
-
-#: rc.cpp:271
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>The name of the signal.</para>\n"
-"<para>The name must be written as <em>signalName(TypeOfFirstArgument, "
-"TypeOfSecondArgument, TypeOfThirdArgument...)</em>, without including "
-"<em>SIGNAL()</em> wrapping text.</para>"
-msgstr ""
-
-#: rc.cpp:275
-msgctxt "@title"
-msgid "Edit condition to wait for"
-msgstr ""
-
-#: rc.cpp:278
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Edit a condition to wait for until it is met.</para>\n"
-"<para>A condition can be a plain condition or a composed condition. Plain "
-"conditions wait for some specific thing to happen, for example, they wait "
-"until a signal is emitted. Composed conditions contain other conditions "
-"(plain or also composed) and wait until something happens in its contained "
-"conditions, for example, wait until all the contained conditions were met.</"
-"para>"
-msgstr ""
-
-#: rc.cpp:282
-msgctxt "@info:tooltip"
-msgid "Add a new condition"
-msgstr ""
-
-#: rc.cpp:285
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Adds a new condition.</para>\n"
-"<para>A condition has to be added to composed conditions, that is, "
-"conditions that contain other conditions, or as the root condition when "
-"there is no other condition.</para>"
-msgstr ""
-
-#: rc.cpp:289
-msgctxt "@action:button"
-msgid "Add..."
-msgstr ""
-
-#: rc.cpp:292
-msgctxt "@info:tooltip"
-msgid "Edit the selected condition"
-msgstr ""
-
-#: rc.cpp:295
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Edits the selected condition.</para>\n"
-"<para>Only plain conditions, that is, conditions that aren't composed by "
-"other conditions, can be edited.</para>"
-msgstr ""
-
-#: rc.cpp:299
-msgctxt "@action:button"
-msgid "Edit..."
-msgstr ""
-
-#: rc.cpp:302
-msgctxt "@info:tooltip"
-msgid "Remove the selected condition"
-msgstr ""
-
-#: rc.cpp:305
-msgctxt "@info:whatsthis"
-msgid "Removes the selected condition."
-msgstr ""
-
-#: rc.cpp:308
-msgctxt "@action:button"
-msgid "Remove"
-msgstr ""
-
-#: rc.cpp:311
-msgctxt "@title"
-msgid "Edit window to wait for"
-msgstr ""
-
-#: rc.cpp:314
-msgctxt "@info:whatsthis"
-msgid "<para>Set the object name of the window to wait for.</para>"
-msgstr ""
-
-#: rc.cpp:317
-msgctxt "@title:group"
-msgid "Wait for window"
-msgstr ""
-
-#: rc.cpp:320
-msgctxt "@label:textbox"
-msgid "Window name:"
-msgstr ""
-
-#: rc.cpp:323
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>The name of the window to be shown.</para>\n"
-"<para>Note that the name is not the title of the window or its class name, "
-"but the string returned by its objectName() method.</para>\n"
-"<para>Also note that it can wait either for windows or for dialogs, not just "
-"for windows.</para>"
-msgstr ""
-
-#: rc.cpp:326
+#: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr ""
 
-#: rc.cpp:327
+#: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""

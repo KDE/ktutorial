@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/tracker/?"
 "group_id=301227&atid=1270278\n"
-"POT-Creation-Date: 2012-08-20 12:59+0200\n"
+"POT-Creation-Date: 2012-09-17 04:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: customization/DefaultKdeCustomization.cpp:63
+#: customization/DefaultKdeCustomization.cpp:62
 msgctxt "@action:inmenu"
 msgid "Tutorials..."
 msgstr ""
@@ -157,98 +157,52 @@ msgid ""
 "click on it and you will return to the tutorial selection dialog. Bye!</para>"
 msgstr ""
 
-#: view/StepTextWidget.cpp:113
+#: view/StepTextWidget.cpp:114
 msgctxt "@item:inmenu"
 msgid "Highlight"
 msgstr ""
 
-#: view/StepTextWidget.cpp:116
+#: view/StepTextWidget.cpp:117
 msgctxt "@item:inmenu"
 msgid "Stop highlighting"
 msgstr ""
 
-#: view/StepWidget.cpp:47
+#: view/StepWidget.cpp:49
 msgctxt "@title:window"
 msgid "Tutorial: %1"
 msgstr ""
 
-#: view/TutorialListModel.cpp:58
+#: view/TutorialListModel.cpp:60
 msgctxt "@title:column"
 msgid "Tutorials name"
 msgstr ""
 
-#: view/TutorialManagerDialog.cpp:42 rc.cpp:12
+#: view/TutorialManagerDialog.cpp:44
 msgctxt "@title:window"
 msgid "Tutorial manager"
 msgstr ""
 
-#: view/TutorialManagerDialog.cpp:48
+#: view/TutorialManagerDialog.cpp:50
 msgctxt "@action:button Used to start a tutorial"
 msgid "Start"
 msgstr ""
 
-#: view/TutorialManagerDialog.cpp:49
+#: view/TutorialManagerDialog.cpp:51
 msgctxt "@info:tooltip"
 msgid "Start the selected tutorial"
 msgstr ""
 
-#: view/TutorialManagerDialog.cpp:50
+#: view/TutorialManagerDialog.cpp:52
 msgctxt "@info:whatsthis"
 msgid "Start the selected tutorial"
 msgstr ""
 
-#: rc.cpp:3
-msgctxt "@info:tooltip"
-msgid "Close this tutorial"
-msgstr ""
-
-#: rc.cpp:6
-msgctxt "@info:whatsthis"
-msgid ""
-"Click here to close the tutorial.<nl/>The tutorial can be closed when you "
-"have finished it, or at any time to cancel it."
-msgstr ""
-
-#: rc.cpp:9
-msgctxt "@info:whatsthis"
-msgid ""
-"Here appear the instructions for each step of the tutorial.<nl/>Once you "
-"complete one step, a new step with new instructions will be shown."
-msgstr ""
-
-#: rc.cpp:15
-msgctxt "@info:tooltip"
-msgid "Available tutorials"
-msgstr ""
-
-#: rc.cpp:18
-msgctxt "@info:whatsthis"
-msgid ""
-"This is the list with the available tutorials.<nl/>Select a tutorial and "
-"click <interface>Start</interface> button."
-msgstr ""
-
-#: rc.cpp:21
-msgctxt "@title"
-msgid "Description"
-msgstr ""
-
-#: rc.cpp:24
-msgctxt "@info:tooltip"
-msgid "Description of the selected tutorial"
-msgstr ""
-
-#: rc.cpp:27
-msgctxt "@info:whatsthis"
-msgid "This is the description of the selected tutorial."
-msgstr ""
-
-#: rc.cpp:28
+#: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr ""
 
-#: rc.cpp:29
+#: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""

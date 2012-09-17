@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: ktutorial-editor handbook\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/tracker/?"
 "group_id=301227&atid=1270278\n"
-"POT-Creation-Date: 2012-08-20 11:00+0000\n"
+"POT-Creation-Date: 2012-09-17 02:55+0000\n"
 "PO-Revision-Date: 2012-08-20 13:14+0200\n"
 "Last-Translator: Daniel Calviño Sánchez <danxuliu@gmail.com>\n"
 "Language-Team: Spanish <>\n"
@@ -19,6 +19,551 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.4\n"
+
+#. Tag: title
+#: commands.docbook:8
+#, no-c-format
+msgid "Command Reference"
+msgstr "Referencia de órdenes"
+
+#. Tag: title
+#: commands.docbook:11
+#, no-c-format
+msgid "The main &ktutorial-editor; window"
+msgstr "La ventana principal de &ktutorial-editor;"
+
+#. Tag: title
+#: commands.docbook:14
+#, no-c-format
+msgid "The <guimenu>File</guimenu> Menu"
+msgstr "El menú <guimenu>Archivo</guimenu>"
+
+#. Tag: menuchoice
+#: commands.docbook:19
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>New</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> </"
+"shortcut> <guimenu>Archivo</guimenu> <guimenuitem>Nuevo</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:29
+#, no-c-format
+msgid "Creates a new tutorial."
+msgstr "Crea un nuevo tutorial."
+
+#. Tag: menuchoice
+#: commands.docbook:35
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Open...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo> </"
+"shortcut> <guimenu>Archivo</guimenu> <guimenuitem>Abrir...</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:45
+#, no-c-format
+msgid "Opens a saved tutorial."
+msgstr "Abre un tutorial guardado."
+
+#. Tag: menuchoice
+#: commands.docbook:51
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Open Recent</guimenuitem>"
+msgstr "<guimenu>Archivo</guimenu> <guimenuitem>Abrir reciente</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:58
+#, no-c-format
+msgid "Opens a tutorial from the list of the most recently used tutorials."
+msgstr ""
+"Abre un tutorial de la lista de los tutoriales usados más recientemente."
+
+#. Tag: menuchoice
+#: commands.docbook:64
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Save</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo> </"
+"shortcut> <guimenu>Archivo</guimenu> <guimenuitem>Guardar</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:74
+#, no-c-format
+msgid "Saves the tutorial to the current file."
+msgstr "Guarda el tutorial al archivo actual."
+
+#. Tag: menuchoice
+#: commands.docbook:80
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Save As...</guimenuitem>"
+msgstr "<guimenu>Archivo</guimenu> <guimenuitem>Guardar como...</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:87
+#, no-c-format
+msgid "Saves the tutorial to the selected file."
+msgstr "Guarda el tutorial en el archivo seleccionado."
+
+#. Tag: menuchoice
+#: commands.docbook:93
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Export...</guimenuitem>"
+msgstr "<guimenu>Archivo</guimenu> <guimenuitem>Exportar...</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:100
+#, no-c-format
+msgid "Exports the tutorial to a script."
+msgstr "Exporta el tutorial a un script."
+
+#. Tag: menuchoice
+#: commands.docbook:106
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> </"
+"shortcut> <guimenu>File</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> </"
+"shortcut> <guimenu>Archivo</guimenu> <guimenuitem>Salir</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:116
+#, no-c-format
+msgid "Quits &ktutorial-editor;."
+msgstr "Sale de &ktutorial-editor;."
+
+#. Tag: title
+#: commands.docbook:125
+#, no-c-format
+msgid "The <guimenu>Edit</guimenu> Menu"
+msgstr "El menú <guimenu>Editar</guimenu>"
+
+#. Tag: menuchoice
+#: commands.docbook:130
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo> </"
+"shortcut> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo> </"
+"shortcut> <guimenu>Editar</guimenu> <guimenuitem>Deshacer</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:140
+#, no-c-format
+msgid "Undoes the last edition action not undone yet."
+msgstr "Deshace la última acción de edición no deshecha todavía."
+
+#. Tag: menuchoice
+#: commands.docbook:146
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;&Shift;<keycap>Z</keycap></"
+"keycombo> </shortcut> <guimenu>Edit</guimenu> <guimenuitem>Redo</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;&Shift;<keycap>Z</keycap></"
+"keycombo> </shortcut> <guimenu>Editar</guimenu> <guimenuitem>Rehacer</"
+"guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:156
+#, no-c-format
+msgid "Does again the last undone edition action not redone yet."
+msgstr "Hace de nuevo la última acción de edición deshecha y no rehecha aún."
+
+#. Tag: menuchoice
+#: commands.docbook:162
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Tutorial</guimenu> <guimenuitem>Set "
+"information...</guimenuitem>"
+msgstr ""
+"<guimenu>Editar</guimenu> <guimenu>Tutorial</guimenu> "
+"<guimenuitem>Establecer información...</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:170
+#, no-c-format
+msgid "Opens the dialog to set the name and description of the tutorial."
+msgstr ""
+"Abre el diálogo para establecer el nombre y la descripción del tutorial."
+
+#. Tag: menuchoice
+#: commands.docbook:176
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Tutorial</guimenu> <guimenuitem>Set "
+"license...</guimenuitem>"
+msgstr ""
+"<guimenu>Editar</guimenu> <guimenu>Tutorial</guimenu> "
+"<guimenuitem>Establecer licencia...</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:184
+#, no-c-format
+msgid "Opens the dialog to set the license text of the tutorial."
+msgstr "Abre el diálogo para establecer el texto de la licencia del tutorial."
+
+#. Tag: menuchoice
+#: commands.docbook:190
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Tutorial</guimenu> <guimenuitem>Set setup "
+"code...</guimenuitem>"
+msgstr ""
+"<guimenu>Editar</guimenu> <guimenu>Tutorial</guimenu> "
+"<guimenuitem>Establecer código de inicialización...</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:198
+#, no-c-format
+msgid ""
+"Opens the dialog to set the custom code to be executed when the tutorial "
+"starts."
+msgstr ""
+"Abre el diálogo para establecer el código propio que se ejecutará cuando "
+"comience el tutorial."
+
+#. Tag: menuchoice
+#: commands.docbook:204
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Tutorial</guimenu> <guimenuitem>Set tear "
+"down code...</guimenuitem>"
+msgstr ""
+"<guimenu>Editar</guimenu> <guimenu>Tutorial</guimenu> "
+"<guimenuitem>Establecer código de finalización...</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:212
+#, no-c-format
+msgid ""
+"Opens the dialog to set the custom code to be executed when the tutorial "
+"finishes."
+msgstr ""
+"Abre el diálogo para establecer el código propio que se ejecutará cuando "
+"termine el tutorial."
+
+#. Tag: menuchoice
+#: commands.docbook:218
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Step</guimenu> <guimenuitem>Add step...</"
+"guimenuitem>"
+msgstr ""
+"<guimenu>Editar</guimenu> <guimenu>Paso</guimenu> <guimenuitem>Añadir paso..."
+"</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:226
+#, no-c-format
+msgid "Opens the dialog to add a new step to the tutorial."
+msgstr "Abre el diálogo para añadir un nuevo paso al tutorial."
+
+#. Tag: menuchoice
+#: commands.docbook:232
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Step</guimenu> <guimenuitem>Set data...</"
+"guimenuitem>"
+msgstr ""
+"<guimenu>Editar</guimenu> <guimenu>Paso</guimenu> <guimenuitem>Establecer "
+"datos...</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:240
+#, no-c-format
+msgid ""
+"Opens the dialog to set the name and text of the currently selected step."
+msgstr ""
+"Abre el diálogo para establecer el nombre y el texto del paso seleccionado "
+"actualmente."
+
+#. Tag: menuchoice
+#: commands.docbook:246
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Step</guimenu> <guimenuitem>Set setup "
+"code...</guimenuitem>"
+msgstr ""
+"<guimenu>Editar</guimenu> <guimenu>Paso</guimenu> <guimenuitem>Establecer "
+"código de inicialización...</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:254
+#, no-c-format
+msgid ""
+"Opens the dialog to set the custom code to be executed when the tutorial "
+"passes to the currently selected step."
+msgstr ""
+"Abre el diálogo para establecer el código propio que se ejecutará cuando el "
+"tutorial cambie al paso seleccionado actualmente."
+
+#. Tag: menuchoice
+#: commands.docbook:260
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Step</guimenu> <guimenuitem>Set tear down "
+"code...</guimenuitem>"
+msgstr ""
+"<guimenu>Editar</guimenu> <guimenu>Paso</guimenu> <guimenuitem>Establecer "
+"código de finalización...</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:268
+#, no-c-format
+msgid ""
+"Opens the dialog to set the custom code to be executed when the tutorial "
+"changes from the currently selected step to another step."
+msgstr ""
+"Abre el diálogo para establecer el código propio que se ejecutará cuando el "
+"tutorial cambie del paso seleccionado actualmente a otro paso."
+
+#. Tag: menuchoice
+#: commands.docbook:274
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Step</guimenu> <guimenuitem>Remove step</"
+"guimenuitem>"
+msgstr ""
+"<guimenu>Editar</guimenu> <guimenu>Paso</guimenu> <guimenuitem>Eliminar "
+"paso</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:282
+#, no-c-format
+msgid "Removes the currently selected step from the tutorial."
+msgstr "Elimina del tutorial el paso seleccionado actualmente."
+
+#. Tag: menuchoice
+#: commands.docbook:288
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Reaction</guimenu> <guimenuitem>Add "
+"reaction...</guimenuitem>"
+msgstr ""
+"<guimenu>Editar</guimenu> <guimenu>Reacción</guimenu> <guimenuitem>Añadir "
+"reacción...</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:296
+#, no-c-format
+msgid "Opens the dialog to add a new reaction to the selected step."
+msgstr "Abre el diálogo para añadir una nueva reacción al paso seleccionado."
+
+#. Tag: menuchoice
+#: commands.docbook:302
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Reaction</guimenu> <guimenuitem>Set data..."
+"</guimenuitem>"
+msgstr ""
+"<guimenu>Editar</guimenu> <guimenu>Reacción</guimenu> "
+"<guimenuitem>Establecer datos...</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:310
+#, no-c-format
+msgid ""
+"Opens the dialog to set the trigger and response of the currently selected "
+"reaction."
+msgstr ""
+"Abre el diálogo para establecer el activador y la respuesta de la reacción "
+"seleccionada actualmente."
+
+#. Tag: menuchoice
+#: commands.docbook:316
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenu>Reaction</guimenu> <guimenuitem>Remove "
+"reaction</guimenuitem>"
+msgstr ""
+"<guimenu>Editar</guimenu> <guimenu>Reacción</guimenu> <guimenuitem>Eliminar "
+"reacción</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:324
+#, no-c-format
+msgid "Removes the currently selected reaction from its step."
+msgstr "Elimina de su paso la reacción seleccionada actualmente."
+
+#. Tag: menuchoice
+#: commands.docbook:330
+#, no-c-format
+msgid "<guimenu>Edit</guimenu> <guimenuitem>Test tutorial</guimenuitem>"
+msgstr "<guimenu>Editar</guimenu> <guimenuitem>Probar tutorial</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:337
+#, no-c-format
+msgid "Starts the tutorial in the target application."
+msgstr "Empieza el tutorial en la aplicación objetivo."
+
+#. Tag: menuchoice
+#: commands.docbook:343
+#, no-c-format
+msgid ""
+"<guimenu>Edit</guimenu> <guimenuitem>Test tutorial from current step</"
+"guimenuitem>"
+msgstr ""
+"<guimenu>Editar</guimenu> <guimenuitem>Probar tutorial desde el paso actual</"
+"guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:350
+#, no-c-format
+msgid ""
+"Starts the tutorial in the target application from the currently selected "
+"step."
+msgstr ""
+"Empieza el tutorial en la aplicación objetivo desde el paso seleccionado "
+"actualmente."
+
+#. Tag: title
+#: commands.docbook:359
+#, no-c-format
+msgid "The <guimenu>View</guimenu> Menu"
+msgstr "El menú <guimenu>Ver</guimenu>"
+
+#. Tag: menuchoice
+#: commands.docbook:364
+#, no-c-format
+msgid ""
+"<guimenu>View</guimenu> <guimenuitem>Panels</guimenuitem> <guimenuitem>Edit "
+"tutorial</guimenuitem>"
+msgstr ""
+"<guimenu>Ver</guimenu> <guimenuitem>Paneles</guimenuitem> "
+"<guimenuitem>Editar tutorial</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:372
+#, no-c-format
+msgid "Shows or hides the panel with the shorcuts to tutorial edition actions."
+msgstr ""
+"Muestra u oculta el panel con los accesos directos a las acciones de edición "
+"del tutorial."
+
+#. Tag: menuchoice
+#: commands.docbook:378
+#, no-c-format
+msgid ""
+"<guimenu>View</guimenu> <guimenuitem>Panels</guimenuitem> <guimenuitem>Edit "
+"step</guimenuitem>"
+msgstr ""
+"<guimenu>Ver</guimenu> <guimenuitem>Paneles</guimenuitem> "
+"<guimenuitem>Editar paso</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:386
+#, no-c-format
+msgid "Shows or hides the panel with the shorcuts to step edition actions."
+msgstr ""
+"Muestra u oculta el panel con los accesos directos a las acciones de edición "
+"de los pasos."
+
+#. Tag: menuchoice
+#: commands.docbook:392
+#, no-c-format
+msgid ""
+"<guimenu>View</guimenu> <guimenuitem>Panels</guimenuitem> <guimenuitem>Edit "
+"reaction</guimenuitem>"
+msgstr ""
+"<guimenu>Ver</guimenu> <guimenuitem>Paneles</guimenuitem> "
+"<guimenuitem>Editar reacción</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:400
+#, no-c-format
+msgid "Shows or hides the panel with the shorcuts to reaction edition actions."
+msgstr ""
+"Muestra u oculta el panel con los accesos directos a las acciones de edición "
+"de las reacciones."
+
+#. Tag: title
+#: commands.docbook:409
+#, no-c-format
+msgid "The <guimenu>Settings</guimenu> Menu"
+msgstr "El menú <guimenu>Preferencias</guimenu>"
+
+#. Tag: menuchoice
+#: commands.docbook:414
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Toolbar</guimenuitem>"
+msgstr ""
+"<guimenu>Preferencias</guimenu> <guimenuitem>Mostrar la barra de "
+"herramientas</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:421
+#, no-c-format
+msgid "Shows or hides the main toolbar."
+msgstr "Muestra u oculta la barra de herramientas principal."
+
+#. Tag: menuchoice
+#: commands.docbook:427
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Statusbar</guimenuitem>"
+msgstr ""
+"<guimenu>Preferencias</guimenu> <guimenuitem>Mostrar barra de estado</"
+"guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:434
+#, no-c-format
+msgid "Shows or hides the statusbar."
+msgstr "Muestra u oculta la barra de estado."
+
+#. Tag: menuchoice
+#: commands.docbook:440
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Configure Shortcuts...</guimenuitem>"
+msgstr ""
+"<guimenu>Preferencias</guimenu> <guimenuitem>Configurar los accesos "
+"rápidos...</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:447
+#, no-c-format
+msgid "Opens a configure dialog for binding keys to actions."
+msgstr "Abre el diálogo de configuración para asociar teclas con acciones."
+
+#. Tag: menuchoice
+#: commands.docbook:453
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Configure Toolbars...</guimenuitem>"
+msgstr ""
+"<guimenu>Preferencias</guimenu> <guimenuitem>Configurar las barras de "
+"herramientas...</guimenuitem>"
+
+#. Tag: action
+#: commands.docbook:460
+#, no-c-format
+msgid ""
+"Opens a configure dialog for selecting the actions to show in the toolbar."
+msgstr ""
+"Abre el diálogo de configuración para seleccionar las acciones a mostrar en "
+"la barra de herramientas."
+
+#. Tag: title
+#: commands.docbook:469
+#, no-c-format
+msgid "The <guimenu>Help</guimenu> Menu"
+msgstr "El menú <guimenu>Ayuda</guimenu>"
+
+#. Tag: sect2
+#: commands.docbook:469
+#, no-c-format
+msgid "&help.menu.documentation;"
+msgstr "&help.menu.documentation;"
 
 #. Tag: title
 #: index.docbook:22
@@ -181,8 +726,7 @@ msgid ""
 "com</email>"
 msgstr ""
 "Programa Copyright 2010-2012 Daniel Calviño Sánchez <email>danxuliu@gmail."
-"com</"
-"email>"
+"com</email>"
 
 #. Tag: para
 #: index.docbook:100
@@ -191,9 +735,8 @@ msgid ""
 "Documentation Copyright 2010-2012 Daniel Calviño Sánchez "
 "<email>danxuliu@gmail.com</email>"
 msgstr ""
-"Documentación Copyright 2010-2012 Daniel Calviño Sánchez <email>"
-"danxuliu@gmail."
-"com</email>"
+"Documentación Copyright 2010-2012 Daniel Calviño Sánchez "
+"<email>danxuliu@gmail.com</email>"
 
 #. Tag: trans_comment
 #: index.docbook:104
@@ -208,6 +751,292 @@ msgstr ""
 #, no-c-format
 msgid "&underFDL; &underGPL;"
 msgstr "&underFDL; &underGPL;"
+
+#. Tag: title
+#: installation.docbook:8
+#, no-c-format
+msgid "Installation"
+msgstr "Instalación"
+
+#. Tag: title
+#: installation.docbook:11
+#, no-c-format
+msgid "How to obtain &ktutorial-editor;"
+msgstr "Cómo obtener &ktutorial-editor;"
+
+#. Tag: para
+#: installation.docbook:13
+#, no-c-format
+msgid ""
+"&ktutorial-editor; is part of KTutorial package, which is hosted at <ulink "
+"url=\"http://sourceforge.net/\">SourceForge.net</ulink>."
+msgstr ""
+"&ktutorial-editor; es parte del paquete KTutorial, hospedado en <ulink url="
+"\"http://sourceforge.net/\">SourceForge.net</ulink>."
+
+#. Tag: para
+#: installation.docbook:15
+#, no-c-format
+msgid ""
+"KTutorial can be downloaded from the <ulink url=\"http://sourceforge.net/"
+"projects/ktutorial/files/\">files section</ulink> of the <ulink url=\"http://"
+"sourceforge.net/projects/ktutorial/\">KTutorial project in SourceForge.net</"
+"ulink>."
+msgstr ""
+"KTutorial puede descargarse desde la <ulink url=\"http://sourceforge.net/"
+"projects/ktutorial/files/\">sección de archivos</ulink> del <ulink url="
+"\"http://sourceforge.net/projects/ktutorial/\">proyecto KTutorial en "
+"SourceForge.net</ulink>."
+
+#. Tag: para
+#: installation.docbook:17
+#, no-c-format
+msgid ""
+"You are encouraged to visit, however, the <ulink url=\"http://ktutorial."
+"sourceforge.net/download.html\">download section</ulink> of the <ulink url="
+"\"http://ktutorial.sourceforge.net/\">webpage</ulink>, as a lot more "
+"information can be found there apart of only the files."
+msgstr ""
+"Se recomienda visitar, no obstante, la <ulink url=\"http://ktutorial."
+"sourceforge.net/download.html\">sección de descargas</ulink> de la <ulink "
+"url=\"http://ktutorial.sourceforge.net/\">página web</ulink>, ya que puede "
+"encontrarse mucha más información además de simplemente los archivos."
+
+#. Tag: para
+#: installation.docbook:19
+#, no-c-format
+msgid ""
+"If you are brave enough, in the download section you will also find "
+"instructions to install KTutorial from <acronym>SVN</acronym>. However, this "
+"is only recommended for developers."
+msgstr ""
+"Si eres suficientemente valiente, en la sección de descargas también "
+"encontrarás instrucciones para instalar KTutorial desde <acronym>SVN</"
+"acronym>. No obstante, esto sólo se recomienda a desarrolladores."
+
+#. Tag: title
+#: installation.docbook:23
+#, no-c-format
+msgid "Requirements"
+msgstr "Requisitos"
+
+#. Tag: para
+#: installation.docbook:25
+#, no-c-format
+msgid ""
+"In order to successfully build and use KTutorial, you need &kde; (at least "
+"version 4.3) and, therefore, &Qt; (at least version 4.6)."
+msgstr ""
+"Para poder compilar y utilizar KTutorial con éxito, necesitas &kde; (al "
+"menos la versión 4.3) y, por tanto, &Qt; (al menos la versión 4.6)."
+
+#. Tag: para
+#: installation.docbook:27
+#, no-c-format
+msgid ""
+"To use the full feature set of &ktutorial-editor; you will also need the "
+"QtDBus module of Qt, only available in Unix systems. Without that module "
+"&ktutorial-editor; can not talk to the target application, for example to "
+"know the name of its objects."
+msgstr ""
+"Para utilizar todas las funcionalidades de &ktutorial-editor; también "
+"necesitarás el módulo QtDBus de Qt, que sólo está disponible en sistemas "
+"Unix. Sin ese módulo &ktutorial-editor; no puede hablar con la aplicación "
+"objetivo, por ejemplo para saber el nombre de sus objetos."
+
+#. Tag: para
+#: installation.docbook:29
+#, no-c-format
+msgid ""
+"Also, <application>CMake</application> build system is required to build "
+"KTutorial, as required to build any other &kde; application."
+msgstr ""
+"Además, el sistema de construcción <application>CMake</application> se "
+"necesita para compilar KTutorial, del mismo modo que se necesita para "
+"compilar cualquier otra aplicación de &kde;."
+
+#. Tag: title
+#: installation.docbook:33
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Compilación e instalación"
+
+#. Tag: para
+#: installation.docbook:35
+#, no-c-format
+msgid ""
+"In order to compile KTutorial on your system, extract the KTutorial package "
+"you downloaded and type the following in the base directory of the extracted "
+"package:"
+msgstr ""
+"Para compilar KTutorial en tu sistema, extrae el paquete de KTutorial que "
+"descargaste y escribe lo siguiente en el directorio base del paquete "
+"extraído:"
+
+#. Tag: screen
+#: installation.docbook:37
+#, no-c-format
+msgid ""
+"<prompt>$</prompt> <userinput><command>mkdir</command> build &amp;&amp; "
+"<command>cd</command> build</userinput>\n"
+"<prompt>$</prompt> <userinput><command>cmake</command> ..</userinput>\n"
+"<prompt>$</prompt> <userinput><command>make</command></userinput>"
+msgstr ""
+"<prompt>$</prompt> <userinput><command>mkdir</command> build &amp;&amp; "
+"<command>cd</command> build</userinput>\n"
+"<prompt>$</prompt> <userinput><command>cmake</command> ..</userinput>\n"
+"<prompt>$</prompt> <userinput><command>make</command></userinput>"
+
+#. Tag: para
+#: installation.docbook:39
+#, no-c-format
+msgid ""
+"That will create a <filename class=\"directory\">build</filename> directory, "
+"change to it, prepare the build directory to build KTutorial on it and "
+"finally build KTutorial. If <command>cmake</command> complains, you have to "
+"install the required dependencies asked in the error message."
+msgstr ""
+"Esto creará un directorio <filename class=\"directory\">build</filename>, "
+"cambiará a él, preparará el directorio para compilar KTutorial en él y "
+"finalmente compilará KTutorial. Si <command>cmake</command> se queja, "
+"tendrás que instalar las dependencias pedidas en el mensaje de error."
+
+#. Tag: para
+#: installation.docbook:41
+#, no-c-format
+msgid "To install KTutorial, become root user and run:"
+msgstr "Para instalar KTutorial, hazte usuario root y ejecuta:"
+
+#. Tag: screen
+#: installation.docbook:43
+#, no-c-format
+msgid ""
+"<prompt>#</prompt> <userinput><command>make</command> install</userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput><command>make</command> install</userinput>"
+
+#. Tag: title
+#: installation.docbook:46
+#, no-c-format
+msgid ""
+"Installing &ktutorial-editor; in <filename class=\"directory\">/usr/local/</"
+"filename>"
+msgstr ""
+"Instalar &ktutorial-editor; en <filename class=\"directory\">/usr/local/</"
+"filename>"
+
+#. Tag: para
+#: installation.docbook:48
+#, no-c-format
+msgid ""
+"In order to keep a proper organization of your system and not mess up the "
+"packages installed by your distribution package manager and those installed "
+"manually by you, you are encouraged to install KTutorial in <filename class="
+"\"directory\">/usr/local/</filename>."
+msgstr ""
+"Para mantener tu sistema organizado y no enredar con los paquetes instalados "
+"por el gestor de paquetes de tu distribución y los paquetes instalados por "
+"ti, se recomienda que instales KTutorial en <filename class=\"directory\">/"
+"usr/local/</filename>."
+
+#. Tag: para
+#: installation.docbook:50
+#, no-c-format
+msgid ""
+"This is the directory that should be used for manually installed packages. "
+"To do this, instead of executing <command>cmake</command> as stated before, "
+"execute this:"
+msgstr ""
+"Éste es el directorio que debería utilizarse para paquetes instalados "
+"manualmente. Para hacerlo, en lugar de ejecutar <command>cmake</command> "
+"como se indicó antes, ejecuta esto:"
+
+#. Tag: screen
+#: installation.docbook:52
+#, no-c-format
+msgid ""
+"<prompt>$</prompt> <userinput><command>cmake</command> <parameter class="
+"\"command\">-DCMAKE_INSTALL_PREFIX=<filename class=\"directory\">/usr/local/"
+"</filename></parameter></userinput>"
+msgstr ""
+"<prompt>$</prompt> <userinput><command>cmake</command> <parameter class="
+"\"command\">-DCMAKE_INSTALL_PREFIX=<filename class=\"directory\">/usr/local/"
+"</filename></parameter></userinput>"
+
+#. Tag: title
+#: installation.docbook:57
+#, no-c-format
+msgid "Configuration"
+msgstr "Configuración"
+
+#. Tag: para
+#: installation.docbook:59
+#, no-c-format
+msgid ""
+"Depending on your distribution and where KTutorial was installed (if you "
+"installed it from sourcecode), you may need a last step before being able to "
+"make KTutorial run properly."
+msgstr ""
+"Dependiendo de tu distribución y de dónde se instaló KTutorial (si lo "
+"instalaste desde el código fuente), puede que tengas que realizar un último "
+"paso para que KTutorial funcione adecuadamente."
+
+#. Tag: para
+#: installation.docbook:61
+#, no-c-format
+msgid ""
+"To check this, launch &ktutorial-editor; and take a look to the help. If "
+"&ktutorial-editor; manual cannot be found, go on reading to know what must "
+"be configured. If the manual is shown, congratulations, just enjoy! :)"
+msgstr ""
+"Para comprobarlo, ejecuta &ktutorial-editor; y mira la ayuda. Si el manual "
+"de &ktutorial-editor; no se puede encontrar, sigue leyendo para saber qué "
+"tiene que configurarse. Si se muestra el manual, felicidades, ¡simplemente "
+"disfruta! :)"
+
+#. Tag: para
+#: installation.docbook:63
+#, no-c-format
+msgid ""
+"If the manual wasn't found, you must configure your &kde; prefixes. To do "
+"this, create the file <filename>/etc/kderc</filename> and add the following "
+"content:"
+msgstr ""
+"Si no se encontró el manual debes configurar los prefijos de &kde;. Para "
+"hacer esto, crea el archivo <filename>/etc/kderc</filename> y añade el "
+"siguiente contenido:"
+
+#. Tag: programlisting
+#: installation.docbook:65
+#, no-c-format
+msgid ""
+"[Directories]\n"
+"prefixes=/the/prefix/where/ktutorial/was/installed/"
+msgstr ""
+"[Directories]\n"
+"prefixes=/el/prefijo/donde/se/instaló/ktutorial"
+
+#. Tag: para
+#: installation.docbook:67
+#, no-c-format
+msgid ""
+"If <filename>/etc/kderc</filename> already existed and had a prefixes rule, "
+"add the prefix of KTutorial separating it from the previous prefixes with a "
+"\",\" like this:"
+msgstr ""
+"Si <filename>/etc/kderc</filename> ya existe y tenía una regla de prefijos "
+"previa, añade el prefijo de KTutorial separándolo de los prefijos previos "
+"con un \",\" de este modo:"
+
+#. Tag: programlisting
+#: installation.docbook:69
+#, no-c-format
+msgid ""
+"[Directories]\n"
+"prefixes=/previous/prefixes/,/the/prefix/where/ktutorial/was/installed/"
+msgstr ""
+"[Directories]\n"
+"prefixes=/prefijos/previos/,/el/prefijo/donde/se/instaló/ktutorial"
 
 #. Tag: title
 #: using.docbook:8
@@ -1349,15 +2178,14 @@ msgid ""
 "object in the target application."
 msgstr ""
 "No obstante, ten en cuenta que el nombre y el objeto al que representa "
-"dependen del "
-"estado de la aplicación objetivo. Por ejemplo, si hay un diálogo llamado "
-"<literal>Configuration dialog</literal> con un botón llamado <literal>Ok "
-"button</literal>, su nombre único podría ser simplemente <literal>Ok button</"
-"literal>. Sin embargo, si se abriese otro diálogo llamado <literal>File "
-"information dialog</literal> cuando el diálogo <literal>Configuration "
-"dialog</literal> estuviese abierto, y el diálogo <literal>File information "
-"dialog</literal> tuviese también un botón llamado <literal>Ok button</"
-"literal>, ahora el nombre único del primer botón sería "
+"dependen del estado de la aplicación objetivo. Por ejemplo, si hay un "
+"diálogo llamado <literal>Configuration dialog</literal> con un botón llamado "
+"<literal>Ok button</literal>, su nombre único podría ser simplemente "
+"<literal>Ok button</literal>. Sin embargo, si se abriese otro diálogo "
+"llamado <literal>File information dialog</literal> cuando el diálogo "
+"<literal>Configuration dialog</literal> estuviese abierto, y el diálogo "
+"<literal>File information dialog</literal> tuviese también un botón llamado "
+"<literal>Ok button</literal>, ahora el nombre único del primer botón sería "
 "<literal>Configuration dialog/Ok button</literal>. En esta situación, "
 "<literal>Ok button</literal> no representaría a un objeto específico en la "
 "aplicación objetivo."
@@ -1780,835 +2608,3 @@ msgstr "ktutorial-editor <option>--license</option>"
 #, no-c-format
 msgid "Shows &ktutorial-editor;'s license text in the terminal window."
 msgstr "Muestra el texto de la licencia de &ktutorial-editor; en la terminal."
-
-#. Tag: title
-#: commands.docbook:8
-#, no-c-format
-msgid "Command Reference"
-msgstr "Referencia de órdenes"
-
-#. Tag: title
-#: commands.docbook:11
-#, no-c-format
-msgid "The main &ktutorial-editor; window"
-msgstr "La ventana principal de &ktutorial-editor;"
-
-#. Tag: title
-#: commands.docbook:14
-#, no-c-format
-msgid "The <guimenu>File</guimenu> Menu"
-msgstr "El menú <guimenu>Archivo</guimenu>"
-
-#. Tag: menuchoice
-#: commands.docbook:19
-#, no-c-format
-msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> </"
-"shortcut> <guimenu>File</guimenu> <guimenuitem>New</guimenuitem>"
-msgstr ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> </"
-"shortcut> <guimenu>Archivo</guimenu> <guimenuitem>Nuevo</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:29
-#, no-c-format
-msgid "Creates a new tutorial."
-msgstr "Crea un nuevo tutorial."
-
-#. Tag: menuchoice
-#: commands.docbook:35
-#, no-c-format
-msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo> </"
-"shortcut> <guimenu>File</guimenu> <guimenuitem>Open...</guimenuitem>"
-msgstr ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo> </"
-"shortcut> <guimenu>Archivo</guimenu> <guimenuitem>Abrir...</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:45
-#, no-c-format
-msgid "Opens a saved tutorial."
-msgstr "Abre un tutorial guardado."
-
-#. Tag: menuchoice
-#: commands.docbook:51
-#, no-c-format
-msgid "<guimenu>File</guimenu> <guimenuitem>Open Recent</guimenuitem>"
-msgstr "<guimenu>Archivo</guimenu> <guimenuitem>Abrir reciente</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:58
-#, no-c-format
-msgid "Opens a tutorial from the list of the most recently used tutorials."
-msgstr ""
-"Abre un tutorial de la lista de los tutoriales usados más recientemente."
-
-#. Tag: menuchoice
-#: commands.docbook:64
-#, no-c-format
-msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo> </"
-"shortcut> <guimenu>File</guimenu> <guimenuitem>Save</guimenuitem>"
-msgstr ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo> </"
-"shortcut> <guimenu>Archivo</guimenu> <guimenuitem>Guardar</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:74
-#, no-c-format
-msgid "Saves the tutorial to the current file."
-msgstr "Guarda el tutorial al archivo actual."
-
-#. Tag: menuchoice
-#: commands.docbook:80
-#, no-c-format
-msgid "<guimenu>File</guimenu> <guimenuitem>Save As...</guimenuitem>"
-msgstr "<guimenu>Archivo</guimenu> <guimenuitem>Guardar como...</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:87
-#, no-c-format
-msgid "Saves the tutorial to the selected file."
-msgstr "Guarda el tutorial en el archivo seleccionado."
-
-#. Tag: menuchoice
-#: commands.docbook:93
-#, no-c-format
-msgid "<guimenu>File</guimenu> <guimenuitem>Export...</guimenuitem>"
-msgstr "<guimenu>Archivo</guimenu> <guimenuitem>Exportar...</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:100
-#, no-c-format
-msgid "Exports the tutorial to a script."
-msgstr "Exporta el tutorial a un script."
-
-#. Tag: menuchoice
-#: commands.docbook:106
-#, no-c-format
-msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> </"
-"shortcut> <guimenu>File</guimenu> <guimenuitem>Quit</guimenuitem>"
-msgstr ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> </"
-"shortcut> <guimenu>Archivo</guimenu> <guimenuitem>Salir</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:116
-#, no-c-format
-msgid "Quits &ktutorial-editor;."
-msgstr "Sale de &ktutorial-editor;."
-
-#. Tag: title
-#: commands.docbook:125
-#, no-c-format
-msgid "The <guimenu>Edit</guimenu> Menu"
-msgstr "El menú <guimenu>Editar</guimenu>"
-
-#. Tag: menuchoice
-#: commands.docbook:130
-#, no-c-format
-msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo> </"
-"shortcut> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem>"
-msgstr ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo> </"
-"shortcut> <guimenu>Editar</guimenu> <guimenuitem>Deshacer</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:140
-#, no-c-format
-msgid "Undoes the last edition action not undone yet."
-msgstr "Deshace la última acción de edición no deshecha todavía."
-
-#. Tag: menuchoice
-#: commands.docbook:146
-#, no-c-format
-msgid ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;&Shift;<keycap>Z</keycap></"
-"keycombo> </shortcut> <guimenu>Edit</guimenu> <guimenuitem>Redo</guimenuitem>"
-msgstr ""
-"<shortcut> <keycombo action=\"simul\">&Ctrl;&Shift;<keycap>Z</keycap></"
-"keycombo> </shortcut> <guimenu>Editar</guimenu> <guimenuitem>Rehacer</"
-"guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:156
-#, no-c-format
-msgid "Does again the last undone edition action not redone yet."
-msgstr "Hace de nuevo la última acción de edición deshecha y no rehecha aún."
-
-#. Tag: menuchoice
-#: commands.docbook:162
-#, no-c-format
-msgid ""
-"<guimenu>Edit</guimenu> <guimenu>Tutorial</guimenu> <guimenuitem>Set "
-"information...</guimenuitem>"
-msgstr ""
-"<guimenu>Editar</guimenu> <guimenu>Tutorial</guimenu> "
-"<guimenuitem>Establecer información...</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:170
-#, no-c-format
-msgid "Opens the dialog to set the name and description of the tutorial."
-msgstr ""
-"Abre el diálogo para establecer el nombre y la descripción del tutorial."
-
-#. Tag: menuchoice
-#: commands.docbook:176
-#, no-c-format
-msgid ""
-"<guimenu>Edit</guimenu> <guimenu>Tutorial</guimenu> <guimenuitem>Set "
-"license...</guimenuitem>"
-msgstr ""
-"<guimenu>Editar</guimenu> <guimenu>Tutorial</guimenu> "
-"<guimenuitem>Establecer licencia...</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:184
-#, no-c-format
-msgid "Opens the dialog to set the license text of the tutorial."
-msgstr "Abre el diálogo para establecer el texto de la licencia del tutorial."
-
-#. Tag: menuchoice
-#: commands.docbook:190
-#, no-c-format
-msgid ""
-"<guimenu>Edit</guimenu> <guimenu>Tutorial</guimenu> <guimenuitem>Set setup "
-"code...</guimenuitem>"
-msgstr ""
-"<guimenu>Editar</guimenu> <guimenu>Tutorial</guimenu> "
-"<guimenuitem>Establecer código de inicialización...</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:198
-#, no-c-format
-msgid ""
-"Opens the dialog to set the custom code to be executed when the tutorial "
-"starts."
-msgstr ""
-"Abre el diálogo para establecer el código propio que se ejecutará cuando "
-"comience el tutorial."
-
-#. Tag: menuchoice
-#: commands.docbook:204
-#, no-c-format
-msgid ""
-"<guimenu>Edit</guimenu> <guimenu>Tutorial</guimenu> <guimenuitem>Set tear "
-"down code...</guimenuitem>"
-msgstr ""
-"<guimenu>Editar</guimenu> <guimenu>Tutorial</guimenu> "
-"<guimenuitem>Establecer código de finalización...</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:212
-#, no-c-format
-msgid ""
-"Opens the dialog to set the custom code to be executed when the tutorial "
-"finishes."
-msgstr ""
-"Abre el diálogo para establecer el código propio que se ejecutará cuando "
-"termine el tutorial."
-
-#. Tag: menuchoice
-#: commands.docbook:218
-#, no-c-format
-msgid ""
-"<guimenu>Edit</guimenu> <guimenu>Step</guimenu> <guimenuitem>Add step...</"
-"guimenuitem>"
-msgstr ""
-"<guimenu>Editar</guimenu> <guimenu>Paso</guimenu> <guimenuitem>Añadir paso..."
-"</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:226
-#, no-c-format
-msgid "Opens the dialog to add a new step to the tutorial."
-msgstr "Abre el diálogo para añadir un nuevo paso al tutorial."
-
-#. Tag: menuchoice
-#: commands.docbook:232
-#, no-c-format
-msgid ""
-"<guimenu>Edit</guimenu> <guimenu>Step</guimenu> <guimenuitem>Set data...</"
-"guimenuitem>"
-msgstr ""
-"<guimenu>Editar</guimenu> <guimenu>Paso</guimenu> <guimenuitem>Establecer "
-"datos...</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:240
-#, no-c-format
-msgid ""
-"Opens the dialog to set the name and text of the currently selected step."
-msgstr ""
-"Abre el diálogo para establecer el nombre y el texto del paso seleccionado "
-"actualmente."
-
-#. Tag: menuchoice
-#: commands.docbook:246
-#, no-c-format
-msgid ""
-"<guimenu>Edit</guimenu> <guimenu>Step</guimenu> <guimenuitem>Set setup "
-"code...</guimenuitem>"
-msgstr ""
-"<guimenu>Editar</guimenu> <guimenu>Paso</guimenu> <guimenuitem>Establecer "
-"código de inicialización...</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:254
-#, no-c-format
-msgid ""
-"Opens the dialog to set the custom code to be executed when the tutorial "
-"passes to the currently selected step."
-msgstr ""
-"Abre el diálogo para establecer el código propio que se ejecutará cuando el "
-"tutorial cambie al paso seleccionado actualmente."
-
-#. Tag: menuchoice
-#: commands.docbook:260
-#, no-c-format
-msgid ""
-"<guimenu>Edit</guimenu> <guimenu>Step</guimenu> <guimenuitem>Set tear down "
-"code...</guimenuitem>"
-msgstr ""
-"<guimenu>Editar</guimenu> <guimenu>Paso</guimenu> <guimenuitem>Establecer "
-"código de finalización...</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:268
-#, no-c-format
-msgid ""
-"Opens the dialog to set the custom code to be executed when the tutorial "
-"changes from the currently selected step to another step."
-msgstr ""
-"Abre el diálogo para establecer el código propio que se ejecutará cuando el "
-"tutorial cambie del paso seleccionado actualmente a otro paso."
-
-#. Tag: menuchoice
-#: commands.docbook:274
-#, no-c-format
-msgid ""
-"<guimenu>Edit</guimenu> <guimenu>Step</guimenu> <guimenuitem>Remove step</"
-"guimenuitem>"
-msgstr ""
-"<guimenu>Editar</guimenu> <guimenu>Paso</guimenu> <guimenuitem>Eliminar "
-"paso</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:282
-#, no-c-format
-msgid "Removes the currently selected step from the tutorial."
-msgstr "Elimina del tutorial el paso seleccionado actualmente."
-
-#. Tag: menuchoice
-#: commands.docbook:288
-#, no-c-format
-msgid ""
-"<guimenu>Edit</guimenu> <guimenu>Reaction</guimenu> <guimenuitem>Add "
-"reaction...</guimenuitem>"
-msgstr ""
-"<guimenu>Editar</guimenu> <guimenu>Reacción</guimenu> <guimenuitem>Añadir "
-"reacción...</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:296
-#, no-c-format
-msgid "Opens the dialog to add a new reaction to the selected step."
-msgstr "Abre el diálogo para añadir una nueva reacción al paso seleccionado."
-
-#. Tag: menuchoice
-#: commands.docbook:302
-#, no-c-format
-msgid ""
-"<guimenu>Edit</guimenu> <guimenu>Reaction</guimenu> <guimenuitem>Set data..."
-"</guimenuitem>"
-msgstr ""
-"<guimenu>Editar</guimenu> <guimenu>Reacción</guimenu> "
-"<guimenuitem>Establecer datos...</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:310
-#, no-c-format
-msgid ""
-"Opens the dialog to set the trigger and response of the currently selected "
-"reaction."
-msgstr ""
-"Abre el diálogo para establecer el activador y la respuesta de la reacción "
-"seleccionada actualmente."
-
-#. Tag: menuchoice
-#: commands.docbook:316
-#, no-c-format
-msgid ""
-"<guimenu>Edit</guimenu> <guimenu>Reaction</guimenu> <guimenuitem>Remove "
-"reaction</guimenuitem>"
-msgstr ""
-"<guimenu>Editar</guimenu> <guimenu>Reacción</guimenu> <guimenuitem>Eliminar "
-"reacción</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:324
-#, no-c-format
-msgid "Removes the currently selected reaction from its step."
-msgstr "Elimina de su paso la reacción seleccionada actualmente."
-
-#. Tag: menuchoice
-#: commands.docbook:330
-#, no-c-format
-msgid "<guimenu>Edit</guimenu> <guimenuitem>Test tutorial</guimenuitem>"
-msgstr "<guimenu>Editar</guimenu> <guimenuitem>Probar tutorial</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:337
-#, no-c-format
-msgid "Starts the tutorial in the target application."
-msgstr "Empieza el tutorial en la aplicación objetivo."
-
-#. Tag: menuchoice
-#: commands.docbook:343
-#, no-c-format
-msgid ""
-"<guimenu>Edit</guimenu> <guimenuitem>Test tutorial from current step</"
-"guimenuitem>"
-msgstr ""
-"<guimenu>Editar</guimenu> <guimenuitem>Probar tutorial desde el paso actual</"
-"guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:350
-#, no-c-format
-msgid ""
-"Starts the tutorial in the target application from the currently selected "
-"step."
-msgstr ""
-"Empieza el tutorial en la aplicación objetivo desde el paso seleccionado "
-"actualmente."
-
-#. Tag: title
-#: commands.docbook:359
-#, no-c-format
-msgid "The <guimenu>View</guimenu> Menu"
-msgstr "El menú <guimenu>Ver</guimenu>"
-
-#. Tag: menuchoice
-#: commands.docbook:364
-#, no-c-format
-msgid ""
-"<guimenu>View</guimenu> <guimenuitem>Panels</guimenuitem> <guimenuitem>Edit "
-"tutorial</guimenuitem>"
-msgstr ""
-"<guimenu>Ver</guimenu> <guimenuitem>Paneles</guimenuitem> "
-"<guimenuitem>Editar tutorial</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:372
-#, no-c-format
-msgid "Shows or hides the panel with the shorcuts to tutorial edition actions."
-msgstr ""
-"Muestra u oculta el panel con los accesos directos a las acciones de edición "
-"del tutorial."
-
-#. Tag: menuchoice
-#: commands.docbook:378
-#, no-c-format
-msgid ""
-"<guimenu>View</guimenu> <guimenuitem>Panels</guimenuitem> <guimenuitem>Edit "
-"step</guimenuitem>"
-msgstr ""
-"<guimenu>Ver</guimenu> <guimenuitem>Paneles</guimenuitem> "
-"<guimenuitem>Editar paso</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:386
-#, no-c-format
-msgid "Shows or hides the panel with the shorcuts to step edition actions."
-msgstr ""
-"Muestra u oculta el panel con los accesos directos a las acciones de edición "
-"de los pasos."
-
-#. Tag: menuchoice
-#: commands.docbook:392
-#, no-c-format
-msgid ""
-"<guimenu>View</guimenu> <guimenuitem>Panels</guimenuitem> <guimenuitem>Edit "
-"reaction</guimenuitem>"
-msgstr ""
-"<guimenu>Ver</guimenu> <guimenuitem>Paneles</guimenuitem> "
-"<guimenuitem>Editar reacción</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:400
-#, no-c-format
-msgid "Shows or hides the panel with the shorcuts to reaction edition actions."
-msgstr ""
-"Muestra u oculta el panel con los accesos directos a las acciones de edición "
-"de las reacciones."
-
-#. Tag: title
-#: commands.docbook:409
-#, no-c-format
-msgid "The <guimenu>Settings</guimenu> Menu"
-msgstr "El menú <guimenu>Preferencias</guimenu>"
-
-#. Tag: menuchoice
-#: commands.docbook:414
-#, no-c-format
-msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Toolbar</guimenuitem>"
-msgstr ""
-"<guimenu>Preferencias</guimenu> <guimenuitem>Mostrar la barra de "
-"herramientas</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:421
-#, no-c-format
-msgid "Shows or hides the main toolbar."
-msgstr "Muestra u oculta la barra de herramientas principal."
-
-#. Tag: menuchoice
-#: commands.docbook:427
-#, no-c-format
-msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Statusbar</guimenuitem>"
-msgstr ""
-"<guimenu>Preferencias</guimenu> <guimenuitem>Mostrar barra de estado</"
-"guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:434
-#, no-c-format
-msgid "Shows or hides the statusbar."
-msgstr "Muestra u oculta la barra de estado."
-
-#. Tag: menuchoice
-#: commands.docbook:440
-#, no-c-format
-msgid ""
-"<guimenu>Settings</guimenu> <guimenuitem>Configure Shortcuts...</guimenuitem>"
-msgstr ""
-"<guimenu>Preferencias</guimenu> <guimenuitem>Configurar los accesos "
-"rápidos...</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:447
-#, no-c-format
-msgid "Opens a configure dialog for binding keys to actions."
-msgstr "Abre el diálogo de configuración para asociar teclas con acciones."
-
-#. Tag: menuchoice
-#: commands.docbook:453
-#, no-c-format
-msgid ""
-"<guimenu>Settings</guimenu> <guimenuitem>Configure Toolbars...</guimenuitem>"
-msgstr ""
-"<guimenu>Preferencias</guimenu> <guimenuitem>Configurar las barras de "
-"herramientas...</guimenuitem>"
-
-#. Tag: action
-#: commands.docbook:460
-#, no-c-format
-msgid ""
-"Opens a configure dialog for selecting the actions to show in the toolbar."
-msgstr ""
-"Abre el diálogo de configuración para seleccionar las acciones a mostrar en "
-"la barra de herramientas."
-
-#. Tag: title
-#: commands.docbook:469
-#, no-c-format
-msgid "The <guimenu>Help</guimenu> Menu"
-msgstr "El menú <guimenu>Ayuda</guimenu>"
-
-#. Tag: sect2
-#: commands.docbook:469
-#, no-c-format
-msgid "&help.menu.documentation;"
-msgstr "&help.menu.documentation;"
-
-#. Tag: title
-#: installation.docbook:8
-#, no-c-format
-msgid "Installation"
-msgstr "Instalación"
-
-#. Tag: title
-#: installation.docbook:11
-#, no-c-format
-msgid "How to obtain &ktutorial-editor;"
-msgstr "Cómo obtener &ktutorial-editor;"
-
-#. Tag: para
-#: installation.docbook:13
-#, no-c-format
-msgid ""
-"&ktutorial-editor; is part of KTutorial package, which is hosted at <ulink "
-"url=\"http://sourceforge.net/\">SourceForge.net</ulink>."
-msgstr ""
-"&ktutorial-editor; es parte del paquete KTutorial, hospedado en <ulink url="
-"\"http://sourceforge.net/\">SourceForge.net</ulink>."
-
-#. Tag: para
-#: installation.docbook:15
-#, no-c-format
-msgid ""
-"KTutorial can be downloaded from the <ulink url=\"http://sourceforge.net/"
-"projects/ktutorial/files/\">files section</ulink> of the <ulink url=\"http://"
-"sourceforge.net/projects/ktutorial/\">KTutorial project in SourceForge.net</"
-"ulink>."
-msgstr ""
-"KTutorial puede descargarse desde la <ulink url=\"http://sourceforge.net/"
-"projects/ktutorial/files/\">sección de archivos</ulink> del <ulink url="
-"\"http://sourceforge.net/projects/ktutorial/\">proyecto KTutorial en "
-"SourceForge.net</ulink>."
-
-#. Tag: para
-#: installation.docbook:17
-#, no-c-format
-msgid ""
-"You are encouraged to visit, however, the <ulink url=\"http://ktutorial."
-"sourceforge.net/download.html\">download section</ulink> of the <ulink url="
-"\"http://ktutorial.sourceforge.net/\">webpage</ulink>, as a lot more "
-"information can be found there apart of only the files."
-msgstr ""
-"Se recomienda visitar, no obstante, la <ulink url=\"http://ktutorial."
-"sourceforge.net/download.html\">sección de descargas</ulink> de la <ulink "
-"url=\"http://ktutorial.sourceforge.net/\">página web</ulink>, ya que puede "
-"encontrarse mucha más información además de simplemente los archivos."
-
-#. Tag: para
-#: installation.docbook:19
-#, no-c-format
-msgid ""
-"If you are brave enough, in the download section you will also find "
-"instructions to install KTutorial from <acronym>SVN</acronym>. However, this "
-"is only recommended for developers."
-msgstr ""
-"Si eres suficientemente valiente, en la sección de descargas también "
-"encontrarás instrucciones para instalar KTutorial desde <acronym>SVN</"
-"acronym>. No obstante, esto sólo se recomienda a desarrolladores."
-
-#. Tag: title
-#: installation.docbook:23
-#, no-c-format
-msgid "Requirements"
-msgstr "Requisitos"
-
-#. Tag: para
-#: installation.docbook:25
-#, no-c-format
-msgid ""
-"In order to successfully build and use KTutorial, you need &kde; (at least "
-"version 4.3) and, therefore, &Qt; (at least version 4.6)."
-msgstr ""
-"Para poder compilar y utilizar KTutorial con éxito, necesitas &kde; (al "
-"menos la versión 4.3) y, por tanto, &Qt; (al menos la versión 4.6)."
-
-#. Tag: para
-#: installation.docbook:27
-#, no-c-format
-msgid ""
-"To use the full feature set of &ktutorial-editor; you will also need the "
-"QtDBus module of Qt, only available in Unix systems. Without that module "
-"&ktutorial-editor; can not talk to the target application, for example to "
-"know the name of its objects."
-msgstr ""
-"Para utilizar todas las funcionalidades de &ktutorial-editor; también "
-"necesitarás el módulo QtDBus de Qt, que sólo está disponible en sistemas "
-"Unix. Sin ese módulo &ktutorial-editor; no puede hablar con la aplicación "
-"objetivo, por ejemplo para saber el nombre de sus objetos."
-
-#. Tag: para
-#: installation.docbook:29
-#, no-c-format
-msgid ""
-"Also, <application>CMake</application> build system is required to build "
-"KTutorial, as required to build any other &kde; application."
-msgstr ""
-"Además, el sistema de construcción <application>CMake</application> se "
-"necesita para compilar KTutorial, del mismo modo que se necesita para "
-"compilar cualquier otra aplicación de &kde;."
-
-#. Tag: title
-#: installation.docbook:33
-#, no-c-format
-msgid "Compilation and Installation"
-msgstr "Compilación e instalación"
-
-#. Tag: para
-#: installation.docbook:35
-#, no-c-format
-msgid ""
-"In order to compile KTutorial on your system, extract the KTutorial package "
-"you downloaded and type the following in the base directory of the extracted "
-"package:"
-msgstr ""
-"Para compilar KTutorial en tu sistema, extrae el paquete de KTutorial que "
-"descargaste y escribe lo siguiente en el directorio base del paquete "
-"extraído:"
-
-#. Tag: screen
-#: installation.docbook:37
-#, no-c-format
-msgid ""
-"<prompt>$</prompt> <userinput><command>mkdir</command> build &amp;&amp; "
-"<command>cd</command> build</userinput>\n"
-"<prompt>$</prompt> <userinput><command>cmake</command> ..</userinput>\n"
-"<prompt>$</prompt> <userinput><command>make</command></userinput>"
-msgstr ""
-"<prompt>$</prompt> <userinput><command>mkdir</command> build &amp;&amp; "
-"<command>cd</command> build</userinput>\n"
-"<prompt>$</prompt> <userinput><command>cmake</command> ..</userinput>\n"
-"<prompt>$</prompt> <userinput><command>make</command></userinput>"
-
-#. Tag: para
-#: installation.docbook:39
-#, no-c-format
-msgid ""
-"That will create a <filename class=\"directory\">build</filename> directory, "
-"change to it, prepare the build directory to build KTutorial on it and "
-"finally build KTutorial. If <command>cmake</command> complains, you have to "
-"install the required dependencies asked in the error message."
-msgstr ""
-"Esto creará un directorio <filename class=\"directory\">build</filename>, "
-"cambiará a él, preparará el directorio para compilar KTutorial en él y "
-"finalmente compilará KTutorial. Si <command>cmake</command> se queja, "
-"tendrás que instalar las dependencias pedidas en el mensaje de error."
-
-#. Tag: para
-#: installation.docbook:41
-#, no-c-format
-msgid "To install KTutorial, become root user and run:"
-msgstr "Para instalar KTutorial, hazte usuario root y ejecuta:"
-
-#. Tag: screen
-#: installation.docbook:43
-#, no-c-format
-msgid ""
-"<prompt>#</prompt> <userinput><command>make</command> install</userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput><command>make</command> install</userinput>"
-
-#. Tag: title
-#: installation.docbook:46
-#, no-c-format
-msgid ""
-"Installing &ktutorial-editor; in <filename class=\"directory\">/usr/local/</"
-"filename>"
-msgstr ""
-"Instalar &ktutorial-editor; en <filename class=\"directory\">/usr/local/</"
-"filename>"
-
-#. Tag: para
-#: installation.docbook:48
-#, no-c-format
-msgid ""
-"In order to keep a proper organization of your system and not mess up the "
-"packages installed by your distribution package manager and those installed "
-"manually by you, you are encouraged to install KTutorial in <filename class="
-"\"directory\">/usr/local/</filename>."
-msgstr ""
-"Para mantener tu sistema organizado y no enredar con los paquetes instalados "
-"por el gestor de paquetes de tu distribución y los paquetes instalados por "
-"ti, se recomienda que instales KTutorial en <filename class=\"directory\">/"
-"usr/local/</filename>."
-
-#. Tag: para
-#: installation.docbook:50
-#, no-c-format
-msgid ""
-"This is the directory that should be used for manually installed packages. "
-"To do this, instead of executing <command>cmake</command> as stated before, "
-"execute this:"
-msgstr ""
-"Éste es el directorio que debería utilizarse para paquetes instalados "
-"manualmente. Para hacerlo, en lugar de ejecutar <command>cmake</command> "
-"como se indicó antes, ejecuta esto:"
-
-#. Tag: screen
-#: installation.docbook:52
-#, no-c-format
-msgid ""
-"<prompt>$</prompt> <userinput><command>cmake</command> <parameter class="
-"\"command\">-DCMAKE_INSTALL_PREFIX=<filename class=\"directory\">/usr/local/"
-"</filename></parameter></userinput>"
-msgstr ""
-"<prompt>$</prompt> <userinput><command>cmake</command> <parameter class="
-"\"command\">-DCMAKE_INSTALL_PREFIX=<filename class=\"directory\">/usr/local/"
-"</filename></parameter></userinput>"
-
-#. Tag: title
-#: installation.docbook:57
-#, no-c-format
-msgid "Configuration"
-msgstr "Configuración"
-
-#. Tag: para
-#: installation.docbook:59
-#, no-c-format
-msgid ""
-"Depending on your distribution and where KTutorial was installed (if you "
-"installed it from sourcecode), you may need a last step before being able to "
-"make KTutorial run properly."
-msgstr ""
-"Dependiendo de tu distribución y de dónde se instaló KTutorial (si lo "
-"instalaste desde el código fuente), puede que tengas que realizar un último "
-"paso para que KTutorial funcione adecuadamente."
-
-#. Tag: para
-#: installation.docbook:61
-#, no-c-format
-msgid ""
-"To check this, launch &ktutorial-editor; and take a look to the help. If "
-"&ktutorial-editor; manual cannot be found, go on reading to know what must "
-"be configured. If the manual is shown, congratulations, just enjoy! :)"
-msgstr ""
-"Para comprobarlo, ejecuta &ktutorial-editor; y mira la ayuda. Si el manual "
-"de &ktutorial-editor; no se puede encontrar, sigue leyendo para saber qué "
-"tiene que configurarse. Si se muestra el manual, felicidades, ¡simplemente "
-"disfruta! :)"
-
-#. Tag: para
-#: installation.docbook:63
-#, no-c-format
-msgid ""
-"If the manual wasn't found, you must configure your &kde; prefixes. To do "
-"this, create the file <filename>/etc/kderc</filename> and add the following "
-"content:"
-msgstr ""
-"Si no se encontró el manual debes configurar los prefijos de &kde;. Para "
-"hacer esto, crea el archivo <filename>/etc/kderc</filename> y añade el "
-"siguiente contenido:"
-
-#. Tag: programlisting
-#: installation.docbook:65
-#, no-c-format
-msgid ""
-"[Directories]\n"
-"prefixes=/the/prefix/where/ktutorial/was/installed/"
-msgstr ""
-"[Directories]\n"
-"prefixes=/el/prefijo/donde/se/instaló/ktutorial"
-
-#. Tag: para
-#: installation.docbook:67
-#, no-c-format
-msgid ""
-"If <filename>/etc/kderc</filename> already existed and had a prefixes rule, "
-"add the prefix of KTutorial separating it from the previous prefixes with a "
-"\",\" like this:"
-msgstr ""
-"Si <filename>/etc/kderc</filename> ya existe y tenía una regla de prefijos "
-"previa, añade el prefijo de KTutorial separándolo de los prefijos previos "
-"con un \",\" de este modo:"
-
-#. Tag: programlisting
-#: installation.docbook:69
-#, no-c-format
-msgid ""
-"[Directories]\n"
-"prefixes=/previous/prefixes/,/the/prefix/where/ktutorial/was/installed/"
-msgstr ""
-"[Directories]\n"
-"prefixes=/prefijos/previos/,/el/prefijo/donde/se/instaló/ktutorial"
-

@@ -8,10 +8,11 @@ msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/tracker/?"
 "group_id=301227&atid=1270278\n"
-"POT-Creation-Date: 2010-10-26 04:11+0200\n"
+"POT-Creation-Date: 2012-09-17 04:55+0200\n"
 "PO-Revision-Date: 2010-10-25 19:02+0200\n"
 "Last-Translator: Daniel Calviño Sánchez <danxuliu@gmail.com>\n"
 "Language-Team: Español\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -53,16 +54,12 @@ msgctxt "@info:credit"
 msgid "KTutorial integration and tutorials"
 msgstr "Integración con KTutorial y tutoriales"
 
-#: po/rc.cpp:3 rc.cpp:3
-msgid "Main Toolbar"
-msgstr "Barra de herramientas principal"
-
-#: po/rc.cpp:4 rc.cpp:4
+#: po/rc.cpp:1 rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Daniel Calviño Sánchez"
 
-#: po/rc.cpp:5 rc.cpp:5
+#: po/rc.cpp:2 rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "danxuliu@gmail.com"
@@ -72,22 +69,22 @@ msgctxt "@action"
 msgid "Clear"
 msgstr "Limpiar"
 
-#: TutorialClearText.cpp:33 TutorialClearText.js:21 TutorialClearText.py:24
+#: TutorialClearText.cpp:39 TutorialClearText.js:21 TutorialClearText.py:24
 msgid "Clear the text area"
 msgstr "Limpiar el área de texto"
 
-#: TutorialClearText.cpp:34 TutorialClearText.js:22 TutorialClearText.py:25
+#: TutorialClearText.cpp:40 TutorialClearText.js:22 TutorialClearText.py:25
 msgid "This tutorial shows how to clean the text area with ease"
 msgstr "Este tutorial muestra cómo limpiar el área de texto con facilidad"
 
-#: TutorialClearText.cpp:38 TutorialClearText.cpp:68 TutorialClearText.js:26
+#: TutorialClearText.cpp:44 TutorialClearText.cpp:74 TutorialClearText.js:26
 #: TutorialClearText.js:35 TutorialClearText.py:29 TutorialClearText.py:38
-#: TutorialMoveText.cpp:76 TutorialMoveText.cpp:168 TutorialMoveText.py:84
+#: TutorialMoveText.cpp:84 TutorialMoveText.cpp:176 TutorialMoveText.py:84
 #: TutorialMoveText.py:91
 msgid "Hello world"
 msgstr "Hola mundo"
 
-#: TutorialClearText.cpp:38 TutorialClearText.js:26 TutorialClearText.py:29
+#: TutorialClearText.cpp:44 TutorialClearText.js:26 TutorialClearText.py:29
 msgctxt "@info"
 msgid ""
 "In this tutorial you will learn how to clear text in the test application."
@@ -96,7 +93,7 @@ msgstr ""
 "En este tutorial aprenderás cómo limpiar el texto en la aplicación de prueba."
 "<nl/>Primero, escribe \"%1\" (sin las comillas) en el área de texto"
 
-#: TutorialClearText.cpp:48 TutorialClearText.js:44 TutorialClearText.py:45
+#: TutorialClearText.cpp:54 TutorialClearText.js:44 TutorialClearText.py:45
 msgctxt "@info"
 msgid ""
 "Now, you must trigger the clear action.<nl/>To do this, you can click in "
@@ -107,20 +104,20 @@ msgstr ""
 "click en <interface>Archivo|Limpiar</interface>, o en el botón de la barra "
 "de herramientas llamado <interface>Limpiar</interface>."
 
-#: TutorialClearText.cpp:58 TutorialClearText.js:56 TutorialClearText.py:57
+#: TutorialClearText.cpp:64 TutorialClearText.js:56 TutorialClearText.py:57
 msgctxt "@info"
 msgid "And that's all.<nl/>Now you can close the tutorial."
 msgstr "Y eso es todo.<nl/>Ahora puedes cerrar el tutorial."
 
-#: TutorialMoveText.cpp:58 TutorialMoveText.py:24
+#: TutorialMoveText.cpp:66 TutorialMoveText.py:24
 msgid "Move text in the text area"
 msgstr "Mover texto en el área de texto"
 
-#: TutorialMoveText.cpp:59 TutorialMoveText.py:25
+#: TutorialMoveText.cpp:67 TutorialMoveText.py:25
 msgid "This tutorial shows how to move text in the text area"
 msgstr "Este tutorial muestra cómo mover texto en el área de texto"
 
-#: TutorialMoveText.cpp:67 TutorialMoveText.py:66
+#: TutorialMoveText.cpp:75 TutorialMoveText.py:66
 msgctxt "@info"
 msgid ""
 "In this tutorial you will learn how to move text in the test application.<nl/"
@@ -129,31 +126,31 @@ msgstr ""
 "En este tutorial aprenderás cómo mover texto en la aplicación de prueba.<nl/"
 ">El texto puede moverse utilizando el ratón o el teclado. ¿Qué prefieres?"
 
-#: TutorialMoveText.cpp:69 TutorialMoveText.py:68
+#: TutorialMoveText.cpp:77 TutorialMoveText.py:68
 msgid "Mouse"
 msgstr "Ratón"
 
-#: TutorialMoveText.cpp:70 TutorialMoveText.py:74
+#: TutorialMoveText.cpp:78 TutorialMoveText.py:74
 msgid "Keyboard"
 msgstr "Teclado"
 
-#: TutorialMoveText.cpp:76 TutorialMoveText.py:84
+#: TutorialMoveText.cpp:84 TutorialMoveText.py:84
 msgctxt "@info"
 msgid "First of all, clean the text area and write \"%1\" (without quotes)"
 msgstr ""
 "Lo primero de todo, limpia el área de texto y escribe \"%1\" (sin comillas)"
 
-#: TutorialMoveText.cpp:85 TutorialMoveText.cpp:175 TutorialMoveText.py:98
+#: TutorialMoveText.cpp:93 TutorialMoveText.cpp:183 TutorialMoveText.py:98
 #: TutorialMoveText.py:105
 msgid "world"
 msgstr "mundo"
 
-#: TutorialMoveText.cpp:85 TutorialMoveText.py:98
+#: TutorialMoveText.cpp:93 TutorialMoveText.py:98
 msgctxt "@info"
 msgid "Now, select the text \"%1\" in the text area"
 msgstr "Ahora, selecciona el texto \"%1\" en el área de texto"
 
-#: TutorialMoveText.cpp:94 TutorialMoveText.py:115
+#: TutorialMoveText.cpp:102 TutorialMoveText.py:115
 msgctxt "@info"
 msgid ""
 "The next thing to do is cut the selected text. Cutting it will remove it "
@@ -166,16 +163,16 @@ msgstr ""
 "cortar el texto seleccionado, haz click en <interface>Editar|Cortar</"
 "interface> o en el botón de la barra de tareas"
 
-#: TutorialMoveText.cpp:104 TutorialMoveText.py:126
+#: TutorialMoveText.cpp:112 TutorialMoveText.py:126
 msgid "Hello"
 msgstr "Hola"
 
-#: TutorialMoveText.cpp:104 TutorialMoveText.py:126
+#: TutorialMoveText.cpp:112 TutorialMoveText.py:126
 msgctxt "@info"
 msgid "Move the cursor to the beginning of the document, before \"%1\" text"
 msgstr "Mueve el cursor al principio del documento, antes del texto \"%1\""
 
-#: TutorialMoveText.cpp:113 TutorialMoveText.py:140
+#: TutorialMoveText.cpp:121 TutorialMoveText.py:140
 msgctxt "@info"
 msgid ""
 "Finally, paste the text you have cut previously. To do this, click in "
@@ -185,7 +182,7 @@ msgstr ""
 "click en <interface>Editar|Pegar</interface> o en el botón de la barra de "
 "herramientas"
 
-#: TutorialMoveText.cpp:123
+#: TutorialMoveText.cpp:131
 msgctxt "@info"
 msgid ""
 "Press with the left button of the mouse on the selected text. You must press "
@@ -196,7 +193,7 @@ msgstr ""
 "pulsar sobre él, o la selección cambiará, y deberás seleccionarlo de nuevo.  "
 "No sueltes el botón aún."
 
-#: TutorialMoveText.cpp:132 TutorialMoveText.py:169
+#: TutorialMoveText.cpp:140 TutorialMoveText.py:169
 msgctxt "@info"
 msgid ""
 "Without releasing the mouse button, move the cursor to the desired position, "
@@ -207,7 +204,7 @@ msgstr ""
 "ejemplo el principio del texto.<nl/>Una vez que el cursor esté ahí, puedes "
 "soltar el botón del ratón, y el texto será movido."
 
-#: TutorialMoveText.cpp:141 TutorialMoveText.py:185
+#: TutorialMoveText.cpp:149 TutorialMoveText.py:185
 msgctxt "@info"
 msgid ""
 "As explained, there are two ways to move text in a text area: using the "
@@ -216,15 +213,15 @@ msgstr ""
 "Como se dijo, existen dos formas de mover el texto en un área de texto: "
 "usando el ratón y usando el teclado. ¿Quieres ver la otra forma?"
 
-#: TutorialMoveText.cpp:143 TutorialMoveText.py:187
+#: TutorialMoveText.cpp:151 TutorialMoveText.py:187
 msgid "Yes, please"
 msgstr "Sí, por favor"
 
-#: TutorialMoveText.cpp:144 TutorialMoveText.py:197
+#: TutorialMoveText.cpp:152 TutorialMoveText.py:197
 msgid "No, thanks"
 msgstr "No, gracias"
 
-#: TutorialMoveText.cpp:150 TutorialMoveText.py:203
+#: TutorialMoveText.cpp:158 TutorialMoveText.py:203
 msgctxt "@info"
 msgid "That's all.<nl/>Now you can close the tutorial."
 msgstr "Y eso es todo.<nl/>Ahora puedes cerrar el tutorial."
@@ -253,3 +250,6 @@ msgstr ""
 "con el botón izquierdo del ratón en el texto seleccionado. Debes pulsar "
 "sobre él, o la selección cambiará, y deberás seleccionarlo de nuevo. No "
 "sueltes el botón aún.</para>"
+
+#~ msgid "Main Toolbar"
+#~ msgstr "Barra de herramientas principal"
