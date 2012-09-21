@@ -7,6 +7,5 @@ include(KDE4Defaults)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${KDE4_ENABLE_EXCEPTIONS}")
 
 add_subdirectory(doc)
-add_subdirectory(po)
 add_subdirectory(src)
 add_subdirectory(tests)

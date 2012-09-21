@@ -3,8 +3,6 @@ project(ktutorial-test-app)
 find_package(KDE4 REQUIRED)
 include_directories(${KDE4_INCLUDES})
 
-add_subdirectory(po)
-
 # When KTutorial is built, the library isn't installed yet when the test-app is
 # built. In that case, use the headers and libraries in the build directory
 # of the library.

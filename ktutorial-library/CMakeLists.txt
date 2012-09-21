@@ -12,6 +12,5 @@ set(CMAKE_KTUTORIAL_VERSION_STRING "${CMAKE_KTUTORIAL_VERSION_MAJOR}.${CMAKE_KTU
 enable_testing()
 
 add_subdirectory(cmake)
-add_subdirectory(po)
 add_subdirectory(src)
 add_subdirectory(tests)
