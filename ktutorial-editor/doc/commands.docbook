@@ -232,7 +232,7 @@
                             <menuchoice>
                                 <guimenu>Edit</guimenu>
                                 <guimenu>Step</guimenu>
-                                <guimenuitem>Set data...</guimenuitem>
+                                <guimenuitem>Set step data...</guimenuitem>
                             </menuchoice>
                         </term>
                         <listitem>
@@ -302,7 +302,7 @@
                             <menuchoice>
                                 <guimenu>Edit</guimenu>
                                 <guimenu>Reaction</guimenu>
-                                <guimenuitem>Set data...</guimenuitem>
+                                <guimenuitem>Set reaction data...</guimenuitem>
                             </menuchoice>
                         </term>
                         <listitem>
@@ -369,7 +369,7 @@
                         </term>
                         <listitem>
                             <para>
-                                <action>Shows or hides the panel with the shorcuts to tutorial edition actions.</action>
+                                <action>Shows or hides the panel with the shortcuts to tutorial edition actions.</action>
                             </para>
                         </listitem>
                     </varlistentry>
@@ -383,7 +383,7 @@
                         </term>
                         <listitem>
                             <para>
-                                <action>Shows or hides the panel with the shorcuts to step edition actions.</action>
+                                <action>Shows or hides the panel with the shortcuts to step edition actions.</action>
                             </para>
                         </listitem>
                     </varlistentry>
@@ -397,7 +397,7 @@
                         </term>
                         <listitem>
                             <para>
-                                <action>Shows or hides the panel with the shorcuts to reaction edition actions.</action>
+                                <action>Shows or hides the panel with the shortcuts to reaction edition actions.</action>
                             </para>
                         </listitem>
                     </varlistentry>
