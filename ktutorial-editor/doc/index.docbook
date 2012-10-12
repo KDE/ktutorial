@@ -13,12 +13,12 @@
 
 <!-- ................................................................ -->
 
-<book lang="&language;">
+<book id="ktutorial-editor" lang="&language;">
 
 <!-- This header contains all of the meta-information for the document such
 as Authors, publish date, the abstract, and Keywords -->
 
-<bookinfo>
+<book id="ktutorial-editor"info>
     <title>The &ktutorial-editor; Handbook</title>
 
     <authorgroup>
