@@ -18,7 +18,7 @@
 <!-- This header contains all of the meta-information for the document such
 as Authors, publish date, the abstract, and Keywords -->
 
-<book id="ktutorial-editor"info>
+<bookinfo>
     <title>The &ktutorial-editor; Handbook</title>
 
     <authorgroup>
