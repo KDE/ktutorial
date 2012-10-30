@@ -152,7 +152,7 @@ void WaitForWindowTest::testWaitEndedByModalDialog() {
     queueAssertConditionMet(&waitForWindow, &waitEndedSpy, 500);
 
     timerAccept.start();
-    modalDialog->exec();
+    modalDialog->exec(); //krazy:exclude=crashy
 
     modalDialog->deleteLater();
 

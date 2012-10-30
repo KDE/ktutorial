@@ -352,7 +352,7 @@ void StepWidgetTest::moveAfterShowingModalDialogAndThenClose() {
     queueAssertWidgetDragged(stepWidget, 500);
 
     timerAccept.start();
-    modalDialog->exec();
+    modalDialog->exec(); //krazy:exclude=crashy
 
     QSignalSpy destroyedSpy(stepWidget, SIGNAL(destroyed(QObject*)));
 

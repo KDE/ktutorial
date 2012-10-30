@@ -71,7 +71,7 @@ void DialogRunnerTest::testExec() {
     //executing them after the runner.exec() won't work.
     QTimer::singleShot(500, this, SLOT(hideShowAndAcceptDialog()));
 
-    int result = runner.exec();
+    int result = runner.exec(); //krazy:exclude=crashy
 
     QCOMPARE(result, (int)QDialog::Accepted);
 }
@@ -84,7 +84,7 @@ void DialogRunnerTest::testExecWhenDialogIsDestroyed() {
     //executing them after the runner.exec() won't work.
     QTimer::singleShot(500, this, SLOT(destroyDialog()));
 
-    int result = runner.exec();
+    int result = runner.exec(); //krazy:exclude=crashy
 
     QCOMPARE(result, (int)QDialog::Rejected);
 }
