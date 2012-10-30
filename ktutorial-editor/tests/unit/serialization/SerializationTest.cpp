@@ -201,7 +201,7 @@ void SerializationTest::testSaveToDirectory() {
 void SerializationTest::testAvailableExporterTypes() {
     QString types = Serialization().availableExporterTypes();
 
-    QCOMPARE(types, i18nc("@item:combobox A KFileDialog filter",
+    QCOMPARE(types, i18nc("@item:inlistbox A KFileDialog filter",
                           "*.js|Javascript file"));
 }
 
