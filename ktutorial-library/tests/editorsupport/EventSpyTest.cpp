@@ -16,9 +16,10 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include <QtTest>
+#include <QTest>
 
 #include <QApplication>
+#include <QSignalSpy>
 
 #include "EventSpy.h"
 

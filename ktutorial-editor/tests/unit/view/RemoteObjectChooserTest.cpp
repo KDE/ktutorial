@@ -17,7 +17,7 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include <QtTest>
+#include <QTest>
 #include <QtTest/QTestKeyClicksEvent>
 
 #define protected public
@@ -28,6 +28,7 @@
 
 #include <QCheckBox>
 #include <QPushButton>
+#include <QSignalSpy>
 #include <QTreeView>
 
 #include <KDialog>

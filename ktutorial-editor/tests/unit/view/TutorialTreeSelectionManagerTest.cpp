@@ -16,9 +16,11 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include <QtTest>
+#include <QTest>
 
 #include "TutorialTreeSelectionManager.h"
+
+#include <QSignalSpy>
 
 #include "TreeModel.h"
 #include "TutorialTreeItem.h"

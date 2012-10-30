@@ -17,8 +17,9 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include <QtTest>
+#include <QTest>
 
+#include <QSignalSpy>
 #include <QWidget>
 #include <QtDBus/QtDBus>
 

@@ -16,9 +16,11 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include <QtTest>
+#include <QTest>
 
 #include "WaitForSignal.h"
+
+#include <QSignalSpy>
 
 class WaitForSignalTest: public QObject {
 Q_OBJECT

@@ -16,9 +16,11 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include <QtTest>
+#include <QTest>
 
 #include "WaitForWindowTreeItem.h"
+
+#include <QSignalSpy>
 
 #include <KLocalizedString>
 

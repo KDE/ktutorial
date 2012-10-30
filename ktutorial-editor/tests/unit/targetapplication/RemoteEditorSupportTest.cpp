@@ -17,10 +17,11 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include <QtTest>
+#include <QTest>
 
 #include "RemoteEditorSupport.h"
 
+#include <QSignalSpy>
 #include <QtDBus/QtDBus>
 
 #include "RemoteClassStubs.h"

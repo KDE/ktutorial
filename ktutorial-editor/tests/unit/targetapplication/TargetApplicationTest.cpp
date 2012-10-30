@@ -17,7 +17,7 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include <QtTest>
+#include <QTest>
 
 #define protected public
 #define private public
@@ -26,6 +26,7 @@
 #undef protected
 
 #include <QApplication>
+#include <QSignalSpy>
 
 #include <KProcess>
 

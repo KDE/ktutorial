@@ -16,9 +16,12 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include <QtTest>
+#include <QTest>
 
 #include "Tutorial.h"
+
+#include <QSignalSpy>
+
 #include "Step.h"
 
 class TutorialTest: public QObject {

@@ -16,9 +16,12 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include <QtTest>
+#include <QTest>
 
 #include "Reaction.h"
+
+#include <QSignalSpy>
+
 #include "WaitFor.h"
 
 class ReactionTest: public QObject {

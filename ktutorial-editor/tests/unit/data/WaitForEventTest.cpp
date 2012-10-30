@@ -16,9 +16,11 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include <QtTest>
+#include <QTest>
 
 #include "WaitForEvent.h"
+
+#include <QSignalSpy>
 
 class WaitForEventTest: public QObject {
 Q_OBJECT

@@ -16,13 +16,15 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include <QtTest>
+#include <QTest>
 
 #define protected public
 #define private public
 #include "WaitForPropertyWidget.h"
 #undef private
 #undef protected
+
+#include <QSignalSpy>
 
 #include <KLineEdit>
 
