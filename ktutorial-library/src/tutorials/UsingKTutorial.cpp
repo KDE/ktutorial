@@ -19,9 +19,9 @@
 #include "UsingKTutorial.h"
 
 #include <QMouseEvent>
-#include <QTextEdit>
 
 #include <KLocalizedString>
+#include <KTextEdit>
 
 #include "../KTutorial.h"
 #include "../Option.h"
@@ -62,12 +62,12 @@ public:
     }
 
     virtual void setup() {
-        QTextEdit* textEdit = new QTextEdit(
-                                    KTutorial::self()->mainApplicationWindow());
+        QTextEdit* textEdit = //krazy:exclude=qclasses
+                    new KTextEdit(KTutorial::self()->mainApplicationWindow());
         textEdit->setAttribute(Qt::WA_DeleteOnClose);
         textEdit->setWindowFlags(Qt::Window | Qt::WindowStaysOnTopHint);
         textEdit->setObjectName("usingKTutorialTextEdit");
-        textEdit->setText(i18nc("@info/plain Plain text in a QTextEdit",
+        textEdit->setText(i18nc("@info/plain Plain text in a KTextEdit",
                                 "Look at me! I am the text area!"));
         textEdit->show();
 
@@ -90,7 +90,7 @@ public:
     }
 
     virtual void setup() {
-        QTextEdit* textEdit = KTutorial::self()->findObject<QTextEdit*>(
+        KTextEdit* textEdit = KTutorial::self()->findObject<KTextEdit*>(
                                                     "usingKTutorialTextEdit");
 
         addWaitFor(new WaitForEvent(textEdit, QEvent::Close),
@@ -310,8 +310,8 @@ UsingKTutorial::UsingKTutorial(): Tutorial(0) {
 //public slots:
 
 void UsingKTutorial::clearTextTextModified() {
-    QTextEdit* textEdit = KTutorial::self()->
-                            findObject<QTextEdit*>("usingKTutorialTextEdit");
+    KTextEdit* textEdit = KTutorial::self()->
+                            findObject<KTextEdit*>("usingKTutorialTextEdit");
 
     if (textEdit->toPlainText().isEmpty()) {
         nextStep("textCleared");
@@ -321,7 +321,7 @@ void UsingKTutorial::clearTextTextModified() {
 //protected:
 
 void UsingKTutorial::tearDown() {
-    QTextEdit* textEdit = KTutorial::self()->findObject<QTextEdit*>(
+    KTextEdit* textEdit = KTutorial::self()->findObject<KTextEdit*>(
                                                     "usingKTutorialTextEdit");
     if (textEdit) {
         textEdit->deleteLater();
