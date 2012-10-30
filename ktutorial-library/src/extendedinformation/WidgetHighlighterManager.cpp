@@ -16,9 +16,10 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "WidgetHighlighterManager.h"
+
 #include <QWidget>
 
-#include "WidgetHighlighterManager.h"
 #include "WidgetHighlighter.h"
 
 namespace ktutorial {

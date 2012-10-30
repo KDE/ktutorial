@@ -18,6 +18,8 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "StepWidget.h"
+
 #include <QHBoxLayout>
 #include <QKeyEvent>
 #include <QMouseEvent>
@@ -25,7 +27,6 @@
 
 #include <klocalizedstring.h>
 
-#include "StepWidget.h"
 #include "ui_StepWidget.h"
 #include "WindowOnTopEnforcer.h"
 #include "../Option.h"

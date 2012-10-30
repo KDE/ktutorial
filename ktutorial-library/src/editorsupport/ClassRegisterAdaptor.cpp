@@ -17,9 +17,10 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "ClassRegisterAdaptor.h"
+
 #include <QMetaClassInfo>
 
-#include "ClassRegisterAdaptor.h"
 #include "ObjectRegister.h"
 
 namespace ktutorial {

@@ -16,10 +16,10 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "WindowVisibilitySpy.h"
+
 #include <QEvent>
 #include <QWidget>
-
-#include "WindowVisibilitySpy.h"
 
 namespace ktutorial {
 namespace common {

@@ -17,10 +17,10 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "WidgetHighlighter.h"
+
 #include <QPainter>
 #include <QPaintEvent>
-
-#include "WidgetHighlighter.h"
 
 namespace ktutorial {
 namespace extendedinformation {

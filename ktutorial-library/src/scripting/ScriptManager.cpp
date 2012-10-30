@@ -17,12 +17,13 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "ScriptManager.h"
+
 #include <QDir>
 
 #include <KDebug>
 #include <KStandardDirs>
 
-#include "ScriptManager.h"
 #include "ScriptedTutorial.h"
 #include "../TutorialManager.h"
 

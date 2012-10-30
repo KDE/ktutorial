@@ -19,9 +19,10 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "Tutorial.h"
+
 #include <kdebug.h>
 
-#include "Tutorial.h"
 #include "Step.h"
 #include "TutorialInformation.h"
 

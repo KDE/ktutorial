@@ -16,6 +16,8 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "TestApp.h"
+
 #include <KApplication>
 #include <KAction>
 #include <KLocale>
@@ -29,7 +31,6 @@
 
 #include <ktutorial/KTutorial.h>
 
-#include "TestApp.h"
 #include "TutorialClearText.h"
 #include "TutorialMoveText.h"
 

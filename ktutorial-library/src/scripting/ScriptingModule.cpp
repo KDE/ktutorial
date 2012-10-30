@@ -18,11 +18,12 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "ScriptingModule.h"
+
 #include <QMetaMethod>
 
 #include <KDebug>
 
-#include "ScriptingModule.h"
 #include "ScriptedStep.h"
 #include "../KTutorial.h"
 #include "../Option.h"

@@ -15,11 +15,12 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "DefaultKdeCustomization.h"
+
 #include <KAction>
 #include <KActionCollection>
 #include <KLocalizedString>
 
-#include "DefaultKdeCustomization.h"
 #include "../Tutorial.h"
 #include "../TutorialInformation.h"
 #include "../TutorialManager.h"

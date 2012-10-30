@@ -18,9 +18,10 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "TutorialManager.h"
+
 #include <kdebug.h>
 
-#include "TutorialManager.h"
 #include "Tutorial.h"
 #include "TutorialInformation.h"
 

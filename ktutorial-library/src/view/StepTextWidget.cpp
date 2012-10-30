@@ -17,13 +17,14 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "StepTextWidget.h"
+
 #include <QContextMenuEvent>
 #include <QMenu>
 
 #include <KDebug>
 #include <KLocalizedString>
 
-#include "StepTextWidget.h"
 #include "../KTutorial.h"
 #include "../extendedinformation/WidgetHighlighterManager.h"
 

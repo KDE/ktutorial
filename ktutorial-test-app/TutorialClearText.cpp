@@ -17,10 +17,10 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "TutorialClearText.h"
+
 #include <klocalizedstring.h>
 #include <ktextedit.h>
-
-#include "TutorialClearText.h"
 
 #include <ktutorial/KTutorial.h>
 #include <ktutorial/Step.h>

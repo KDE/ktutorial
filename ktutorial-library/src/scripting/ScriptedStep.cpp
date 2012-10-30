@@ -17,9 +17,10 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "ScriptedStep.h"
+
 #include <kross/core/action.h>
 
-#include "ScriptedStep.h"
 #include "../WaitFor.h"
 
 namespace ktutorial {

@@ -17,9 +17,10 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "ScriptedTutorial.h"
+
 #include <kross/core/action.h>
 
-#include "ScriptedTutorial.h"
 #include "ScriptingModule.h"
 #include "../TutorialInformation.h"
 

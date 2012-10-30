@@ -17,12 +17,13 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "EditorSupport.h"
+
 #include <QWidget>
 #include <QtDBus/QtDBus>
 
 #include <KDebug>
 
-#include "EditorSupport.h"
 #include "ClassRegisterAdaptor.h"
 #include "EditorSupportAdaptor.h"
 #include "EventSpy.h"

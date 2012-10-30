@@ -16,10 +16,11 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "EventSpyAdaptor.h"
+
 #include <QEvent>
 #include <QMetaEnum>
 
-#include "EventSpyAdaptor.h"
 #include "EventSpy.h"
 #include "ObjectRegister.h"
 

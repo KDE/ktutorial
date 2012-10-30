@@ -18,9 +18,10 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "Step.h"
+
 #include <kdebug.h>
 
-#include "Step.h"
 #include "Option.h"
 #include "WaitFor.h"
 #include "WaitForSignal.h"

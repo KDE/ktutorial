@@ -16,9 +16,10 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "WindowOnTopEnforcer.h"
+
 #include <QWidget>
 
-#include "WindowOnTopEnforcer.h"
 #include "../common/WindowVisibilitySpy.h"
 
 using ktutorial::common::WindowVisibilitySpy;

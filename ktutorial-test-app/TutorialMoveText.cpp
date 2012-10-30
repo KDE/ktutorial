@@ -17,13 +17,13 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "TutorialMoveText.h"
+
 #include <QMouseEvent>
 
 #include <kaction.h>
 #include <klocalizedstring.h>
 #include <ktextedit.h>
-
-#include "TutorialMoveText.h"
 
 #include <ktutorial/KTutorial.h>
 #include <ktutorial/Option.h>

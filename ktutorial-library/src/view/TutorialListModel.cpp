@@ -18,9 +18,10 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "TutorialListModel.h"
+
 #include <klocalizedstring.h>
 
-#include "TutorialListModel.h"
 #include "../TutorialInformation.h"
 #include "../TutorialManager.h"
 

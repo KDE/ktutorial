@@ -17,9 +17,10 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
+#include "EditorSupportAdaptor.h"
+
 #include <QCoreApplication>
 
-#include "EditorSupportAdaptor.h"
 #include "EditorSupport.h"
 #include "ObjectRegister.h"
 
