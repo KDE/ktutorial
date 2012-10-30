@@ -673,7 +673,7 @@ void RemoteObjectNameWidgetTest::testAddingOrRemovingRemoteObjects() {
 
 void RemoteObjectNameWidgetTest::testSetFocus() {
     QWidget parent;
-    QLineEdit* otherLineEdit = new QLineEdit(&parent);
+    QLineEdit* otherLineEdit = new QLineEdit(&parent); //krazy:exclude=qclasses
 
     RemoteObjectNameWidget* widget = new RemoteObjectNameWidget(&parent);
 
@@ -695,7 +695,7 @@ void RemoteObjectNameWidgetTest::testSetFocus() {
 
 void RemoteObjectNameWidgetTest::testWidgetAsBuddyOfLabel() {
     QWidget parent;
-    QLineEdit* otherLineEdit = new QLineEdit(&parent);
+    QLineEdit* otherLineEdit = new QLineEdit(&parent); //krazy:exclude=qclasses
 
     RemoteObjectNameWidget* widget = new RemoteObjectNameWidget(&parent);
 

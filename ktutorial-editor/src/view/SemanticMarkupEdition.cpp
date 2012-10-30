@@ -33,7 +33,8 @@
 
 //public:
 
-SemanticMarkupEdition::SemanticMarkupEdition(QTextEdit* textEdit):
+SemanticMarkupEdition::SemanticMarkupEdition(
+                                QTextEdit* textEdit): //krazy:exclude=qclasses
         QObject(textEdit),
     mTextEdit(textEdit) {
     Q_ASSERT(textEdit);
@@ -219,7 +220,8 @@ void SemanticMarkupEdition::writeSimpleTagFor(const QAction* action) {
     }
 }
 
-QDialog* SemanticMarkupEdition::newLinkDialog(const QString& url) const {
+QDialog* SemanticMarkupEdition::newLinkDialog( //krazy:exclude=qclasses
+                                        const QString& url) const {
     KDialog* dialog = new KDialog(mTextEdit);
     dialog->setModal(true);
 

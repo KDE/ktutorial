@@ -47,7 +47,8 @@ public:
      * @param dialog The dialog to execute.
      * @param parent The parent object of this DialogRunner.
      */
-    explicit DialogRunner(QDialog* dialog, QObject* parent = 0);
+    explicit DialogRunner(QDialog* dialog, //krazy:exclude=qclasses
+                          QObject* parent = 0);
 
     /**
      * Shows the dialog as a modal dialog, blocking until the user closes it.

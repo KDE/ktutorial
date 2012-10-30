@@ -139,7 +139,7 @@ void WaitForWindowTest::testWaitEndedByModalDialog() {
     int waitForStarType = qRegisterMetaType<WaitFor*>("WaitFor*");
     QSignalSpy waitEndedSpy(&waitForWindow, SIGNAL(waitEnded(WaitFor*)));
 
-    QDialog* modalDialog = new QDialog(mMainWindow);
+    QDialog* modalDialog = new QDialog(mMainWindow); //krazy:exclude=qclasses
     modalDialog->setObjectName("theName");
 
     QTimer timerAccept;

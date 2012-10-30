@@ -72,7 +72,7 @@ public:
      *
      * @param textEdit The QTextEdit used for the edition of the text.
      */
-    SemanticMarkupEdition(QTextEdit* textEdit);
+    SemanticMarkupEdition(QTextEdit* textEdit); //krazy:exclude=qclasses
 
     /**
      * Creates the actions for markup edition and adds them to the given
@@ -143,7 +143,7 @@ private:
     /**
      * The QTextEdit used for the edition of the text.
      */
-    QTextEdit* mTextEdit;
+    QTextEdit* mTextEdit; //krazy:exclude=qclasses
 
     /**
      * Whether the cursor is between two paired start and end link elements or
@@ -177,7 +177,7 @@ private:
      * @param url The URL to show in the link widget of the dialog.
      * @return The new dialog.
      */
-    QDialog* newLinkDialog(const QString& url) const;
+    QDialog* newLinkDialog(const QString& url) const; //krazy:exclude=qclasses
 
 private Q_SLOTS:
 

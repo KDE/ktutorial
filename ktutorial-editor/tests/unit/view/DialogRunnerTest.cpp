@@ -48,7 +48,7 @@ private:
 };
 
 void DialogRunnerTest::init() {
-    mDialog = new QDialog();
+    mDialog = new QDialog(); //krazy:exclude=qclasses
 }
 
 void DialogRunnerTest::cleanup() {

@@ -342,7 +342,7 @@ void StepWidgetTest::moveAfterShowingModalDialogAndThenClose() {
     stepWidget->setMainApplicationWindow(window);
     stepWidget->show();
 
-    QDialog* modalDialog = new QDialog(window);
+    QDialog* modalDialog = new QDialog(window); //krazy:exclude=qclasses
 
     QTimer timerAccept;
     timerAccept.setSingleShot(true);

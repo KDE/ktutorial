@@ -23,7 +23,8 @@
 
 //public:
 
-DialogRunner::DialogRunner(QDialog* dialog, QObject* parent):
+DialogRunner::DialogRunner(QDialog* dialog, //krazy:exclude=qclasses
+                           QObject* parent):
         QObject(parent),
     mDialog(dialog) {
     Q_ASSERT(dialog);

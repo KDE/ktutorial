@@ -102,7 +102,8 @@ void DefaultKdeCustomization::showTutorialUI(Tutorial* tutorial) {
 //private slots:
 
 void DefaultKdeCustomization::showTutorialManagerDialog() const {
-    QDialog* dialog = new TutorialManagerDialog(mTutorialManager, mWindow);
+    QDialog* dialog = //krazy:exclude=qclasses
+                new TutorialManagerDialog(mTutorialManager, mWindow);
     dialog->setAttribute(Qt::WA_DeleteOnClose);
     dialog->setModal(true);
     dialog->setObjectName("ktutorial_TutorialManagerDialog");
