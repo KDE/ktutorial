@@ -20,7 +20,7 @@
 #include <KAboutData>
 #include <KCmdLineArgs>
 
-#include "TestApp.h"
+#include "MainWindow.h"
 
 int main (int argc, char *argv[]) {
   KAboutData aboutData("ktutorial-test-app", 0,

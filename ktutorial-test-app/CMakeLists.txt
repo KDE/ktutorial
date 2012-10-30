@@ -24,7 +24,7 @@ endif(NOT KTUTORIAL_FOUND)
 
 set(ktutorial_test_app_SRCS
     main.cpp
-    TestApp.cpp
+    MainWindow.cpp
     TutorialClearText.cpp
     TutorialMoveText.cpp
 )
