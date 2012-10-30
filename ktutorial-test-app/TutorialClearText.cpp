@@ -36,12 +36,12 @@ using ktutorial::WaitForSignal;
 
 TutorialClearText::TutorialClearText(): Tutorial(0) {
     mTutorialInformation = new TutorialInformation("clearText");
-    mTutorialInformation->setName(i18n("Clear the text area"));
-    mTutorialInformation->setDescription(i18n("This tutorial shows how to clean the text area with ease"));
+    mTutorialInformation->setName(i18nc("@info/plain", "Clear the text area"));
+    mTutorialInformation->setDescription(i18nc("@info/plain", "This tutorial shows how to clean the text area with ease"));
 
     //Step 1
     Step* startStep = new Step("start");
-    startStep->setText(i18nc("@info", "In this tutorial you will learn how to clear text in the test application.<nl/>First, write \"%1\" (without quotes) in the text area", i18n("Hello world")));
+    startStep->setText(i18nc("@info", "In this tutorial you will learn how to clear text in the test application.<nl/>First, write \"%1\" (without quotes) in the text area", i18nc("@item:intext", "Hello world")));
 
     QObject* textArea = KTutorial::self()->findObject<QObject*>("textArea");
     startStep->addWaitFor(new WaitForSignal(textArea, SIGNAL(textChanged())),
@@ -71,7 +71,7 @@ TutorialClearText::TutorialClearText(): Tutorial(0) {
 void TutorialClearText::startDone() {
     KTextEdit* textArea = KTutorial::self()->findObject<KTextEdit*>("textArea");
 
-    if (textArea->toPlainText().compare(i18n("Hello world"),
+    if (textArea->toPlainText().compare(i18nc("@item:intext", "Hello world"),
                                         Qt::CaseInsensitive) == 0) {
             nextStep("clearText");
     }

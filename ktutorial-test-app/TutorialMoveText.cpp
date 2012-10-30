@@ -63,8 +63,8 @@ protected:
 
 TutorialMoveText::TutorialMoveText(): Tutorial(0) {
     mTutorialInformation = new TutorialInformation("moveText");
-    mTutorialInformation->setName(i18n("Move text in the text area"));
-    mTutorialInformation->setDescription(i18n("This tutorial shows how to move text in the text area"));
+    mTutorialInformation->setName(i18nc("@info/plain", "Move text in the text area"));
+    mTutorialInformation->setDescription(i18nc("@info/plain", "This tutorial shows how to move text in the text area"));
 
     mTextArea = KTutorial::self()->findObject<KTextEdit*>("textArea");
 
@@ -74,14 +74,14 @@ TutorialMoveText::TutorialMoveText(): Tutorial(0) {
     Step* startStep = new Step("start");
     startStep->setText(i18nc("@info", "In this tutorial you will learn how to move text in the test application.<nl/>Text can be moved using the mouse or the keyboard. What do you prefer?"));
 
-    startStep->addOption(new Option(i18n("Mouse")), this, SLOT(startMouseMove()));
-    startStep->addOption(new Option(i18n("Keyboard")), this, SLOT(startKeyboardMove()));
+    startStep->addOption(new Option(i18nc("@action", "Mouse")), this, SLOT(startMouseMove()));
+    startStep->addOption(new Option(i18nc("@action", "Keyboard")), this, SLOT(startKeyboardMove()));
 
     addStep(startStep);
 
     //Step write
     Step* writeStep = new Step("write");
-    writeStep->setText(i18nc("@info", "First of all, clean the text area and write \"%1\" (without quotes)", i18n("Hello world")));
+    writeStep->setText(i18nc("@info", "First of all, clean the text area and write \"%1\" (without quotes)", i18nc("@item:intext", "Hello world")));
 
     writeStep->addWaitFor(new WaitForSignal(mTextArea, SIGNAL(textChanged())),
                           this, SLOT(write()));
@@ -90,7 +90,7 @@ TutorialMoveText::TutorialMoveText(): Tutorial(0) {
 
     //Step select
     Step* selectStep = new Step("select");
-    selectStep->setText(i18nc("@info", "Now, select the text \"%1\" in the text area", i18n("world")));
+    selectStep->setText(i18nc("@info", "Now, select the text \"%1\" in the text area", i18nc("@item:intext As in 'Hello world'", "world")));
 
     selectStep->addWaitFor(new WaitForSignal(mTextArea, SIGNAL(selectionChanged())),
                           this, SLOT(select()));
@@ -109,7 +109,7 @@ TutorialMoveText::TutorialMoveText(): Tutorial(0) {
 
     //Step keyboardMoveCursor
     Step* keyboardMoveCursorStep = new Step("keyboardMoveCursor");
-    keyboardMoveCursorStep->setText(i18nc("@info", "Move the cursor to the beginning of the document, before \"%1\" text", i18n("Hello")));
+    keyboardMoveCursorStep->setText(i18nc("@info", "Move the cursor to the beginning of the document, before \"%1\" text", i18nc("@item:intext As in 'Hello world'", "Hello")));
 
     keyboardMoveCursorStep->addWaitFor(new WaitForSignal(mTextArea, SIGNAL(cursorPositionChanged())),
                                        this, SLOT(keyboardMoveCursor()));
@@ -148,8 +148,8 @@ TutorialMoveText::TutorialMoveText(): Tutorial(0) {
     Step* showOtherWayStep = new Step("showOtherWay");
     showOtherWayStep->setText(i18nc("@info", "As explained, there are two ways to move text in a text area: using the mouse and using the keyboard. Do you want to see the other way?"));
 
-    showOtherWayStep->addOption(new Option(i18n("Yes, please")), this, SLOT(showOtherWay()));
-    showOtherWayStep->addOption(new Option(i18n("No, thanks")), "end");
+    showOtherWayStep->addOption(new Option(i18nc("@action", "Yes, please")), this, SLOT(showOtherWay()));
+    showOtherWayStep->addOption(new Option(i18nc("@action", "No, thanks")), "end");
 
     addStep(showOtherWayStep);
 
@@ -173,14 +173,14 @@ void TutorialMoveText::startMouseMove() {
 }
 
 void TutorialMoveText::write() {
-    if (mTextArea->toPlainText().compare(i18n("Hello world"),
+    if (mTextArea->toPlainText().compare(i18nc("@item:intext", "Hello world"),
                                          Qt::CaseInsensitive) == 0) {
         nextStep("select");
     }
 }
 
 void TutorialMoveText::select(){
-    if (mTextArea->textCursor().selectedText().compare(i18n("world"),
+    if (mTextArea->textCursor().selectedText().compare(i18nc("@item:intext As in 'Hello world'", "world"),
                                                        Qt::CaseInsensitive) == 0) {
         if (mMousePathSelected) {
             nextStep("mousePress");

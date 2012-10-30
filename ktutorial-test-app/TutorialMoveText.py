@@ -21,8 +21,8 @@
 import Kross
 t = Kross.module("kdetranslation")
 
-tutorial.tutorialInformationAsObject().setName(t.i18n("Move text in the text area") + " (Python)")
-tutorial.tutorialInformationAsObject().setDescription(t.i18n("This tutorial shows how to move text in the text area"))
+tutorial.tutorialInformationAsObject().setName(t.i18nc("@info/plain", "Move text in the text area") + " (Python)")
+tutorial.tutorialInformationAsObject().setDescription(t.i18nc("@info/plain", "This tutorial shows how to move text in the text area22"))
 
 textArea = ktutorial.findObject("textArea")
 
@@ -65,13 +65,13 @@ tutorial.connect("setup(QObject*)", tutorialSetup)
 startStep = ktutorial.newStep("start")
 startStep.setText(t.i18nc("@info", "In this tutorial you will learn how to move text in the test application.<nl/>Text can be moved using the mouse or the keyboard. What do you prefer?"))
 
-startStep.addOption(ktutorial.newOption(t.i18n("Mouse")), self, "startMouseMove()")
+startStep.addOption(ktutorial.newOption(t.i18nc("@action", "Mouse")), self, "startMouseMove()")
 
 def startMouseMove():
     flags["mousePathSelected"] = True
     tutorial.nextStep("write")
 
-startStep.addOption(ktutorial.newOption(t.i18n("Keyboard")), self, "startKeyboardMove()")
+startStep.addOption(ktutorial.newOption(t.i18nc("@action", "Keyboard")), self, "startKeyboardMove()")
 
 def startKeyboardMove():
     flags["mousePathSelected"] = False
@@ -81,28 +81,28 @@ tutorial.addStep(startStep)
 
 #Step write
 writeStep = ktutorial.newStep("write")
-writeStep.setText(t.i18nc("@info", "First of all, clean the text area and write \"%1\" (without quotes)", [t.i18n("Hello world")]))
+writeStep.setText(t.i18nc("@info", "First of all, clean the text area and write \"%1\" (without quotes)", [t.i18nc("@item:intext", "Hello world")]))
 
 waitForTextChanged = ktutorial.newWaitFor("WaitForSignal")
 waitForTextChanged.setSignal(textArea, "textChanged()")
 writeStep.addWaitFor(waitForTextChanged, self, "write()")
 
 def write():
-    if textArea.plainText.lower() == t.i18n("Hello world").lower():
+    if textArea.plainText.lower() == t.i18nc("@item:intext", "Hello world").lower():
         tutorial.nextStep("select")
 
 tutorial.addStep(writeStep)
 
 #Step select
 selectStep = ktutorial.newStep("select")
-selectStep.setText(t.i18nc("@info", "Now, select the text \"%1\" in the text area", [t.i18n("world")]))
+selectStep.setText(t.i18nc("@info", "Now, select the text \"%1\" in the text area", [t.i18nc("@item:intext As in 'Hello world'", "world")]))
 
 waitForSelectionChanged = ktutorial.newWaitFor("WaitForSignal")
 waitForSelectionChanged.setSignal(textArea, "selectionChanged()")
 selectStep.addWaitFor(waitForSelectionChanged, self, "select()")
 
 def select():
-    if textAreaPyQt.textCursor().selectedText().toLower() == t.i18n("world").lower():
+    if textAreaPyQt.textCursor().selectedText().toLower() == t.i18nc("@item:intext As in 'Hello world'", "world").lower():
         if flags["mousePathSelected"]:
             tutorial.nextStep("mousePress")
         else:
@@ -123,7 +123,7 @@ tutorial.addStep(keyboardCutStep)
 
 #Step keyboardMoveCursor
 keyboardMoveCursorStep = ktutorial.newStep("keyboardMoveCursor")
-keyboardMoveCursorStep.setText(t.i18nc("@info", "Move the cursor to the beginning of the document, before \"%1\" text", [t.i18n("Hello")]))
+keyboardMoveCursorStep.setText(t.i18nc("@info", "Move the cursor to the beginning of the document, before \"%1\" text", [t.i18nc("@item:intext As in 'Hello world'", "Hello")]))
 
 waitForCursorPositionChanged = ktutorial.newWaitFor("WaitForSignal")
 waitForCursorPositionChanged.setSignal(textArea, "cursorPositionChanged()")
@@ -184,7 +184,7 @@ tutorial.addStep(mouseReleaseStep)
 showOtherWayStep = ktutorial.newStep("showOtherWay")
 showOtherWayStep.setText(t.i18nc("@info", "As explained, there are two ways to move text in a text area: using the mouse and using the keyboard. Do you want to see the other way?"))
 
-showOtherWayStep.addOption(ktutorial.newOption(t.i18n("Yes, please")), self, "showOtherWay()")
+showOtherWayStep.addOption(ktutorial.newOption(t.i18nc("@action", "Yes, please")), self, "showOtherWay()")
 
 def showOtherWay():
     flags["secondPath"] = True
@@ -194,7 +194,7 @@ def showOtherWay():
     flags["mousePathSelected"] = not flags["mousePathSelected"]
     tutorial.nextStep("write")
 
-showOtherWayStep.addOption(ktutorial.newOption(t.i18n("No, thanks")), "end")
+showOtherWayStep.addOption(ktutorial.newOption(t.i18nc("@action", "No, thanks")), "end")
 
 tutorial.addStep(showOtherWayStep)
 

@@ -18,12 +18,12 @@
 
 t = Kross.module("kdetranslation");
 
-tutorial.tutorialInformationAsObject().setName(t.i18n("Clear the text area") + " (Javascript)");
-tutorial.tutorialInformationAsObject().setDescription(t.i18n("This tutorial shows how to clean the text area with ease"));
+tutorial.tutorialInformationAsObject().setName(t.i18nc("@info/plain", "Clear the text area") + " (Javascript)");
+tutorial.tutorialInformationAsObject().setDescription(t.i18nc("@info/plain", "This tutorial shows how to clean the text area with ease"));
 
 //Step 1
 startStep = ktutorial.newStep("start");
-startStep.setText(t.i18nc("@info", "In this tutorial you will learn how to clear text in the test application.<nl/>First, write \"%1\" (without quotes) in the text area", [t.i18n("Hello world")]));
+startStep.setText(t.i18nc("@info", "In this tutorial you will learn how to clear text in the test application.<nl/>First, write \"%1\" (without quotes) in the text area", [t.i18nc("@item:intext", "Hello world")]));
 
 textArea = ktutorial.findObject("textArea");
 
@@ -32,7 +32,7 @@ waitForTextChanged.setSignal(textArea, "textChanged()");
 startStep.addWaitFor(waitForTextChanged, self, "startDone()");
 
 function startDone() {
-    if (textArea.plainText.toLowerCase() == t.i18n("Hello world").toLowerCase()) {
+    if (textArea.plainText.toLowerCase() == t.i18nc("@item:intext", "Hello world").toLowerCase()) {
         tutorial.nextStep("clearText");
     }
 }
