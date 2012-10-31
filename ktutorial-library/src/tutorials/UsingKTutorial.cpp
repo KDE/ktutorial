@@ -188,8 +188,8 @@ UsingKTutorial::UsingKTutorial(): Tutorial(0) {
     //Step option1Selected
     Step* option1SelectedStep = new Step("option1Selected");
     option1SelectedStep->setText(i18nc("@info",
-"<para>You have selected <emphasis>%1</emphasis>. Don't worry, as this is just "
-"an example, selecting one option or the other makes no difference.</para>"
+"<para>You have selected <emphasis>%1</emphasis>. Do not worry, as this is "
+"just an example, selecting one option or the other makes no difference.</para>"
 "<para>In the next step you will learn the last way to advance from one step "
 "to another. To show this to you I will open a new window where text can be "
 "written.</para>", i18nc("@action", "Option 1")));
@@ -202,8 +202,8 @@ UsingKTutorial::UsingKTutorial(): Tutorial(0) {
     //Step option2Selected
     Step* option2SelectedStep = new Step("option2Selected");
     option2SelectedStep->setText(i18nc("@info",
-"<para>You have selected <emphasis>%1</emphasis>. Don't worry, as this is just "
-"an example, selecting one option or the other makes no difference.</para>"
+"<para>You have selected <emphasis>%1</emphasis>. Do not worry, as this is "
+"just an example, selecting one option or the other makes no difference.</para>"
 "<para>In the next step you will learn the last way to advance from one step "
 "to another. To show this to you I will open a new window where text can be "
 "written.</para>", i18nc("@action", "Option 2")));
@@ -230,7 +230,7 @@ UsingKTutorial::UsingKTutorial(): Tutorial(0) {
     //Step textCleared
     Step* textClearedStep = new Step("textCleared");
     textClearedStep->setText(i18nc("@info",
-"<para>Do you see? You are in a new step, but you didn't tell the tutorial to "
+"<para>Do you see? You are in a new step, but you did not tell the tutorial to "
 "continue to the next step, and neither you had to select between several "
 "options. The tutorial advanced automatically when you erased the text as "
 "requested. This will be the most common way to advance from one step to "
@@ -267,12 +267,12 @@ UsingKTutorial::UsingKTutorial(): Tutorial(0) {
     Step* moveWidgetPressStep = new MoveWidgetPressStep();
     moveWidgetPressStep->setText(i18nc("@info",
 "<para>You may have noticed that the tutorial window has no border. Does that "
-"mean that it can't be moved? Not at all. It can be dragged using the mouse "
+"mean that it can not be moved? Not at all. It can be dragged using the mouse "
 "like any other window, but pressing in a different place. Let's see "
 "how.</para>"
 "<para>Above these paragraphs you can see an empty space, next to the button "
 "at the corner. Press with the left button of your mouse on that empty space. "
-"Just press, don't release the mouse button yet.</para>"));
+"Just press, do not release the mouse button yet.</para>"));
 
     //WaitFor is added in step setup, as it uses an object that isn't available
     //when the tutorial is created
@@ -297,7 +297,7 @@ UsingKTutorial::UsingKTutorial(): Tutorial(0) {
     endStep->setText(i18nc("@info",
 "<para>And that's all. You can now close the tutorial. In fact, you could have "
 "closed the tutorial in any other of the previous steps, but if you do that "
-"when the tutorial is started again it won't remember what you did. It will "
+"when the tutorial is started again it will not remember what you did. It will "
 "start from the beginning again.</para>"
 "<para>But how do you close the tutorial? Well, do you see that button above "
 "this text, in the corner, with an icon that looks like a close icon? Do you "

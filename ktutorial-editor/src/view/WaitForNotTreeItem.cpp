@@ -36,7 +36,7 @@ WaitForNotTreeItem::WaitForNotTreeItem(WaitForNot* waitForNot,
 }
 
 QString WaitForNotTreeItem::text() const {
-    return i18nc("@item", "The contained condition can't have been met");
+    return i18nc("@item", "The contained condition can not have been met");
 }
 
 //private slots:

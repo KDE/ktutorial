@@ -60,7 +60,7 @@ void WaitForNotTreeItemTest::testConstructor() {
     QCOMPARE(item.parent(), &parent);
     QCOMPARE(item.waitFor(), &waitForNot);
     QCOMPARE(item.text(),
-             i18nc("@item", "The contained condition can't have been met"));
+             i18nc("@item", "The contained condition can not have been met"));
     QCOMPARE(item.childCount(), 0);
 }
 
@@ -75,7 +75,7 @@ void WaitForNotTreeItemTest::testConstructorFull() {
     QCOMPARE(item.parent(), &parent);
     QCOMPARE(item.waitFor(), &waitForNot);
     QCOMPARE(item.text(),
-             i18nc("@item", "The contained condition can't have been met"));
+             i18nc("@item", "The contained condition can not have been met"));
     QCOMPARE(item.childCount(), 1);
     assertSignalItem(item.child(0), waitForSignal);
 }

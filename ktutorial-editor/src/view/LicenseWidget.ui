@@ -15,7 +15,7 @@
   </property>
   <property name="whatsThis">
    <string comment="@info:whatsthis">&lt;para&gt;Set the license of the tutorial.&lt;/para&gt;
-&lt;para&gt;The license is copied, commented, to the top of the exported tutorial file. That is, you don't have to worry about how comments are written in the programming language the tutorial will be exported to. Just set the pure text of the license, and the editor will take care of adding the necessary characters in each line to mark them as comments instead of source code.&lt;/para&gt;</string>
+&lt;para&gt;The license is copied, commented, to the top of the exported tutorial file. That is, you do not have to worry about how comments are written in the programming language the tutorial will be exported to. Just set the pure text of the license, and the editor will take care of adding the necessary characters in each line to mark them as comments instead of source code.&lt;/para&gt;</string>
   </property>
   <layout class="QVBoxLayout" name="LicenseWidgetLayout">
    <item>

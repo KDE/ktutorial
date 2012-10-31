@@ -203,7 +203,7 @@ void RemoteObjectNameWidget::setChosenRemoteObject(RemoteObject* remoteObject) {
     } catch (DBusException e) {
         QString text = i18nc("@label", "The object name can not be set, there "
 "was a problem getting the name from the target application: %1", e.message());
-        QString title = i18nc("@title", "Can't communicate with the target "
+        QString title = i18nc("@title", "Can not communicate with the target "
 "application");
         KMessageBox::sorry(this, text, title);
         return;

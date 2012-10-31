@@ -156,7 +156,7 @@ tutorial.addStep(keyboardPasteStep)
 mousePressStep = ktutorial.newStep("mousePress")
 mousePressStep.setText(t.i18nc("@info", "<para><emphasis>Warning:</emphasis> due to <link url=\"https://bugs.kde.org/show_bug.cgi?id=219787\">Kross bug 219787</link>, this step will crash KTutorial test app. Hopefully, soon the patch given in the bug will be applied and there will be no more crashes ;)</para>\
 <para>If you are wondering why a tutorial that crashes was included in KTutorial test app, the answer is because although it crashes, it also contains examples of advanced tutorial scripting using Python.</para>\
-<para>Press with the left button of the mouse on the selected text. You must press on it, or the selection will change, and you will have to select it again. Don't release the button yet.</para>"))
+<para>Press with the left button of the mouse on the selected text. You must press on it, or the selection will change, and you will have to select it again. Do not release the button yet.</para>"))
 
 waitForMousePressed = ktutorial.newWaitFor("WaitForSignal")
 waitForMousePressed.setSignal(mouseFilter, "mousePressed()")

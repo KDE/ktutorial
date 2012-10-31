@@ -44,7 +44,7 @@
        </property>
        <property name="whatsThis">
         <string comment="@info:whatsthis">&lt;para&gt;Edits the selected condition.&lt;/para&gt;
-&lt;para&gt;Only plain conditions, that is, conditions that aren't composed by other conditions, can be edited.&lt;/para&gt;</string>
+&lt;para&gt;Only plain conditions, that is, conditions that are not composed by other conditions, can be edited.&lt;/para&gt;</string>
        </property>
        <property name="text">
         <string comment="@action:button">Edit...</string>

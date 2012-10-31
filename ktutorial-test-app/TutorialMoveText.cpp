@@ -128,7 +128,7 @@ TutorialMoveText::TutorialMoveText(): Tutorial(0) {
 
     //Step mousePress
     Step* mousePressStep = new Step("mousePress");
-    mousePressStep->setText(i18nc("@info", "Press with the left button of the mouse on the selected text. You must press on it, or the selection will change, and you will have to select it again. Don't release the button yet."));
+    mousePressStep->setText(i18nc("@info", "Press with the left button of the mouse on the selected text. You must press on it, or the selection will change, and you will have to select it again. Do not release the button yet."));
 
     mousePressStep->addWaitFor(new WaitForLeftMouseButtonPressed(mTextArea->viewport()),
                                "mouseRelease");

@@ -53,7 +53,7 @@
         </item>
         <item>
          <property name="text">
-          <string comment="@item:inlistbox">The contained condition can't match</string>
+          <string comment="@item:inlistbox">The contained condition can not match</string>
          </property>
         </item>
         <item>
