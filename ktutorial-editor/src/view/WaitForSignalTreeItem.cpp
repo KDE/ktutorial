@@ -37,14 +37,14 @@ WaitForSignalTreeItem::WaitForSignalTreeItem(WaitForSignal* waitForSignal,
 QString WaitForSignalTreeItem::text() const {
     QString emitterName;
     if (mEmitterName.isEmpty()) {
-        emitterName = i18nc("@item", "(object not set)");
+        emitterName = i18nc("@item:intext", "(object not set)");
     } else {
         emitterName = "\"" + mEmitterName + "\"";
     }
 
     QString signalName;
     if (mSignalName.isEmpty()) {
-        signalName = i18nc("@item", "(signal not set)");
+        signalName = i18nc("@item:intext", "(signal not set)");
     } else {
         signalName = "\"" + mSignalName + "\"";
     }

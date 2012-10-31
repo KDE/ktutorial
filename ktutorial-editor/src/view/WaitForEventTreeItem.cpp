@@ -37,14 +37,14 @@ WaitForEventTreeItem::WaitForEventTreeItem(WaitForEvent* waitForEvent,
 QString WaitForEventTreeItem::text() const {
     QString receiverName;
     if (mReceiverName.isEmpty()) {
-        receiverName = i18nc("@item", "(object not set)");
+        receiverName = i18nc("@item:intext", "(object not set)");
     } else {
         receiverName = "\"" + mReceiverName + "\"";
     }
 
     QString eventName;
     if (mEventName.isEmpty()) {
-        eventName = i18nc("@item", "(event not set)");
+        eventName = i18nc("@item:intext", "(event not set)");
     } else {
         eventName = "\"" + mEventName + "\"";
     }

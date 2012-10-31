@@ -77,7 +77,7 @@ StepTreeItem* TutorialTreeItem::stepTreeItemForStep(Step* step) {
 void TutorialTreeItem::update(Tutorial* tutorial) {
     QString name;
     if (tutorial->name().isEmpty()) {
-        name = i18nc("@item", "(name not set)");
+        name = i18nc("@item:intext", "(name not set)");
 
         if (!mTutorialId.isEmpty()) {
             mTutorialId.clear();
@@ -94,7 +94,7 @@ void TutorialTreeItem::update(Tutorial* tutorial) {
 
     QString description;
     if (tutorial->description().isEmpty()) {
-        description = i18nc("@item", "(description not set)");
+        description = i18nc("@item:intext", "(description not set)");
     } else {
         description = tutorial->description();
     }

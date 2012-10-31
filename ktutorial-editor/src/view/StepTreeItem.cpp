@@ -53,7 +53,7 @@ StepTreeItem::StepTreeItem(Step* step, TreeItem* parent):
 QString StepTreeItem::text() const {
     QString id = mStepId;
     if (mStepId.isEmpty()) {
-        id = i18nc("@item", "(id not set)");
+        id = i18nc("@item:intext", "(id not set)");
     }
 
     return i18nc("@item Noun, a step in a tutorial", "Step %1", id);
@@ -91,7 +91,7 @@ void StepTreeItem::update(Step* step) {
 
     QString text;
     if (step->text().isEmpty()) {
-        text = i18nc("@item", "(text not set)");
+        text = i18nc("@item:intext", "(text not set)");
     } else {
         text = step->text();
     }

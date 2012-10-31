@@ -38,16 +38,16 @@ RemoteObjectTreeItem::RemoteObjectTreeItem(RemoteObject* remoteObject,
         mName = remoteObject->name();
         mClassName = remoteObject->remoteClass()->className();
     } catch (DBusException e) {
-        mName = i18nc("@item", "D-Bus Error!");
-        mClassName = i18nc("@item", "D-Bus Error!");
+        mName = i18nc("@item:intext", "D-Bus Error!");
+        mClassName = i18nc("@item:intext", "D-Bus Error!");
     }
 
     if (mName.isEmpty()) {
-        mName = i18nc("@item", "Object without name!");
+        mName = i18nc("@item:intext", "Object without name!");
     }
 
     if (mClassName.isEmpty()) {
-        mClassName = i18nc("@item", "No class name!");
+        mClassName = i18nc("@item:intext", "No class name!");
     }
 
     updateChildren();

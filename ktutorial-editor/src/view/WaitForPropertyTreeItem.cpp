@@ -39,21 +39,21 @@ WaitForPropertyTreeItem::WaitForPropertyTreeItem(
 QString WaitForPropertyTreeItem::text() const {
     QString objectName;
     if (mObjectName.isEmpty()) {
-        objectName = i18nc("@item", "(object name not set)");
+        objectName = i18nc("@item:intext", "(object name not set)");
     } else {
         objectName = "\"" + mObjectName + "\"";
     }
 
     QString propertyName;
     if (mPropertyName.isEmpty()) {
-        propertyName = i18nc("@item", "(property not set)");
+        propertyName = i18nc("@item:intext", "(property not set)");
     } else {
         propertyName = "\"" + mPropertyName + "\"";
     }
 
     QString value;
     if (mValue.isEmpty()) {
-        value = i18nc("@item", "(value not set)");
+        value = i18nc("@item:intext", "(value not set)");
     } else {
         value = mValue;
     }

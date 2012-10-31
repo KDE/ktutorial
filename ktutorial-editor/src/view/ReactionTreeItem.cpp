@@ -96,7 +96,7 @@ void ReactionTreeItem::updateOptionItem(Reaction* reaction) {
 
     QString optionName = reaction->optionName();
     if (optionName.isEmpty()) {
-        optionName = i18nc("@item", "(option name not set)");
+        optionName = i18nc("@item:intext", "(option name not set)");
     } else {
         optionName = '"' + reaction->optionName() + '"';
     }
@@ -132,7 +132,7 @@ void ReactionTreeItem::updateNextStepItem(Reaction* reaction) {
 
     QString nextStepId = reaction->nextStepId();
     if (nextStepId.isEmpty()) {
-        nextStepId = i18nc("@item", "(step id not set)");
+        nextStepId = i18nc("@item:intext", "(step id not set)");
     } else {
         nextStepId = '"' + reaction->nextStepId() + '"';
     }

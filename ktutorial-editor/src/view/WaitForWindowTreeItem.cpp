@@ -36,7 +36,7 @@ WaitForWindowTreeItem::WaitForWindowTreeItem(WaitForWindow* waitForWindow,
 QString WaitForWindowTreeItem::text() const {
     QString windowObjectName;
     if (mWindowObjectName.isEmpty()) {
-        windowObjectName = i18nc("@item", "(object name not set)");
+        windowObjectName = i18nc("@item:intext", "(object name not set)");
     } else {
         windowObjectName = "\"" + mWindowObjectName + "\"";
     }
