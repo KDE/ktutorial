@@ -120,7 +120,7 @@ void StepTreeItemTest::testConstructorFullStep() {
     StepTreeItem item(&step, &parent);
 
     QCOMPARE(item.parent(), &parent);
-    QCOMPARE(item.text(), i18nc("@item", "Step %1", "The id"));
+    QCOMPARE(item.text(), i18nc("@item Noun", "Step %1", "The id"));
     QCOMPARE(item.step(), &step);
     QCOMPARE(item.childCount(), 5);
     assertText(item.child(0), "The text");
@@ -143,7 +143,7 @@ void StepTreeItemTest::testStepSetId() {
 
     step.setId("The id");
 
-    QCOMPARE(item.text(), i18nc("@item", "Step %1", "The id"));
+    QCOMPARE(item.text(), i18nc("@item Noun", "Step %1", "The id"));
     QCOMPARE(item.childCount(), 1);
     assertEmptyText(item.child(0));
     QCOMPARE(dataChangedSpy.count(), 1);
@@ -160,7 +160,7 @@ void StepTreeItemTest::testStepSetIdChange() {
 
     step.setId("The id changed");
 
-    QCOMPARE(item.text(), i18nc("@item", "Step %1", "The id changed"));
+    QCOMPARE(item.text(), i18nc("@item Noun", "Step %1", "The id changed"));
     QCOMPARE(item.childCount(), 1);
     assertEmptyText(item.child(0));
     QCOMPARE(dataChangedSpy.count(), 1);
@@ -417,7 +417,7 @@ void StepTreeItemTest::testChildOrderWhenSettingDataInStep() {
 
     step.setId("The id");
 
-    QCOMPARE(item.text(), i18nc("@item", "Step %1", "The id"));
+    QCOMPARE(item.text(), i18nc("@item Noun", "Step %1", "The id"));
     QCOMPARE(item.childCount(), 6);
     assertText(item.child(0), "The text");
     assertCustomSetupCode(item.child(1), "The setup code");
@@ -444,7 +444,7 @@ void StepTreeItemTest::testChildOrderWhenUnsettingDataInStep() {
 
     step.setText("");
 
-    QCOMPARE(item.text(), i18nc("@item", "Step %1", "The id"));
+    QCOMPARE(item.text(), i18nc("@item Noun", "Step %1", "The id"));
     QCOMPARE(item.childCount(), 5);
     assertEmptyText(item.child(0));
     assertCustomSetupCode(item.child(1), "The setup code");
@@ -454,7 +454,7 @@ void StepTreeItemTest::testChildOrderWhenUnsettingDataInStep() {
 
     step.removeReaction(&reaction1);
 
-    QCOMPARE(item.text(), i18nc("@item", "Step %1", "The id"));
+    QCOMPARE(item.text(), i18nc("@item Noun", "Step %1", "The id"));
     QCOMPARE(item.childCount(), 4);
     assertEmptyText(item.child(0));
     assertCustomSetupCode(item.child(1), "The setup code");
@@ -463,7 +463,7 @@ void StepTreeItemTest::testChildOrderWhenUnsettingDataInStep() {
 
     step.setCustomTearDownCode("");
 
-    QCOMPARE(item.text(), i18nc("@item", "Step %1", "The id"));
+    QCOMPARE(item.text(), i18nc("@item Noun", "Step %1", "The id"));
     QCOMPARE(item.childCount(), 3);
     assertEmptyText(item.child(0));
     assertCustomSetupCode(item.child(1), "The setup code");

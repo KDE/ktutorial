@@ -627,7 +627,7 @@ void TutorialTreeItemTest::assertEmptyName(TreeItem* nameItem) const {
 
 void TutorialTreeItemTest::assertName(TreeItem* nameItem,
                                       const QString& name) const {
-    QCOMPARE(nameItem->text(), i18nc("@item", "Name: %1", name));
+    QCOMPARE(nameItem->text(), i18nc("@item Noun", "Name: %1", name));
 }
 
 void TutorialTreeItemTest::assertEmptyDescription(
@@ -667,7 +667,7 @@ void TutorialTreeItemTest::assertCustomTearDownCode(TreeItem* tearDownItem,
 void TutorialTreeItemTest::assertStep(TreeItem* stepItem,
                                       const QString& stepId) const {
     QVERIFY(qobject_cast<StepTreeItem*>(stepItem));
-    QCOMPARE(stepItem->text(), i18nc("@item", "Step %1", stepId));
+    QCOMPARE(stepItem->text(), i18nc("@item Noun", "Step %1", stepId));
 }
 
 void TutorialTreeItemTest::assertDataChanged(const QSignalSpy& spy, int index,

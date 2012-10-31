@@ -51,7 +51,7 @@ MainWindow::MainWindow(QWidget* parent): KXmlGuiWindow(parent),
 
 void MainWindow::setupActions() {
     KAction* clearAction = new KAction(this);
-    clearAction->setText(i18nc("@action", "Clear"));
+    clearAction->setText(i18nc("@action Verb, to clear a text area", "Clear"));
     clearAction->setIcon(KIcon("document-new"));
     clearAction->setShortcut(Qt::CTRL + Qt::Key_W);
     actionCollection()->addAction("clear", clearAction);
