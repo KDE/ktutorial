@@ -22,7 +22,7 @@ import Kross
 t = Kross.module("kdetranslation")
 
 tutorial.tutorialInformationAsObject().setName(t.i18nc("@info/plain", "Move text in the text area") + " (Python)")
-tutorial.tutorialInformationAsObject().setDescription(t.i18nc("@info/plain", "This tutorial shows how to move text in the text area22"))
+tutorial.tutorialInformationAsObject().setDescription(t.i18nc("@info/plain", "This tutorial shows how to move text in the text area"))
 
 textArea = ktutorial.findObject("textArea")
 
