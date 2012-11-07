@@ -18,7 +18,9 @@
 
 t = Kross.module("kdetranslation");
 
-tutorial.tutorialInformationAsObject().setName(t.i18nc("@info/plain", "Clear the text area") + " (Javascript)");
+tutorialName = t.i18nc("@info/plain", "Clear the text area");
+programmingLanguage = t.i18nc("@item:intext Programming language", "JavaScript");
+tutorial.tutorialInformationAsObject().setName(t.i18nc("@info/plain Tutorial name (Programming language name)", "%1 (%2)", [tutorialName, programmingLanguage]));
 tutorial.tutorialInformationAsObject().setDescription(t.i18nc("@info/plain", "This tutorial shows how to clean the text area with ease"));
 
 //Step 1

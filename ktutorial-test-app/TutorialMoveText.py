@@ -21,7 +21,9 @@
 import Kross
 t = Kross.module("kdetranslation")
 
-tutorial.tutorialInformationAsObject().setName(t.i18nc("@info/plain", "Move text in the text area") + " (Python)")
+tutorialName = t.i18nc("@info/plain", "Move text in the text area")
+programmingLanguage = t.i18nc("@item:intext Programming language", "Python")
+tutorial.tutorialInformationAsObject().setName(t.i18nc("@info/plain Tutorial name (Programming language name)", "%1 (%2)", [tutorialName, programmingLanguage]))
 tutorial.tutorialInformationAsObject().setDescription(t.i18nc("@info/plain", "This tutorial shows how to move text in the text area"))
 
 textArea = ktutorial.findObject("textArea")
