@@ -20,7 +20,7 @@
 #ifndef KTUTORIAL_WAITFOREVENT_H
 #define KTUTORIAL_WAITFOREVENT_H
 
-#include <QEvent>
+#include <QtCore/QEvent>
 
 #include "ktutorial_export.h"
 

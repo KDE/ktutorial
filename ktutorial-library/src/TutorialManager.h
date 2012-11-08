@@ -21,9 +21,9 @@
 #ifndef KTUTORIAL_TUTORIALMANAGER_H
 #define KTUTORIAL_TUTORIALMANAGER_H
 
-#include <QMap>
-#include <QObject>
-#include <QString>
+#include <QtCore/QMap>
+#include <QtCore/QObject>
+#include <QtCore/QString>
 
 #include "ktutorial_export.h"
 

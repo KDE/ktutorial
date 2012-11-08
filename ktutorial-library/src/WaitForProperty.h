@@ -19,7 +19,7 @@
 #ifndef KTUTORIAL_WAITFORPROPERTY_H
 #define KTUTORIAL_WAITFORPROPERTY_H
 
-#include <QVariant>
+#include <QtCore/QVariant>
 
 #include "ktutorial_export.h"
 

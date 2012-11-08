@@ -20,7 +20,7 @@
 #ifndef KTUTORIAL_OPTION_H
 #define KTUTORIAL_OPTION_H
 
-#include <QObject>
+#include <QtCore/QObject>
 
 #include "ktutorial_export.h"
 

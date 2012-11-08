@@ -22,8 +22,8 @@
 #ifndef KTUTORIAL_TUTORIAL_H
 #define KTUTORIAL_TUTORIAL_H
 
-#include <QMap>
-#include <QObject>
+#include <QtCore/QMap>
+#include <QtCore/QObject>
 
 #include "ktutorial_export.h"
 

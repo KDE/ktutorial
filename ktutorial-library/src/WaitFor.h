@@ -20,7 +20,7 @@
 #ifndef KTUTORIAL_WAITFOR_H
 #define KTUTORIAL_WAITFOR_H
 
-#include <QObject>
+#include <QtCore/QObject>
 
 #include "ktutorial_export.h"
 

@@ -18,8 +18,8 @@
 #ifndef KTUTORIAL_OBJECTFINDER_H
 #define KTUTORIAL_OBJECTFINDER_H
 
-#include <QObject>
-#include <QRegExp>
+#include <QtCore/QObject>
+#include <QtCore/QRegExp>
 
 #include "ktutorial_export.h"
 

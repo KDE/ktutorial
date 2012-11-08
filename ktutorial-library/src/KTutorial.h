@@ -22,7 +22,7 @@
 #ifndef KTUTORIAL_KTUTORIAL_H
 #define KTUTORIAL_KTUTORIAL_H
 
-#include <QWidget>
+#include <QtGui/QWidget>
 
 #include "ktutorial_export.h"
 

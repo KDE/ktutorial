@@ -18,7 +18,7 @@
 #ifndef KTUTORIAL_KTUTORIALCUSTOMIZATION_H
 #define KTUTORIAL_KTUTORIALCUSTOMIZATION_H
 
-#include <QObject>
+#include <QtCore/QObject>
 
 #include "ktutorial_export.h"
 
