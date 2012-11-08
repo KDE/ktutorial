@@ -100,7 +100,7 @@ public:
         }
     }
 
-public slots:
+public Q_SLOTS:
 
     /**
      * Notifies that the wait for the signal ended.

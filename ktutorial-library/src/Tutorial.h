@@ -134,7 +134,7 @@ public:
      */
     void nextStep(Step* step);
 
-public slots:
+public Q_SLOTS:
 
     /**
      * Activates the next Step in the Tutorial.
@@ -159,7 +159,7 @@ public slots:
      */
     void finish();
 
-signals:
+Q_SIGNALS:
 
     /**
      * This signal is emitted when this Tutorial finishes.

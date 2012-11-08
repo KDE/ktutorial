@@ -71,7 +71,7 @@ public:
         return mName;
     }
 
-signals:
+Q_SIGNALS:
 
     /**
      * This signal is emitted when this Option is selected by the user.

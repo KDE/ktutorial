@@ -68,7 +68,7 @@ public:
      */
     Q_INVOKABLE void add(WaitFor* waitFor);
 
-public slots:
+public Q_SLOTS:
 
     /**
      * Notifies that the child WaitFor object has ended its wait.

@@ -86,7 +86,7 @@ public:
      */
     virtual QWidget* mainApplicationWindow() = 0;
 
-public slots:
+public Q_SLOTS:
 
     /**
      * Shows the tutorial UI.

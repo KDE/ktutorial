@@ -79,7 +79,7 @@ public:
         mActive = active;
     }
 
-signals:
+Q_SIGNALS:
 
     /**
      * This signal is emitted when the condition being waited for is met, and

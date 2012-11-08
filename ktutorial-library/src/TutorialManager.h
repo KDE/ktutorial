@@ -93,7 +93,7 @@ public:
      */
     void start(const QString& id);
 
-signals:
+Q_SIGNALS:
 
     /**
      * This signal is emitted when the given tutorial is about to be started.
@@ -118,7 +118,7 @@ private:
      */
     QMap<const TutorialInformation*, Tutorial*> mTutorials;
 
-private slots:
+private Q_SLOTS:
 
     /**
      * Finishes a tutorial.

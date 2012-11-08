@@ -151,7 +151,7 @@ private:
      */
     QVariant mValue;
 
-private slots:
+private Q_SLOTS:
 
     /**
      * When the property value changes to the expected one, this method notifies

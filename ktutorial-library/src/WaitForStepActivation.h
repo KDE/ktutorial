@@ -109,7 +109,7 @@ private:
      */
     bool mDuringStepActivation;
 
-private slots:
+private Q_SLOTS:
 
     /**
      * When the step is activated, this method notifies that the wait for the
