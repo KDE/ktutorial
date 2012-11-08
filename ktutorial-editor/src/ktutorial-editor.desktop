@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=KTutorial editor
 Name[et]=KTutoriali redaktor
+Name[fr]=Éditeur de KTutorial
 Name[ga]=Eagarthóir KTutorial
 Name[hu]=KTutorial szerkesztő
 Name[nl]=KTutorial-bewerker
@@ -12,6 +13,7 @@ Name[uk]=Редактор KTutorial
 Name[x-test]=xxKTutorial editorxx
 GenericName=Editor for KTutorial tutorials
 GenericName[et]=KTutoriali õppematerjalide redaktor
+GenericName[fr]=Éditeur de tutoriels de KTutorial
 GenericName[hu]=Szerkesztő a KTutorial ismertetőkhöz
 GenericName[nl]=Bewerker voor KTutorial-handleidingen
 GenericName[pt]=Editor de tutoriais do KTutorial
