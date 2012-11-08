@@ -37,8 +37,7 @@ public:
     /**
      * Creates a new WaitForOr.
      */
-    Q_INVOKABLE WaitForOr(): WaitForComposed() {
-    }
+    Q_INVOKABLE WaitForOr();
 
     /**
      * Returns true if at least one of its children met its condition, false

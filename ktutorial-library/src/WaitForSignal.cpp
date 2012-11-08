@@ -50,6 +50,18 @@ void WaitForSignal::setSignal(QObject* sender, const QString& signal) {
     connect(sender, signalName.toLatin1(), this, SLOT(signalWaitEnd()));
 }
 
+bool WaitForSignal::conditionMet() const {
+    return mConditionMet;
+}
+
+void WaitForSignal::setActive(bool active) {
+    WaitFor::setActive(active);
+
+    if (active) {
+        mConditionMet = false;
+    }
+}
+
 //public slots:
 
 void WaitForSignal::signalWaitEnd() {

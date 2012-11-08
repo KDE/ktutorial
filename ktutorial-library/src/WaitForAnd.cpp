@@ -24,6 +24,9 @@ namespace ktutorial {
 
 //public:
 
+WaitForAnd::WaitForAnd(): WaitForComposed() {
+}
+
 bool WaitForAnd::conditionMet() const {
     if (mWaitFors.isEmpty()) {
         return false;

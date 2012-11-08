@@ -29,6 +29,9 @@ namespace ktutorial {
 
 //public:
 
+TutorialManager::TutorialManager(): QObject() {
+}
+
 TutorialManager::~TutorialManager() {
 }
 
@@ -46,6 +49,11 @@ bool TutorialManager::registerTutorial(Tutorial* tutorial) {
     mTutorials.insert(tutorial->tutorialInformation(), tutorial);
 
     return true;
+}
+
+QList<const TutorialInformation*> TutorialManager::tutorialInformations()
+                                                                        const {
+    return mTutorialInformations.values();
 }
 
 void TutorialManager::start(const QString& id) {

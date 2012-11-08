@@ -37,4 +37,13 @@ void WaitForNot::setNegatedWaitFor(WaitFor* waitFor) {
     mWaitFor->setParent(this);
 }
 
+bool WaitForNot::conditionMet() const {
+    return !mWaitFor->conditionMet();
+}
+
+void WaitForNot::setActive(bool active) {
+    WaitFor::setActive(active);
+    mWaitFor->setActive(active);
+}
+
 }

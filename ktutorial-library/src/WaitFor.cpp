@@ -19,6 +19,22 @@
 
 #include "WaitFor.h"
 
+namespace ktutorial {
+    
 //public:
 
-//TODO remove?
+bool WaitFor::isActive() const {
+    return mActive;
+}
+
+void WaitFor::setActive(bool active) {
+    mActive = active;
+}
+
+//protected:
+
+WaitFor::WaitFor(): QObject(),
+    mActive(false) {
+}
+
+}

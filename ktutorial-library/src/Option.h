@@ -58,18 +58,14 @@ public:
      *
      * @param name The name of this Option.
      */
-    explicit Option(const QString& name): QObject(),
-        mName(name) {
-    }
+    explicit Option(const QString& name);
 
     /**
      * Returns the name of this Option.
      *
      * @return The name of this Option.
      */
-    const QString& name() const {
-        return mName;
-    }
+    const QString& name() const;
 
 Q_SIGNALS:
 

@@ -62,4 +62,9 @@ void WaitForComposed::childWaitEnd(WaitFor* waitFor) {
     }
 }
 
+//protected:
+
+WaitForComposed::WaitForComposed(): WaitFor() {
+}
+
 }

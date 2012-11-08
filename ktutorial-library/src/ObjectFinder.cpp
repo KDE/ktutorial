@@ -19,6 +19,11 @@
 
 namespace ktutorial {
 
+//public:
+
+ObjectFinder::ObjectFinder(QObject* parent /*= 0*/): QObject(parent) {
+}
+
 //private:
 
 QList<QObject*> ObjectFinder::getBestMatches(const QString& name,

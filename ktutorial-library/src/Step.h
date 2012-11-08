@@ -144,38 +144,28 @@ public:
      *
      * @param id The identifier of this Step.
      */
-    explicit Step(const QString& id): QObject(),
-        mId(id),
-        mActive(false),
-        mDeleteAddedObjectsInTearDown(false) {
-    }
+    explicit Step(const QString& id);
 
     /**
      * Returns the identifier of this Step.
      *
      * @return The identifier of this Step.
      */
-    const QString& id() const {
-        return mId;
-    }
+    const QString& id() const;
 
     /**
      * Returns the Options added to this Step.
      *
      * @return The Options added to this Step.
      */
-    const QList<Option*>& options() const {
-        return mOptions;
-    }
+    const QList<Option*>& options() const;
 
     /**
      * Returns the text to be shown to the user.
      *
      * @return The text to be shown to the user.
      */
-    const QString& text() const {
-        return mText;
-    }
+    const QString& text() const;
 
     /**
      * Sets the text to be shown to the user.
@@ -187,18 +177,14 @@ public:
      *
      * @param text The text to set.
      */
-    Q_INVOKABLE void setText(const QString& text) {
-        mText = text;
-    }
+    Q_INVOKABLE void setText(const QString& text);
 
     /**
      * Returns true if this Step is active, false otherwise.
      *
      * @return True if this Step is active, false otherwise.
      */
-    bool isActive() const {
-        return mActive;
-    }
+    bool isActive() const;
 
     /**
      * Makes this Step active or inactive.
@@ -347,16 +333,14 @@ protected:
      * Step subclasses can redefine it if they need to perform something when 
      * they are activated.
      */
-    virtual void setup() {
-    }
+    virtual void setup();
 
     /**
      * Tears down the Step when it is deactivated.
      * Step subclasses can redefine it if they need to perform something when 
      * they are deactivated.
      */
-    virtual void tearDown() {
-    }
+    virtual void tearDown();
 
     /**
      * Connects the given WaitFor with the slot in the receiver.

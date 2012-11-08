@@ -20,6 +20,34 @@
 
 #include "TutorialInformation.h"
 
-//TODO remove?
+namespace ktutorial {
+
+//public:
+
+TutorialInformation::TutorialInformation(const QString& id): QObject(),
+    mId(id) {
+}
+
+const QString& TutorialInformation::id() const {
+    return mId;
+}
+
+const QString& TutorialInformation::name() const {
+    return mName;
+}
+
+const QString& TutorialInformation::description() const {
+    return mDescription;
+}
+
+void TutorialInformation::setName(const QString& name) {
+    mName = name;
+}
+
+void TutorialInformation::setDescription(const QString& description) {
+    mDescription = description;
+}
+
+}
 
 #include "TutorialInformation.moc"

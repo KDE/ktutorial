@@ -30,8 +30,17 @@ namespace ktutorial {
 
 //public:
 
+Tutorial::Tutorial(TutorialInformation* tutorialInformation): QObject(),
+    mTutorialInformation(tutorialInformation),
+    mCurrentStep(0) {
+}
+
 Tutorial::~Tutorial() {
     delete mTutorialInformation;
+}
+
+TutorialInformation* Tutorial::tutorialInformation() const {
+    return mTutorialInformation;
 }
 
 void Tutorial::addStep(Step* step) {
@@ -98,6 +107,14 @@ void Tutorial::finish() {
     tearDown();
 
     emit finished(this);
+}
+
+//protected:
+
+void Tutorial::setup() {
+}
+
+void Tutorial::tearDown() {
 }
 
 //private:

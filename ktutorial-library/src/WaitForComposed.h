@@ -93,8 +93,7 @@ protected:
      *
      * Protected to avoid classes other than subclasses to create them.
      */
-    WaitForComposed(): WaitFor() {
-    }
+    WaitForComposed();
 
 };
 

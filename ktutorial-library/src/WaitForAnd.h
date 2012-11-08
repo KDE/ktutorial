@@ -37,8 +37,7 @@ public:
     /**
      * Creates a new WaitForAnd.
      */
-    Q_INVOKABLE WaitForAnd(): WaitForComposed() {
-    }
+    Q_INVOKABLE WaitForAnd();
 
     /**
      * Returns true if all of its children met its condition, false otherwise.

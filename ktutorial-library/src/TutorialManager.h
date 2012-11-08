@@ -50,8 +50,7 @@ public:
     /**
      * Creates a new TutorialManager.
      */
-    TutorialManager(): QObject() {
-    }
+    TutorialManager();
 
     /**
      * Destroys this TutorialManager.
@@ -76,9 +75,7 @@ public:
      *
      * @return A list with the information of all the registered tutorials.
      */
-    QList<const TutorialInformation*> tutorialInformations() const {
-        return mTutorialInformations.values();
-    }
+    QList<const TutorialInformation*> tutorialInformations() const;
 
     /**
      * Starts a tutorial identified by its id.

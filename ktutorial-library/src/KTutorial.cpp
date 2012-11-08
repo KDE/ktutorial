@@ -35,6 +35,10 @@ namespace ktutorial {
 
 //public:
 
+KTutorial* KTutorial::self() {
+    return sSelf;
+}
+
 bool KTutorial::registerWaitForMetaObject(const QMetaObject& waitForMetaObject,
                                     const QString& typeName /*= QString()*/) {
     return ScriptingModule::self()->registerWaitForMetaObject(waitForMetaObject,
@@ -63,6 +67,10 @@ void KTutorial::setup(KTutorialCustomization* ktutorialCustomization) {
     connect(editorSupport, SIGNAL(started(Tutorial*)),
             ktutorialCustomization, SLOT(showTutorialUI(Tutorial*)));
 #endif
+}
+
+bool KTutorial::registerTutorial(Tutorial* tutorial) {
+    return mTutorialmanager->registerTutorial(tutorial);
 }
 
 QWidget* KTutorial::mainApplicationWindow() const {

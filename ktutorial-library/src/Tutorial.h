@@ -82,10 +82,7 @@ public:
      *
      * @param tutorialInformation The TutorialInformation for this Tutorial.
      */
-    explicit Tutorial(TutorialInformation* tutorialInformation): QObject(),
-        mTutorialInformation(tutorialInformation),
-        mCurrentStep(0) {
-    }
+    explicit Tutorial(TutorialInformation* tutorialInformation);
 
     /**
      * Destroys this Tutorial.
@@ -99,9 +96,7 @@ public:
      *
      * @return The TutorialInformation of this Tutorial.
      */
-    Q_INVOKABLE TutorialInformation* tutorialInformation() const {
-        return mTutorialInformation;
-    }
+    Q_INVOKABLE TutorialInformation* tutorialInformation() const;
 
     /**
      * Adds a new Step to this Tutorial.
@@ -194,16 +189,14 @@ protected:
      * Tutorial subclasses can redefine it if they need to set up something
      * before start.
      */
-    virtual void setup() {
-    }
+    virtual void setup();
 
     /**
      * Sets up the Tutorial before activating start Step.
      * Tutorial subclasses can redefine it if they need to set up something
      * before start.
      */
-    virtual void tearDown() {
-    }
+    virtual void tearDown();
 
 private:
 

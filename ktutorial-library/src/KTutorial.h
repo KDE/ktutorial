@@ -83,9 +83,7 @@ public:
      *
      * @return The only instance of this class.
      */
-    static KTutorial* self() {
-        return sSelf;
-    }
+    static KTutorial* self();
 
     /**
      * Registers a WaitFor type to create instances of it in scripted tutorials.
@@ -132,9 +130,7 @@ public:
      * @param tutorial The Tutorial to register.
      * @return True if the Tutorial was registered, false otherwise.
      */
-    bool registerTutorial(Tutorial* tutorial) {
-        return mTutorialmanager->registerTutorial(tutorial);
-    }
+    bool registerTutorial(Tutorial* tutorial);
 
     /**
      * Returns the main window of the application.

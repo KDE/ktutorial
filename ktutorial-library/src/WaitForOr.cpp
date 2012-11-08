@@ -23,6 +23,9 @@ namespace ktutorial {
 
 //public:
 
+WaitForOr::WaitForOr(): WaitForComposed() {
+}
+
 bool WaitForOr::conditionMet() const {
     QListIterator<WaitFor*> it(mWaitFors);
     while (it.hasNext()) {

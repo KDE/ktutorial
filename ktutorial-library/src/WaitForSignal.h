@@ -82,9 +82,7 @@ public:
      * @return True if the connected signal was emitted while active, false
      * otherwise.
      */
-    virtual bool conditionMet() const {
-        return mConditionMet;
-    }
+    virtual bool conditionMet() const;
 
     /**
      * Sets this WaitForSignal active or inactive.
@@ -92,13 +90,7 @@ public:
      *
      * @param active True to set it active, false otherwise.
      */
-    virtual void setActive(bool active) {
-        WaitFor::setActive(active);
-
-        if (active) {
-            mConditionMet = false;
-        }
-    }
+    virtual void setActive(bool active);
 
 public Q_SLOTS:
 

@@ -30,6 +30,32 @@ namespace ktutorial {
 
 //public:
 
+Step::Step(const QString& id): QObject(),
+    mId(id),
+    mActive(false),
+    mDeleteAddedObjectsInTearDown(false) {
+}
+
+const QString& Step::id() const {
+    return mId;
+}
+
+const QList<Option*>& Step::options() const {
+    return mOptions;
+}
+
+const QString& Step::text() const {
+    return mText;
+}
+
+void Step::setText(const QString& text) {
+    mText = text;
+}
+
+bool Step::isActive() const {
+    return mActive;
+}
+
 void Step::setActive(bool active) {
     if (active) {
         setupWrapper();
@@ -135,6 +161,12 @@ void Step::removeWaitFor(WaitFor* waitFor) {
 }
 
 //protected:
+
+void Step::setup() {
+}
+
+void Step::tearDown() {
+}
 
 void Step::connectWaitFor(WaitFor* waitFor, QObject* receiver,
                           const QString& slot) {

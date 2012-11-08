@@ -46,36 +46,28 @@ public:
      *
      * @param id The unique, untranslated identifier of the tutorial.
      */
-    explicit TutorialInformation(const QString& id): QObject(),
-        mId(id) {
-    }
+    explicit TutorialInformation(const QString& id);
 
     /**
      * Returns the identifier of the tutorial.
      *
      * @return The identifier of the tutorial.
      */
-    const QString& id() const {
-        return mId;
-    }
+    const QString& id() const;
 
     /**
      * Returns the name of the tutorial.
      *
      * @return The name of the tutorial.
      */
-    const QString& name() const {
-        return mName;
-    }
+    const QString& name() const;
 
     /**
      * Returns the description of the tutorial.
      *
      * @return The description of the tutorial.
      */
-    const QString& description() const {
-        return mDescription;
-    }
+    const QString& description() const;
 
     /**
      * Sets the name of the tutorial.
@@ -83,9 +75,7 @@ public:
      *
      * @param name The name to set.
      */
-    Q_INVOKABLE void setName(const QString& name) {
-        mName = name;
-    }
+    Q_INVOKABLE void setName(const QString& name);
 
     /**
      * Sets the description of the tutorial.
@@ -93,9 +83,7 @@ public:
      *
      * @param description The description to set.
      */
-    Q_INVOKABLE void setDescription(const QString& description) {
-        mDescription = description;
-    }
+    Q_INVOKABLE void setDescription(const QString& description);
 
 private:
 

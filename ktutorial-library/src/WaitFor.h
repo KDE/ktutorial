@@ -62,9 +62,7 @@ public:
      *
      * @return True if this WaitFor is active, false otherwise.
      */
-    bool isActive() const {
-        return mActive;
-    }
+    bool isActive() const;
 
     /**
      * Sets this WaitFor as active or inactive.
@@ -75,9 +73,7 @@ public:
      *
      * @param active True to set it active, false otherwise.
      */
-    virtual void setActive(bool active) {
-        mActive = active;
-    }
+    virtual void setActive(bool active);
 
 Q_SIGNALS:
 
@@ -98,9 +94,7 @@ protected:
      *
      * Protected to avoid classes other than subclasses to create them.
      */
-    WaitFor(): QObject(),
-        mActive(false) {
-    }
+    WaitFor();
 
 private:
 

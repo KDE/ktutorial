@@ -19,6 +19,16 @@
 
 #include "Option.h"
 
+namespace ktutorial {
+
 //public:
 
-//TODO remove?
+Option::Option(const QString& name): QObject(),
+    mName(name) {
+}
+
+const QString& Option::name() const {
+    return mName;
+}
+
+}

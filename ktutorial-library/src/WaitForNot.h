@@ -99,19 +99,14 @@ public:
      *
      * @return True if the child WaitFor condition isn't met, false otherwise.
      */
-    virtual bool conditionMet() const {
-        return !mWaitFor->conditionMet();
-    }
+    virtual bool conditionMet() const;
 
     /**
      * Sets this WaitForNot and its child as active or inactive.
      *
      * @param active True to set it active, false otherwise.
      */
-    virtual void setActive(bool active) {
-        WaitFor::setActive(active);
-        mWaitFor->setActive(active);
-    }
+    virtual void setActive(bool active);
 
 protected:
 
