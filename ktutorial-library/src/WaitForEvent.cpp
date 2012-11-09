@@ -100,5 +100,3 @@ void WaitForEvent::handleEvent(QEvent* event) {
 }
 
 }
-
-#include "WaitForEvent.moc"

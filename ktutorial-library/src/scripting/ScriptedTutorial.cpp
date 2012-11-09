@@ -65,5 +65,3 @@ void ScriptedTutorial::tearDown() {
 
 }
 }
-
-#include "ScriptedTutorial.moc"

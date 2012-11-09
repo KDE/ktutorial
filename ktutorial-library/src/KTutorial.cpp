@@ -82,5 +82,3 @@ QWidget* KTutorial::mainApplicationWindow() const {
 KTutorial* KTutorial::sSelf = new KTutorial();
 
 }
-
-#include "KTutorial.moc"

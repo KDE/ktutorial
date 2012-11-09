@@ -70,5 +70,3 @@ bool WindowVisibilitySpy::eventFilter(QObject* object, QEvent* event) {
 
 }
 }
-
-#include "WindowVisibilitySpy.moc"

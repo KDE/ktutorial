@@ -258,5 +258,3 @@ void Step::requestNextStepForWaitFor(WaitFor* waitFor) {
 }
 
 }
-
-#include "Step.moc"

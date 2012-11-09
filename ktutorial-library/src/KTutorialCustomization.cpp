@@ -16,5 +16,3 @@
  ***************************************************************************/
 
 #include "KTutorialCustomization.h"
-
-#include "KTutorialCustomization.moc"

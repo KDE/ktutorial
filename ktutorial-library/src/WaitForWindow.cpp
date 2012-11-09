@@ -78,5 +78,3 @@ void WaitForWindow::checkWindowShown(QWidget* window) {
 }
 
 }
-
-#include "WaitForWindow.moc"

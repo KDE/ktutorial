@@ -49,5 +49,3 @@ void TutorialInformation::setDescription(const QString& description) {
 }
 
 }
-
-#include "TutorialInformation.moc"
