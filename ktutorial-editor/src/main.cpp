@@ -29,7 +29,7 @@ int main (int argc, char *argv[]) {
         ki18nc("@title", "An editor to create tutorials for "
                          "<application>KTutorial</application>."),
         KAboutData::License_GPL_V2,
-        ki18nc("@info:credit", "Copyright (c) 2010-2012 Daniel Calviño Sánchez"));
+        ki18nc("@info:credit", "Copyright (C) 2010-2012 Daniel Calviño Sánchez"));
     aboutData.addAuthor(ki18nc("@info:credit", "Daniel Calviño Sánchez"),
                         ki18nc("@info:credit", "Main developer"),
                         "danxuliu@gmail.com");

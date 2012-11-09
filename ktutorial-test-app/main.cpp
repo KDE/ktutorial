@@ -26,7 +26,7 @@ int main (int argc, char *argv[]) {
       ki18nc("@title", "Test application for <application>KTutorial</application>"), "1.0",
       ki18nc("@title", "A simple test application for <application>KTutorial</application>."),
       KAboutData::License_GPL,
-      ki18nc("@info:credit", "Copyright (c) 2007 Matt Williams"),
+      ki18nc("@info:credit", "Copyright (C) 2007 Matt Williams"),
       ki18nc("@info", "Code borrowed from <link>http://techbase.kde.org/index.php?title=Development/Tutorials/Saving_and_loading</link>"));
   aboutData.addAuthor(ki18nc("@info:credit", "Daniel Calviño Sánchez"),
                       ki18nc("@info:credit", "KTutorial integration and tutorials"), 
