@@ -39,7 +39,7 @@ public:
      *
      * @param parent The parent QObject.
      */
-    WaitForEvent(QObject* parent = 0);
+    explicit WaitForEvent(QObject* parent = 0);
 
     virtual WaitFor* clone() const;
     virtual bool equals(const WaitFor& waitFor) const;

@@ -40,7 +40,7 @@ public:
      *
      * @param parent The parent widget.
      */
-    AutoExpandableTreeView(QWidget* parent = 0);
+    explicit AutoExpandableTreeView(QWidget* parent = 0);
 
 protected:
 

@@ -37,7 +37,7 @@ class Step: public QObject {
 Q_OBJECT
 public:
 
-    Step(QObject* parent = 0);
+    explicit Step(QObject* parent = 0);
 
     /**
      * Destroys this Step and all its reactions.

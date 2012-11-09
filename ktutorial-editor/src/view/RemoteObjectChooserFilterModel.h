@@ -53,7 +53,7 @@ public:
      *
      * @param parent The parent object.
      */
-    RemoteObjectChooserFilterModel(QObject* parent = 0);
+    explicit RemoteObjectChooserFilterModel(QObject* parent = 0);
 
 public Q_SLOTS:
 

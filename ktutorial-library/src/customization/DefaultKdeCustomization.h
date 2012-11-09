@@ -48,7 +48,7 @@ public:
      *
      * @param window The main window of the application.
      */
-    DefaultKdeCustomization(KXmlGuiWindow* window);
+    explicit DefaultKdeCustomization(KXmlGuiWindow* window);
 
     /**
      * Sets up the KTutorial user interface.

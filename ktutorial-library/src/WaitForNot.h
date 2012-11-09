@@ -78,7 +78,7 @@ public:
      *
      * @param waitFor The child WaitFor.
      */
-    WaitForNot(WaitFor* waitFor);
+    explicit WaitForNot(WaitFor* waitFor);
 
     /**
      * Sets the WaitFor to be negated.

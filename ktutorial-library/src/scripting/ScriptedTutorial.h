@@ -61,7 +61,7 @@ public:
      *
      * @param filename The name of the file containing the script.
      */
-    ScriptedTutorial(const QString& filename);
+    explicit ScriptedTutorial(const QString& filename);
 
     /**
      * Destroys this ScriptedTutorial.

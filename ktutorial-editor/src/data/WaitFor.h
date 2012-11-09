@@ -45,7 +45,7 @@ public:
      *
      * @param parent The parent QObject.
      */
-    WaitFor(QObject* parent = 0);
+    explicit WaitFor(QObject* parent = 0);
 
     /**
      * Deep copy of this WaitFor.

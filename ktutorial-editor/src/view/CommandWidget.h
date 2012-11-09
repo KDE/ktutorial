@@ -73,7 +73,7 @@ public:
      *
      * @param parent The parent widget.
      */
-    CommandWidget(QWidget* parent = 0);
+    explicit CommandWidget(QWidget* parent = 0);
 
     /**
      * Saves the changes to the object being edited.

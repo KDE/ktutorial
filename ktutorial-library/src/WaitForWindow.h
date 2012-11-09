@@ -62,7 +62,7 @@ public:
      *
      * @param windowObjectName The object name of the window to wait for.
      */
-    WaitForWindow(const QString& windowObjectName);
+    explicit WaitForWindow(const QString& windowObjectName);
 
     /**
      * Sets the object name of the window to wait for.

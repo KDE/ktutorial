@@ -42,7 +42,7 @@ public:
      *
      * @param parent The parent widget.
      */
-    EditionWidget(QWidget* parent = 0);
+    explicit EditionWidget(QWidget* parent = 0);
 
     /**
      * Saves the changes to the object being edited.

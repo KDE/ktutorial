@@ -72,7 +72,7 @@ public:
      *
      * @param textEdit The QTextEdit used for the edition of the text.
      */
-    SemanticMarkupEdition(QTextEdit* textEdit); //krazy:exclude=qclasses
+    explicit SemanticMarkupEdition(QTextEdit* textEdit); //krazy:exclude=qclasses
 
     /**
      * Creates the actions for markup edition and adds them to the given

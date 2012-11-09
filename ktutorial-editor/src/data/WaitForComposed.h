@@ -46,7 +46,7 @@ public:
      *
      * @param parent The parent QObject.
      */
-    WaitForComposed(QObject* parent = 0);
+    explicit WaitForComposed(QObject* parent = 0);
     virtual ~WaitForComposed();
 
     virtual WaitFor* clone() const;

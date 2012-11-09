@@ -42,7 +42,7 @@ public:
      *
      * @param service The DBus service name of the remote objects and classes.
      */
-    RemoteObjectMapper(const QString& service);
+    explicit RemoteObjectMapper(const QString& service);
 
     /**
      * Destroys this RemoteObjectMapper.

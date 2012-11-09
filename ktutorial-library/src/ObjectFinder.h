@@ -39,7 +39,7 @@ public:
      * 
      * @param parent The parent object.
      */
-    ObjectFinder(QObject* parent = 0);
+    explicit ObjectFinder(QObject* parent = 0);
 
     /**
      * Returns the object with the specified name, if any.

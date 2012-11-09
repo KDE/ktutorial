@@ -41,7 +41,7 @@ public:
      *
      * @param parent The parent QObject.
      */
-    WaitForStepActivation(QObject* parent = 0);
+    explicit WaitForStepActivation(QObject* parent = 0);
 
     virtual WaitFor* clone() const;
     virtual bool equals(const WaitFor& waitFor) const;

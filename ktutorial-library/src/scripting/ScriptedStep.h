@@ -61,7 +61,7 @@ public:
      *
      * @param id The identifier of this Step.
      */
-    ScriptedStep(const QString& id);
+    explicit ScriptedStep(const QString& id);
 
 signals:
 

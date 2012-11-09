@@ -40,7 +40,7 @@ public:
      *
      * @param parent The parent QObject.
      */
-    WaitForNot(QObject* parent = 0);
+    explicit WaitForNot(QObject* parent = 0);
     virtual ~WaitForNot();
 
     virtual WaitFor* clone() const;

@@ -49,7 +49,7 @@ public:
         CustomCode
     };
 
-    Reaction(QObject* parent = 0);
+    explicit Reaction(QObject* parent = 0);
     virtual ~Reaction();
 
     TriggerType triggerType() const;

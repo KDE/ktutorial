@@ -38,7 +38,7 @@ class Tutorial: public QObject {
 Q_OBJECT
 public:
 
-    Tutorial(QObject* parent = 0);
+    explicit Tutorial(QObject* parent = 0);
 
     /**
      * Destroys this Tutorial and all its steps.
