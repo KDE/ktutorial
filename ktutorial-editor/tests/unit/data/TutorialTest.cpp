@@ -186,7 +186,7 @@ void TutorialTest::testAddStep() {
     Step* step2 = new Step();
     Step* step3 = new Step();
 
-    QSignalSpy stepAddedSpy(&tutorial, SIGNAL(stepAdded(Step*, int)));
+    QSignalSpy stepAddedSpy(&tutorial, SIGNAL(stepAdded(Step*,int)));
 
     tutorial.addStep(step1);
     tutorial.addStep(step2);
@@ -208,7 +208,7 @@ void TutorialTest::testAddStepAtIndex() {
     Step* step2 = new Step();
     Step* step3 = new Step();
 
-    QSignalSpy stepAddedSpy(&tutorial, SIGNAL(stepAdded(Step*, int)));
+    QSignalSpy stepAddedSpy(&tutorial, SIGNAL(stepAdded(Step*,int)));
 
     tutorial.addStep(step2, 0);
     tutorial.addStep(step1, 0);

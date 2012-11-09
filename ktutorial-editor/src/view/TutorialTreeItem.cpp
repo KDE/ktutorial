@@ -46,8 +46,8 @@ TutorialTreeItem::TutorialTreeItem(Tutorial* tutorial, TreeItem* parent):
     foreach(Step* step, tutorial->steps()) {
         addStep(step, mStepTreeItems.count());
     }
-    connect(tutorial, SIGNAL(stepAdded(Step*, int)),
-            this, SLOT(addStep(Step*, int)));
+    connect(tutorial, SIGNAL(stepAdded(Step*,int)),
+            this, SLOT(addStep(Step*,int)));
     connect(tutorial, SIGNAL(stepRemoved(Step*)),
             this, SLOT(removeStep(Step*)));
 }

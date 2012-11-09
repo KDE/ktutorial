@@ -120,8 +120,8 @@ int TreeModel::columnCount(const QModelIndex& parent) const {
 //private:
 
 void TreeModel::registerTreeItemForUpdates(TreeItem* item) {
-    connect(item, SIGNAL(childAboutToBeInserted(TreeItem*, int)),
-            this, SLOT(treeItemAboutToBeInserted(TreeItem*, int)));
+    connect(item, SIGNAL(childAboutToBeInserted(TreeItem*,int)),
+            this, SLOT(treeItemAboutToBeInserted(TreeItem*,int)));
     connect(item, SIGNAL(childInserted(TreeItem*)),
             this, SLOT(treeItemInserted(TreeItem*)));
     connect(item, SIGNAL(childAboutToBeRemoved(TreeItem*)),
@@ -137,8 +137,8 @@ void TreeModel::registerTreeItemForUpdates(TreeItem* item) {
 }
 
 void TreeModel::deregisterTreeItemFromUpdates(TreeItem* item) {
-    disconnect(item, SIGNAL(childAboutToBeInserted(TreeItem*, int)),
-            this, SLOT(treeItemAboutToBeInserted(TreeItem*, int)));
+    disconnect(item, SIGNAL(childAboutToBeInserted(TreeItem*,int)),
+            this, SLOT(treeItemAboutToBeInserted(TreeItem*,int)));
     disconnect(item, SIGNAL(childInserted(TreeItem*)),
             this, SLOT(treeItemInserted(TreeItem*)));
     disconnect(item, SIGNAL(childAboutToBeRemoved(TreeItem*)),

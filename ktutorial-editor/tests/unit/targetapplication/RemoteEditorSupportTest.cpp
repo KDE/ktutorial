@@ -231,7 +231,7 @@ void RemoteEditorSupportTest::testEnableEventSpy() {
     int remoteObjectStarType =
                             qRegisterMetaType<RemoteObject*>("RemoteObject*");
     QSignalSpy eventReceivedSpy(remoteEventSpy,
-                                SIGNAL(eventReceived(RemoteObject*, QString)));
+                                SIGNAL(eventReceived(RemoteObject*,QString)));
 
     mEditorSupport->mEventSpy->emitEventReceived(42, "Close");
 
@@ -286,7 +286,7 @@ void RemoteEditorSupportTest::testDisableEventSpy() {
     //RemoteObject* must be registered in order to be used with QSignalSpy
     qRegisterMetaType<RemoteObject*>("RemoteObject*");
     QSignalSpy eventReceivedSpy(remoteEventSpy,
-                                SIGNAL(eventReceived(RemoteObject*, QString)));
+                                SIGNAL(eventReceived(RemoteObject*,QString)));
 
     remoteEditorSupport.disableEventSpy();
 

@@ -28,8 +28,8 @@ RemoteObjectTreeItemUpdater::RemoteObjectTreeItemUpdater(QObject* parent):
 
 void RemoteObjectTreeItemUpdater::setRemoteEventSpy(
                                             RemoteEventSpy* remoteEventSpy) {
-    connect(remoteEventSpy, SIGNAL(eventReceived(RemoteObject*, QString)),
-            this, SLOT(handleEventReceived(RemoteObject*, QString)));
+    connect(remoteEventSpy, SIGNAL(eventReceived(RemoteObject*,QString)),
+            this, SLOT(handleEventReceived(RemoteObject*,QString)));
 }
 
 void RemoteObjectTreeItemUpdater::registerRemoteObjectTreeItem(

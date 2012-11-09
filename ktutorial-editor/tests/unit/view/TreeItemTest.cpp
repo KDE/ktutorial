@@ -86,7 +86,7 @@ void TreeItemTest::testAppendChild() {
     TreeItem* child = new StubTreeItem(&treeItem);
 
     QSignalSpy aboutToBeInsertedSpy(&treeItem,
-                                SIGNAL(childAboutToBeInserted(TreeItem*, int)));
+                                SIGNAL(childAboutToBeInserted(TreeItem*,int)));
     QSignalSpy insertedSpy(&treeItem, SIGNAL(childInserted(TreeItem*)));
 
     treeItem.appendChild(child);
@@ -113,7 +113,7 @@ void TreeItemTest::testAppendChildSeveralChildren() {
     TreeItem* child3 = new StubTreeItem(&treeItem);
 
     QSignalSpy aboutToBeInsertedSpy(&treeItem,
-                                SIGNAL(childAboutToBeInserted(TreeItem*, int)));
+                                SIGNAL(childAboutToBeInserted(TreeItem*,int)));
     QSignalSpy insertedSpy(&treeItem, SIGNAL(childInserted(TreeItem*)));
 
     treeItem.appendChild(child1);
@@ -146,7 +146,7 @@ void TreeItemTest::testInsertChild() {
     TreeItem* child = new StubTreeItem(&treeItem);
 
     QSignalSpy aboutToBeInsertedSpy(&treeItem,
-                                SIGNAL(childAboutToBeInserted(TreeItem*, int)));
+                                SIGNAL(childAboutToBeInserted(TreeItem*,int)));
     QSignalSpy insertedSpy(&treeItem, SIGNAL(childInserted(TreeItem*)));
 
     treeItem.insertChild(child, 0);
@@ -170,7 +170,7 @@ void TreeItemTest::testInsertChildSeveralChildren() {
     TreeItem* child4 = new StubTreeItem(&treeItem);
 
     QSignalSpy aboutToBeInsertedSpy(&treeItem,
-                                SIGNAL(childAboutToBeInserted(TreeItem*, int)));
+                                SIGNAL(childAboutToBeInserted(TreeItem*,int)));
     QSignalSpy insertedSpy(&treeItem, SIGNAL(childInserted(TreeItem*)));
 
     treeItem.insertChild(child2, 0);

@@ -69,7 +69,7 @@ void EventSpyTest::testEventReceived() {
     QObject spiedObject;
     spy.addObjectToSpy(&spiedObject);
 
-    QSignalSpy eventEmittedSpy(&spy, SIGNAL(eventReceived(QObject*, QEvent*)));
+    QSignalSpy eventEmittedSpy(&spy, SIGNAL(eventReceived(QObject*,QEvent*)));
 
     //Send an event not managed by QObject to avoid messing up its internal
     //state
@@ -86,7 +86,7 @@ void EventSpyTest::testEventReceivedInChildObject() {
     QObject* childObject = new QObject(&spiedObject);
     spy.addObjectToSpy(&spiedObject);
 
-    QSignalSpy eventEmittedSpy(&spy, SIGNAL(eventReceived(QObject*, QEvent*)));
+    QSignalSpy eventEmittedSpy(&spy, SIGNAL(eventReceived(QObject*,QEvent*)));
 
     //Send an event not managed by QObject to avoid messing up its internal
     //state
@@ -102,7 +102,7 @@ void EventSpyTest::testEventReceivedInChildObjectAddedAfterSpyingStart() {
     QObject spiedObject;
     spy.addObjectToSpy(&spiedObject);
 
-    QSignalSpy eventEmittedSpy(&spy, SIGNAL(eventReceived(QObject*, QEvent*)));
+    QSignalSpy eventEmittedSpy(&spy, SIGNAL(eventReceived(QObject*,QEvent*)));
 
     QObject* childObject = new QObject(&spiedObject);
 
@@ -124,7 +124,7 @@ void EventSpyTest::testEventReceivedSeveralObjects() {
     QObject spiedObject2;
     spy.addObjectToSpy(&spiedObject2);
 
-    QSignalSpy eventEmittedSpy(&spy, SIGNAL(eventReceived(QObject*, QEvent*)));
+    QSignalSpy eventEmittedSpy(&spy, SIGNAL(eventReceived(QObject*,QEvent*)));
 
     //Send an event not managed by QObject to avoid messing up its internal
     //state

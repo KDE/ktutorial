@@ -141,7 +141,7 @@ void StepTest::testAddReaction() {
     Reaction* reaction2 = new Reaction();
     Reaction* reaction3 = new Reaction();
 
-    QSignalSpy reactionAddedSpy(&step, SIGNAL(reactionAdded(Reaction*, int)));
+    QSignalSpy reactionAddedSpy(&step, SIGNAL(reactionAdded(Reaction*,int)));
 
     step.addReaction(reaction1);
     step.addReaction(reaction2);
@@ -163,7 +163,7 @@ void StepTest::testAddReactionAtIndex() {
     Reaction* reaction2 = new Reaction();
     Reaction* reaction3 = new Reaction();
 
-    QSignalSpy reactionAddedSpy(&step, SIGNAL(reactionAdded(Reaction*, int)));
+    QSignalSpy reactionAddedSpy(&step, SIGNAL(reactionAdded(Reaction*,int)));
 
     step.addReaction(reaction2, 0);
     step.addReaction(reaction1, 0);

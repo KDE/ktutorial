@@ -44,8 +44,8 @@ StepTreeItem::StepTreeItem(Step* step, TreeItem* parent):
     foreach(Reaction* reaction, step->reactions()) {
         addReaction(reaction, mReactionTreeItems.count());
     }
-    connect(step, SIGNAL(reactionAdded(Reaction*, int)),
-            this, SLOT(addReaction(Reaction*, int)));
+    connect(step, SIGNAL(reactionAdded(Reaction*,int)),
+            this, SLOT(addReaction(Reaction*,int)));
     connect(step, SIGNAL(reactionRemoved(Reaction*)),
             this, SLOT(removeReaction(Reaction*)));
 }

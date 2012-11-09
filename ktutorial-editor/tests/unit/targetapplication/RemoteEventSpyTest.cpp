@@ -76,7 +76,7 @@ void RemoteEventSpyTest::testEventReceived() {
     int remoteObjectStarType =
                             qRegisterMetaType<RemoteObject*>("RemoteObject*");
     QSignalSpy eventReceivedSpy(&remoteEventSpy,
-                                SIGNAL(eventReceived(RemoteObject*, QString)));
+                                SIGNAL(eventReceived(RemoteObject*,QString)));
 
     mEventSpy->emitEventReceived(42, "Close");
 
