@@ -55,6 +55,7 @@ install(TARGETS ktutorial DESTINATION ${LIB_INSTALL_DIR})
 set(ktutorial_LIB_HEADERS
     ktutorial_export.h
     KTutorial.h
+    KTutorialCustomization.h
     ObjectFinder.h
     Option.h
     Step.h
