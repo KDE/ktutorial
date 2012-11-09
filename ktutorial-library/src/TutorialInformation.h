@@ -53,21 +53,21 @@ public:
      *
      * @return The identifier of the tutorial.
      */
-    const QString& id() const;
+    QString id() const;
 
     /**
      * Returns the name of the tutorial.
      *
      * @return The name of the tutorial.
      */
-    const QString& name() const;
+    QString name() const;
 
     /**
      * Returns the description of the tutorial.
      *
      * @return The description of the tutorial.
      */
-    const QString& description() const;
+    QString description() const;
 
     /**
      * Sets the name of the tutorial.

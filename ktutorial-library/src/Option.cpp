@@ -27,7 +27,7 @@ Option::Option(const QString& name): QObject(),
     mName(name) {
 }
 
-const QString& Option::name() const {
+QString Option::name() const {
     return mName;
 }
 

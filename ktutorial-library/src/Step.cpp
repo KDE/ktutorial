@@ -36,15 +36,15 @@ Step::Step(const QString& id): QObject(),
     mDeleteAddedObjectsInTearDown(false) {
 }
 
-const QString& Step::id() const {
+QString Step::id() const {
     return mId;
 }
 
-const QList<Option*>& Step::options() const {
+QList<Option*> Step::options() const {
     return mOptions;
 }
 
-const QString& Step::text() const {
+QString Step::text() const {
     return mText;
 }
 

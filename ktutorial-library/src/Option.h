@@ -65,7 +65,7 @@ public:
      *
      * @return The name of this Option.
      */
-    const QString& name() const;
+    QString name() const;
 
 Q_SIGNALS:
 

@@ -151,21 +151,21 @@ public:
      *
      * @return The identifier of this Step.
      */
-    const QString& id() const;
+    QString id() const;
 
     /**
      * Returns the Options added to this Step.
      *
      * @return The Options added to this Step.
      */
-    const QList<Option*>& options() const;
+    QList<Option*> options() const;
 
     /**
      * Returns the text to be shown to the user.
      *
      * @return The text to be shown to the user.
      */
-    const QString& text() const;
+    QString text() const;
 
     /**
      * Sets the text to be shown to the user.

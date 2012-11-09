@@ -28,15 +28,15 @@ TutorialInformation::TutorialInformation(const QString& id): QObject(),
     mId(id) {
 }
 
-const QString& TutorialInformation::id() const {
+QString TutorialInformation::id() const {
     return mId;
 }
 
-const QString& TutorialInformation::name() const {
+QString TutorialInformation::name() const {
     return mName;
 }
 
-const QString& TutorialInformation::description() const {
+QString TutorialInformation::description() const {
     return mDescription;
 }
 
