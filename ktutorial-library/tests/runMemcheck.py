@@ -90,7 +90,7 @@ class BackTrace:
         is_interesting = False
         for frame in self.stack:
             if frame.func:
-                if frame.func.find("QTest") != -1 or frame.func.find("Veritas") != -1:
+                if frame.func.find('QTest') != -1:
                     is_interesting = True
                 if frame.func.find('XcursorXcFileLoadImages') != -1:
                     return False # something deep in X server, not interested in this
@@ -100,9 +100,6 @@ class BackTrace:
                     return False # something Qt-Font related, not interested in this
                 if frame.func.find('__nss_database_lookup') != -1:
                     return False # more crap
-            if frame.sfile:
-                if frame.sfile.find("xtest") != -1 or frame.sfile.find("veritas") != -1:
-                    is_interesting = True
         return is_interesting
 
     def __str__(self):
