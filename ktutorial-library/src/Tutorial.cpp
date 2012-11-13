@@ -49,8 +49,8 @@ TutorialInformation* Tutorial::tutorialInformation() const {
 
 void Tutorial::addStep(Step* step) {
     if (mSteps.contains(step->id())) {
-        kWarning(debugArea()) << "Step with id " << step->id()
-                              << " already added in tutorial "
+        kWarning(debugArea()) << "Step with id" << step->id()
+                              << "already added in tutorial"
                               << mTutorialInformation->id();
         return;
     }
@@ -67,7 +67,7 @@ void Tutorial::start() {
     setup();
 
     if (!mSteps.contains("start")) {
-        kError(debugArea()) << "No start step found in tutorial "
+        kError(debugArea()) << "No start step found in tutorial"
                             << mTutorialInformation->id();
         finish();
         return;
@@ -78,7 +78,7 @@ void Tutorial::start() {
 
 void Tutorial::nextStep(const QString& id) {
     if (!mSteps.contains(id)) {
-        kError(debugArea()) << "No step " << id << " found in tutorial "
+        kError(debugArea()) << "No step" << id << "found in tutorial"
                             << mTutorialInformation->id();
         return;
     }
@@ -128,8 +128,8 @@ void Tutorial::tearDown() {
 
 void Tutorial::changeToStep(Step* step) {
     if (mSteps.key(step).isEmpty()) {
-        kError(debugArea()) << "Activate step " << step->id()
-                            << " which doesn't belong to tutorial "
+        kError(debugArea()) << "Activate step" << step->id()
+                            << "which doesn't belong to tutorial"
                             << mTutorialInformation->id();
         return;
     }
@@ -138,7 +138,7 @@ void Tutorial::changeToStep(Step* step) {
         mCurrentStep->setActive(false);
     }
 
-    kDebug(debugArea()) << "Next step: " << step->id() << endl;
+    kDebug(debugArea()) << "Next step:" << step->id() << endl;
 
     mCurrentStep = step;
     mCurrentStep->setActive(true);

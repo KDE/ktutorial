@@ -41,9 +41,9 @@ TutorialManager::~TutorialManager() {
 
 bool TutorialManager::registerTutorial(Tutorial* tutorial) {
     if (mTutorialInformations.contains(tutorial->tutorialInformation()->id())) {
-        kWarning(debugArea()) << "Tutorial with id " 
+        kWarning(debugArea()) << "Tutorial with id" 
                               << tutorial->tutorialInformation()->id()
-                              << " already added";
+                              << "already added";
         return false;
     }
 
@@ -67,7 +67,7 @@ void TutorialManager::start(const QString& id) {
         return;
     }
 
-    kDebug(debugArea()) << "Started: " << id;
+    kDebug(debugArea()) << "Started:" << id;
 
     Tutorial* tutorial = mTutorials.value(mTutorialInformations.value(id));
     connect(tutorial, SIGNAL(finished(Tutorial*)), this, SLOT(finish()));

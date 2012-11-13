@@ -185,9 +185,9 @@ void RemoteObjectChooser::handleTargetApplicationStarted() {
     try {
         updater->setRemoteEventSpy(remoteEditorSupport->enableEventSpy());
     } catch (DBusException e) {
-        kWarning() << "Remote event spy could not be enabled in the target "
-                   << "application. Children objects will not be added and "
-                   << "removed automatically in the list to reflect the "
+        kWarning() << "Remote event spy could not be enabled in the target"
+                   << "application. Children objects will not be added and"
+                   << "removed automatically in the list to reflect the"
                    << "changes in the remote objects (" << e.message() << ").";
     }
 

@@ -118,7 +118,7 @@ void WaitForSignalWidget::setChosenRemoteObject(RemoteObject* remoteObject) {
     try {
         setSignalCompletion(remoteObject->remoteClass());
     } catch (DBusException e) {
-        kWarning() << "The signal completion could not be set, there was a "
+        kWarning() << "The signal completion could not be set, there was a"
                    << "problem getting the class of the remote object ("
                    << e.message() << ").";
     }

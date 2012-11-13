@@ -80,8 +80,8 @@ protected:
             try {
                 bestNames = mNameRegister->bestNames(it.next());
             } catch (DBusException e) {
-                kWarning() << "The unique names for the remote objects named "
-                           << it.value() << "could not be added to the "
+                kWarning() << "The unique names for the remote objects named"
+                           << it.value() << "could not be added to the"
                            << "completion matches (" << e.message() << ")";
             }
 

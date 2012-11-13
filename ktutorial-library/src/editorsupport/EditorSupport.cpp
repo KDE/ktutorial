@@ -128,7 +128,7 @@ void EditorSupport::testScriptedTutorial(const QString& filename,
     ScriptedTutorial* scriptedTutorial = new ScriptedTutorial(filename);
 
     if (!scriptedTutorial->isValid()) {
-        kWarning(debugArea()) << "Cannot test the scripted tutorial stored in "
+        kWarning(debugArea()) << "Cannot test the scripted tutorial stored in"
                               << filename << ": the script is invalid";
         delete scriptedTutorial;
         return;

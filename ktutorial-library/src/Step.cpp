@@ -128,7 +128,7 @@ void Step::addWaitFor(WaitFor* waitFor, const QString& nextStepId) {
 
 void Step::removeOption(Option* option) {
     if (!mOptions.contains(option)) {
-        kWarning(debugArea()) << "Tried to remove an Option not added in step "
+        kWarning(debugArea()) << "Tried to remove an Option not added in step"
                               << mId;
         return;
     }
@@ -147,7 +147,7 @@ void Step::removeOption(Option* option) {
 
 void Step::removeWaitFor(WaitFor* waitFor) {
     if (!mWaitsFor.contains(waitFor)) {
-        kWarning(debugArea()) << "Tried to remove a WaitFor not added in step "
+        kWarning(debugArea()) << "Tried to remove a WaitFor not added in step"
                               << mId;
         return;
     }
@@ -215,16 +215,16 @@ void Step::tearDownWrapper() {
 
 bool Step::addOption(Option* option) {
     if (mOptions.contains(option)) {
-        kWarning(debugArea()) << "Option " << option->name()
-                              << " already added in step " << mId;
+        kWarning(debugArea()) << "Option" << option->name()
+                              << "already added in step" << mId;
         return false;
     }
 
     QListIterator<Option*> it(mOptions);
     while (it.hasNext()) {
         if (it.next()->name() == option->name()) {
-            kWarning(debugArea()) << "Option named " << option->name()
-                                  << " already added in step " << mId;
+            kWarning(debugArea()) << "Option named" << option->name()
+                                  << "already added in step" << mId;
             return false;
         }
     }
@@ -242,7 +242,7 @@ bool Step::addOption(Option* option) {
 
 bool Step::addWaitFor(WaitFor* waitFor) {
     if (mWaitsFor.contains(waitFor)) {
-        kWarning(debugArea()) << "Same WaitFor already added in step " << mId;
+        kWarning(debugArea()) << "Same WaitFor already added in step" << mId;
         return false;
     }
 

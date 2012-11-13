@@ -316,7 +316,7 @@ void RemoteObjectNameRegister::registerRemoteObjects() {
         registerRemoteObject(TargetApplication::self()->
                                         remoteEditorSupport()->mainWindow(), 0);
     } catch (DBusException e) {
-        kWarning() << "The remote objects could not be registered to provide "
+        kWarning() << "The remote objects could not be registered to provide"
                    << "name completion (" << e.message() << ").";
     }
     
@@ -330,7 +330,7 @@ void RemoteObjectNameRegister::registerRemoteObjects() {
         connect(remoteEventSpy, SIGNAL(eventReceived(RemoteObject*,QString)),
                 this, SLOT(updateRemoteObjects(RemoteObject*,QString)));
     } catch (DBusException e) {
-        kWarning() << "The remote event spy could not be connected to provide "
+        kWarning() << "The remote event spy could not be connected to provide"
                    << "name completion updates (" << e.message() << ").";
     }
 }
@@ -372,7 +372,7 @@ void RemoteObjectNameRegister::updateRemoteObjects(RemoteObject* remoteObject,
             }
         }
     } catch (DBusException e) {
-        kWarning() << "There was a problem querying the remote objects, the "
+        kWarning() << "There was a problem querying the remote objects, the"
                    << "name completion could not be updated ("
                    << e.message() << ").";
     }

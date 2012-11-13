@@ -79,8 +79,8 @@ void RemoteObjectTreeItem::updateChildren() {
     try {
         children = mRemoteObject->children();
     } catch (DBusException e) {
-        kWarning() << "The children for the remote object with id "
-                   << mRemoteObject->objectId() << " could not be updated ("
+        kWarning() << "The children for the remote object with id"
+                   << mRemoteObject->objectId() << "could not be updated ("
                    << e.message() << ").";
         return;
     }

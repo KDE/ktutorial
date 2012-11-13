@@ -122,7 +122,7 @@ void WaitForPropertyWidget::setChosenRemoteObject(RemoteObject* remoteObject) {
     try {
         setPropertyCompletion(remoteObject->remoteClass());
     } catch (DBusException e) {
-        kWarning() << "The property completion could not be set, there was a "
+        kWarning() << "The property completion could not be set, there was a"
                    << "problem getting the class of the remote object ("
                    << e.message() << ").";
     }
