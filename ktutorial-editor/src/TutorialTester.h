@@ -69,7 +69,7 @@ private:
 private Q_SLOTS:
 
     /**
-     * Exports the current tutorial to a temporary Javascript file and sends the
+     * Exports the current tutorial to a temporary JavaScript file and sends the
      * file name (and, if set, the step id) to the target application to test
      * the tutorial.
      */

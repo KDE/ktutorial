@@ -14,7 +14,7 @@ ENDMACRO(UNIT_TESTS)
 unit_tests(
     DeserializationException
     IOException
-    JavascriptExporter
+    JavaScriptExporter
     Serialization
     TutorialReader
     TutorialWriter
@@ -29,7 +29,7 @@ ENDMACRO(MEM_TESTS)
 mem_tests(
     DeserializationException
     IOException
-    JavascriptExporter
+    JavaScriptExporter
     Serialization
     TutorialReader
     TutorialWriter

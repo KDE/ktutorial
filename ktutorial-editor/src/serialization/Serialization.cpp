@@ -23,7 +23,7 @@
 #include <KUrl>
 #include <KIO/NetAccess>
 
-#include "JavascriptExporter.h"
+#include "JavaScriptExporter.h"
 #include "TutorialReader.h"
 #include "TutorialWriter.h"
 
@@ -89,7 +89,7 @@ throw (IOException) {
 
     QString exportedCode;
     if (type == "*.js") {
-        exportedCode = JavascriptExporter().exportTutorial(tutorial);
+        exportedCode = JavaScriptExporter().exportTutorial(tutorial);
     } else {
         Q_ASSERT(false);
     }
@@ -102,7 +102,7 @@ throw (IOException) {
 QStringList Serialization::availableExporterTypeList() {
     QStringList types;
     types << i18nc("@item:inlistbox A KFileDialog filter",
-                   "*.js|Javascript file");
+                   "*.js|JavaScript file");
     return types;
 }
 

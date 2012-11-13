@@ -121,7 +121,7 @@ along with this program; If not, see &lt;http://www.gnu.org/licenses/&gt;.</lice
 
 &lt;para&gt;We want to advance to the next step when the user writes &lt;emphasis&gt;Hello world!&lt;/emphasis&gt;, but textChanged() is emitted whenever the text was changed no matter what was written. So, before changing to the next step, we must check that the text area contains the expected text.&lt;/para&gt;
 
-&lt;para&gt;The checks will be made using some custom Javascript code, so select the &lt;link url=&quot;widget:responseCodeRadioButton&quot;&gt;&lt;interface&gt;custom response code&lt;/interface&gt; radio button.&lt;/link&gt;.&lt;/para&gt;</text>
+&lt;para&gt;The checks will be made using some custom JavaScript code, so select the &lt;link url=&quot;widget:responseCodeRadioButton&quot;&gt;&lt;interface&gt;custom response code&lt;/interface&gt; radio button.&lt;/link&gt;.&lt;/para&gt;</text>
         <reaction triggerType="ConditionMet" responseType="NextStep">
             <waitForSignal emitterName="responseCodeRadioButton" signalName="clicked()"/>
             <nextStep id="setCodeToCheckTheText"/>
@@ -214,7 +214,7 @@ if (textArea.plainText.toLowerCase() == t.i18n(&quot;Hello world!&quot;).toLower
     <step id="end">
         <text>&lt;para&gt;The last step does not need a reaction, as it just informs the user that the tutorial has ended and that it can be closed.&lt;/para&gt;
 
-&lt;para&gt;Finally, to install the tutorial you have just made you would have to export it (&lt;interface&gt;File|Export...&lt;/interface&gt; or &lt;interface&gt;Export&lt;/interface&gt; button in the tool bar) to a Javascript file and save it in the tutorials subdirectory of the data directory of KTutorial test application.&lt;/para&gt;
+&lt;para&gt;Finally, to install the tutorial you have just made you would have to export it (&lt;interface&gt;File|Export...&lt;/interface&gt; or &lt;interface&gt;Export&lt;/interface&gt; button in the tool bar) to a JavaScript file and save it in the tutorials subdirectory of the data directory of KTutorial test application.&lt;/para&gt;
 
 &lt;para&gt;Of course, this is too cumbersome to test a tutorial while it is being designed. &lt;application&gt;KTutorial editor&lt;/application&gt; is able to launch an application and start the tutorial being designed on it, but this will be shown in another tutorial.&lt;/para&gt;
 

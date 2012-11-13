@@ -1,7 +1,7 @@
 set(ktutorial_editor_serialization_SRCS
     DeserializationException.cpp
     IOException.cpp
-    JavascriptExporter.cpp
+    JavaScriptExporter.cpp
     Serialization.cpp
     TutorialReader.cpp
     TutorialWriter.cpp

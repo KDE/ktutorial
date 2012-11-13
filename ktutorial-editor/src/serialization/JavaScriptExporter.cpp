@@ -17,7 +17,7 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include "JavascriptExporter.h"
+#include "JavaScriptExporter.h"
 
 #include <QRegExp>
 #include <QSet>
@@ -37,10 +37,10 @@
 
 //public:
 
-JavascriptExporter::JavascriptExporter(): mIndentationLevel(0) {
+JavaScriptExporter::JavaScriptExporter(): mIndentationLevel(0) {
 }
 
-QString JavascriptExporter::exportTutorial(const Tutorial* tutorial) {
+QString JavaScriptExporter::exportTutorial(const Tutorial* tutorial) {
     QString code;
     mOut.setString(&code);
 
@@ -60,7 +60,7 @@ QString JavascriptExporter::exportTutorial(const Tutorial* tutorial) {
 
 //private:
 
-void JavascriptExporter::writeLicense(const Tutorial* tutorial) {
+void JavaScriptExporter::writeLicense(const Tutorial* tutorial) {
     if (tutorial->licenseText().isEmpty()) {
         return;
     }
@@ -82,7 +82,7 @@ void JavascriptExporter::writeLicense(const Tutorial* tutorial) {
     out() << " ****" << QString('*').repeated(maximumLineLength) << "****/\n\n";
 }
 
-void JavascriptExporter::writeInformation(const Tutorial* tutorial) {
+void JavaScriptExporter::writeInformation(const Tutorial* tutorial) {
     if (tutorial->name().isEmpty()) {
         out() << "//Error: Tutorial without name!\n";
     } else {
@@ -100,7 +100,7 @@ void JavascriptExporter::writeInformation(const Tutorial* tutorial) {
     mOut << "\n";
 }
 
-void JavascriptExporter::writeSetup(const Tutorial* tutorial) {
+void JavaScriptExporter::writeSetup(const Tutorial* tutorial) {
     if (tutorial->customSetupCode().isEmpty()) {
         return;
     }
@@ -114,7 +114,7 @@ void JavascriptExporter::writeSetup(const Tutorial* tutorial) {
           << "        this, \"tutorialSetup(QObject*)\");\n\n";
 }
 
-void JavascriptExporter::writeTearDown(const Tutorial* tutorial) {
+void JavaScriptExporter::writeTearDown(const Tutorial* tutorial) {
     if (tutorial->customTearDownCode().isEmpty()) {
         return;
     }
@@ -128,7 +128,7 @@ void JavascriptExporter::writeTearDown(const Tutorial* tutorial) {
           << "        this, \"tutorialTearDown(QObject*)\");\n\n";
 }
 
-void JavascriptExporter::writeStep(const Step* step) {
+void JavaScriptExporter::writeStep(const Step* step) {
     if (step->id().isEmpty()) {
         out() << "//Error: Step without id!\n\n";
         return;
@@ -158,7 +158,7 @@ void JavascriptExporter::writeStep(const Step* step) {
     out() << "tutorial.addStep(" << stepVariable << ");\n\n";
 }
 
-void JavascriptExporter::writeSetup(const Step* step) {
+void JavaScriptExporter::writeSetup(const Step* step) {
     if (step->customSetupCode().isEmpty() && step->reactions().count() == 0) {
         return;
     }
@@ -190,7 +190,7 @@ void JavascriptExporter::writeSetup(const Step* step) {
     mVariables.clear();
 }
 
-void JavascriptExporter::writeTearDown(const Step* step) {
+void JavaScriptExporter::writeTearDown(const Step* step) {
     if (step->customTearDownCode().isEmpty()) {
         return;
     }
@@ -205,7 +205,7 @@ void JavascriptExporter::writeTearDown(const Step* step) {
           << "        this, \"" << stepVariable << "TearDown(QObject*)\");\n\n";
 }
 
-void JavascriptExporter::writeReaction(const Step* step,
+void JavaScriptExporter::writeReaction(const Step* step,
                                        const Reaction* reaction) {
     if (reaction->triggerType() == Reaction::ConditionMet &&
             !reaction->waitFor()) {
@@ -263,7 +263,7 @@ void JavascriptExporter::writeReaction(const Step* step,
     addFunction(functionName, reaction->customCode());
 }
 
-QString JavascriptExporter::writeOption(const QString& optionName) {
+QString JavaScriptExporter::writeOption(const QString& optionName) {
     Q_ASSERT(!optionName.isEmpty());
 
     QString variable = toLowerCamelCase(optionName) + "Option";
@@ -276,7 +276,7 @@ QString JavascriptExporter::writeOption(const QString& optionName) {
     return variable;
 }
 
-QString JavascriptExporter::writeWaitFor(const WaitFor* waitFor) {
+QString JavaScriptExporter::writeWaitFor(const WaitFor* waitFor) {
     if (qobject_cast<const WaitForComposed*>(waitFor)) {
         return writeWaitFor(static_cast<const WaitForComposed*>(waitFor));
     }
@@ -302,7 +302,7 @@ QString JavascriptExporter::writeWaitFor(const WaitFor* waitFor) {
     return "";
 }
 
-QString JavascriptExporter::writeWaitFor(const WaitForComposed* waitForComposed) {
+QString JavaScriptExporter::writeWaitFor(const WaitForComposed* waitForComposed) {
     QString type;
     if (waitForComposed->compositionType() == WaitForComposed::And) {
         type = "And";
@@ -328,7 +328,7 @@ QString JavascriptExporter::writeWaitFor(const WaitForComposed* waitForComposed)
     return variable;
 }
 
-QString JavascriptExporter::writeWaitFor(const WaitForEvent* waitForEvent) {
+QString JavaScriptExporter::writeWaitFor(const WaitForEvent* waitForEvent) {
     if (waitForEvent->receiverName().isEmpty()) {
         out() << "//Error: WaitForEvent without receiver name!\n";
         return "";
@@ -351,7 +351,7 @@ QString JavascriptExporter::writeWaitFor(const WaitForEvent* waitForEvent) {
     return variable;
 }
 
-QString JavascriptExporter::writeWaitFor(const WaitForNot* waitForNot) {
+QString JavaScriptExporter::writeWaitFor(const WaitForNot* waitForNot) {
     if (!waitForNot->negatedWaitFor()) {
         out() << "//Error: WaitForNot without negated WaitFor!\n";
         return "";
@@ -369,7 +369,7 @@ QString JavascriptExporter::writeWaitFor(const WaitForNot* waitForNot) {
     return variable;
 }
 
-QString JavascriptExporter::writeWaitFor(
+QString JavaScriptExporter::writeWaitFor(
                                     const WaitForProperty* waitForProperty) {
     if (waitForProperty->objectName().isEmpty()) {
         out() << "//Error: WaitForProperty without object name!\n";
@@ -401,7 +401,7 @@ QString JavascriptExporter::writeWaitFor(
     return variable;
 }
 
-QString JavascriptExporter::writeWaitFor(const WaitForSignal* waitForSignal) {
+QString JavaScriptExporter::writeWaitFor(const WaitForSignal* waitForSignal) {
     if (waitForSignal->emitterName().isEmpty()) {
         out() << "//Error: WaitForSignal without emitter name!\n";
         return "";
@@ -426,7 +426,7 @@ QString JavascriptExporter::writeWaitFor(const WaitForSignal* waitForSignal) {
     return variable;
 }
 
-QString JavascriptExporter::writeWaitFor(
+QString JavaScriptExporter::writeWaitFor(
                         const WaitForStepActivation* waitForStepActivation) {
     Q_UNUSED(waitForStepActivation);
 
@@ -439,7 +439,7 @@ QString JavascriptExporter::writeWaitFor(
     return variable;
 }
 
-QString JavascriptExporter::writeWaitFor(const WaitForWindow* waitForWindow) {
+QString JavaScriptExporter::writeWaitFor(const WaitForWindow* waitForWindow) {
     if (waitForWindow->windowObjectName().isEmpty()) {
         out() << "//Error: WaitForWindow without window object name!\n";
         return "";
@@ -457,12 +457,12 @@ QString JavascriptExporter::writeWaitFor(const WaitForWindow* waitForWindow) {
     return variable;
 }
 
-QTextStream& JavascriptExporter::out() {
+QTextStream& JavaScriptExporter::out() {
     mOut << indentation();
     return mOut;
 }
 
-QString JavascriptExporter::indentation() {
+QString JavaScriptExporter::indentation() {
     QString text;
     for (int i=0; i<mIndentationLevel; ++i) {
         text += "    ";
@@ -471,7 +471,7 @@ QString JavascriptExporter::indentation() {
     return text;
 }
 
-void JavascriptExporter::addFunction(const QString& functionName,
+void JavaScriptExporter::addFunction(const QString& functionName,
                                      const QString& code) {
     int previousIndentationLevel = mIndentationLevel;
     mIndentationLevel = 0;
@@ -492,7 +492,7 @@ void JavascriptExporter::addFunction(const QString& functionName,
     mIndentationLevel = previousIndentationLevel;
 }
 
-QString JavascriptExporter::addVariable(const QString& variable) {
+QString JavaScriptExporter::addVariable(const QString& variable) {
     if (!mVariables.contains(variable)) {
         mVariables.insert(variable, 1);
         return variable;
@@ -502,7 +502,7 @@ QString JavascriptExporter::addVariable(const QString& variable) {
     return variable + QString().setNum(mVariables.value(variable));
 }
 
-QString JavascriptExporter::escape(QString text) {
+QString JavaScriptExporter::escape(QString text) {
     text.replace('\n', "\\n");
     text.replace('\t', "\\t");
     text.replace('"', "\\\"");
@@ -510,7 +510,7 @@ QString JavascriptExporter::escape(QString text) {
     return text;
 }
 
-QString JavascriptExporter::toIndentedCode(const QString& code) {
+QString JavaScriptExporter::toIndentedCode(const QString& code) {
     if (code.isEmpty()) {
         return "";
     }
@@ -531,7 +531,7 @@ QString JavascriptExporter::toIndentedCode(const QString& code) {
     return indentedCode;
 }
 
-QString JavascriptExporter::toLowerCamelCase(const QString& text) const {
+QString JavaScriptExporter::toLowerCamelCase(const QString& text) const {
     if (text.isEmpty()) {
         return "";
     }
@@ -542,7 +542,7 @@ QString JavascriptExporter::toLowerCamelCase(const QString& text) const {
     return lowerCamelCase;
 }
 
-QString JavascriptExporter::toUpperCamelCase(QString text) const {
+QString JavaScriptExporter::toUpperCamelCase(QString text) const {
     if (text.isEmpty()) {
         return "";
     }
@@ -559,7 +559,7 @@ QString JavascriptExporter::toUpperCamelCase(QString text) const {
     return upperCamelCase;
 }
 
-bool JavascriptExporter::mightContainSemanticMarkup(const QString& text) const {
+bool JavaScriptExporter::mightContainSemanticMarkup(const QString& text) const {
     QSet<QString> semanticMarkupTags;
     semanticMarkupTags << "application" << "bcode" << "command" << "email"
                        << "emphasis" << "envar" << "filename" << "icode"

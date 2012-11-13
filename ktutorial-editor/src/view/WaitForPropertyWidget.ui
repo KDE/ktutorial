@@ -89,7 +89,7 @@
          <widget class="KLineEdit" name="valueLineEdit">
           <property name="whatsThis">
            <string comment="@info:whatsthis">&lt;para&gt;The expected value of the property.&lt;/para&gt;
-&lt;para&gt;The value is copied as is to the script. That means that it has to be written with the syntax of the script language that the tutorial is going to be exported to. For example, if the tutorial is going to be exported to Javascript and the value to wait for is a text, the value has to be written as &lt;em&gt;&quot;The expected text&quot;&lt;/em&gt; (wrapped in quotes).&lt;/para&gt;
+&lt;para&gt;The value is copied as is to the script. That means that it has to be written with the syntax of the script language that the tutorial is going to be exported to. For example, if the tutorial is going to be exported to JavaScript and the value to wait for is a text, the value has to be written as &lt;em&gt;&quot;The expected text&quot;&lt;/em&gt; (wrapped in quotes).&lt;/para&gt;
 &lt;para&gt;The value can even contain a programming expression in the script language. For example, something like &lt;em&gt;t.i18nc(&quot;@item:inlistbox&quot;, &quot;Certain item text&quot;)&lt;/em&gt; would be used to wait for the localized text of an item in a combo box.&lt;/para&gt;</string>
           </property>
          </widget>

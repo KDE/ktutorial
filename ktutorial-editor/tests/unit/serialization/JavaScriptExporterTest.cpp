@@ -19,7 +19,7 @@
 
 #include <QTest>
 
-#include "JavascriptExporter.h"
+#include "JavaScriptExporter.h"
 
 #include "../data/Reaction.h"
 #include "../data/Step.h"
@@ -54,7 +54,7 @@
 "tutorial.addStep(theIdStep);\n"\
 "\n"
 
-class JavascriptExporterTest: public QObject {
+class JavaScriptExporterTest: public QObject {
 Q_OBJECT
 
 private slots:
@@ -116,11 +116,11 @@ private slots:
 
 };
 
-void JavascriptExporterTest::testTutorialLicense() {
+void JavaScriptExporterTest::testTutorialLicense() {
     Tutorial tutorial;
     tutorial.setLicenseText("The license text, which should be\nwrapped");
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -134,12 +134,12 @@ TUTORIAL_EMPTY_INFORMATION_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testTutorialInformation() {
+void JavaScriptExporterTest::testTutorialInformation() {
     Tutorial tutorial;
     tutorial.setName("The name");
     tutorial.setDescription("The description");
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -153,12 +153,12 @@ void JavascriptExporterTest::testTutorialInformation() {
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testTutorialInformationWithEscapeSequences() {
+void JavaScriptExporterTest::testTutorialInformationWithEscapeSequences() {
     Tutorial tutorial;
     tutorial.setName("The \"name\"");
     tutorial.setDescription("The\tdescription\nwith \"escape\" sequences");
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -172,11 +172,11 @@ t.i18n(\"The\\tdescription\\nwith \\\"escape\\\" sequences\"));\n"
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testTutorialSetupCode() {
+void JavaScriptExporterTest::testTutorialSetupCode() {
     Tutorial tutorial;
     tutorial.setCustomSetupCode("The custom setup\ncode");
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -192,11 +192,11 @@ TUTORIAL_EMPTY_INFORMATION_CODE
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testTutorialTearDownCode() {
+void JavaScriptExporterTest::testTutorialTearDownCode() {
     Tutorial tutorial;
     tutorial.setCustomTearDownCode("The custom tear down\ncode");
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -212,7 +212,7 @@ TUTORIAL_EMPTY_INFORMATION_CODE
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testTutorialWithSeveralSteps() {
+void JavaScriptExporterTest::testTutorialWithSeveralSteps() {
     Tutorial tutorial;
 
     Step* step1 = new Step();
@@ -247,7 +247,7 @@ void JavascriptExporterTest::testTutorialWithSeveralSteps() {
     reaction2->setCustomCode("The custom\ncode2");
     step2->addReaction(reaction2);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -302,14 +302,14 @@ ktutorial.findObject(\"The emitter name\"), \
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testStep() {
+void JavaScriptExporterTest::testStep() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
     step->setText("The text");
     tutorial.addStep(step);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -324,14 +324,14 @@ TUTORIAL_EMPTY_INFORMATION_CODE
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testStepWithEscapeSequences() {
+void JavaScriptExporterTest::testStepWithEscapeSequences() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The \"id\"");
     step->setText("The\ttext\nwith \"escape\" sequences");
     tutorial.addStep(step);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -347,14 +347,14 @@ TUTORIAL_EMPTY_INFORMATION_CODE
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testStepWithRichText() {
+void JavaScriptExporterTest::testStepWithRichText() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
     step->setText("The <i>rich</i> text");
     tutorial.addStep(step);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -369,14 +369,14 @@ TUTORIAL_EMPTY_INFORMATION_CODE
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testStepWithSemanticMarkup() {
+void JavaScriptExporterTest::testStepWithSemanticMarkup() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
     step->setText("The text with <emphasis>semantic markup</emphasis>");
     tutorial.addStep(step);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -392,14 +392,14 @@ TUTORIAL_EMPTY_INFORMATION_CODE
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testStepSetupCode() {
+void JavaScriptExporterTest::testStepSetupCode() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
     step->setCustomSetupCode("The custom setup\ncode");
     tutorial.addStep(step);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -417,7 +417,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testStepSetupCodeWithReactions() {
+void JavaScriptExporterTest::testStepSetupCodeWithReactions() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -431,7 +431,7 @@ void JavascriptExporterTest::testStepSetupCodeWithReactions() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -453,14 +453,14 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testStepTearDownCode() {
+void JavaScriptExporterTest::testStepTearDownCode() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
     step->setCustomTearDownCode("The custom tear down\ncode");
     tutorial.addStep(step);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -478,7 +478,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testStepWithoutId() {
+void JavaScriptExporterTest::testStepWithoutId() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setText("The text");
@@ -493,7 +493,7 @@ void JavascriptExporterTest::testStepWithoutId() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -504,7 +504,7 @@ TUTORIAL_EMPTY_INFORMATION_CODE
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testStepWithSeveralReactions() {
+void JavaScriptExporterTest::testStepWithSeveralReactions() {
     Tutorial tutorial;
 
     Step* step = new Step();
@@ -529,7 +529,7 @@ void JavascriptExporterTest::testStepWithSeveralReactions() {
     reaction2->setCustomCode("The custom\ncode2");
     step->addReaction(reaction2);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -565,7 +565,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testReactionOptionNextStep() {
+void JavaScriptExporterTest::testReactionOptionNextStep() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -578,7 +578,7 @@ void JavascriptExporterTest::testReactionOptionNextStep() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -595,7 +595,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testReactionOptionNextStepWithEscapeSequences() {
+void JavaScriptExporterTest::testReactionOptionNextStepWithEscapeSequences() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -608,7 +608,7 @@ void JavascriptExporterTest::testReactionOptionNextStepWithEscapeSequences() {
     reaction->setNextStepId("Another \"step\"");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -625,7 +625,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::
+void JavaScriptExporterTest::
                         testReactionOptionNextStepWithoutOptionNameOrStepId() {
     Tutorial tutorial;
     Step* step = new Step();
@@ -637,7 +637,7 @@ void JavascriptExporterTest::
     reaction->setResponseType(Reaction::NextStep);
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -667,7 +667,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testReactionOptionCustomCode() {
+void JavaScriptExporterTest::testReactionOptionCustomCode() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -680,7 +680,7 @@ void JavascriptExporterTest::testReactionOptionCustomCode() {
     reaction->setCustomCode("The custom\ncode");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -703,7 +703,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testReactionOptionCustomCodeWithEscapeSequences() {
+void JavaScriptExporterTest::testReactionOptionCustomCodeWithEscapeSequences() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -716,7 +716,7 @@ void JavascriptExporterTest::testReactionOptionCustomCodeWithEscapeSequences() {
     reaction->setCustomCode("The custom\ncode");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -739,7 +739,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::
+void JavaScriptExporterTest::
                 testReactionOptionCustomCodeWithoutOptionNameOrCustomCode() {
     Tutorial tutorial;
     Step* step = new Step();
@@ -751,7 +751,7 @@ void JavascriptExporterTest::
     reaction->setResponseType(Reaction::CustomCode);
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -788,7 +788,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testReactionConditionNextStep() {
+void JavaScriptExporterTest::testReactionConditionNextStep() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -805,7 +805,7 @@ void JavascriptExporterTest::testReactionConditionNextStep() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -825,7 +825,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testReactionConditionNextStepWithAncestorNames() {
+void JavaScriptExporterTest::testReactionConditionNextStepWithAncestorNames() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -842,7 +842,7 @@ void JavascriptExporterTest::testReactionConditionNextStepWithAncestorNames() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -863,7 +863,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::
+void JavaScriptExporterTest::
                             testReactionConditionNextStepWithEscapeSequences() {
     Tutorial tutorial;
     Step* step = new Step();
@@ -882,7 +882,7 @@ void JavascriptExporterTest::
     reaction->setNextStepId("Another \"step\"");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -903,7 +903,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::
+void JavaScriptExporterTest::
                     testReactionConditionNextStepWithoutConditionOrStepId() {
     Tutorial tutorial;
     Step* step = new Step();
@@ -915,7 +915,7 @@ void JavascriptExporterTest::
     reaction->setResponseType(Reaction::NextStep);
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -948,7 +948,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testReactionConditionCustomCode() {
+void JavaScriptExporterTest::testReactionConditionCustomCode() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -965,7 +965,7 @@ void JavascriptExporterTest::testReactionConditionCustomCode() {
     reaction->setCustomCode("The custom\ncode");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -991,7 +991,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::
+void JavaScriptExporterTest::
                             testReactionConditionCustomCodeWithAncestorNames() {
     Tutorial tutorial;
     Step* step = new Step();
@@ -1009,7 +1009,7 @@ void JavascriptExporterTest::
     reaction->setCustomCode("The custom\ncode");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1035,7 +1035,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::
+void JavaScriptExporterTest::
                         testReactionConditionCustomCodeWithEscapeSequences() {
     Tutorial tutorial;
     Step* step = new Step();
@@ -1054,7 +1054,7 @@ void JavascriptExporterTest::
     reaction->setCustomCode("The custom\ncode");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1080,7 +1080,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::
+void JavaScriptExporterTest::
                 testReactionConditionCustomCodeWithoutConditionOrCustomCode() {
     Tutorial tutorial;
     Step* step = new Step();
@@ -1092,7 +1092,7 @@ void JavascriptExporterTest::
     reaction->setResponseType(Reaction::CustomCode);
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1135,7 +1135,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForEvent() {
+void JavaScriptExporterTest::testWaitForEvent() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1152,7 +1152,7 @@ void JavascriptExporterTest::testWaitForEvent() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1172,7 +1172,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForEventWithAncestorNames() {
+void JavaScriptExporterTest::testWaitForEventWithAncestorNames() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1189,7 +1189,7 @@ void JavascriptExporterTest::testWaitForEventWithAncestorNames() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1210,7 +1210,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForEventWithEscapeSequences() {
+void JavaScriptExporterTest::testWaitForEventWithEscapeSequences() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1227,7 +1227,7 @@ void JavascriptExporterTest::testWaitForEventWithEscapeSequences() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1247,7 +1247,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForEventWithoutReceiverNameOrEventName() {
+void JavaScriptExporterTest::testWaitForEventWithoutReceiverNameOrEventName() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1262,7 +1262,7 @@ void JavascriptExporterTest::testWaitForEventWithoutReceiverNameOrEventName() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1292,7 +1292,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForProperty() {
+void JavaScriptExporterTest::testWaitForProperty() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1310,7 +1310,7 @@ void JavascriptExporterTest::testWaitForProperty() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1330,7 +1330,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForPropertyWithAncestorNames() {
+void JavaScriptExporterTest::testWaitForPropertyWithAncestorNames() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1348,7 +1348,7 @@ void JavascriptExporterTest::testWaitForPropertyWithAncestorNames() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1369,7 +1369,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForPropertyWithEscapeSequences() {
+void JavaScriptExporterTest::testWaitForPropertyWithEscapeSequences() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1387,7 +1387,7 @@ void JavascriptExporterTest::testWaitForPropertyWithEscapeSequences() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1408,7 +1408,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::
+void JavaScriptExporterTest::
                 testWaitForPropertyWithoutObjectNameOrPropertyNameOrValue() {
     Tutorial tutorial;
     Step* step = new Step();
@@ -1424,7 +1424,7 @@ void JavascriptExporterTest::
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1469,7 +1469,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForSignal() {
+void JavaScriptExporterTest::testWaitForSignal() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1486,7 +1486,7 @@ void JavascriptExporterTest::testWaitForSignal() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1506,7 +1506,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForSignalWithAncestorNames() {
+void JavaScriptExporterTest::testWaitForSignalWithAncestorNames() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1523,7 +1523,7 @@ void JavascriptExporterTest::testWaitForSignalWithAncestorNames() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1544,7 +1544,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForSignalWithEscapeSequences() {
+void JavaScriptExporterTest::testWaitForSignalWithEscapeSequences() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1562,7 +1562,7 @@ void JavascriptExporterTest::testWaitForSignalWithEscapeSequences() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1582,7 +1582,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForSignalWithoutEmitterNameOrSignalName() {
+void JavaScriptExporterTest::testWaitForSignalWithoutEmitterNameOrSignalName() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1597,7 +1597,7 @@ void JavascriptExporterTest::testWaitForSignalWithoutEmitterNameOrSignalName() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1627,7 +1627,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForStepActivation() {
+void JavaScriptExporterTest::testWaitForStepActivation() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1642,7 +1642,7 @@ void JavascriptExporterTest::testWaitForStepActivation() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1659,7 +1659,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForWindow() {
+void JavaScriptExporterTest::testWaitForWindow() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1675,7 +1675,7 @@ void JavascriptExporterTest::testWaitForWindow() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1694,7 +1694,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForWindowWithAncestorNames() {
+void JavaScriptExporterTest::testWaitForWindowWithAncestorNames() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1711,7 +1711,7 @@ void JavascriptExporterTest::testWaitForWindowWithAncestorNames() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1731,7 +1731,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForWindowWithEscapeSequences() {
+void JavaScriptExporterTest::testWaitForWindowWithEscapeSequences() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1747,7 +1747,7 @@ void JavascriptExporterTest::testWaitForWindowWithEscapeSequences() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1766,7 +1766,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForWindowWithoutWindowObjectName() {
+void JavaScriptExporterTest::testWaitForWindowWithoutWindowObjectName() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1781,7 +1781,7 @@ void JavascriptExporterTest::testWaitForWindowWithoutWindowObjectName() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1796,7 +1796,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForComposed() {
+void JavaScriptExporterTest::testWaitForComposed() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1825,7 +1825,7 @@ void JavascriptExporterTest::testWaitForComposed() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1854,7 +1854,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForComposedWithInvalidChildWaitFor() {
+void JavaScriptExporterTest::testWaitForComposedWithInvalidChildWaitFor() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1881,7 +1881,7 @@ void JavascriptExporterTest::testWaitForComposedWithInvalidChildWaitFor() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1905,7 +1905,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForNot() {
+void JavaScriptExporterTest::testWaitForNot() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1925,7 +1925,7 @@ void JavascriptExporterTest::testWaitForNot() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1948,7 +1948,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForNotWithInvalidNegatedWaitFor() {
+void JavaScriptExporterTest::testWaitForNotWithInvalidNegatedWaitFor() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1966,7 +1966,7 @@ void JavascriptExporterTest::testWaitForNotWithInvalidNegatedWaitFor() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -1984,7 +1984,7 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-void JavascriptExporterTest::testWaitForNotWithoutNegatedWaitFor() {
+void JavaScriptExporterTest::testWaitForNotWithoutNegatedWaitFor() {
     Tutorial tutorial;
     Step* step = new Step();
     step->setId("The id");
@@ -1999,7 +1999,7 @@ void JavascriptExporterTest::testWaitForNotWithoutNegatedWaitFor() {
     reaction->setNextStepId("Another step");
     step->addReaction(reaction);
 
-    JavascriptExporter exporter;
+    JavaScriptExporter exporter;
     QString exportedTutorial = exporter.exportTutorial(&tutorial);
 
     QString expected =
@@ -2014,6 +2014,6 @@ STEP_WITH_ID_THE_ID_AND_EMPTY_TEXT_END_CODE;
     QCOMPARE(exportedTutorial, expected);
 }
 
-QTEST_MAIN(JavascriptExporterTest)
+QTEST_MAIN(JavaScriptExporterTest)
 
-#include "JavascriptExporterTest.moc"
+#include "JavaScriptExporterTest.moc"

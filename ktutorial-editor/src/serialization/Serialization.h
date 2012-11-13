@@ -83,7 +83,7 @@ public:
      * The string has the format expected by KFileDialog setFilter method, that
      * is, "*.fileExtension1|Human readable name1\n*.fileExtension2|Human
      * readable name2\n...".
-     * The first type in the list is the default type, Javascript.
+     * The first type in the list is the default type, JavaScript.
      *
      * @return The available exporter types.
      */

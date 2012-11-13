@@ -40,7 +40,7 @@
 
         <para>When the scripted tutorial is part of an application (it is installed with the rest of the application data when the application is installed), the strings in the scripted tutorial can be extracted to be localized before the installation like any other string in the C++ code, as explained in KTutorial documentation. Scripted tutorials that are added after the application was installed, however, can not be localized, as KTutorial uses the same translation file as the rest of the application where it is used.</para>
 
-        <para>As you may have guessed already, &ktutorial-editor; creates scripted tutorials. Right now, only Javascript is supported by &ktutorial-editor;, as &kde; libraries offer out of the box support for Javascript scripts. Python or Ruby, on the other hand, require some specific packages to be installed in the system.</para>
+        <para>As you may have guessed already, &ktutorial-editor; creates scripted tutorials. Right now, only JavaScript is supported by &ktutorial-editor;, as &kde; libraries offer out of the box support for JavaScript scripts. Python or Ruby, on the other hand, require some specific packages to be installed in the system.</para>
     </sect1>
 
     <sect1 id="main-window">
@@ -96,7 +96,7 @@
             <para>The license text dialog is used to set a license for the tutorial, for example, if the exported scripted tutorial is going to be distributed with its application. When the tutorial is exported, the license text is automatically wrapped in comments appropriate for the script language. For example, the following license text:
 <programlisting>The license text, which should be
 wrapped
-</programlisting> is exported to Javascript as:
+</programlisting> is exported to JavaScript as:
 <programlisting>/*****************************************
  *   The license text, which should be   *
  *   wrapped                             *
@@ -105,7 +105,7 @@ wrapped
             </para>
 
             <para>The setup and tear down code dialogs just provide a text editor to write the custom code to be executed when the tutorial starts or finishes. Note that you have to provide just the body of the function, as the signature is automatically written when exported. For example, the following setup code:
-<programlisting>alert("Hello world!");</programlisting> is exported to Javascript as:
+<programlisting>alert("Hello world!");</programlisting> is exported to JavaScript as:
 <programlisting>function tutorialSetup(tutorial) {
     alert("Hello world!");
 }

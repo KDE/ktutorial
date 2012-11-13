@@ -37,8 +37,8 @@ class WaitForStepActivation;
 class WaitForWindow;
 
 /**
- * Exporter of tutorials to Javascript code.
- * The generated Javascript code can be read by KTutorial from a tutorial script
+ * Exporter of tutorials to JavaScript code.
+ * The generated JavaScript code can be read by KTutorial from a tutorial script
  * file to create and initialize a KTutorial::Tutorial from it.
  *
  * The general structure of the code is:
@@ -59,26 +59,26 @@ class WaitForWindow;
  * If some necessary data is missing (for example, the id in a step), a comment
  * explaining the error is written instead of the code for that element.
  */
-class JavascriptExporter {
+class JavaScriptExporter {
 public:
 
     /**
-     * Creates a new JavascriptExporter.
+     * Creates a new JavaScriptExporter.
      */
-    JavascriptExporter();
+    JavaScriptExporter();
 
     /**
-     * Exports the tutorial to Javascript code.
+     * Exports the tutorial to JavaScript code.
      *
      * @param tutorial The tutorial to export.
-     * @return The Javascript code.
+     * @return The JavaScript code.
      */
     QString exportTutorial(const Tutorial* tutorial);
 
 private:
 
     /**
-     * The text stream to write the Javascript code to.
+     * The text stream to write the JavaScript code to.
      */
     QTextStream mOut;
 
@@ -308,12 +308,12 @@ private:
     QString addVariable(const QString& variable);
 
     /**
-     * Returns the same text, but with Javascript escape sequences where needed.
+     * Returns the same text, but with JavaScript escape sequences where needed.
      * Some special characters (new line, tab and quotes) are written as their
      * escape squence.
      *
      * @param text The text to escape.
-     * @return The Javascript text.
+     * @return The JavaScript text.
      */
     QString escape(QString text);
 

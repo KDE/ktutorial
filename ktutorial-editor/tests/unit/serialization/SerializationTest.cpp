@@ -62,7 +62,7 @@ private slots:
 
     void testAvailableExporterTypes();
 
-    void testExportJavascript();
+    void testExportJavaScript();
 
     void testExportToExistingUrl();
     void testExportToUnwritableUrl();
@@ -202,10 +202,10 @@ void SerializationTest::testAvailableExporterTypes() {
     QString types = Serialization().availableExporterTypes();
 
     QCOMPARE(types, i18nc("@item:inlistbox A KFileDialog filter",
-                          "*.js|Javascript file"));
+                          "*.js|JavaScript file"));
 }
 
-void SerializationTest::testExportJavascript() {
+void SerializationTest::testExportJavaScript() {
     Tutorial tutorial;
     tutorial.setName("The name");
     tutorial.setDescription("The description");
