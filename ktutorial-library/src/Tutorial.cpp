@@ -138,7 +138,7 @@ void Tutorial::changeToStep(Step* step) {
         mCurrentStep->setActive(false);
     }
 
-    kDebug(debugArea()) << "Next step:" << step->id() << endl;
+    kDebug(debugArea()) << "Next step:" << step->id();
 
     mCurrentStep = step;
     mCurrentStep->setActive(true);

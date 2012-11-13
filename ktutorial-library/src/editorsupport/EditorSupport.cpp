@@ -58,7 +58,7 @@ void EditorSupport::setObjectFinder(ObjectFinder* objectFinder) {
 
 void EditorSupport::setup(QObject* window) {
     if (!QDBusConnection::sessionBus().isConnected()) {
-        kWarning(debugArea()) << "Cannot connect to the D-Bus session bus!\n"
+        kWarning(debugArea()) << "Cannot connect to the D-Bus session bus!"
                               << "KTutorial editor support will not be enabled";
         return;
     }
