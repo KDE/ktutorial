@@ -23,6 +23,10 @@
 #include <KDebug>
 
 namespace ktutorial {
+extern int debugArea();
+}
+
+namespace ktutorial {
 
 //public:
 
@@ -38,7 +42,8 @@ WaitForEvent::WaitForEvent(QObject* object, QEvent::Type type):
     mConditionMet(false) {
 
     if (!object) {
-        kWarning() << "The object that receives the event to wait for is null!";
+        kWarning(debugArea()) << "The object that receives the event to wait"
+                              << "for is null!";
         return;
     }
 
@@ -47,7 +52,8 @@ WaitForEvent::WaitForEvent(QObject* object, QEvent::Type type):
 
 void WaitForEvent::setEvent(QObject* object, const QString& typeName) {
     if (!object) {
-        kWarning() << "The object that receives the event to wait for is null!";
+        kWarning(debugArea()) << "The object that receives the event to wait"
+                              << "for is null!";
         return;
     }
 
@@ -56,7 +62,8 @@ void WaitForEvent::setEvent(QObject* object, const QString& typeName) {
 
     int eventTypeValue = eventTypeEnumerator.keyToValue(qPrintable(typeName));
     if (eventTypeValue == -1) {
-        kWarning() << "QEvent::Type named \"" << typeName << "\" is unknown";
+        kWarning(debugArea()) << "QEvent::Type named \"" << typeName << "\" is"
+                              << "unknown";
         return;
     }
 

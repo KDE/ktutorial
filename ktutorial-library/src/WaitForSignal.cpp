@@ -23,6 +23,10 @@
 #include <KDebug>
 
 namespace ktutorial {
+extern int debugArea();
+}
+
+namespace ktutorial {
 
 //public:
 
@@ -37,8 +41,8 @@ WaitForSignal::WaitForSignal(QObject* sender, const QString& signal): WaitFor(),
 
 void WaitForSignal::setSignal(QObject* sender, const QString& signal) {
     if (!sender) {
-        kWarning() << "The object that emits the signal" << signal
-                   << "to wait for is null!";
+        kWarning(debugArea()) << "The object that emits the signal" << signal
+                              << "to wait for is null!";
         return;
     }
 

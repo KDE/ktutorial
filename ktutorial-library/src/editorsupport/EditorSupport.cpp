@@ -38,6 +38,10 @@ using ktutorial::extendedinformation::WidgetHighlighterManager;
 using ktutorial::scripting::ScriptedTutorial;
 
 namespace ktutorial {
+extern int debugArea();
+}
+
+namespace ktutorial {
 namespace editorsupport {
 
 //public:
@@ -54,8 +58,8 @@ void EditorSupport::setObjectFinder(ObjectFinder* objectFinder) {
 
 void EditorSupport::setup(QObject* window) {
     if (!QDBusConnection::sessionBus().isConnected()) {
-        kWarning() << "Cannot connect to the D-Bus session bus!\n"
-                   << "KTutorial editor support will not be enabled";
+        kWarning(debugArea()) << "Cannot connect to the D-Bus session bus!\n"
+                              << "KTutorial editor support will not be enabled";
         return;
     }
 
@@ -124,8 +128,8 @@ void EditorSupport::testScriptedTutorial(const QString& filename,
     ScriptedTutorial* scriptedTutorial = new ScriptedTutorial(filename);
 
     if (!scriptedTutorial->isValid()) {
-        kWarning() << "Cannot test the scripted tutorial stored in "
-                   << filename << ": the script is invalid";
+        kWarning(debugArea()) << "Cannot test the scripted tutorial stored in "
+                              << filename << ": the script is invalid";
         delete scriptedTutorial;
         return;
     }

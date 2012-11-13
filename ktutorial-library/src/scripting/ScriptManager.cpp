@@ -28,6 +28,10 @@
 #include "../TutorialManager.h"
 
 namespace ktutorial {
+extern int debugArea();
+}
+
+namespace ktutorial {
 namespace scripting {
 
 //public:
@@ -43,7 +47,8 @@ void ScriptManager::loadTutorials(TutorialManager* tutorialManager) {
 
     QStringList baseDirectories = KGlobal::dirs()->resourceDirs("appdata");
     if (baseDirectories.count() == 0) {
-        kWarning() << "No directories found for \"appdata\" resource. Tutorials can't be loaded";
+        kWarning(debugArea()) << "No directories found for \"appdata\""
+                              << "resource. Tutorials can't be loaded";
         return;
     }
 

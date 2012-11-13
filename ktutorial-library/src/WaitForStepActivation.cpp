@@ -25,6 +25,10 @@
 #include "Tutorial.h"
 
 namespace ktutorial {
+extern int debugArea();
+}
+
+namespace ktutorial {
 
 //public:
 
@@ -41,13 +45,13 @@ WaitForStepActivation::WaitForStepActivation(const Tutorial* tutorial,
 void WaitForStepActivation::setStep(const Tutorial* tutorial,
                                     const Step* step) {
     if (!tutorial) {
-        kWarning() << "The tutorial that contains the step to wait for its"
-                   << "activation is null!";
+        kWarning(debugArea()) << "The tutorial that contains the step to wait"
+                              << "for its activation is null!";
         return;
     }
 
     if (!step) {
-        kWarning() << "The step to wait for its activation is null!";
+        kWarning(debugArea()) << "The step to wait for its activation is null!";
         return;
     }
 

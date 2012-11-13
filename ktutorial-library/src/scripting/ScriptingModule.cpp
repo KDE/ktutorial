@@ -38,6 +38,10 @@
 #include "../WaitForWindow.h"
 
 namespace ktutorial {
+extern int debugArea();
+}
+
+namespace ktutorial {
 namespace scripting {
 
 ScriptingModule* ScriptingModule::self() {
@@ -75,20 +79,24 @@ bool ScriptingModule::registerWaitForMetaObject(
                             const QMetaObject& waitForMetaObject,
                             const QString& typeName /*= QString()*/) {
     if (mWaitForMetaObjects.contains(typeName)) {
-        kWarning() << "Can't register " << waitForMetaObject.className() <<
-                      ", as " << typeName << " is already registered";
+        kWarning(debugArea()) << "Can't register "
+                              << waitForMetaObject.className() << ", as "
+                              << typeName << " is already registered";
         return false;
     }
 
     if (!inheritsWaitFor(waitForMetaObject)) {
-        kWarning() << "Can't register " << waitForMetaObject.className() <<
-                      ", as it does not inherit WaitFor";
+        kWarning(debugArea()) << "Can't register "
+                              << waitForMetaObject.className()
+                              << ", as it does not inherit WaitFor";
         return false;
     }
 
     if (!hasInvokableDefaultConstructor(waitForMetaObject)) {
-        kWarning() << "Can't register " << waitForMetaObject.className() <<
-                      ", as it does not have an invokable default constructor";
+        kWarning(debugArea()) << "Can't register "
+                              << waitForMetaObject.className()
+                              << ", as it does not have an invokable default"
+                              << "constructor";
         return false;
     }
 

@@ -23,6 +23,10 @@
 #include <KDebug>
 
 namespace ktutorial {
+extern int debugArea();
+}
+
+namespace ktutorial {
 
 //public:
 
@@ -41,8 +45,8 @@ void WaitForProperty::setProperty(QObject* object, const QString& propertyName,
     mValue = value;
 
     if (!mObject) {
-        kWarning() << "The object that contains the property" << mPropertyName
-                   << "to wait for is null!";
+        kWarning(debugArea()) << "The object that contains the property"
+                              << mPropertyName << "to wait for is null!";
         return;
     }
 
@@ -50,17 +54,18 @@ void WaitForProperty::setProperty(QObject* object, const QString& propertyName,
     int propertyIndex = metaObject->indexOfProperty(mPropertyName.toUtf8());
 
     if (propertyIndex == -1) {
-        kWarning() << "The class" << metaObject->className() << "does not"
-                   << "contain a property named" << mPropertyName << "!";
+        kWarning(debugArea()) << "The class" << metaObject->className()
+                              << "does not contain a property named"
+                              << mPropertyName << "!";
         return;
     }
 
     QMetaProperty metaProperty = metaObject->property(propertyIndex);
 
     if (!metaProperty.hasNotifySignal()) {
-        kWarning() << "The property" << mPropertyName << "in the class"
-                   << metaObject->className() << "does not have a notification"
-                   << "signal!";
+        kWarning(debugArea()) << "The property" << mPropertyName << "in the"
+                              << "class" << metaObject->className()
+                              << "does not have a notification signal!";
         return;
     }
 

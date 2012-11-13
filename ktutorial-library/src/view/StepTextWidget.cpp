@@ -31,6 +31,10 @@
 using ktutorial::extendedinformation::WidgetHighlighterManager;
 
 namespace ktutorial {
+extern int debugArea();
+}
+
+namespace ktutorial {
 namespace view {
 
 //public:
@@ -184,7 +188,7 @@ void StepTextWidget::updateText() {
 
 void StepTextWidget::highlightLastReferencedWidget() {
     if (!mLastReferencedWidget) {
-        kWarning() << "The widget to highlight was not found!";
+        kWarning(debugArea()) << "The widget to highlight was not found!";
         return;
     }
 
@@ -200,7 +204,8 @@ void StepTextWidget::highlightLastReferencedWidget() {
 
 void StepTextWidget::stopHighlightingCurrentWidget() {
     if (!mWidgetBeingHighlighted) {
-        kWarning() << "The widget to stop highlighting was not found!";
+        kWarning(debugArea()) << "The widget to stop highlighting was not"
+                              << "found!";
         return;
     }
 

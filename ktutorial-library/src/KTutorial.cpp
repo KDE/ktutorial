@@ -19,6 +19,9 @@
  ***************************************************************************/
 
 #include "KTutorial.h"
+
+#include <KDebug>
+
 #include "customization/DefaultKdeCustomization.h"
 #include "scripting/ScriptingModule.h"
 #include "scripting/ScriptManager.h"
@@ -32,6 +35,16 @@ using ktutorial::scripting::ScriptingModule;
 using ktutorial::scripting::ScriptManager;
 
 namespace ktutorial {
+
+//The function is used in subdirectories, and each subdirectory has its own
+//static library. The unit tests for the subdirectories are linked against the
+//static library of its subdirectory and the main shared library (where this
+//function is defined). Thus, the function must be exported for the linker to be
+//able to find it when the unit tests for the subdirectories are built.
+KTUTORIAL_EXPORT int debugArea() {
+    static int s_area = KDebug::registerArea("ktutorial");
+    return s_area;
+}
 
 //public:
 
