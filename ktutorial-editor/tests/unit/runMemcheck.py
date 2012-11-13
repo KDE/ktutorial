@@ -92,14 +92,12 @@ class BackTrace:
             if frame.func:
                 if frame.func.find('QTest') != -1:
                     is_interesting = True
-                if frame.func.find('XcursorXcFileLoadImages') != -1:
-                    return False # something deep in X server, not interested in this
+                if frame.func.find('qdbus_loadLibDBus') != -1:
+                    return False # Qt DBus loader
+                if frame.func.find('loadFc(QFontPrivate') != -1:
+                    return False # Something related to Qt, X11 and fonts
                 if frame.func.find('XRegisterIMInstantiateCallback') != -1:
                     return False # X-related static memory allocation, no leak
-                if frame.func.find('FcDefaultSubstitute') != -1:
-                    return False # something Qt-Font related, not interested in this
-                if frame.func.find('__nss_database_lookup') != -1:
-                    return False # more crap
         return is_interesting
 
     def __str__(self):
