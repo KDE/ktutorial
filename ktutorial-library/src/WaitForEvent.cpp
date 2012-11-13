@@ -62,7 +62,7 @@ void WaitForEvent::setEvent(QObject* object, const QString& typeName) {
 
     int eventTypeValue = eventTypeEnumerator.keyToValue(qPrintable(typeName));
     if (eventTypeValue == -1) {
-        kWarning(debugArea()) << "QEvent::Type named \"" << typeName << "\" is"
+        kWarning(debugArea()) << "QEvent::Type named" << typeName << "is"
                               << "unknown";
         return;
     }

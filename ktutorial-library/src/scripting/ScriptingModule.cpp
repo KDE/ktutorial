@@ -80,21 +80,21 @@ bool ScriptingModule::registerWaitForMetaObject(
                             const QString& typeName /*= QString()*/) {
     if (mWaitForMetaObjects.contains(typeName)) {
         kWarning(debugArea()) << "Can't register"
-                              << waitForMetaObject.className() << ", as"
-                              << typeName << "is already registered";
+                              << QString(waitForMetaObject.className())
+                              << ", as" << typeName << "is already registered";
         return false;
     }
 
     if (!inheritsWaitFor(waitForMetaObject)) {
         kWarning(debugArea()) << "Can't register"
-                              << waitForMetaObject.className()
+                              << QString(waitForMetaObject.className())
                               << ", as it does not inherit WaitFor";
         return false;
     }
 
     if (!hasInvokableDefaultConstructor(waitForMetaObject)) {
         kWarning(debugArea()) << "Can't register"
-                              << waitForMetaObject.className()
+                              << QString(waitForMetaObject.className())
                               << ", as it does not have an invokable default"
                               << "constructor";
         return false;
