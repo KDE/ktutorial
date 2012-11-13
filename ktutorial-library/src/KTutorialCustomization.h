@@ -59,6 +59,11 @@ Q_OBJECT
 public:
 
     /**
+     * Destroys this KTutorialCustomization.
+     */
+    virtual ~KTutorialCustomization();
+
+    /**
      * Sets up the KTutorial user interface.
      * This method will be called before loading the scripted tutorials, and
      * before setting up the editor support (if available).

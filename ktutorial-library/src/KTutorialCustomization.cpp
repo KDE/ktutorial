@@ -16,3 +16,10 @@
  ***************************************************************************/
 
 #include "KTutorialCustomization.h"
+
+namespace ktutorial {
+
+KTutorialCustomization::~KTutorialCustomization() {
+}
+
+}
