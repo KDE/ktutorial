@@ -79,6 +79,10 @@ private:
 
     QString mPath;
 
+    QObject* mActiveModalWidgetCloser;
+
+    QObject* closeActiveModalWidget(int timeToWaitBeforeClosing);
+
     void closeInformationMessageBox(int timeout);
     void closeInformationMessageBoxOnceTargetApplicationEnds(int timeout);
     void closeSorryMessageBox(QWidget* widget, int timeout);
@@ -108,9 +112,20 @@ void RemoteObjectChooserTest::init() {
     //setting a new TargetApplication
     delete TargetApplication::sSelf;
     TargetApplication::sSelf = new TargetApplication();
+
+    //Ensure that, if a TargetApplication can not be started in a method where
+    //it is expected to start, the modal dialog shown by RemoteObjectChooser
+    //to warn the user about the problem does not hang the tests. This helper
+    //will close the active modal widget in twelve seconds, which is longer that
+    //the time at which the actions queued in the tests time out.
+    mActiveModalWidgetCloser = closeActiveModalWidget(12000);
 }
 
 void RemoteObjectChooserTest::cleanup() {
+    //Delete the helper to prevent modal dialogs in next tests to be closed by
+    //it.
+    mActiveModalWidgetCloser->deleteLater();
+
     delete TargetApplication::sSelf;
     TargetApplication::sSelf = 0;
 }
@@ -545,13 +560,6 @@ public:
         mActionDone(false) {
     }
 
-    void run() {
-        mElapsedTime.start();
-        mFinished = false;
-
-        checkAction();
-    }
-
     bool isFinished() const {
         return mFinished;
     }
@@ -561,6 +569,13 @@ public:
     }
     
 public slots:
+
+    void run() {
+        mElapsedTime.start();
+        mFinished = false;
+
+        checkAction();
+    }
 
     void checkAction() {
         mActionDone = action();
@@ -582,6 +597,27 @@ private:
     bool mFinished;
     bool mActionDone;
 
+};
+
+class CloseActiveModalWidgetHelper: public QueuedAction {
+public:
+
+    CloseActiveModalWidgetHelper(int timeout, QObject* parent):
+        QueuedAction(timeout, parent) {
+    }
+
+protected:
+
+    virtual bool action() {
+        QWidget* activeModalWidget = QApplication::activeModalWidget();
+        if (!activeModalWidget) {
+            return false;
+        }
+
+        delete activeModalWidget;
+
+        return true;
+    }
 };
 
 QWidget* findRemoteObjectChooser() {
@@ -703,6 +739,16 @@ protected:
         return true;
     }
 };
+
+QObject* RemoteObjectChooserTest::closeActiveModalWidget(
+                                                int timeToWaitBeforeClosing) {
+    CloseActiveModalWidgetHelper* helper =
+                                new CloseActiveModalWidgetHelper(100000, this);
+
+    QTimer::singleShot(timeToWaitBeforeClosing, helper, SLOT(run()));
+
+    return helper;
+}
 
 void RemoteObjectChooserTest::closeInformationMessageBox(int timeout) {
     CloseInformationMessageBoxHelper* helper =
