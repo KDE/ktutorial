@@ -79,11 +79,11 @@ private:
 
     QString mPath;
 
-    void closeInformationMessageBox(int timeToWait);
-    void closeInformationMessageBoxOnceTargetApplicationEnds(int timeToWait);
-    void closeSorryMessageBox(QWidget* widget, int timeToWait);
+    void closeInformationMessageBox(int timeout);
+    void closeInformationMessageBoxOnceTargetApplicationEnds(int timeout);
+    void closeSorryMessageBox(QWidget* widget, int timeout);
 
-    void killTargetApplicationOnceMessageBoxIsShown(int timeToWait);
+    void killTargetApplicationOnceMessageBoxIsShown(int timeout);
 
     bool waitForSorryMessageBoxToBeClosed(QWidget* widget, int timeout);
 
@@ -704,32 +704,32 @@ protected:
     }
 };
 
-void RemoteObjectChooserTest::closeInformationMessageBox(int timeToWait) {
+void RemoteObjectChooserTest::closeInformationMessageBox(int timeout) {
     CloseInformationMessageBoxHelper* helper =
-                        new CloseInformationMessageBoxHelper(timeToWait, this);
+                        new CloseInformationMessageBoxHelper(timeout, this);
     helper->run();
 }
 
 void RemoteObjectChooserTest::
-        closeInformationMessageBoxOnceTargetApplicationEnds(int timeToWait) {
+        closeInformationMessageBoxOnceTargetApplicationEnds(int timeout) {
     CloseInformationMessageBoxOnceTargetApplicationEndsHelper* helper =
                 new CloseInformationMessageBoxOnceTargetApplicationEndsHelper(
-                                                            timeToWait, this);
+                                                            timeout, this);
     helper->run();
 }
 
 void RemoteObjectChooserTest::closeSorryMessageBox(QWidget* widget,
-                                                   int timeToWait) {
+                                                   int timeout) {
     CloseSorryMessageBoxHelper* helper = new CloseSorryMessageBoxHelper(
-                                                            timeToWait, this);
+                                                            timeout, this);
     helper->setWidget(widget);
     helper->run();    
 }
 
 void RemoteObjectChooserTest::killTargetApplicationOnceMessageBoxIsShown(
-                                                            int timeToWait) {
+                                                            int timeout) {
     KillTargetApplicationOnceMessageBoxIsShownHelper* helper =
-        new KillTargetApplicationOnceMessageBoxIsShownHelper(timeToWait, this);
+        new KillTargetApplicationOnceMessageBoxIsShownHelper(timeout, this);
     helper->run();    
 }
 
