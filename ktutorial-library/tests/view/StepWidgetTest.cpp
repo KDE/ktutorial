@@ -335,14 +335,14 @@ void StepWidgetTest::closeUsingEscKey() {
 }
 
 void StepWidgetTest::moveAfterShowingModalDialogAndThenClose() {
-    QWidget* window = new QWidget();
-    window->show();
+    QWidget window;
+    window.show();
 
     StepWidget* stepWidget = new StepWidget("Test tutorial");
-    stepWidget->setMainApplicationWindow(window);
+    stepWidget->setMainApplicationWindow(&window);
     stepWidget->show();
 
-    QDialog* modalDialog = new QDialog(window); //krazy:exclude=qclasses
+    QDialog* modalDialog = new QDialog(&window); //krazy:exclude=qclasses
 
     QTimer timerAccept;
     timerAccept.setSingleShot(true);
