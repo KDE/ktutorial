@@ -25,7 +25,7 @@
 #include <QMouseEvent>
 #include <QWhatsThis>
 
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
 #include "ui_StepWidget.h"
 #include "WindowOnTopEnforcer.h"

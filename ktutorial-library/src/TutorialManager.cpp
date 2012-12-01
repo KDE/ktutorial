@@ -21,7 +21,7 @@
 #include "TutorialManager.h"
 #include "TutorialManager_p.h"
 
-#include <kdebug.h>
+#include <KDebug>
 
 #include "Tutorial.h"
 #include "TutorialInformation.h"

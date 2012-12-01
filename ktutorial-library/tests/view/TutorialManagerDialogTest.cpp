@@ -21,7 +21,8 @@
 #include <QTest>
 #include <QtTest/QTestKeyClicksEvent>
 #include <qtest_kde.h>
-#include <kpushbutton.h>
+
+#include <KPushButton>
 
 #define protected public
 #define private public

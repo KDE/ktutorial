@@ -19,8 +19,8 @@
 
 #include "TutorialClearText.h"
 
-#include <klocalizedstring.h>
-#include <ktextedit.h>
+#include <KLocalizedString>
+#include <KTextEdit>
 
 #include <ktutorial/KTutorial.h>
 #include <ktutorial/Step.h>

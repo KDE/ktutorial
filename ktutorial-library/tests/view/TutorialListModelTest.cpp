@@ -18,7 +18,8 @@
  ***************************************************************************/
 
 #include <QTest>
-#include <klocalizedstring.h>
+
+#include <KLocalizedString>
 
 #define protected public
 #define private public

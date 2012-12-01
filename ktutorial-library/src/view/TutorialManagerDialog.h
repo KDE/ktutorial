@@ -21,7 +21,7 @@
 #ifndef KTUTORIAL_VIEW_TUTORIALMANAGERDIALOG_H
 #define KTUTORIAL_VIEW_TUTORIALMANAGERDIALOG_H
 
-#include <kdialog.h>
+#include <KDialog>
 
 class QItemSelection;
 

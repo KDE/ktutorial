@@ -22,7 +22,7 @@
 #include "Tutorial.h"
 #include "Tutorial_p.h"
 
-#include <kdebug.h>
+#include <KDebug>
 
 #include "Step.h"
 #include "TutorialInformation.h"

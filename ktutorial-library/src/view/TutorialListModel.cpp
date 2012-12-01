@@ -20,7 +20,7 @@
 
 #include "TutorialListModel.h"
 
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
 #include "../TutorialInformation.h"
 #include "../TutorialManager.h"

@@ -21,7 +21,7 @@
 #include "Step.h"
 #include "Step_p.h"
 
-#include <kdebug.h>
+#include <KDebug>
 
 #include "Option.h"
 #include "WaitFor.h"

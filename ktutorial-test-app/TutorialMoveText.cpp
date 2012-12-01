@@ -21,9 +21,9 @@
 
 #include <QMouseEvent>
 
-#include <kaction.h>
-#include <klocalizedstring.h>
-#include <ktextedit.h>
+#include <KAction>
+#include <KLocalizedString>
+#include <KTextEdit>
 
 #include <ktutorial/KTutorial.h>
 #include <ktutorial/Option.h>
