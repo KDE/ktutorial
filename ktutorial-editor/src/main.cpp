@@ -19,6 +19,7 @@
 #include <KApplication>
 #include <KAboutData>
 #include <KCmdLineArgs>
+#include <KUrl>
 
 #include "KTutorialEditor.h"
 

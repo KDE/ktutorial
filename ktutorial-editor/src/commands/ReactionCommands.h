@@ -19,11 +19,11 @@
 #ifndef REACTIONCOMMANDS_H
 #define REACTIONCOMMANDS_H
 
-#include <QString>
-
 #include "../data/Reaction.h"
 
+class QString;
 class QUndoCommand;
+
 class WaitFor;
 
 /**

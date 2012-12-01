@@ -20,6 +20,7 @@
 #include <KAction>
 #include <KActionCollection>
 #include <KLocalizedString>
+#include <KXmlGuiWindow>
 
 #include "../Tutorial.h"
 #include "../TutorialInformation.h"

@@ -19,9 +19,9 @@
 #ifndef STEPCOMMANDS_H
 #define STEPCOMMANDS_H
 
-#include <QString>
-
+class QString;
 class QUndoCommand;
+
 class Reaction;
 class Step;
 

@@ -18,6 +18,8 @@
 #ifndef KTUTORIAL_WAITFORPROPERTY_P_H
 #define KTUTORIAL_WAITFORPROPERTY_P_H
 
+#include <QVariant>
+
 namespace ktutorial {
 
 class WaitForPropertyPrivate {

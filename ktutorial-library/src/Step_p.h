@@ -18,6 +18,9 @@
 #ifndef KTUTORIAL_STEP_P_H
 #define KTUTORIAL_STEP_P_H
 
+#include <QHash>
+#include <QList>
+
 namespace ktutorial {
 
 class StepPrivate {

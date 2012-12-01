@@ -21,7 +21,8 @@
 #define KTUTORIALEDITOR_H
 
 #include <KXmlGuiWindow>
-#include <KUrl>
+
+class KUrl;
 
 class EditActions;
 class FileActions;

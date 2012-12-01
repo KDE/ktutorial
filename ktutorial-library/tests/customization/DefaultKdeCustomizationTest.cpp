@@ -21,6 +21,7 @@
 
 #include <KAction>
 #include <KActionCollection>
+#include <KXmlGuiWindow>
 
 #include "DefaultKdeCustomization.h"
 #include "../Step.h"

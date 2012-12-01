@@ -20,8 +20,6 @@
 #ifndef TUTORIALREADER_H
 #define TUTORIALREADER_H
 
-#include <QXmlStreamWriter>
-
 #include "DeserializationException.h"
 
 class QDomElement;

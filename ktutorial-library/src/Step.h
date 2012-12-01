@@ -22,10 +22,7 @@
 #ifndef KTUTORIAL_STEP_H
 #define KTUTORIAL_STEP_H
 
-#include <QtCore/QHash>
-#include <QtCore/QList>
 #include <QtCore/QObject>
-#include <QtCore/QString>
 
 #include "ktutorial_export.h"
 

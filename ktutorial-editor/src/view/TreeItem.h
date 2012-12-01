@@ -19,8 +19,8 @@
 #ifndef TREEITEM_H
 #define TREEITEM_H
 
+#include <QObject>
 #include <QString>
-#include <QVariant>
 
 /**
  * An item in a TreeModel.

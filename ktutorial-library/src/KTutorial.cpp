@@ -23,6 +23,7 @@
 
 #include <KDebug>
 
+#include "TutorialManager.h"
 #include "customization/DefaultKdeCustomization.h"
 #include "scripting/ScriptingModule.h"
 #include "scripting/ScriptManager.h"

@@ -20,7 +20,9 @@
 #ifndef TUTORIALWRITER_H
 #define TUTORIALWRITER_H
 
-#include <QXmlStreamWriter>
+#include <QString>
+
+class QXmlStreamWriter;
 
 class Reaction;
 class Step;

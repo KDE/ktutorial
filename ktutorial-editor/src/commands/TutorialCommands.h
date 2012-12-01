@@ -19,9 +19,9 @@
 #ifndef TUTORIALCOMMANDS_H
 #define TUTORIALCOMMANDS_H
 
-#include <QString>
-
+class QString;
 class QUndoCommand;
+
 class Step;
 class Tutorial;
 

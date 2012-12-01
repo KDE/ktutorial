@@ -22,6 +22,7 @@
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KTemporaryFile>
+#include <KUrl>
 
 #include "KTutorialEditor.h"
 #include "serialization/Serialization.h"

@@ -18,11 +18,10 @@
 #ifndef KTUTORIAL_CUSTOMIZATION_DEFAULTKDECUSTOMIZATION_H
 #define KTUTORIAL_CUSTOMIZATION_DEFAULTKDECUSTOMIZATION_H
 
-#include <KXmlGuiWindow>
-
 #include "../KTutorialCustomization.h"
 
 class KAction;
+class KXmlGuiWindow;
 
 namespace ktutorial {
 namespace customization {

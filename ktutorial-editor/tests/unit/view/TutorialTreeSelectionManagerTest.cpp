@@ -20,6 +20,7 @@
 
 #include "TutorialTreeSelectionManager.h"
 
+#include <QItemSelectionModel>
 #include <QSignalSpy>
 
 #include "TreeModel.h"

@@ -19,6 +19,8 @@
 
 #include "TutorialWriter.h"
 
+#include <QXmlStreamWriter>
+
 #include "../data/Reaction.h"
 #include "../data/Step.h"
 #include "../data/Tutorial.h"

@@ -27,12 +27,12 @@
 #include "ktutorial_export.h"
 
 #include "ObjectFinder.h"
-#include "TutorialManager.h"
 
 class KXmlGuiWindow;
 
 namespace ktutorial {
 class KTutorialCustomization;
+class Tutorial;
 }
 
 namespace ktutorial {

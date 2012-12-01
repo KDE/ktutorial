@@ -19,6 +19,10 @@
 #define KTUTORIAL_KTUTORIAL_P_H
 
 namespace ktutorial {
+class TutorialManager;
+}
+
+namespace ktutorial {
 
 class KTutorialPrivate {
 public:

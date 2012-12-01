@@ -19,8 +19,10 @@
 #ifndef TUTORIALTREESELECTIONMANAGER_H
 #define TUTORIALTREESELECTIONMANAGER_H
 
-#include <QItemSelectionModel>
 #include <QObject>
+
+class QItemSelection;
+class QItemSelectionModel;
 
 class Reaction;
 class Step;

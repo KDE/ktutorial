@@ -18,6 +18,8 @@
 #ifndef KTUTORIAL_TUTORIAL_P_H
 #define KTUTORIAL_TUTORIAL_P_H
 
+#include <QMap>
+
 namespace ktutorial {
 
 class TutorialPrivate {

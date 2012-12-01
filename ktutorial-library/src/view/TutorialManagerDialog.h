@@ -21,10 +21,9 @@
 #ifndef KTUTORIAL_VIEW_TUTORIALMANAGERDIALOG_H
 #define KTUTORIAL_VIEW_TUTORIALMANAGERDIALOG_H
 
-#include <QItemSelection>
-
 #include <kdialog.h>
-#include <klocalizedstring.h>
+
+class QItemSelection;
 
 namespace ktutorial {
 class TutorialInformation;

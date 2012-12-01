@@ -18,6 +18,8 @@
 
 #include "TutorialTreeSelectionManager.h"
 
+#include <QItemSelectionModel>
+
 #include "ReactionTreeItem.h"
 #include "StepTreeItem.h"
 #include "TreeItem.h"
