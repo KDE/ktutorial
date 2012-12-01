@@ -20,11 +20,7 @@
 
 #include <QSignalSpy>
 
-#define protected public
-#define private public
 #include "WaitForProperty.h"
-#undef private
-#undef protected
 
 //WaitFor* must be declared as a metatype to be used in qvariant_cast
 Q_DECLARE_METATYPE(ktutorial::WaitFor*);
