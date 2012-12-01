@@ -27,6 +27,8 @@
 #undef private
 #undef protected
 
+#include "Tutorial_p.h"
+
 #include "Step.h"
 #include "TutorialInformation.h"
 
@@ -49,6 +51,7 @@ public slots:
 private slots:
 
     void testConstructor();
+    void testConstructorWithoutTutorialInformation();
 
     void testAddStep();
     void testAddStepSeveralSteps();
@@ -153,7 +156,17 @@ void TutorialTest::testConstructor() {
     Tutorial tutorial(tutorialInformation);
 
     QCOMPARE(tutorial.tutorialInformation(), tutorialInformation);
-    QCOMPARE(tutorial.mCurrentStep, (Step*)0);
+    QCOMPARE(tutorial.d->mCurrentStep, (Step*)0);
+}
+
+void TutorialTest::testConstructorWithoutTutorialInformation() {
+    Tutorial tutorial(0);
+    TutorialInformation* tutorialInformation =
+                                    new TutorialInformation("pearlOrientation");
+    tutorial.setTutorialInformation(tutorialInformation);
+
+    QCOMPARE(tutorial.tutorialInformation(), tutorialInformation);
+    QCOMPARE(tutorial.d->mCurrentStep, (Step*)0);
 }
 
 void TutorialTest::testAddStep() {
@@ -164,9 +177,9 @@ void TutorialTest::testAddStep() {
     tutorial.addStep(step1);
 
     QCOMPARE(step1->parent(), &tutorial);
-    QCOMPARE(tutorial.mSteps.size(), 1);
-    QCOMPARE(tutorial.mSteps.value("record"), step1);
-    QCOMPARE(tutorial.mCurrentStep, (Step*)0);
+    QCOMPARE(tutorial.d->mSteps.size(), 1);
+    QCOMPARE(tutorial.d->mSteps.value("record"), step1);
+    QCOMPARE(tutorial.d->mCurrentStep, (Step*)0);
 }
 
 void TutorialTest::testAddStepSeveralSteps() {
@@ -184,11 +197,11 @@ void TutorialTest::testAddStepSeveralSteps() {
     QCOMPARE(step1->parent(), &tutorial);
     QCOMPARE(step2->parent(), &tutorial);
     QCOMPARE(step3->parent(), &tutorial);
-    QCOMPARE(tutorial.mSteps.size(), 3);
-    QCOMPARE(tutorial.mSteps.value("record"), step1);
-    QCOMPARE(tutorial.mSteps.value("roll"), step2);
-    QCOMPARE(tutorial.mSteps.value("send"), step3);
-    QCOMPARE(tutorial.mCurrentStep, (Step*)0);
+    QCOMPARE(tutorial.d->mSteps.size(), 3);
+    QCOMPARE(tutorial.d->mSteps.value("record"), step1);
+    QCOMPARE(tutorial.d->mSteps.value("roll"), step2);
+    QCOMPARE(tutorial.d->mSteps.value("send"), step3);
+    QCOMPARE(tutorial.d->mCurrentStep, (Step*)0);
 }
 
 void TutorialTest::testAddStepTwice() {
@@ -208,11 +221,11 @@ void TutorialTest::testAddStepTwice() {
     QCOMPARE(step1->parent(), &tutorial);
     QCOMPARE(step2->parent(), &tutorial);
     QCOMPARE(step3->parent(), &tutorial);
-    QCOMPARE(tutorial.mSteps.size(), 3);
-    QCOMPARE(tutorial.mSteps.value("record"), step1);
-    QCOMPARE(tutorial.mSteps.value("roll"), step2);
-    QCOMPARE(tutorial.mSteps.value("send"), step3);
-    QCOMPARE(tutorial.mCurrentStep, (Step*)0);
+    QCOMPARE(tutorial.d->mSteps.size(), 3);
+    QCOMPARE(tutorial.d->mSteps.value("record"), step1);
+    QCOMPARE(tutorial.d->mSteps.value("roll"), step2);
+    QCOMPARE(tutorial.d->mSteps.value("send"), step3);
+    QCOMPARE(tutorial.d->mCurrentStep, (Step*)0);
 }
 
 void TutorialTest::testAddStepDifferentStepWithSameId() {
@@ -235,11 +248,11 @@ void TutorialTest::testAddStepDifferentStepWithSameId() {
     QCOMPARE(step1->parent(), &tutorial);
     QCOMPARE(step2->parent(), &tutorial);
     QCOMPARE(step3->parent(), &tutorial);
-    QCOMPARE(tutorial.mSteps.size(), 3);
-    QCOMPARE(tutorial.mSteps.value("record"), step1);
-    QCOMPARE(tutorial.mSteps.value("roll"), step2);
-    QCOMPARE(tutorial.mSteps.value("send"), step3);
-    QCOMPARE(tutorial.mCurrentStep, (Step*)0);
+    QCOMPARE(tutorial.d->mSteps.size(), 3);
+    QCOMPARE(tutorial.d->mSteps.value("record"), step1);
+    QCOMPARE(tutorial.d->mSteps.value("roll"), step2);
+    QCOMPARE(tutorial.d->mSteps.value("send"), step3);
+    QCOMPARE(tutorial.d->mCurrentStep, (Step*)0);
 }
 
 void TutorialTest::testStart() {
@@ -267,7 +280,7 @@ void TutorialTest::testStart() {
     QVariant argument = stepActivatedSpy.at(0).at(0);
     QCOMPARE(argument.userType(), stepStarType);
     QCOMPARE(qvariant_cast<Step*>(argument), stepStart);
-    QCOMPARE(tutorial.mCurrentStep, stepStart);
+    QCOMPARE(tutorial.d->mCurrentStep, stepStart);
     QVERIFY(stepStart->isActive());
     QCOMPARE(finishedSpy.count(), 0);
     QCOMPARE(tutorial.mTearDownCount, 0);
@@ -292,7 +305,7 @@ void TutorialTest::testStartNoStartStep() {
 
     QCOMPARE(tutorial.mSetupCount, 1);
     QCOMPARE(stepActivatedSpy.count(), 0);
-    QCOMPARE(tutorial.mCurrentStep, (Step*)0);
+    QCOMPARE(tutorial.d->mCurrentStep, (Step*)0);
     QCOMPARE(finishedSpy.count(), 1);
     QVariant argument = finishedSpy.at(0).at(0);
     QCOMPARE(argument.userType(), tutorialStarType);
@@ -328,7 +341,7 @@ void TutorialTest::testNextStepId() {
     QVariant argument = stepActivatedSpy.at(0).at(0);
     QCOMPARE(argument.userType(), stepStarType);
     QCOMPARE(qvariant_cast<Step*>(argument), step1);
-    QCOMPARE(tutorial.mCurrentStep, step1);
+    QCOMPARE(tutorial.d->mCurrentStep, step1);
     QVERIFY(!stepStart->isActive());
     QVERIFY(step1->isActive());
 }
@@ -361,7 +374,7 @@ void TutorialTest::testNextStepIdRequestedFromStep() {
     QVariant argument = stepActivatedSpy.at(0).at(0);
     QCOMPARE(argument.userType(), stepStarType);
     QCOMPARE(qvariant_cast<Step*>(argument), step1);
-    QCOMPARE(tutorial.mCurrentStep, step1);
+    QCOMPARE(tutorial.d->mCurrentStep, step1);
     QVERIFY(!stepStart->isActive());
     QVERIFY(step1->isActive());
 }
@@ -388,7 +401,7 @@ void TutorialTest::testNextStepIdWithInvalidId() {
     tutorial.nextStep("idNotAdded");
 
     QCOMPARE(stepActivatedSpy.count(), 0);
-    QCOMPARE(tutorial.mCurrentStep, step1);
+    QCOMPARE(tutorial.d->mCurrentStep, step1);
     QVERIFY(!stepStart->isActive());
     QVERIFY(step1->isActive());
 }
@@ -421,7 +434,7 @@ void TutorialTest::testNextStepStep() {
     QVariant argument = stepActivatedSpy.at(0).at(0);
     QCOMPARE(argument.userType(), stepStarType);
     QCOMPARE(qvariant_cast<Step*>(argument), step1);
-    QCOMPARE(tutorial.mCurrentStep, step1);
+    QCOMPARE(tutorial.d->mCurrentStep, step1);
     QVERIFY(!stepStart->isActive());
     QVERIFY(step1->isActive());
 }
@@ -449,7 +462,7 @@ void TutorialTest::testNextStepStepWithInvalidStep() {
     tutorial.nextStep(&stepNotAdded);
 
     QCOMPARE(stepActivatedSpy.count(), 0);
-    QCOMPARE(tutorial.mCurrentStep, step1);
+    QCOMPARE(tutorial.d->mCurrentStep, step1);
     QVERIFY(!stepStart->isActive());
     QVERIFY(step1->isActive());
 }
@@ -496,7 +509,7 @@ void TutorialTest::testNextStepFromStepSetup() {
     argument = stepActivatedSpy.at(1).at(0);
     QCOMPARE(argument.userType(), stepStarType);
     QCOMPARE(qvariant_cast<Step*>(argument), step2);
-    QCOMPARE(tutorial.mCurrentStep, step2);
+    QCOMPARE(tutorial.d->mCurrentStep, step2);
     QVERIFY(!stepStart->isActive());
     QVERIFY(!step1->isActive());
     QVERIFY(step2->isActive());
@@ -515,7 +528,7 @@ void TutorialTest::testFinish() {
     tutorial.start();
     tutorial.finish();
 
-    QCOMPARE(tutorial.mCurrentStep, (Step*)0);
+    QCOMPARE(tutorial.d->mCurrentStep, (Step*)0);
     QVERIFY(!stepStart->isActive());
     QCOMPARE(finishedSpy.count(), 1);
     QVariant argument = finishedSpy.at(0).at(0);

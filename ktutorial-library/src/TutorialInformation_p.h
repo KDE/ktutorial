@@ -1,6 +1,4 @@
 /***************************************************************************
- *   Copyright (C) 2008 by Daniel Calviño Sánchez <danxuliu@gmail.com>     *
- *   Copyright (C) 2010 by Daniel Calviño Sánchez <danxuliu@gmail.com>     *
  *   Copyright (C) 2012 by Daniel Calviño Sánchez <danxuliu@gmail.com>     *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -17,24 +15,31 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include "Option.h"
-#include "Option_p.h"
+#ifndef KTUTORIAL_TUTORIALINFORMATION_P_H
+#define KTUTORIAL_TUTORIALINFORMATION_P_H
 
 namespace ktutorial {
 
-//public:
+class TutorialInformationPrivate {
+public:
 
-Option::Option(const QString& name): QObject(),
-    d(new OptionPrivate()) {
-    d->mName = name;
+    /**
+     * The unique, unstranslated identifier of the Tutorial.
+     */
+    QString mId;
+
+    /**
+     * The human readable and localized name of the Tutorial.
+     */
+    QString mName;
+
+    /**
+     * The description of the Tutorial.
+     */
+    QString mDescription;
+
+};
+
 }
 
-Option::~Option() {
-    delete d;
-}
-
-QString Option::name() const {
-    return d->mName;
-}
-
-}
+#endif

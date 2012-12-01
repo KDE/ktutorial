@@ -28,6 +28,8 @@
 #undef private
 #undef protected
 
+#include "Step_p.h"
+
 #include "Option.h"
 #include "WaitForSignal.h"
 
@@ -350,8 +352,8 @@ void StepTest::testAddOptionDuringSetup() {
     step.setActive(false);
 
     QCOMPARE(step.options().count(), 0);
-    QCOMPARE(step.mWaitsForToBeDeletedInTearDown.count(), 0);
-    QCOMPARE(step.mOptionsToBeDeletedInTearDown.count(), 0);
+    QCOMPARE(step.d->mWaitsForToBeDeletedInTearDown.count(), 0);
+    QCOMPARE(step.d->mOptionsToBeDeletedInTearDown.count(), 0);
     QCOMPARE(destroyedSpy.count(), 1);
 }
 
@@ -379,8 +381,8 @@ void StepTest::testAddOptionNormalAndDuringSetup() {
 
     QCOMPARE(step.options().count(), 1);
     QVERIFY(step.options().contains(option1));
-    QCOMPARE(step.mWaitsForToBeDeletedInTearDown.count(), 0);
-    QCOMPARE(step.mOptionsToBeDeletedInTearDown.count(), 0);
+    QCOMPARE(step.d->mWaitsForToBeDeletedInTearDown.count(), 0);
+    QCOMPARE(step.d->mOptionsToBeDeletedInTearDown.count(), 0);
     QCOMPARE(destroyedSpy.count(), 1);
 }
 
@@ -462,8 +464,8 @@ void StepTest::testAddWaitFor() {
     step.addWaitFor(waitFor1, this, SLOT(dummySlot()));
 
     QCOMPARE(waitFor1->parent(), &step);
-    QCOMPARE(step.mWaitsFor.count(), 1);
-    QVERIFY(step.mWaitsFor.contains(waitFor1));
+    QCOMPARE(step.d->mWaitsFor.count(), 1);
+    QVERIFY(step.d->mWaitsFor.contains(waitFor1));
     QCOMPARE(mDummySlotCallCount, 0);
 
     emit dummySignal();
@@ -482,8 +484,8 @@ void StepTest::testAddWaitForWithoutSlotMacro() {
     step.addWaitFor(waitFor1, this, "dummySlot()");
 
     QCOMPARE(waitFor1->parent(), &step);
-    QCOMPARE(step.mWaitsFor.count(), 1);
-    QVERIFY(step.mWaitsFor.contains(waitFor1));
+    QCOMPARE(step.d->mWaitsFor.count(), 1);
+    QVERIFY(step.d->mWaitsFor.contains(waitFor1));
     QCOMPARE(mDummySlotCallCount, 0);
 
     emit dummySignal();
@@ -504,8 +506,8 @@ void StepTest::testAddWaitForAssociatedToStepId() {
     QSignalSpy nextStepRequestedSpy(&step, SIGNAL(nextStepRequested(QString)));
 
     QCOMPARE(waitFor1->parent(), &step);
-    QCOMPARE(step.mWaitsFor.count(), 1);
-    QVERIFY(step.mWaitsFor.contains(waitFor1));
+    QCOMPARE(step.d->mWaitsFor.count(), 1);
+    QVERIFY(step.d->mWaitsFor.contains(waitFor1));
     QCOMPARE(nextStepRequestedSpy.count(), 0);
 
     emit dummySignal();
@@ -538,11 +540,11 @@ void StepTest::testAddWaitForSeveralWaitFors() {
     QCOMPARE(waitFor2->parent(), &step);
     QCOMPARE(waitFor3->parent(), &step);
     QCOMPARE(waitFor4->parent(), &step);
-    QCOMPARE(step.mWaitsFor.count(), 4);
-    QVERIFY(step.mWaitsFor.contains(waitFor1));
-    QVERIFY(step.mWaitsFor.contains(waitFor2));
-    QVERIFY(step.mWaitsFor.contains(waitFor3));
-    QVERIFY(step.mWaitsFor.contains(waitFor4));
+    QCOMPARE(step.d->mWaitsFor.count(), 4);
+    QVERIFY(step.d->mWaitsFor.contains(waitFor1));
+    QVERIFY(step.d->mWaitsFor.contains(waitFor2));
+    QVERIFY(step.d->mWaitsFor.contains(waitFor3));
+    QVERIFY(step.d->mWaitsFor.contains(waitFor4));
     QCOMPARE(mDummySlotCallCount, 0);
     QCOMPARE(nextStepRequestedSpy.count(), 0);
 
@@ -579,8 +581,8 @@ void StepTest::testAddWaitForDuringSetup() {
     step.setActive(true);
 
     QCOMPARE(step.mWaitFor->parent(), &step);
-    QCOMPARE(step.mWaitsFor.count(), 1);
-    QVERIFY(step.mWaitsFor.contains(step.mWaitFor));
+    QCOMPARE(step.d->mWaitsFor.count(), 1);
+    QVERIFY(step.d->mWaitsFor.contains(step.mWaitFor));
     QCOMPARE(mDummySlotCallCount, 0);
 
     emit dummySignal();
@@ -590,9 +592,9 @@ void StepTest::testAddWaitForDuringSetup() {
 
     step.setActive(false);
 
-    QCOMPARE(step.mWaitsFor.count(), 0);
-    QCOMPARE(step.mWaitsForToBeDeletedInTearDown.count(), 0);
-    QCOMPARE(step.mOptionsToBeDeletedInTearDown.count(), 0);
+    QCOMPARE(step.d->mWaitsFor.count(), 0);
+    QCOMPARE(step.d->mWaitsForToBeDeletedInTearDown.count(), 0);
+    QCOMPARE(step.d->mOptionsToBeDeletedInTearDown.count(), 0);
     QCOMPARE(destroyedSpy.count(), 1);
 }
 
@@ -615,10 +617,10 @@ void StepTest::testAddWaitForNormalAndDuringSetup() {
 
     step.setActive(false);
 
-    QCOMPARE(step.mWaitsFor.count(), 1);
-    QVERIFY(step.mWaitsFor.contains(waitFor1));
-    QCOMPARE(step.mWaitsForToBeDeletedInTearDown.count(), 0);
-    QCOMPARE(step.mOptionsToBeDeletedInTearDown.count(), 0);
+    QCOMPARE(step.d->mWaitsFor.count(), 1);
+    QVERIFY(step.d->mWaitsFor.contains(waitFor1));
+    QCOMPARE(step.d->mWaitsForToBeDeletedInTearDown.count(), 0);
+    QCOMPARE(step.d->mOptionsToBeDeletedInTearDown.count(), 0);
     QCOMPARE(destroyedSpy.count(), 1);
 }
 
@@ -636,9 +638,9 @@ void StepTest::testAddWaitForTwice() {
 
     QCOMPARE(waitFor1->parent(), &step);
     QCOMPARE(waitFor2->parent(), &step);
-    QCOMPARE(step.mWaitsFor.count(), 2);
-    QVERIFY(step.mWaitsFor.contains(waitFor1));
-    QVERIFY(step.mWaitsFor.contains(waitFor2));
+    QCOMPARE(step.d->mWaitsFor.count(), 2);
+    QVERIFY(step.d->mWaitsFor.contains(waitFor1));
+    QVERIFY(step.d->mWaitsFor.contains(waitFor2));
 
     step.setActive(true);
     emit dummySignal();
@@ -806,9 +808,9 @@ void StepTest::testRemoveWaitFor() {
 
     QCOMPARE(waitFor1->parent(), &step);
     QCOMPARE(waitFor2.parent(), (QObject*)0);
-    QCOMPARE(step.mWaitsFor.count(), 1);
-    QVERIFY(step.mWaitsFor.contains(waitFor1));
-    QVERIFY(!step.mWaitsFor.contains(&waitFor2));
+    QCOMPARE(step.d->mWaitsFor.count(), 1);
+    QVERIFY(step.d->mWaitsFor.contains(waitFor1));
+    QVERIFY(!step.d->mWaitsFor.contains(&waitFor2));
     QVERIFY(waitFor1->isActive());
     QVERIFY(!waitFor2.isActive());
     QCOMPARE(mDummySlotCallCount, 0);
@@ -840,9 +842,9 @@ void StepTest::testRemoveWaitForAssociatedToStepId() {
 
     QCOMPARE(waitFor1->parent(), &step);
     QCOMPARE(waitFor2.parent(), (QObject*)0);
-    QCOMPARE(step.mWaitsFor.count(), 1);
-    QVERIFY(step.mWaitsFor.contains(waitFor1));
-    QVERIFY(!step.mWaitsFor.contains(&waitFor2));
+    QCOMPARE(step.d->mWaitsFor.count(), 1);
+    QVERIFY(step.d->mWaitsFor.contains(waitFor1));
+    QVERIFY(!step.d->mWaitsFor.contains(&waitFor2));
     QVERIFY(waitFor1->isActive());
     QVERIFY(!waitFor2.isActive());
     QCOMPARE(nextStepRequestedSpy.count(), 0);
@@ -882,11 +884,11 @@ void StepTest::testRemoveWaitForSeveralWaitFors() {
     QCOMPARE(waitFor2.parent(), &step);
     QCOMPARE(waitFor3.parent(), (QObject*)0);
     QCOMPARE(waitFor4.parent(), &step);
-    QCOMPARE(step.mWaitsFor.count(), 2);
-    QVERIFY(step.mWaitsFor.contains(&waitFor2));
-    QVERIFY(step.mWaitsFor.contains(&waitFor4));
-    QVERIFY(!step.mWaitsFor.contains(&waitFor1));
-    QVERIFY(!step.mWaitsFor.contains(&waitFor3));
+    QCOMPARE(step.d->mWaitsFor.count(), 2);
+    QVERIFY(step.d->mWaitsFor.contains(&waitFor2));
+    QVERIFY(step.d->mWaitsFor.contains(&waitFor4));
+    QVERIFY(!step.d->mWaitsFor.contains(&waitFor1));
+    QVERIFY(!step.d->mWaitsFor.contains(&waitFor3));
     QVERIFY(!waitFor1.isActive());
     QVERIFY(waitFor2.isActive());
     QVERIFY(!waitFor3.isActive());
@@ -910,9 +912,9 @@ void StepTest::testRemoveWaitForSeveralWaitFors() {
     step.removeWaitFor(&waitFor2);
 
     QCOMPARE(waitFor2.parent(), (QObject*)0);
-    QCOMPARE(step.mWaitsFor.count(), 1);
-    QVERIFY(step.mWaitsFor.contains(&waitFor4));
-    QVERIFY(!step.mWaitsFor.contains(&waitFor2));
+    QCOMPARE(step.d->mWaitsFor.count(), 1);
+    QVERIFY(step.d->mWaitsFor.contains(&waitFor4));
+    QVERIFY(!step.d->mWaitsFor.contains(&waitFor2));
     QVERIFY(!waitFor2.isActive());
 
     waitFor2.setActive(true);
@@ -922,8 +924,8 @@ void StepTest::testRemoveWaitForSeveralWaitFors() {
     step.removeWaitFor(&waitFor4);
 
     QCOMPARE(waitFor4.parent(), (QObject*)0);
-    QCOMPARE(step.mWaitsFor.count(), 0);
-    QVERIFY(!step.mWaitsFor.contains(&waitFor4));
+    QCOMPARE(step.d->mWaitsFor.count(), 0);
+    QVERIFY(!step.d->mWaitsFor.contains(&waitFor4));
     QVERIFY(!waitFor4.isActive());
 
     waitFor4.setActive(true);

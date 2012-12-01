@@ -42,6 +42,11 @@ public:
     explicit ObjectFinder(QObject* parent = 0);
 
     /**
+     * Destroys this ObjectFinder.
+     */
+    virtual ~ObjectFinder();
+
+    /**
      * Returns the object with the specified name, if any.
      * Objects are searched in the children of the given base object.
      * 
@@ -70,6 +75,8 @@ public:
     }
 
 private:
+
+    class ObjectFinderPrivate* d;
 
     /**
      * Adds to the foundObjects list the objects with the specified name that

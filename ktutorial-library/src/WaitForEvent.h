@@ -74,6 +74,11 @@ public:
     WaitForEvent(QObject* object, QEvent::Type type);
 
     /**
+     * Destroys this WaitForEvent.
+     */
+    virtual ~WaitForEvent();
+
+    /**
      * Sets the event to wait for.
      * Note that the QEvent::Type has to be passed as a string. For example, to
      * wait for a QEvent::Close you have to pass "Close" as the second
@@ -137,20 +142,7 @@ protected:
 
 private:
 
-    /**
-     * The watched object.
-     */
-    QObject* mObject;
-
-    /**
-     * The type of event expected.
-     */
-    QEvent::Type mEventType;
-
-    /**
-     * Whether the event was received when active or not.
-     */
-    bool mConditionMet;
+    class WaitForEventPrivate* d;
 
 };
 

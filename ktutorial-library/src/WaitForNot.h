@@ -81,6 +81,11 @@ public:
     explicit WaitForNot(WaitFor* waitFor);
 
     /**
+     * Destroys this WaitForNot.
+     */
+    virtual ~WaitForNot();
+
+    /**
      * Sets the WaitFor to be negated.
      * The WaitFor is reparented to this WaitForNot, and thus deleted when this
      * WaitForNot is deleted.
@@ -111,9 +116,15 @@ public:
 protected:
 
     /**
-     * The WaitFor to check if its condition isn't met.
+     * Returns the WaitFor to check if its condition isn't met.
+     *
+     * @return The WaitFor to check if its condition isn't met.
      */
-    WaitFor* mWaitFor;
+    WaitFor* waitFor() const;
+
+private:
+
+    class WaitForNotPrivate* d;
 
 };
 

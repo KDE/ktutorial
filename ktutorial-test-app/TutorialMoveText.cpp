@@ -62,9 +62,10 @@ protected:
 //public:
 
 TutorialMoveText::TutorialMoveText(): Tutorial(0) {
-    mTutorialInformation = new TutorialInformation("moveText");
-    mTutorialInformation->setName(i18nc("@info/plain", "Move text in the text area"));
-    mTutorialInformation->setDescription(i18nc("@info/plain", "This tutorial shows how to move text in the text area"));
+    TutorialInformation* tutorialInformation = new TutorialInformation("moveText");
+    tutorialInformation->setName(i18nc("@info/plain", "Move text in the text area"));
+    tutorialInformation->setDescription(i18nc("@info/plain", "This tutorial shows how to move text in the text area"));
+    setTutorialInformation(tutorialInformation);
 
     mTextArea = KTutorial::self()->findObject<KTextEdit*>("textArea");
 

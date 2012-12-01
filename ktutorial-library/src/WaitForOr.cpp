@@ -18,16 +18,22 @@
  ***************************************************************************/
 
 #include "WaitForOr.h"
+#include "WaitForOr_p.h"
 
 namespace ktutorial {
 
 //public:
 
-WaitForOr::WaitForOr(): WaitForComposed() {
+WaitForOr::WaitForOr(): WaitForComposed(),
+    d(new WaitForOrPrivate()) {
+}
+
+WaitForOr::~WaitForOr() {
+    delete d;
 }
 
 bool WaitForOr::conditionMet() const {
-    QListIterator<WaitFor*> it(mWaitFors);
+    QListIterator<WaitFor*> it(waitFors());
     while (it.hasNext()) {
         if (it.next()->conditionMet()) {
             return true;

@@ -34,6 +34,8 @@
 #undef private
 #undef protected
 
+#include "../Tutorial_p.h"
+
 #include "EventSpy.h"
 #include "ObjectRegister.h"
 #include "../ObjectFinder.h"
@@ -209,8 +211,8 @@ void EditorSupportAdaptorTest::testTestScriptedTutorialWithStepId() {
     QVariant argument = startedSpy.at(0).at(0);
 
     Tutorial* tutorial = qvariant_cast<Tutorial*>(argument);
-    QVERIFY(tutorial->mCurrentStep);
-    QCOMPARE(tutorial->mCurrentStep->id(), QString("third step"));
+    QVERIFY(tutorial->d->mCurrentStep);
+    QCOMPARE(tutorial->d->mCurrentStep->id(), QString("third step"));
 }
 
 }

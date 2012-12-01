@@ -179,10 +179,12 @@ Q_SIGNALS:
 protected:
 
     /**
-     * The information about this Tutorial.
-     * Remember to initialize it if you derive from Tutorial class.
+     * Sets the information about this Tutorial.
+     * Remember to set it if you derive from Tutorial class.
+     *
+     * @param tutorialInformation The TutorialInformation to set.
      */
-    TutorialInformation* mTutorialInformation;
+    void setTutorialInformation(TutorialInformation* tutorialInformation);
 
     /**
      * Sets up the Tutorial before activating start Step.
@@ -200,20 +202,7 @@ protected:
 
 private:
 
-    /**
-     * All the added Steps, indexed by their identifier.
-     */
-    QMap<QString, Step*> mSteps;
-
-    /**
-     * The step currently active, if any.
-     */
-    Step* mCurrentStep;
-
-    /**
-     * The steps to change to that were not activated yet.
-     */
-    QList<Step*> mQueuedSteps;
+    class TutorialPrivate* d;
 
     /**
      * Activates the given step.

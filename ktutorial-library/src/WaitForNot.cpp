@@ -19,31 +19,44 @@
  ***************************************************************************/
 
 #include "WaitForNot.h"
+#include "WaitForNot_p.h"
 
 namespace ktutorial {
 
 //public:
 
 WaitForNot::WaitForNot(): WaitFor(),
-    mWaitFor(0) {
+    d(new WaitForNotPrivate()) {
+    d->mWaitFor = 0;
 }
 
-WaitForNot::WaitForNot(WaitFor* waitFor): WaitFor() {
+WaitForNot::WaitForNot(WaitFor* waitFor): WaitFor(),
+    d(new WaitForNotPrivate()) {
     setNegatedWaitFor(waitFor);
 }
 
+WaitForNot::~WaitForNot() {
+    delete d;
+}
+
 void WaitForNot::setNegatedWaitFor(WaitFor* waitFor) {
-    mWaitFor = waitFor;
-    mWaitFor->setParent(this);
+    d->mWaitFor = waitFor;
+    d->mWaitFor->setParent(this);
 }
 
 bool WaitForNot::conditionMet() const {
-    return !mWaitFor->conditionMet();
+    return !d->mWaitFor->conditionMet();
 }
 
 void WaitForNot::setActive(bool active) {
     WaitFor::setActive(active);
-    mWaitFor->setActive(active);
+    d->mWaitFor->setActive(active);
+}
+
+//protected:
+
+WaitFor* WaitForNot::waitFor() const {
+    return d->mWaitFor;
 }
 
 }

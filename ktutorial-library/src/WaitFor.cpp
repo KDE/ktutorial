@@ -18,23 +18,29 @@
  ***************************************************************************/
 
 #include "WaitFor.h"
+#include "WaitFor_p.h"
 
 namespace ktutorial {
     
 //public:
 
+WaitFor::~WaitFor() {
+    delete d;
+}
+
 bool WaitFor::isActive() const {
-    return mActive;
+    return d->mActive;
 }
 
 void WaitFor::setActive(bool active) {
-    mActive = active;
+    d->mActive = active;
 }
 
 //protected:
 
 WaitFor::WaitFor(): QObject(),
-    mActive(false) {
+    d(new WaitForPrivate()) {
+    d->mActive = false;
 }
 
 }

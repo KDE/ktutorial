@@ -17,6 +17,7 @@
  ***************************************************************************/
 
 #include "WaitForEvent.h"
+#include "WaitForEvent_p.h"
 
 #include <QMetaEnum>
 
@@ -31,15 +32,17 @@ namespace ktutorial {
 //public:
 
 WaitForEvent::WaitForEvent():
-    mObject(0),
-    mEventType(QEvent::None),
-    mConditionMet(false) {
+    d(new WaitForEventPrivate()) {
+    d->mObject = 0;
+    d->mEventType = QEvent::None;
+    d->mConditionMet = false;
 }
 
 WaitForEvent::WaitForEvent(QObject* object, QEvent::Type type):
-    mObject(object),
-    mEventType(type),
-    mConditionMet(false) {
+    d(new WaitForEventPrivate()) {
+    d->mObject = object;
+    d->mEventType = type;
+    d->mConditionMet = false;
 
     if (!object) {
         kWarning(debugArea()) << "The object that receives the event to wait"
@@ -48,6 +51,10 @@ WaitForEvent::WaitForEvent(QObject* object, QEvent::Type type):
     }
 
     object->installEventFilter(this);
+}
+
+WaitForEvent::~WaitForEvent() {
+    delete d;
 }
 
 void WaitForEvent::setEvent(QObject* object, const QString& typeName) {
@@ -67,10 +74,10 @@ void WaitForEvent::setEvent(QObject* object, const QString& typeName) {
         return;
     }
 
-    mObject = object;
-    mEventType = static_cast<QEvent::Type>(eventTypeValue);
+    d->mObject = object;
+    d->mEventType = static_cast<QEvent::Type>(eventTypeValue);
 
-    mObject->installEventFilter(this);
+    d->mObject->installEventFilter(this);
 }
 
 bool WaitForEvent::eventFilter(QObject* object, QEvent* event) {
@@ -78,7 +85,7 @@ bool WaitForEvent::eventFilter(QObject* object, QEvent* event) {
         return false;
     }
 
-    if (object == mObject && event->type() == mEventType) {
+    if (object == d->mObject && event->type() == d->mEventType) {
         handleEvent(event);
     }
 
@@ -86,14 +93,14 @@ bool WaitForEvent::eventFilter(QObject* object, QEvent* event) {
 }
 
 bool WaitForEvent::conditionMet() const {
-    return mConditionMet;
+    return d->mConditionMet;
 }
 
 void WaitForEvent::setActive(bool active) {
     WaitFor::setActive(active);
 
     if (active) {
-        mConditionMet = false;
+        d->mConditionMet = false;
     }
 }
 
@@ -102,7 +109,7 @@ void WaitForEvent::setActive(bool active) {
 void WaitForEvent::handleEvent(QEvent* event) {
     Q_UNUSED(event);
 
-    mConditionMet = true;
+    d->mConditionMet = true;
     emit waitEnded(this);
 }
 

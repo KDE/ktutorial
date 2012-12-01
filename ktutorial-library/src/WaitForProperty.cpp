@@ -17,6 +17,7 @@
  ***************************************************************************/
 
 #include "WaitForProperty.h"
+#include "WaitForProperty_p.h"
 
 #include <QMetaProperty>
 
@@ -30,40 +31,46 @@ namespace ktutorial {
 
 //public:
 
-WaitForProperty::WaitForProperty(): WaitFor() {
+WaitForProperty::WaitForProperty(): WaitFor(),
+    d(new WaitForPropertyPrivate()) {
 }
 
 WaitForProperty::WaitForProperty(QObject* object, const QString& propertyName,
-                                 const QVariant& value): WaitFor() {
+                                 const QVariant& value): WaitFor(),
+    d(new WaitForPropertyPrivate()) {
     setProperty(object, propertyName, value);
+}
+
+WaitForProperty::~WaitForProperty() {
+    delete d;
 }
 
 void WaitForProperty::setProperty(QObject* object, const QString& propertyName,
                                   const QVariant& value) {
-    mObject = object;
-    mPropertyName = propertyName;
-    mValue = value;
+    d->mObject = object;
+    d->mPropertyName = propertyName;
+    d->mValue = value;
 
-    if (!mObject) {
+    if (!d->mObject) {
         kWarning(debugArea()) << "The object that contains the property"
-                              << mPropertyName << "to wait for is null!";
+                              << d->mPropertyName << "to wait for is null!";
         return;
     }
 
-    const QMetaObject* metaObject = mObject->metaObject();
-    int propertyIndex = metaObject->indexOfProperty(mPropertyName.toUtf8());
+    const QMetaObject* metaObject = d->mObject->metaObject();
+    int propertyIndex = metaObject->indexOfProperty(d->mPropertyName.toUtf8());
 
     if (propertyIndex == -1) {
         kWarning(debugArea()) << "The class" << metaObject->className()
                               << "does not contain a property named"
-                              << mPropertyName << "!";
+                              << d->mPropertyName << "!";
         return;
     }
 
     QMetaProperty metaProperty = metaObject->property(propertyIndex);
 
     if (!metaProperty.hasNotifySignal()) {
-        kWarning(debugArea()) << "The property" << mPropertyName << "in the"
+        kWarning(debugArea()) << "The property" << d->mPropertyName << "in the"
                               << "class" << metaObject->className()
                               << "does not have a notification signal!";
         return;
@@ -83,11 +90,11 @@ void WaitForProperty::setPropertyToWaitFor(QObject* object,
 }
 
 bool WaitForProperty::conditionMet() const {
-    if (!mObject) {
+    if (!d->mObject) {
         return false;
     }
 
-    if (mObject->property(mPropertyName.toUtf8()) != mValue) {
+    if (d->mObject->property(d->mPropertyName.toUtf8()) != d->mValue) {
         return false;
     }
 

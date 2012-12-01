@@ -26,6 +26,8 @@
 #undef private
 #undef protected
 
+#include "TutorialManager_p.h"
+
 #include "Step.h"
 #include "Tutorial.h"
 #include "TutorialInformation.h"
@@ -102,11 +104,12 @@ void TutorialManagerTest::testRegisterTutorial() {
     QCOMPARE(mTutorialManager->tutorialInformations().size(), 1);
     QVERIFY(mTutorialManager->tutorialInformations().contains(
                                                         mTutorialInformation1));
-    QCOMPARE(mTutorialManager->mTutorials.size(), 1);
-    QCOMPARE(mTutorialManager->mTutorials.value(mTutorialInformation1), 
+    QCOMPARE(mTutorialManager->d->mTutorials.size(), 1);
+    QCOMPARE(mTutorialManager->d->mTutorials.value(mTutorialInformation1), 
              mTutorial1);
-    QCOMPARE(mTutorialManager->mTutorialInformations.size(), 1);
-    QCOMPARE(mTutorialManager->mTutorialInformations.value("firstIdentifier"),
+    QCOMPARE(mTutorialManager->d->mTutorialInformations.size(), 1);
+    QCOMPARE(mTutorialManager->d->mTutorialInformations.value(
+                                                            "firstIdentifier"),
              mTutorialInformation1);
 }
 
@@ -120,15 +123,17 @@ void TutorialManagerTest::testRegisterTutorialSeveralTutorials() {
                                                         mTutorialInformation1));
     QVERIFY(mTutorialManager->tutorialInformations().contains(
                                                         mTutorialInformation2));
-    QCOMPARE(mTutorialManager->mTutorials.size(), 2);
-    QCOMPARE(mTutorialManager->mTutorials.value(mTutorialInformation1), 
+    QCOMPARE(mTutorialManager->d->mTutorials.size(), 2);
+    QCOMPARE(mTutorialManager->d->mTutorials.value(mTutorialInformation1), 
              mTutorial1);
-    QCOMPARE(mTutorialManager->mTutorials.value(mTutorialInformation2), 
+    QCOMPARE(mTutorialManager->d->mTutorials.value(mTutorialInformation2), 
              mTutorial2);
-    QCOMPARE(mTutorialManager->mTutorialInformations.size(), 2);
-    QCOMPARE(mTutorialManager->mTutorialInformations.value("firstIdentifier"),
+    QCOMPARE(mTutorialManager->d->mTutorialInformations.size(), 2);
+    QCOMPARE(mTutorialManager->d->mTutorialInformations.value(
+                                                            "firstIdentifier"),
              mTutorialInformation1);
-    QCOMPARE(mTutorialManager->mTutorialInformations.value("secondIdentifier"),
+    QCOMPARE(mTutorialManager->d->mTutorialInformations.value(
+                                                            "secondIdentifier"),
              mTutorialInformation2);
 }
 
@@ -143,15 +148,17 @@ void TutorialManagerTest::testRegisterTutorialTwice() {
                                                         mTutorialInformation1));
     QVERIFY(mTutorialManager->tutorialInformations().contains(
                                                         mTutorialInformation2));
-    QCOMPARE(mTutorialManager->mTutorials.size(), 2);
-    QCOMPARE(mTutorialManager->mTutorials.value(mTutorialInformation1), 
+    QCOMPARE(mTutorialManager->d->mTutorials.size(), 2);
+    QCOMPARE(mTutorialManager->d->mTutorials.value(mTutorialInformation1), 
              mTutorial1);
-    QCOMPARE(mTutorialManager->mTutorials.value(mTutorialInformation2),
+    QCOMPARE(mTutorialManager->d->mTutorials.value(mTutorialInformation2),
              mTutorial2);
-    QCOMPARE(mTutorialManager->mTutorialInformations.size(), 2);
-    QCOMPARE(mTutorialManager->mTutorialInformations.value("firstIdentifier"),
+    QCOMPARE(mTutorialManager->d->mTutorialInformations.size(), 2);
+    QCOMPARE(mTutorialManager->d->mTutorialInformations.value(
+                                                            "firstIdentifier"),
              mTutorialInformation1);
-    QCOMPARE(mTutorialManager->mTutorialInformations.value("secondIdentifier"),
+    QCOMPARE(mTutorialManager->d->mTutorialInformations.value(
+                                                            "secondIdentifier"),
              mTutorialInformation2);
 }
 
@@ -170,15 +177,17 @@ void TutorialManagerTest::testRegisterTutorialDifferentTutorialWithSameId() {
                                                         mTutorialInformation1));
     QVERIFY(mTutorialManager->tutorialInformations().contains(
                                                         mTutorialInformation2));
-    QCOMPARE(mTutorialManager->mTutorials.size(), 2);
-    QCOMPARE(mTutorialManager->mTutorials.value(mTutorialInformation1), 
+    QCOMPARE(mTutorialManager->d->mTutorials.size(), 2);
+    QCOMPARE(mTutorialManager->d->mTutorials.value(mTutorialInformation1), 
              mTutorial1);
-    QCOMPARE(mTutorialManager->mTutorials.value(mTutorialInformation2),
+    QCOMPARE(mTutorialManager->d->mTutorials.value(mTutorialInformation2),
              mTutorial2);
-    QCOMPARE(mTutorialManager->mTutorialInformations.size(), 2);
-    QCOMPARE(mTutorialManager->mTutorialInformations.value("firstIdentifier"),
+    QCOMPARE(mTutorialManager->d->mTutorialInformations.size(), 2);
+    QCOMPARE(mTutorialManager->d->mTutorialInformations.value(
+                                                            "firstIdentifier"),
              mTutorialInformation1);
-    QCOMPARE(mTutorialManager->mTutorialInformations.value("secondIdentifier"),
+    QCOMPARE(mTutorialManager->d->mTutorialInformations.value(
+                                                            "secondIdentifier"),
              mTutorialInformation2);
 }
 

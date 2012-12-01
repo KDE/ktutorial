@@ -32,6 +32,8 @@
 #undef private
 #undef protected
 
+#include "../Tutorial_p.h"
+
 #include "ClassRegisterAdaptor.h"
 #include "EventSpy.h"
 #include "ObjectRegister.h"
@@ -336,8 +338,8 @@ void EditorSupportTest::testTestScriptedTutorial() {
              temporaryFile.fileName());
     QCOMPARE(tutorial->tutorialInformation()->name(), QString("Test tutorial"));
 
-    QVERIFY(tutorial->mCurrentStep);
-    QCOMPARE(tutorial->mCurrentStep->id(), QString("start"));
+    QVERIFY(tutorial->d->mCurrentStep);
+    QCOMPARE(tutorial->d->mCurrentStep->id(), QString("start"));
 
     QSignalSpy destroyedSpy(tutorial, SIGNAL(destroyed()));
 
@@ -388,8 +390,8 @@ void EditorSupportTest::testTestScriptedTutorialWithStepId() {
              temporaryFile.fileName());
     QCOMPARE(tutorial->tutorialInformation()->name(), QString("Test tutorial"));
 
-    QVERIFY(tutorial->mCurrentStep);
-    QCOMPARE(tutorial->mCurrentStep->id(), QString("third step"));
+    QVERIFY(tutorial->d->mCurrentStep);
+    QCOMPARE(tutorial->d->mCurrentStep->id(), QString("third step"));
 
     QSignalSpy destroyedSpy(tutorial, SIGNAL(destroyed()));
 

@@ -49,6 +49,11 @@ public:
     explicit TutorialInformation(const QString& id);
 
     /**
+     * Destroys this TutorialInformation.
+     */
+    virtual ~TutorialInformation();
+
+    /**
      * Returns the identifier of the tutorial.
      *
      * @return The identifier of the tutorial.
@@ -87,20 +92,7 @@ public:
 
 private:
 
-    /**
-     * The unique, unstranslated identifier of the Tutorial.
-     */
-    QString mId;
-
-    /**
-     * The human readable and localized name of the Tutorial.
-     */
-    QString mName;
-
-    /**
-     * The description of the Tutorial.
-     */
-    QString mDescription;
+    class TutorialInformationPrivate* d;
 
 };
 

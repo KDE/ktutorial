@@ -1,7 +1,4 @@
 /***************************************************************************
- *   Copyright (C) 2008 by Daniel Calviño Sánchez <danxuliu@gmail.com>     *
- *   Copyright (C) 2009 by Daniel Calviño Sánchez <danxuliu@gmail.com>     *
- *   Copyright (C) 2010 by Daniel Calviño Sánchez <danxuliu@gmail.com>     *
  *   Copyright (C) 2012 by Daniel Calviño Sánchez <danxuliu@gmail.com>     *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -18,43 +15,68 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#ifndef KTUTORIAL_WAITFORAND_H
-#define KTUTORIAL_WAITFORAND_H
-
-#include "ktutorial_export.h"
-
-#include "WaitForComposed.h"
+#ifndef KTUTORIAL_STEP_P_H
+#define KTUTORIAL_STEP_P_H
 
 namespace ktutorial {
 
-/**
- * Composed WaitFor that performs an AND between its children.
- */
-class KTUTORIAL_EXPORT WaitForAnd: public WaitForComposed {
-Q_OBJECT
+class StepPrivate {
 public:
 
     /**
-     * Creates a new WaitForAnd.
+     * The identifier of this Step.
      */
-    Q_INVOKABLE WaitForAnd();
+    QString mId;
 
     /**
-     * Destroys this WaitForAnd.
+     * The text shown to the user.
      */
-    virtual ~WaitForAnd();
+    QString mText;
 
     /**
-     * Returns true if all of its children met its condition, false otherwise.
-     * If there are no children, false is returned.
-     *
-     * @return True if all of its children met its condition, false otherwise.
+     * Whether this Step is active or not
      */
-    virtual bool conditionMet() const;
+    bool mActive;
 
-private:
+    /**
+     * When this flag is on, the conditions and conditions to wait for added are
+     * removed and deleted the next time this Step is deactivated.
+     */
+    bool mDeleteAddedObjectsInTearDown;
 
-    class WaitForAndPrivate* d;
+    /**
+     * The Options for this Step.
+     */
+    QList<Option*> mOptions;
+
+    /**
+     * The Options added in the setup to be deleted in the tearDown.
+     */
+    QList<Option*> mOptionsToBeDeletedInTearDown;
+
+    /**
+     * The conditions to wait for in each Option.
+     * The order of both lists is the same, so the index in the Options list
+     * is the index of it associated WaitFor.
+     */
+    QList<WaitFor*> mOptionsWaitsFor;
+
+    /**
+     * The conditions to wait for in this Step.
+     */
+    QList<WaitFor*> mWaitsFor;
+
+    /**
+     * The conditions to wait for added in the setup to be deleted in the
+     * tearDown.
+     */
+    QList<WaitFor*> mWaitsForToBeDeletedInTearDown;
+
+    /**
+     * Associates a condition to wait for with the id of the step to execute
+     * when the condition is met.
+     */
+    QHash<WaitFor*, QString> mNextStepForWaitFor;
 
 };
 

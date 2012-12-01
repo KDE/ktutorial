@@ -17,6 +17,7 @@
  ***************************************************************************/
 
 #include "WaitForStepActivation.h"
+#include "WaitForStepActivation_p.h"
 
 #include <QEvent>
 
@@ -33,13 +34,19 @@ namespace ktutorial {
 //public:
 
 WaitForStepActivation::WaitForStepActivation(): WaitFor(),
-    mDuringStepActivation(false) {
+    d(new WaitForStepActivationPrivate()) {
+    d->mDuringStepActivation = false;
 }
 
 WaitForStepActivation::WaitForStepActivation(const Tutorial* tutorial,
                                              const Step* step): WaitFor(),
-    mDuringStepActivation(false) {
+    d(new WaitForStepActivationPrivate()) {
+    d->mDuringStepActivation = false;
     setStep(tutorial, step);
+}
+
+WaitForStepActivation::~WaitForStepActivation() {
+    delete d;
 }
 
 void WaitForStepActivation::setStep(const Tutorial* tutorial,
@@ -60,7 +67,7 @@ void WaitForStepActivation::setStep(const Tutorial* tutorial,
 }
 
 bool WaitForStepActivation::conditionMet() const {
-    return mDuringStepActivation;
+    return d->mDuringStepActivation;
 }
 
 //private slots:
@@ -72,9 +79,9 @@ void WaitForStepActivation::checkStepActivatedToEndTheWait(Step* step) {
         return;
     }
 
-    mDuringStepActivation = true;
+    d->mDuringStepActivation = true;
     emit waitEnded(this);
-    mDuringStepActivation = false;
+    d->mDuringStepActivation = false;
 }
 
 }

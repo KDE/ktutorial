@@ -86,6 +86,11 @@ public:
     static KTutorial* self();
 
     /**
+     * Destroys this KTutorial.
+     */
+    virtual ~KTutorial();
+
+    /**
      * Registers a WaitFor type to create instances of it in scripted tutorials.
      * Any WaitFor class has to be registered before calling
      * setup(KXmlGuiWindow*).
@@ -191,7 +196,7 @@ public:
      */
     template <typename T>
     T findObject(const QString& name) const {
-        return mObjectFinder->findObject<T>(name, mainApplicationWindow());
+        return objectFinder()->findObject<T>(name, mainApplicationWindow());
     }
 
 private:
@@ -201,31 +206,20 @@ private:
      */
     static KTutorial* sSelf;
 
-    /**
-     * The manager for the tutorials.
-     */
-    TutorialManager* mTutorialmanager;
-
-    /**
-     * The helper used to find objects.
-     */
-    ObjectFinder* mObjectFinder;
-
-    /**
-     * The KTutorialCustomization used.
-     */
-    KTutorialCustomization* mCustomization;
+    class KTutorialPrivate* d;
 
     /**
      * Creates a new KTutorial.
      * Private to avoid classes other than self to create instances.
      */
-    KTutorial():
-        mTutorialmanager(new TutorialManager()) {
-        mTutorialmanager->setParent(this);
-        mObjectFinder = new ObjectFinder(this);
-        mCustomization = 0;
-    }
+    KTutorial();
+
+    /**
+     * Returns the ObjectFinder to use.
+     *
+     * @return The ObjectFinder to use.
+     */
+    ObjectFinder* objectFinder() const;
 
 };
 

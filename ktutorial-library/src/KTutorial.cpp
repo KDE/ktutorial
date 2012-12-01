@@ -19,6 +19,7 @@
  ***************************************************************************/
 
 #include "KTutorial.h"
+#include "KTutorial_p.h"
 
 #include <KDebug>
 
@@ -52,6 +53,10 @@ KTutorial* KTutorial::self() {
     return sSelf;
 }
 
+KTutorial::~KTutorial() {
+    delete d;
+}
+
 bool KTutorial::registerWaitForMetaObject(const QMetaObject& waitForMetaObject,
                                     const QString& typeName /*= QString()*/) {
     return ScriptingModule::self()->registerWaitForMetaObject(waitForMetaObject,
@@ -65,17 +70,17 @@ void KTutorial::setup(KXmlGuiWindow* window) {
 }
 
 void KTutorial::setup(KTutorialCustomization* ktutorialCustomization) {
-    mCustomization = ktutorialCustomization;
-    mCustomization->setParent(this);
+    d->mCustomization = ktutorialCustomization;
+    d->mCustomization->setParent(this);
 
-    mCustomization->setup(mTutorialmanager);
+    d->mCustomization->setup(d->mTutorialmanager);
 
-    ScriptManager().loadTutorials(mTutorialmanager);
+    ScriptManager().loadTutorials(d->mTutorialmanager);
 
 #ifdef QT_QTDBUS_FOUND
     editorsupport::EditorSupport* editorSupport =
                                         new editorsupport::EditorSupport(this);
-    editorSupport->setObjectFinder(mObjectFinder);
+    editorSupport->setObjectFinder(d->mObjectFinder);
     editorSupport->setup(mainApplicationWindow());
     connect(editorSupport, SIGNAL(started(Tutorial*)),
             ktutorialCustomization, SLOT(showTutorialUI(Tutorial*)));
@@ -83,15 +88,27 @@ void KTutorial::setup(KTutorialCustomization* ktutorialCustomization) {
 }
 
 bool KTutorial::registerTutorial(Tutorial* tutorial) {
-    return mTutorialmanager->registerTutorial(tutorial);
+    return d->mTutorialmanager->registerTutorial(tutorial);
 }
 
 QWidget* KTutorial::mainApplicationWindow() const {
-    return mCustomization->mainApplicationWindow();
+    return d->mCustomization->mainApplicationWindow();
 }
 
 //private:
 
 KTutorial* KTutorial::sSelf = new KTutorial();
+
+KTutorial::KTutorial():
+    d(new KTutorialPrivate()) {
+    d->mTutorialmanager = new TutorialManager();
+    d->mTutorialmanager->setParent(this);
+    d->mObjectFinder = new ObjectFinder(this);
+    d->mCustomization = 0;
+}
+
+ObjectFinder* KTutorial::objectFinder() const {
+    return d->mObjectFinder;
+}
 
 }

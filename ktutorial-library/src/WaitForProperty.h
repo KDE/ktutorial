@@ -90,6 +90,11 @@ public:
                     const QVariant& value);
 
     /**
+     * Destroys this WaitForProperty.
+     */
+    virtual ~WaitForProperty();
+
+    /**
      * Sets the property to wait for.
      * This method can be invoked from a script.
      *
@@ -136,20 +141,7 @@ public:
 
 private:
 
-    /**
-     * The object that contains the property.
-     */
-    QObject* mObject;
-
-    /**
-     * The name of the property.
-     */
-    QString mPropertyName;
-
-    /**
-     * The value of the property to wait for.
-     */
-    QVariant mValue;
+    class WaitForPropertyPrivate* d;
 
 private Q_SLOTS:
 

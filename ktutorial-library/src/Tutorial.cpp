@@ -20,6 +20,7 @@
  ***************************************************************************/
 
 #include "Tutorial.h"
+#include "Tutorial_p.h"
 
 #include <kdebug.h>
 
@@ -35,29 +36,31 @@ namespace ktutorial {
 //public:
 
 Tutorial::Tutorial(TutorialInformation* tutorialInformation): QObject(),
-    mTutorialInformation(tutorialInformation),
-    mCurrentStep(0) {
+    d(new TutorialPrivate()) {
+    d->mTutorialInformation = tutorialInformation;
+    d->mCurrentStep = 0;
 }
 
 Tutorial::~Tutorial() {
-    delete mTutorialInformation;
+    delete d->mTutorialInformation;
+    delete d;
 }
 
 TutorialInformation* Tutorial::tutorialInformation() const {
-    return mTutorialInformation;
+    return d->mTutorialInformation;
 }
 
 void Tutorial::addStep(Step* step) {
-    if (mSteps.contains(step->id())) {
+    if (d->mSteps.contains(step->id())) {
         kWarning(debugArea()) << "Step with id" << step->id()
                               << "already added in tutorial"
-                              << mTutorialInformation->id();
+                              << d->mTutorialInformation->id();
         return;
     }
 
     step->setParent(this);
 
-    mSteps.insert(step->id(), step);
+    d->mSteps.insert(step->id(), step);
 
     connect(step, SIGNAL(nextStepRequested(QString)),
             this, SLOT(nextStep(QString)));
@@ -66,9 +69,9 @@ void Tutorial::addStep(Step* step) {
 void Tutorial::start() {
     setup();
 
-    if (!mSteps.contains("start")) {
+    if (!d->mSteps.contains("start")) {
         kError(debugArea()) << "No start step found in tutorial"
-                            << mTutorialInformation->id();
+                            << d->mTutorialInformation->id();
         finish();
         return;
     }
@@ -77,19 +80,19 @@ void Tutorial::start() {
 }
 
 void Tutorial::nextStep(const QString& id) {
-    if (!mSteps.contains(id)) {
+    if (!d->mSteps.contains(id)) {
         kError(debugArea()) << "No step" << id << "found in tutorial"
-                            << mTutorialInformation->id();
+                            << d->mTutorialInformation->id();
         return;
     }
 
-    nextStep(mSteps.value(id));
+    nextStep(d->mSteps.value(id));
 }
 
 void Tutorial::nextStep(Step* step) {
-    mQueuedSteps.append(step);
+    d->mQueuedSteps.append(step);
 
-    if (mQueuedSteps.count() > 1) {
+    if (d->mQueuedSteps.count() > 1) {
         //Nested call to nextStep(Step*) (that is, something called by
         //nextStep(Step*) caused the method to be called again before its
         //previous execution ended). Once that previous call continues its
@@ -97,18 +100,18 @@ void Tutorial::nextStep(Step* step) {
         return;
     }
 
-    while (mQueuedSteps.count() > 0) {
-        changeToStep(mQueuedSteps[0]);
-        mQueuedSteps.removeFirst();
+    while (d->mQueuedSteps.count() > 0) {
+        changeToStep(d->mQueuedSteps[0]);
+        d->mQueuedSteps.removeFirst();
     }
 }
 
 //public slots:
 
 void Tutorial::finish() {
-    if (mCurrentStep != 0) {
-        mCurrentStep->setActive(false);
-        mCurrentStep = 0;
+    if (d->mCurrentStep != 0) {
+        d->mCurrentStep->setActive(false);
+        d->mCurrentStep = 0;
     }
 
     tearDown();
@@ -117,6 +120,11 @@ void Tutorial::finish() {
 }
 
 //protected:
+
+void Tutorial::setTutorialInformation(
+                                    TutorialInformation* tutorialInformation) {
+    d->mTutorialInformation = tutorialInformation;
+}
 
 void Tutorial::setup() {
 }
@@ -127,21 +135,21 @@ void Tutorial::tearDown() {
 //private:
 
 void Tutorial::changeToStep(Step* step) {
-    if (mSteps.key(step).isEmpty()) {
+    if (d->mSteps.key(step).isEmpty()) {
         kError(debugArea()) << "Activate step" << step->id()
                             << "which doesn't belong to tutorial"
-                            << mTutorialInformation->id();
+                            << d->mTutorialInformation->id();
         return;
     }
 
-    if (mCurrentStep != 0) {
-        mCurrentStep->setActive(false);
+    if (d->mCurrentStep != 0) {
+        d->mCurrentStep->setActive(false);
     }
 
     kDebug(debugArea()) << "Next step:" << step->id();
 
-    mCurrentStep = step;
-    mCurrentStep->setActive(true);
+    d->mCurrentStep = step;
+    d->mCurrentStep->setActive(true);
 
     emit stepActivated(step);
 }

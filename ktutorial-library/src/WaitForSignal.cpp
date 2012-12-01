@@ -19,6 +19,7 @@
  ***************************************************************************/
 
 #include "WaitForSignal.h"
+#include "WaitForSignal_p.h"
 
 #include <KDebug>
 
@@ -31,12 +32,18 @@ namespace ktutorial {
 //public:
 
 WaitForSignal::WaitForSignal(): WaitFor(),
-    mConditionMet(false) {
+    d(new WaitForSignalPrivate()) {
+    d->mConditionMet = false;
 }
 
 WaitForSignal::WaitForSignal(QObject* sender, const QString& signal): WaitFor(),
-    mConditionMet(false) {
+    d(new WaitForSignalPrivate()) {
+    d->mConditionMet = false;
     setSignal(sender, signal);
+}
+
+WaitForSignal::~WaitForSignal() {
+    delete d;
 }
 
 void WaitForSignal::setSignal(QObject* sender, const QString& signal) {
@@ -55,14 +62,14 @@ void WaitForSignal::setSignal(QObject* sender, const QString& signal) {
 }
 
 bool WaitForSignal::conditionMet() const {
-    return mConditionMet;
+    return d->mConditionMet;
 }
 
 void WaitForSignal::setActive(bool active) {
     WaitFor::setActive(active);
 
     if (active) {
-        mConditionMet = false;
+        d->mConditionMet = false;
     }
 }
 
@@ -73,7 +80,7 @@ void WaitForSignal::signalWaitEnd() {
         return;
     }
 
-    mConditionMet = true;
+    d->mConditionMet = true;
     emit waitEnded(this);
 }
 

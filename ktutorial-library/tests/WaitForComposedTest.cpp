@@ -27,6 +27,8 @@
 #undef private
 #undef protected
 
+#include "WaitForComposed_p.h"
+
 //WaitFor* must be declared as a metatype to be used in qvariant_cast
 Q_DECLARE_METATYPE(ktutorial::WaitFor*);
 
@@ -129,17 +131,19 @@ void WaitForComposedTest::testAdd() {
     waitForComposed.add(waitFor1);
 
     QCOMPARE(waitFor1->parent(), &waitForComposed);
-    QCOMPARE(waitForComposed.mWaitFors.size(), 1);
-    QCOMPARE(waitForComposed.mWaitFors[0], waitFor1);
+    QCOMPARE(waitForComposed.d->mWaitFors.size(), 1);
+    QCOMPARE(waitForComposed.d->mWaitFors[0], waitFor1);
+    QCOMPARE(waitForComposed.waitFors(), waitForComposed.d->mWaitFors);
 
     WaitFor* waitFor2 = new MockWaitFor();
     waitForComposed.add(waitFor2);
 
     QCOMPARE(waitFor1->parent(), &waitForComposed);
     QCOMPARE(waitFor2->parent(), &waitForComposed);
-    QCOMPARE(waitForComposed.mWaitFors.size(), 2);
-    QCOMPARE(waitForComposed.mWaitFors[0], waitFor1);
-    QCOMPARE(waitForComposed.mWaitFors[1], waitFor2);
+    QCOMPARE(waitForComposed.d->mWaitFors.size(), 2);
+    QCOMPARE(waitForComposed.d->mWaitFors[0], waitFor1);
+    QCOMPARE(waitForComposed.d->mWaitFors[1], waitFor2);
+    QCOMPARE(waitForComposed.waitFors(), waitForComposed.d->mWaitFors);
 }
 
 void WaitForComposedTest::testAddTwice() {
@@ -156,9 +160,10 @@ void WaitForComposedTest::testAddTwice() {
 
     QCOMPARE(waitFor1->parent(), &waitForComposed);
     QCOMPARE(waitFor2->parent(), &waitForComposed);
-    QCOMPARE(waitForComposed.mWaitFors.size(), 2);
-    QCOMPARE(waitForComposed.mWaitFors[0], waitFor1);
-    QCOMPARE(waitForComposed.mWaitFors[1], waitFor2);
+    QCOMPARE(waitForComposed.d->mWaitFors.size(), 2);
+    QCOMPARE(waitForComposed.d->mWaitFors[0], waitFor1);
+    QCOMPARE(waitForComposed.d->mWaitFors[1], waitFor2);
+    QCOMPARE(waitForComposed.waitFors(), waitForComposed.d->mWaitFors);
 }
 
 void WaitForComposedTest::testChildWaitEnd() {

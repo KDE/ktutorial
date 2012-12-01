@@ -26,6 +26,8 @@
 #undef private
 #undef protected
 
+#include "WaitForEvent_p.h"
+
 //WaitFor* must be declared as a metatype to be used in qvariant_cast
 Q_DECLARE_METATYPE(ktutorial::WaitFor*);
 
@@ -108,7 +110,7 @@ void WaitForEventTest::testConstructorDefaultWithNullObject() {
 
 void WaitForEventTest::testSetActive() {
     WaitForEvent waitForEvent(this, QEvent::ChildAdded);
-    waitForEvent.mConditionMet = true;
+    waitForEvent.d->mConditionMet = true;
 
     waitForEvent.setActive(true);
 

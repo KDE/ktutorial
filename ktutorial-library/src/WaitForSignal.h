@@ -60,6 +60,11 @@ public:
     WaitForSignal(QObject* sender, const QString& signal);
 
     /**
+     * Destroys this WaitForSignal.
+     */
+    virtual ~WaitForSignal();
+
+    /**
      * Sets the signal to wait for.
      * Note that the signal name can be set with or without using the SIGNAL
      * macro (in fact, in a script you will not have a SIGNAL macro).
@@ -102,10 +107,7 @@ public Q_SLOTS:
 
 private:
 
-    /**
-     * Whether the connected signal was received when active or not.
-     */
-    bool mConditionMet;
+    class WaitForSignalPrivate* d;
 
 };
 

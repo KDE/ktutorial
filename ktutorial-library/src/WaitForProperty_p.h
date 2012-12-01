@@ -1,6 +1,4 @@
 /***************************************************************************
- *   Copyright (C) 2008 by Daniel Calviño Sánchez <danxuliu@gmail.com>     *
- *   Copyright (C) 2010 by Daniel Calviño Sánchez <danxuliu@gmail.com>     *
  *   Copyright (C) 2012 by Daniel Calviño Sánchez <danxuliu@gmail.com>     *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -17,24 +15,31 @@
  *   along with this program; If not, see <http://www.gnu.org/licenses/>.  *
  ***************************************************************************/
 
-#include "Option.h"
-#include "Option_p.h"
+#ifndef KTUTORIAL_WAITFORPROPERTY_P_H
+#define KTUTORIAL_WAITFORPROPERTY_P_H
 
 namespace ktutorial {
 
-//public:
+class WaitForPropertyPrivate {
+public:
 
-Option::Option(const QString& name): QObject(),
-    d(new OptionPrivate()) {
-    d->mName = name;
+    /**
+     * The object that contains the property.
+     */
+    QObject* mObject;
+
+    /**
+     * The name of the property.
+     */
+    QString mPropertyName;
+
+    /**
+     * The value of the property to wait for.
+     */
+    QVariant mValue;
+
+};
+
 }
 
-Option::~Option() {
-    delete d;
-}
-
-QString Option::name() const {
-    return d->mName;
-}
-
-}
+#endif

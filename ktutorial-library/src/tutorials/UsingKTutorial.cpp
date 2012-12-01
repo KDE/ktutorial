@@ -138,11 +138,13 @@ public:
 //public:
 
 UsingKTutorial::UsingKTutorial(): Tutorial(0) {
-    mTutorialInformation = new TutorialInformation("usingKTutorial");
-    mTutorialInformation->setName(i18nc("@info/plain", "Using the tutorials"));
-    mTutorialInformation->setDescription(i18nc("@info/plain", "This tutorial "
+    TutorialInformation* tutorialInformation =
+                                    new TutorialInformation("usingKTutorial");
+    tutorialInformation->setName(i18nc("@info/plain", "Using the tutorials"));
+    tutorialInformation->setDescription(i18nc("@info/plain", "This tutorial "
                                                "shows how the tutorial system "
                                                "works"));
+    setTutorialInformation(tutorialInformation);
 
     //Step start
     Step* startStep = new Step("start");

@@ -30,6 +30,8 @@
 #undef private
 #undef protected
 
+#include "WaitForWindow_p.h"
+
 #include "KTutorial.h"
 
 //WaitFor* must be declared as a metatype to be used in qvariant_cast
@@ -91,7 +93,7 @@ void WaitForWindowTest::testConstructorDefault() {
 
 void WaitForWindowTest::testSetActive() {
     WaitForWindow waitForWindow("theName");
-    waitForWindow.mConditionMet = true;
+    waitForWindow.d->mConditionMet = true;
 
     waitForWindow.setActive(true);
 

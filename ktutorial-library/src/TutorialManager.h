@@ -105,15 +105,7 @@ Q_SIGNALS:
 
 private:
 
-    /**
-     * A map with the information of the registered tutorials, indexed by ids.
-     */
-    QMap<QString, const TutorialInformation*> mTutorialInformations;
-
-    /**
-     * A map with all the registered tutorials, indexed by TutorialInformations.
-     */
-    QMap<const TutorialInformation*, Tutorial*> mTutorials;
+    class TutorialManagerPrivate* d;
 
 private Q_SLOTS:
 

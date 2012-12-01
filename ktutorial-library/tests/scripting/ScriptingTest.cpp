@@ -32,6 +32,9 @@
 #undef private
 #undef protected
 
+#include "../Step_p.h"
+#include "../Tutorial_p.h"
+
 #include "ScriptedStep.h"
 #include "../KTutorial.h"
 #include "../TutorialInformation.h"
@@ -157,8 +160,9 @@ void ScriptingTest::basicStep() {
 
     scriptedTutorial.start();
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("start"));
-    QCOMPARE(scriptedTutorial.mCurrentStep->text(), QString("The start step"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("start"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->text(),
+             QString("The start step"));
 }
 
 void ScriptingTest::stepWithCustomSetup() {
@@ -189,14 +193,14 @@ void ScriptingTest::stepWithCustomSetup() {
     QVERIFY(scriptedTutorial.isValid());
 
     scriptedTutorial.start();
-    Step* startStep = scriptedTutorial.mCurrentStep;
+    Step* startStep = scriptedTutorial.d->mCurrentStep;
 
-    QCOMPARE(startStep->mWaitsFor.size(), 1);
+    QCOMPARE(startStep->d->mWaitsFor.size(), 1);
 
     emit dummySignal();
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("first"));
-    QCOMPARE(startStep->mWaitsFor.size(), 0);
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("first"));
+    QCOMPARE(startStep->d->mWaitsFor.size(), 0);
     QVERIFY(mBooleanValue);
 }
 
@@ -235,20 +239,20 @@ void ScriptingTest::stepsWithOptions() {
     connect(this, SIGNAL(dummySignal()), option1, SIGNAL(selected()));
     emit dummySignal();
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("first"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("first"));
 
     QObject* option0 = getObject(&scriptedTutorial, "getOption0");
     //The same signal can be used, as the options belong to different steps
     connect(this, SIGNAL(dummySignal()), option0, SIGNAL(selected()));
     emit dummySignal();
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("start"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("start"));
 
     QObject* option2 = getObject(&scriptedTutorial, "getOption2");
     connect(this, SIGNAL(otherDummySignal()), option2, SIGNAL(selected()));
     emit otherDummySignal();
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("second"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("second"));
 }
 
 void ScriptingTest::stepsWithWaitFors() {
@@ -285,28 +289,28 @@ void ScriptingTest::stepsWithWaitFors() {
 
     scriptedTutorial.start();
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("start"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("start"));
     QCOMPARE(mDummySlotCallCount, 0);
 
     emit dummySignal();
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("start"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("start"));
     QCOMPARE(mDummySlotCallCount, 1);
 
     emit otherDummySignal();
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("start"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("start"));
     QCOMPARE(mDummySlotCallCount, 1);
 
     mBooleanValue = true;
     emit otherDummySignal();
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("first"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("first"));
     QCOMPARE(mDummySlotCallCount, 1);
 
     emit anotherDummySignal();
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("second"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("second"));
 }
 
 void ScriptingTest::fullTutorial() {
@@ -416,40 +420,40 @@ void ScriptingTest::fullTutorial() {
     connect(this, SIGNAL(dummySignal()), option1, SIGNAL(selected()));
     emit dummySignal();
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("first"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("first"));
 
     QObject* option2 = getObject(&scriptedTutorial, "getOption2");
     //The same signal can be used, as the options belong to different steps
     connect(this, SIGNAL(dummySignal()), option2, SIGNAL(selected()));
     emit dummySignal();
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("second"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("second"));
 
     emit dummySignal();
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("second"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("second"));
 
     mBooleanValue = true;
     emit otherDummySignal();
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("second"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("second"));
 
     emit anotherDummySignal();
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("third"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("third"));
 
     QObject* childObject = new QObject();
     childObject->setParent(this);
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("fourth"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("fourth"));
 
     mIntProperty = 42;
     emit intPropertyChanged();
 
     //Fifth step changes to end step when activated
 
-    QCOMPARE(scriptedTutorial.mCurrentStep->id(), QString("end"));
-    QCOMPARE(scriptedTutorial.mCurrentStep->text(),
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->id(), QString("end"));
+    QCOMPARE(scriptedTutorial.d->mCurrentStep->text(),
              QString("The tutorial has ended."));
 }
 

@@ -47,6 +47,11 @@ Q_OBJECT
 public:
 
     /**
+     * Destroys this WaitForComposed.
+     */
+    virtual ~WaitForComposed();
+
+    /**
      * Sets this WaitForComposed and all the children as active or inactive.
      *
      * @param active True to set it active, false otherwise.
@@ -84,16 +89,22 @@ public Q_SLOTS:
 protected:
 
     /**
-     * A list containing all the WaitFor objects added.
-     */
-    QList<WaitFor*> mWaitFors;
-
-    /**
      * Creates a new WaitForComposed.
      *
      * Protected to avoid classes other than subclasses to create them.
      */
     WaitForComposed();
+
+    /**
+     * Returns a list containing all the WaitFor objects added.
+     *
+     * @return All the WaitFor objects added.
+     */
+    QList<WaitFor*>& waitFors() const;
+
+private:
+
+    class WaitForComposedPrivate* d;
 
 };
 

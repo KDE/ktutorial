@@ -19,20 +19,26 @@
  ***************************************************************************/
 
 #include "WaitForAnd.h"
+#include "WaitForAnd_p.h"
 
 namespace ktutorial {
 
 //public:
 
-WaitForAnd::WaitForAnd(): WaitForComposed() {
+WaitForAnd::WaitForAnd(): WaitForComposed(),
+    d(new WaitForAndPrivate()) {
+}
+
+WaitForAnd::~WaitForAnd() {
+    delete d;
 }
 
 bool WaitForAnd::conditionMet() const {
-    if (mWaitFors.isEmpty()) {
+    if (waitFors().isEmpty()) {
         return false;
     }
 
-    QListIterator<WaitFor*> it(mWaitFors);
+    QListIterator<WaitFor*> it(waitFors());
     while (it.hasNext()) {
         if (!it.next()->conditionMet()) {
             return false;

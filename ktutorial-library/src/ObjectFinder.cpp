@@ -16,12 +16,18 @@
  ***************************************************************************/
 
 #include "ObjectFinder.h"
+#include "ObjectFinder_p.h"
 
 namespace ktutorial {
 
 //public:
 
-ObjectFinder::ObjectFinder(QObject* parent /*= 0*/): QObject(parent) {
+ObjectFinder::ObjectFinder(QObject* parent /*= 0*/): QObject(parent),
+    d(new ObjectFinderPrivate()) {
+}
+
+ObjectFinder::~ObjectFinder() {
+    delete d;
 }
 
 //private:

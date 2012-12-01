@@ -40,6 +40,11 @@ public:
     Q_INVOKABLE WaitForOr();
 
     /**
+     * Destroys this WaitForOr.
+     */
+    virtual ~WaitForOr();
+
+    /**
      * Returns true if at least one of its children met its condition, false
      * otherwise.
      * If there are no children, false is returned.
@@ -48,6 +53,10 @@ public:
      *         otherwise.
      */
     virtual bool conditionMet() const;
+
+private:
+
+    class WaitForOrPrivate* d;
 
 };
 

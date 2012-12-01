@@ -147,6 +147,11 @@ public:
     explicit Step(const QString& id);
 
     /**
+     * Destroys this Step.
+     */
+    virtual ~Step();
+
+    /**
      * Returns the identifier of this Step.
      *
      * @return The identifier of this Step.
@@ -368,60 +373,7 @@ protected:
 
 private:
 
-    /**
-     * The identifier of this Step.
-     */
-    QString mId;
-
-    /**
-     * The text shown to the user.
-     */
-    QString mText;
-
-    /**
-     * Whether this Step is active or not
-     */
-    bool mActive;
-
-    /**
-     * When this flag is on, the conditions and conditions to wait for added are
-     * removed and deleted the next time this Step is deactivated.
-     */
-    bool mDeleteAddedObjectsInTearDown;
-
-    /**
-     * The Options for this Step.
-     */
-    QList<Option*> mOptions;
-
-    /**
-     * The Options added in the setup to be deleted in the tearDown.
-     */
-    QList<Option*> mOptionsToBeDeletedInTearDown;
-
-    /**
-     * The conditions to wait for in each Option.
-     * The order of both lists is the same, so the index in the Options list
-     * is the index of it associated WaitFor.
-     */
-    QList<WaitFor*> mOptionsWaitsFor;
-
-    /**
-     * The conditions to wait for in this Step.
-     */
-    QList<WaitFor*> mWaitsFor;
-
-    /**
-     * The conditions to wait for added in the setup to be deleted in the
-     * tearDown.
-     */
-    QList<WaitFor*> mWaitsForToBeDeletedInTearDown;
-
-    /**
-     * Associates a condition to wait for with the id of the step to execute
-     * when the condition is met.
-     */
-    QHash<WaitFor*, QString> mNextStepForWaitFor;
+    class StepPrivate* d;
 
     /**
      * Wraps setup method to ensure that some code is executed before and after

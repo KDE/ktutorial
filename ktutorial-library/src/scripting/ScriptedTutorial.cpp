@@ -46,7 +46,7 @@ ScriptedTutorial::~ScriptedTutorial() {
 }
 
 QObject* ScriptedTutorial::tutorialInformationAsObject() const {
-    return mTutorialInformation;
+    return tutorialInformation();
 }
 
 bool ScriptedTutorial::isValid() const {

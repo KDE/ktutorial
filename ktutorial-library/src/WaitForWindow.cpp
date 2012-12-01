@@ -17,6 +17,7 @@
  ***************************************************************************/
 
 #include "WaitForWindow.h"
+#include "WaitForWindow_p.h"
 #include "KTutorial.h"
 #include "common/WindowVisibilitySpy.h"
 
@@ -27,7 +28,8 @@ namespace ktutorial {
 //public:
 
 WaitForWindow::WaitForWindow(): WaitFor(),
-    mConditionMet(false) {
+    d(new WaitForWindowPrivate()) {
+    d->mConditionMet = false;
 
     WindowVisibilitySpy* spy = new WindowVisibilitySpy(this);
     spy->addWidgetToSpy(KTutorial::self()->mainApplicationWindow());
@@ -36,7 +38,8 @@ WaitForWindow::WaitForWindow(): WaitFor(),
 }
 
 WaitForWindow::WaitForWindow(const QString& objectName): WaitFor(),
-    mConditionMet(false) {
+    d(new WaitForWindowPrivate()) {
+    d->mConditionMet = false;
 
     WindowVisibilitySpy* spy = new WindowVisibilitySpy(this);
     spy->addWidgetToSpy(KTutorial::self()->mainApplicationWindow());
@@ -46,19 +49,23 @@ WaitForWindow::WaitForWindow(const QString& objectName): WaitFor(),
     setWindowObjectName(objectName);
 }
 
+WaitForWindow::~WaitForWindow() {
+    delete d;
+}
+
 void WaitForWindow::setWindowObjectName(const QString& objectName) {
-    mWindowObjectName = objectName;
+    d->mWindowObjectName = objectName;
 }
 
 bool WaitForWindow::conditionMet() const {
-    return mConditionMet;
+    return d->mConditionMet;
 }
 
 void WaitForWindow::setActive(bool active) {
     WaitFor::setActive(active);
 
     if (active) {
-        mConditionMet = false;
+        d->mConditionMet = false;
     }
 }
 
@@ -69,11 +76,11 @@ void WaitForWindow::checkWindowShown(QWidget* window) {
         return;
     }
 
-    if (window->objectName() != mWindowObjectName) {
+    if (window->objectName() != d->mWindowObjectName) {
         return;
     }
 
-    mConditionMet = true;
+    d->mConditionMet = true;
     emit waitEnded(this);
 }
 

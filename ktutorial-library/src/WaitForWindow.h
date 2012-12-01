@@ -65,6 +65,11 @@ public:
     explicit WaitForWindow(const QString& windowObjectName);
 
     /**
+     * Destroys this WaitForWindow.
+     */
+    virtual ~WaitForWindow();
+
+    /**
      * Sets the object name of the window to wait for.
      * Note that the name is the object name, not the window title.
      * This method can be invoked from a script.
@@ -95,16 +100,7 @@ public:
 
 private:
 
-    /**
-     * Whether the window with the expected object name was shown when active or
-     * not.
-     */
-    bool mConditionMet;
-
-    /**
-     * The object name of the window to wait for.
-     */
-    QString mWindowObjectName;
+    class WaitForWindowPrivate* d;
 
 private Q_SLOTS:
 

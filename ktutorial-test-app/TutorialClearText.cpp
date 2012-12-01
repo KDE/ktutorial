@@ -35,9 +35,10 @@ using ktutorial::WaitForSignal;
 //public:
 
 TutorialClearText::TutorialClearText(): Tutorial(0) {
-    mTutorialInformation = new TutorialInformation("clearText");
-    mTutorialInformation->setName(i18nc("@info/plain", "Clear the text area"));
-    mTutorialInformation->setDescription(i18nc("@info/plain", "This tutorial shows how to clean the text area with ease"));
+    TutorialInformation* tutorialInformation = new TutorialInformation("clearText");
+    tutorialInformation->setName(i18nc("@info/plain", "Clear the text area"));
+    tutorialInformation->setDescription(i18nc("@info/plain", "This tutorial shows how to clean the text area with ease"));
+    setTutorialInformation(tutorialInformation);
 
     //Step 1
     Step* startStep = new Step("start");

@@ -19,33 +19,39 @@
  ***************************************************************************/
 
 #include "TutorialInformation.h"
+#include "TutorialInformation_p.h"
 
 namespace ktutorial {
 
 //public:
 
 TutorialInformation::TutorialInformation(const QString& id): QObject(),
-    mId(id) {
+    d(new TutorialInformationPrivate()) {
+    d->mId = id;
+}
+
+TutorialInformation::~TutorialInformation() {
+    delete d;
 }
 
 QString TutorialInformation::id() const {
-    return mId;
+    return d->mId;
 }
 
 QString TutorialInformation::name() const {
-    return mName;
+    return d->mName;
 }
 
 QString TutorialInformation::description() const {
-    return mDescription;
+    return d->mDescription;
 }
 
 void TutorialInformation::setName(const QString& name) {
-    mName = name;
+    d->mName = name;
 }
 
 void TutorialInformation::setDescription(const QString& description) {
-    mDescription = description;
+    d->mDescription = description;
 }
 
 }

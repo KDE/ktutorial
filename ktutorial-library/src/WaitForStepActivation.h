@@ -80,6 +80,11 @@ public:
     WaitForStepActivation(const Tutorial* tutorial, const Step* step);
 
     /**
+     * Destroys this WaitForStepActivation.
+     */
+    virtual ~WaitForStepActivation();
+
+    /**
      * Sets the step to wait for its activation.
      * This method can be invoked from a script.
      *
@@ -104,10 +109,7 @@ public:
 
 private:
 
-    /**
-     * Whether the step is being activated or not.
-     */
-    bool mDuringStepActivation;
+    class WaitForStepActivationPrivate* d;
 
 private Q_SLOTS:
 

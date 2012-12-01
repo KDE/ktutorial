@@ -25,6 +25,8 @@
 #undef private
 #undef protected
 
+#include "WaitForNot_p.h"
+
 namespace ktutorial {
 
 class WaitForNotTest: public QObject {
@@ -62,7 +64,8 @@ void WaitForNotTest::testConstructor() {
     WaitForNot waitForNot(waitFor);
 
     QCOMPARE(waitFor->parent(), &waitForNot);
-    QCOMPARE(waitForNot.mWaitFor, waitFor);
+    QCOMPARE(waitForNot.d->mWaitFor, waitFor);
+    QCOMPARE(waitForNot.waitFor(), waitFor);
 }
 
 void WaitForNotTest::testConstructorDefault() {
@@ -72,7 +75,8 @@ void WaitForNotTest::testConstructorDefault() {
     waitForNot.setNegatedWaitFor(waitFor);
 
     QCOMPARE(waitFor->parent(), &waitForNot);
-    QCOMPARE(waitForNot.mWaitFor, waitFor);
+    QCOMPARE(waitForNot.d->mWaitFor, waitFor);
+    QCOMPARE(waitForNot.waitFor(), waitFor);
 }
 
 void WaitForNotTest::testConditionMetTrue() {

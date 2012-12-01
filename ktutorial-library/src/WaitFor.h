@@ -50,6 +50,11 @@ Q_OBJECT
 public:
 
     /**
+     * Destroys this WaitFor.
+     */
+    virtual ~WaitFor();
+
+    /**
      * Returns true if the condition being waited for is met, false otherwise.
      * This method must be defined in subclasses of WaitFor.
      *
@@ -98,10 +103,7 @@ protected:
 
 private:
 
-    /**
-     * Whether this WaitFor is active or not.
-     */
-    bool mActive;
+    class WaitForPrivate* d;
 
 };
 

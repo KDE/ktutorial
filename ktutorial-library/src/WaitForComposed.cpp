@@ -20,27 +20,32 @@
  ***************************************************************************/
 
 #include "WaitForComposed.h"
+#include "WaitForComposed_p.h"
 
 namespace ktutorial {
 
 //public:
 
+WaitForComposed::~WaitForComposed() {
+    delete d;
+}
+
 void WaitForComposed::setActive(bool active) {
     WaitFor::setActive(active);
 
-    QListIterator<WaitFor*> it(mWaitFors);
+    QListIterator<WaitFor*> it(d->mWaitFors);
     while (it.hasNext()) {
         it.next()->setActive(active);
     }
 }
 
 void WaitForComposed::add(WaitFor* waitFor) {
-    if (mWaitFors.contains(waitFor)) {
+    if (d->mWaitFors.contains(waitFor)) {
         return;
     }
 
     waitFor->setParent(this);
-    mWaitFors.append(waitFor);
+    d->mWaitFors.append(waitFor);
 
     connect(waitFor, SIGNAL(waitEnded(WaitFor*)),
             this, SLOT(childWaitEnd(WaitFor*)));
@@ -51,7 +56,7 @@ void WaitForComposed::add(WaitFor* waitFor) {
 void WaitForComposed::childWaitEnd(WaitFor* waitFor) {
     Q_UNUSED(waitFor);
 
-    Q_ASSERT(mWaitFors.contains(waitFor));
+    Q_ASSERT(d->mWaitFors.contains(waitFor));
 
     if (!isActive()) {
         return;
@@ -64,7 +69,12 @@ void WaitForComposed::childWaitEnd(WaitFor* waitFor) {
 
 //protected:
 
-WaitForComposed::WaitForComposed(): WaitFor() {
+WaitForComposed::WaitForComposed(): WaitFor(),
+    d(new WaitForComposedPrivate()) {
+}
+
+QList<WaitFor*>& WaitForComposed::waitFors() const {
+    return d->mWaitFors;
 }
 
 }

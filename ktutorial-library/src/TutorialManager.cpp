@@ -19,6 +19,7 @@
  ***************************************************************************/
 
 #include "TutorialManager.h"
+#include "TutorialManager_p.h"
 
 #include <kdebug.h>
 
@@ -33,14 +34,17 @@ namespace ktutorial {
 
 //public:
 
-TutorialManager::TutorialManager(): QObject() {
+TutorialManager::TutorialManager(): QObject(),
+    d(new TutorialManagerPrivate()) {
 }
 
 TutorialManager::~TutorialManager() {
+    delete d;
 }
 
 bool TutorialManager::registerTutorial(Tutorial* tutorial) {
-    if (mTutorialInformations.contains(tutorial->tutorialInformation()->id())) {
+    if (d->mTutorialInformations.contains(
+                                    tutorial->tutorialInformation()->id())) {
         kWarning(debugArea()) << "Tutorial with id" 
                               << tutorial->tutorialInformation()->id()
                               << "already added";
@@ -49,27 +53,28 @@ bool TutorialManager::registerTutorial(Tutorial* tutorial) {
 
     tutorial->setParent(this);
 
-    mTutorialInformations.insert(tutorial->tutorialInformation()->id(),
-                                 tutorial->tutorialInformation());
-    mTutorials.insert(tutorial->tutorialInformation(), tutorial);
+    d->mTutorialInformations.insert(tutorial->tutorialInformation()->id(),
+                                    tutorial->tutorialInformation());
+    d->mTutorials.insert(tutorial->tutorialInformation(), tutorial);
 
     return true;
 }
 
 QList<const TutorialInformation*> TutorialManager::tutorialInformations()
                                                                         const {
-    return mTutorialInformations.values();
+    return d->mTutorialInformations.values();
 }
 
 void TutorialManager::start(const QString& id) {
-    if (!mTutorialInformations.contains(id)) {
+    if (!d->mTutorialInformations.contains(id)) {
         finish();
         return;
     }
 
     kDebug(debugArea()) << "Started:" << id;
 
-    Tutorial* tutorial = mTutorials.value(mTutorialInformations.value(id));
+    Tutorial* tutorial = d->mTutorials.value(
+                                            d->mTutorialInformations.value(id));
     connect(tutorial, SIGNAL(finished(Tutorial*)), this, SLOT(finish()));
 
     emit started(tutorial);

@@ -61,6 +61,11 @@ public:
     explicit Option(const QString& name);
 
     /**
+     * Destroys this Option.
+     */
+    virtual ~Option();
+
+    /**
      * Returns the name of this Option.
      *
      * @return The name of this Option.
@@ -80,10 +85,7 @@ Q_SIGNALS:
 
 private:
 
-    /**
-     * The human readable name of this Option shown to the user.
-     */
-    QString mName;
+    class OptionPrivate* d;
 
 };
 

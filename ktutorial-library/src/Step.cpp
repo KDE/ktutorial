@@ -19,6 +19,7 @@
  ***************************************************************************/
 
 #include "Step.h"
+#include "Step_p.h"
 
 #include <kdebug.h>
 
@@ -35,29 +36,34 @@ namespace ktutorial {
 //public:
 
 Step::Step(const QString& id): QObject(),
-    mId(id),
-    mActive(false),
-    mDeleteAddedObjectsInTearDown(false) {
+    d(new StepPrivate()) {
+    d->mId = id;
+    d->mActive = false;
+    d->mDeleteAddedObjectsInTearDown = false;
+}
+
+Step::~Step() {
+    delete d;
 }
 
 QString Step::id() const {
-    return mId;
+    return d->mId;
 }
 
 QList<Option*> Step::options() const {
-    return mOptions;
+    return d->mOptions;
 }
 
 QString Step::text() const {
-    return mText;
+    return d->mText;
 }
 
 void Step::setText(const QString& text) {
-    mText = text;
+    d->mText = text;
 }
 
 bool Step::isActive() const {
-    return mActive;
+    return d->mActive;
 }
 
 void Step::setActive(bool active) {
@@ -67,9 +73,9 @@ void Step::setActive(bool active) {
         tearDownWrapper();
     }
 
-    mActive = active;
+    d->mActive = active;
 
-    QListIterator<WaitFor*> it(mWaitsFor);
+    QListIterator<WaitFor*> it(d->mWaitsFor);
     while (it.hasNext()) {
         it.next()->setActive(active);
     }
@@ -80,15 +86,15 @@ void Step::addOption(Option* option, QObject* receiver, const QString& slot) {
         return;
     }
 
-    bool deleteAddedObjectsInTearDownValue = mDeleteAddedObjectsInTearDown;
-    mDeleteAddedObjectsInTearDown = false;
+    bool deleteAddedObjectsInTearDownValue = d->mDeleteAddedObjectsInTearDown;
+    d->mDeleteAddedObjectsInTearDown = false;
 
     WaitForSignal* waitFor = new WaitForSignal(option, SIGNAL(selected()));
     addWaitFor(waitFor, receiver, slot);
 
-    mOptionsWaitsFor.append(waitFor);
+    d->mOptionsWaitsFor.append(waitFor);
 
-    mDeleteAddedObjectsInTearDown = deleteAddedObjectsInTearDownValue;
+    d->mDeleteAddedObjectsInTearDown = deleteAddedObjectsInTearDownValue;
 }
 
 void Step::addOption(Option* option, const QString& nextStepId) {
@@ -96,15 +102,15 @@ void Step::addOption(Option* option, const QString& nextStepId) {
         return;
     }
 
-    bool deleteAddedObjectsInTearDownValue = mDeleteAddedObjectsInTearDown;
-    mDeleteAddedObjectsInTearDown = false;
+    bool deleteAddedObjectsInTearDownValue = d->mDeleteAddedObjectsInTearDown;
+    d->mDeleteAddedObjectsInTearDown = false;
 
     WaitForSignal* waitFor = new WaitForSignal(option, SIGNAL(selected()));
     addWaitFor(waitFor, nextStepId);
 
-    mOptionsWaitsFor.append(waitFor);
+    d->mOptionsWaitsFor.append(waitFor);
 
-    mDeleteAddedObjectsInTearDown = deleteAddedObjectsInTearDownValue;
+    d->mDeleteAddedObjectsInTearDown = deleteAddedObjectsInTearDownValue;
 }
 
 void Step::addWaitFor(WaitFor* waitFor, QObject* receiver, const QString& slot) {
@@ -120,35 +126,35 @@ void Step::addWaitFor(WaitFor* waitFor, const QString& nextStepId) {
         return;
     }
 
-    mNextStepForWaitFor.insert(waitFor, nextStepId);
+    d->mNextStepForWaitFor.insert(waitFor, nextStepId);
 
     connect(waitFor, SIGNAL(waitEnded(WaitFor*)),
             this, SLOT(requestNextStepForWaitFor(WaitFor*)));
 }
 
 void Step::removeOption(Option* option) {
-    if (!mOptions.contains(option)) {
+    if (!d->mOptions.contains(option)) {
         kWarning(debugArea()) << "Tried to remove an Option not added in step"
-                              << mId;
+                              << d->mId;
         return;
     }
 
     option->setParent(0);
 
-    int index = mOptions.indexOf(option);
-    mOptions.removeAt(index);
+    int index = d->mOptions.indexOf(option);
+    d->mOptions.removeAt(index);
 
-    WaitFor* waitFor = mOptionsWaitsFor[index];
+    WaitFor* waitFor = d->mOptionsWaitsFor[index];
     removeWaitFor(waitFor);
 
-    mOptionsWaitsFor.removeAt(index);
+    d->mOptionsWaitsFor.removeAt(index);
     delete waitFor;
 }
 
 void Step::removeWaitFor(WaitFor* waitFor) {
-    if (!mWaitsFor.contains(waitFor)) {
+    if (!d->mWaitsFor.contains(waitFor)) {
         kWarning(debugArea()) << "Tried to remove a WaitFor not added in step"
-                              << mId;
+                              << d->mId;
         return;
     }
 
@@ -156,11 +162,11 @@ void Step::removeWaitFor(WaitFor* waitFor) {
 
     waitFor->setParent(0);
 
-    mWaitsFor.removeAt(mWaitsFor.indexOf(waitFor));
+    d->mWaitsFor.removeAt(d->mWaitsFor.indexOf(waitFor));
     disconnectWaitFor(waitFor);
 
-    if (mNextStepForWaitFor.contains(waitFor)) {
-        mNextStepForWaitFor.remove(waitFor);
+    if (d->mNextStepForWaitFor.contains(waitFor)) {
+        d->mNextStepForWaitFor.remove(waitFor);
         disconnect(waitFor, SIGNAL(waitEnded(WaitFor*)),
                    this, SLOT(requestNextStepForWaitFor(WaitFor*)));
     }
@@ -192,57 +198,57 @@ void Step::disconnectWaitFor(WaitFor* waitFor) {
 //private:
 
 void Step::setupWrapper() {
-    mDeleteAddedObjectsInTearDown = true;
+    d->mDeleteAddedObjectsInTearDown = true;
     setup();
-    mDeleteAddedObjectsInTearDown = false;
+    d->mDeleteAddedObjectsInTearDown = false;
 }
 
 void Step::tearDownWrapper() {
     tearDown();
 
-    foreach (Option* option, mOptionsToBeDeletedInTearDown) {
+    foreach (Option* option, d->mOptionsToBeDeletedInTearDown) {
         removeOption(option);
         delete option;
     }
-    mOptionsToBeDeletedInTearDown.clear();
+    d->mOptionsToBeDeletedInTearDown.clear();
 
-    foreach (WaitFor* waitFor, mWaitsForToBeDeletedInTearDown) {
+    foreach (WaitFor* waitFor, d->mWaitsForToBeDeletedInTearDown) {
         removeWaitFor(waitFor);
         delete waitFor;
     }
-    mWaitsForToBeDeletedInTearDown.clear();
+    d->mWaitsForToBeDeletedInTearDown.clear();
 }
 
 bool Step::addOption(Option* option) {
-    if (mOptions.contains(option)) {
+    if (d->mOptions.contains(option)) {
         kWarning(debugArea()) << "Option" << option->name()
-                              << "already added in step" << mId;
+                              << "already added in step" << d->mId;
         return false;
     }
 
-    QListIterator<Option*> it(mOptions);
+    QListIterator<Option*> it(d->mOptions);
     while (it.hasNext()) {
         if (it.next()->name() == option->name()) {
             kWarning(debugArea()) << "Option named" << option->name()
-                                  << "already added in step" << mId;
+                                  << "already added in step" << d->mId;
             return false;
         }
     }
 
     option->setParent(this);
 
-    mOptions.append(option);
+    d->mOptions.append(option);
 
-    if (mDeleteAddedObjectsInTearDown) {
-        mOptionsToBeDeletedInTearDown.append(option);
+    if (d->mDeleteAddedObjectsInTearDown) {
+        d->mOptionsToBeDeletedInTearDown.append(option);
     }
 
     return true;
 }
 
 bool Step::addWaitFor(WaitFor* waitFor) {
-    if (mWaitsFor.contains(waitFor)) {
-        kWarning(debugArea()) << "Same WaitFor already added in step" << mId;
+    if (d->mWaitsFor.contains(waitFor)) {
+        kWarning(debugArea()) << "Same WaitFor already added in step" << d->mId;
         return false;
     }
 
@@ -250,10 +256,10 @@ bool Step::addWaitFor(WaitFor* waitFor) {
 
     waitFor->setParent(this);
 
-    mWaitsFor.append(waitFor);
+    d->mWaitsFor.append(waitFor);
 
-    if (mDeleteAddedObjectsInTearDown) {
-        mWaitsForToBeDeletedInTearDown.append(waitFor);
+    if (d->mDeleteAddedObjectsInTearDown) {
+        d->mWaitsForToBeDeletedInTearDown.append(waitFor);
     }
 
     return true;
@@ -262,7 +268,7 @@ bool Step::addWaitFor(WaitFor* waitFor) {
 //private slots:
 
 void Step::requestNextStepForWaitFor(WaitFor* waitFor) {
-    emit nextStepRequested(mNextStepForWaitFor.value(waitFor));
+    emit nextStepRequested(d->mNextStepForWaitFor.value(waitFor));
 }
 
 }

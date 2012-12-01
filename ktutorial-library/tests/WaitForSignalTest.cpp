@@ -27,6 +27,8 @@
 #undef private
 #undef protected
 
+#include "WaitForSignal_p.h"
+
 //WaitFor* must be declared as a metatype to be used in qvariant_cast
 Q_DECLARE_METATYPE(ktutorial::WaitFor*);
 
@@ -122,7 +124,7 @@ void WaitForSignalTest::testConstructorDefaultWithNullObject() {
 
 void WaitForSignalTest::testSetActive() {
     WaitForSignal waitForSignal(this, SIGNAL(dummySignal()));
-    waitForSignal.mConditionMet = true;
+    waitForSignal.d->mConditionMet = true;
 
     waitForSignal.setActive(true);
 
