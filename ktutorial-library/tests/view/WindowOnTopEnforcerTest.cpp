@@ -171,7 +171,7 @@ void WindowOnTopEnforcerTest::testModalDialog() {
     queueAssertIsVisibleWindow(windowToKeepOnTop, 500);
 
     timerAccept.start();
-    modalDialog->exec();
+    modalDialog->exec(); //krazy:exclude=crashy
 
     assertWindow(windowToKeepOnTop, window);
 
@@ -223,7 +223,7 @@ void WindowOnTopEnforcerTest::testNestedModalDialog() {
     timerAccept.start();
     timerExecNested.start();
     timerAcceptNested.start();
-    modalDialog->exec();
+    modalDialog->exec(); //krazy:exclude=crashy
 
     assertWindow(windowToKeepOnTop, window);
 
@@ -295,7 +295,7 @@ void WindowOnTopEnforcerTest::testSeveralModalDialogs() {
     timerAcceptNested.start();
     timerExecNested2.start();
     timerAcceptNested2.start();
-    modalDialog->exec();
+    modalDialog->exec(); //krazy:exclude=crashy
 
     assertWindow(windowToKeepOnTop, window);
 
@@ -329,7 +329,7 @@ void WindowOnTopEnforcerTest::testSeveralModalDialogs() {
     timerAccept2.start();
     timerExecNested3.start();
     timerAcceptNested3.start();
-    modalDialog2->exec();
+    modalDialog2->exec(); //krazy:exclude=crashy
 
     assertWindow(windowToKeepOnTop, window);
 
@@ -368,7 +368,7 @@ void WindowOnTopEnforcerTest::testNestedModalDialogOnChildWindow() {
     queueAssertIsVisibleWindow(windowToKeepOnTop, 500);
 
     timerAccept.start();
-    nestedModalDialog->exec();
+    nestedModalDialog->exec(); //krazy:exclude=crashy
 
     assertWindow(windowToKeepOnTop, window);
 
