@@ -204,7 +204,8 @@ void WaitForWidget::addWaitFor() {
     dialog->setObjectName("addWaitForDialog");
     dialog->button(KDialog::Ok)->setObjectName("okButton");
     dialog->button(KDialog::Cancel)->setObjectName("cancelButton");
-    if (DialogRunner(dialog).exec() == QDialog::Accepted) {
+    if (DialogRunner(dialog).exec() == //krazy:exclude=crashy
+            QDialog::Accepted) {
         newWaitFor = widget->waitFor();
     }
 
@@ -275,7 +276,7 @@ void WaitForWidget::editWaitFor() {
 
     EditionDialog* dialog = new EditionDialog(editionWidget, this);
     dialog->setObjectName(dialogName);
-    DialogRunner(dialog).exec();
+    DialogRunner(dialog).exec(); //krazy:exclude=crashy
 }
 
 void WaitForWidget::removeWaitFor() {

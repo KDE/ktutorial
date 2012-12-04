@@ -218,7 +218,7 @@ int EditActions::showEditionDialog(CommandWidget* commandWidget) {
 
     EditionDialog* dialog = new EditionDialog(commandWidget, mTutorialEditor);
     dialog->setObjectName(dialogName);
-    return DialogRunner(dialog).exec();
+    return DialogRunner(dialog).exec(); //krazy:exclude=crashy
 }
 
 //private slots:
