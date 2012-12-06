@@ -26,7 +26,7 @@
 int main (int argc, char *argv[]) {
     KAboutData aboutData("ktutorial-editor", 0,
         ki18nc("@title", "KTutorial editor"),
-        "0.5",
+        "0.5.1",
         ki18nc("@title", "An editor to create tutorials for "
                          "<application>KTutorial</application>."),
         KAboutData::License_GPL_V2,
