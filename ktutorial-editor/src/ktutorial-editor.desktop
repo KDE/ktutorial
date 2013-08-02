@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=KTutorial editor
+Name[bs]=KTutorial uređivač
 Name[cs]=Editor KTutorial
 Name[de]=KTutorial-Editor
 Name[es]=Editor de KTutorial
@@ -19,6 +20,7 @@ Name[tr]=KTutorial düzenleyici
 Name[uk]=Редактор KTutorial
 Name[x-test]=xxKTutorial editorxx
 GenericName=Editor for KTutorial tutorials
+GenericName[bs]=Uređivač KTutorial tutorijale
 GenericName[de]=Editor für KTutorial-Anleitungen
 GenericName[es]=Editor para las guías de KTutorial
 GenericName[et]=KTutoriali õppematerjalide redaktor
